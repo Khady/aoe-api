@@ -1,0 +1,840 @@
+{
+  "checked_on": "2026-09-19",
+  "repository": "PlayFab/API_Specs",
+  "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+  "commit_date": "2026-08-24T16:57:34Z",
+  "available_swagger_files": [
+    "Swagger/PlayFab/Addon.swagger.json",
+    "Swagger/PlayFab/Admin.swagger.json",
+    "Swagger/PlayFab/Authentication.swagger.json",
+    "Swagger/PlayFab/Client.swagger.json",
+    "Swagger/PlayFab/CloudScript.swagger.json",
+    "Swagger/PlayFab/Data.swagger.json",
+    "Swagger/PlayFab/Economy.swagger.json",
+    "Swagger/PlayFab/Events.swagger.json",
+    "Swagger/PlayFab/Experimentation.swagger.json",
+    "Swagger/PlayFab/Groups.swagger.json",
+    "Swagger/PlayFab/Insights.swagger.json",
+    "Swagger/PlayFab/Leaderboards.swagger.json",
+    "Swagger/PlayFab/Localization.swagger.json",
+    "Swagger/PlayFab/Matchmaker.swagger.json",
+    "Swagger/PlayFab/Multiplayer.swagger.json",
+    "Swagger/PlayFab/Profiles.swagger.json",
+    "Swagger/PlayFab/Progression.swagger.json",
+    "Swagger/PlayFab/Server.swagger.json",
+    "Swagger/PlayFab/State.swagger.json",
+    "Swagger/PlayFab/Sweepstakes.swagger.json"
+  ],
+  "reviewed_specifications": [
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Client.swagger.json",
+      "checked_at": "2026-09-19T10:26:32.280103+00:00",
+      "bytes": 951289,
+      "sha256": "25703e3fdf5ad3fd122f3a63f4b09bfc25b93b44904a6c183bb90df6bf701046",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 174,
+      "schemas": 419
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Events.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Events.swagger.json",
+      "checked_at": "2026-09-19T10:26:32.968596+00:00",
+      "bytes": 153189,
+      "sha256": "1cd401ae848f50a523f13e173e62c5420165197c5618f9f6a59fb38f292d903f",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 12,
+      "schemas": 34
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Multiplayer.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Multiplayer.swagger.json",
+      "checked_at": "2026-09-19T10:26:33.931527+00:00",
+      "bytes": 623543,
+      "sha256": "2cd450bf5f1dc0d077ee9984db8faf763eb008cd383c2e3fcee8d1d3bf955d7a",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 88,
+      "schemas": 250
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Economy.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Economy.swagger.json",
+      "checked_at": "2026-09-19T10:26:34.710739+00:00",
+      "bytes": 436197,
+      "sha256": "45c0f985bf7068e550e39e591b924ea632351af14ac960cefa98b3a6cc30833e",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 46,
+      "schemas": 156
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/CloudScript.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/CloudScript.swagger.json",
+      "checked_at": "2026-09-19T10:26:35.500987+00:00",
+      "bytes": 176243,
+      "sha256": "c3acbf2721296e471e9cffc9f320a5aac1e52e0c55765cd092f7dc5ed28df38b",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 15,
+      "schemas": 50
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Authentication.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Authentication.swagger.json",
+      "checked_at": "2026-09-19T10:26:36.275221+00:00",
+      "bytes": 123466,
+      "sha256": "5c57237010b756554d39bb32cacefae3cdad19d30d5a63c9e5a8ffa554e77e5e",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 4,
+      "schemas": 14
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Data.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Data.swagger.json",
+      "checked_at": "2026-09-19T10:26:37.071625+00:00",
+      "bytes": 144957,
+      "sha256": "1812d207c2e1cf485ae3d2dae720cad6632ae2dca6ca2569a8a103647dd087c6",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 7,
+      "schemas": 22
+    }
+  ],
+  "summary": {
+    "available_swagger_files": 20,
+    "reviewed_swagger_files": 7,
+    "paths_in_reviewed_specs": 346,
+    "schema_definitions_in_reviewed_specs": 945,
+    "emulator_operations_compared": 15,
+    "matched_vendor_operations": 13,
+    "unmatched_in_reviewed_specs": 2,
+    "new_AoE_runtime_verified_operations": 0
+  },
+  "matches": [
+    {
+      "method": "POST",
+      "path": "/Client/GetPlayerCombinedInfo",
+      "emulator_games": [
+        "age4",
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-getplayercombinedinfo"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "GetPlayerCombinedInfo",
+      "authentication": [
+        {
+          "scheme": "SessionTicket",
+          "in": "header",
+          "header": "X-Authorization",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/GetPlayerCombinedInfoRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/GetPlayerCombinedInfoRequest",
+            "required": [
+              "InfoRequestParameters"
+            ],
+            "properties": {
+              "CustomTags": {
+                "type": "object"
+              },
+              "InfoRequestParameters": {
+                "type": "object",
+                "$ref": "#/definitions/GetPlayerCombinedInfoRequestParams"
+              },
+              "PlayFabId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/GetPlayerCombinedInfoResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/account-management/getplayercombinedinfo"
+    },
+    {
+      "method": "POST",
+      "path": "/Client/GetTime",
+      "emulator_games": [
+        "age4",
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-gettime"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "GetTime",
+      "authentication": [
+        {
+          "scheme": "SessionTicket",
+          "in": "header",
+          "header": "X-Authorization",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/GetTimeRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/GetTimeRequest",
+            "required": [],
+            "properties": {}
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/GetTimeResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/gettime"
+    },
+    {
+      "method": "POST",
+      "path": "/Client/LoginWithCustomID",
+      "emulator_games": [
+        "age4"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-loginwithcustomid"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "LoginWithCustomID",
+      "authentication": [
+        {
+          "scheme": "None",
+          "in": "header",
+          "header": "None",
+          "no_authentication_headers": true
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/LoginWithCustomIDRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/LoginWithCustomIDRequest",
+            "required": [
+              "TitleId"
+            ],
+            "properties": {
+              "CreateAccount": {
+                "type": "boolean"
+              },
+              "CustomId": {
+                "type": "string"
+              },
+              "CustomTags": {
+                "type": "object"
+              },
+              "EncryptedRequest": {
+                "type": "string"
+              },
+              "InfoRequestParameters": {
+                "type": "object",
+                "$ref": "#/definitions/GetPlayerCombinedInfoRequestParams"
+              },
+              "PlayerSecret": {
+                "type": "string"
+              },
+              "TitleId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/LoginResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithcustomid"
+    },
+    {
+      "method": "POST",
+      "path": "/Client/GetUserData",
+      "emulator_games": [
+        "age4"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-getuserdata"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "GetUserData",
+      "authentication": [
+        {
+          "scheme": "SessionTicket",
+          "in": "header",
+          "header": "X-Authorization",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/GetUserDataRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/GetUserDataRequest",
+            "required": [],
+            "properties": {
+              "IfChangedFromDataVersion": {
+                "type": "number"
+              },
+              "Keys": {
+                "type": "array"
+              },
+              "PlayFabId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/GetUserDataResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserdata"
+    },
+    {
+      "method": "POST",
+      "path": "/Client/GetTitleData",
+      "emulator_games": [
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-gettitledata"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "GetTitleData",
+      "authentication": [
+        {
+          "scheme": "SessionTicket",
+          "in": "header",
+          "header": "X-Authorization",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/GetTitleDataRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/GetTitleDataRequest",
+            "required": [],
+            "properties": {
+              "Keys": {
+                "type": "array"
+              },
+              "OverrideLabel": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/GetTitleDataResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/title-wide-data-management/gettitledata"
+    },
+    {
+      "method": "POST",
+      "path": "/Client/GetUserReadOnlyData",
+      "emulator_games": [
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-getuserreadonlydata"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "GetUserReadOnlyData",
+      "authentication": [
+        {
+          "scheme": "SessionTicket",
+          "in": "header",
+          "header": "X-Authorization",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/GetUserDataRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/GetUserDataRequest",
+            "required": [],
+            "properties": {
+              "IfChangedFromDataVersion": {
+                "type": "number"
+              },
+              "Keys": {
+                "type": "array"
+              },
+              "PlayFabId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/GetUserDataResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/player-data-management/getuserreadonlydata"
+    },
+    {
+      "method": "POST",
+      "path": "/Client/LoginWithSteam",
+      "emulator_games": [
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-loginwithsteam"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "LoginWithSteam",
+      "authentication": [
+        {
+          "scheme": "None",
+          "in": "header",
+          "header": "None",
+          "no_authentication_headers": true
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/LoginWithSteamRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/LoginWithSteamRequest",
+            "required": [
+              "TitleId"
+            ],
+            "properties": {
+              "CreateAccount": {
+                "type": "boolean"
+              },
+              "CustomTags": {
+                "type": "object"
+              },
+              "EncryptedRequest": {
+                "type": "string"
+              },
+              "InfoRequestParameters": {
+                "type": "object",
+                "$ref": "#/definitions/GetPlayerCombinedInfoRequestParams"
+              },
+              "PlayerSecret": {
+                "type": "string"
+              },
+              "SteamTicket": {
+                "type": "string"
+              },
+              "TicketIsServiceSpecific": {
+                "type": "boolean"
+              },
+              "TitleId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/LoginResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/authentication/loginwithsteam"
+    },
+    {
+      "method": "POST",
+      "path": "/Client/UpdateUserTitleDisplayName",
+      "emulator_games": [
+        "age4",
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-client-updateusertitledisplayname"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "operation_id": "UpdateUserTitleDisplayName",
+      "authentication": [
+        {
+          "scheme": "SessionTicket",
+          "in": "header",
+          "header": "X-Authorization",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/UpdateUserTitleDisplayNameRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/UpdateUserTitleDisplayNameRequest",
+            "required": [
+              "DisplayName"
+            ],
+            "properties": {
+              "CustomTags": {
+                "type": "object"
+              },
+              "DisplayName": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/UpdateUserTitleDisplayNameResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/client/account-management/updateusertitledisplayname"
+    },
+    {
+      "method": "POST",
+      "path": "/Event/WriteTelemetryEvents",
+      "emulator_games": [
+        "age4",
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-event-writetelemetryevents"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Events.swagger.json",
+      "operation_id": "WriteTelemetryEvents",
+      "authentication": [
+        {
+          "scheme": "EntityToken",
+          "in": "header",
+          "header": "X-EntityToken",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/WriteEventsRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/WriteEventsRequest",
+            "required": [
+              "Events"
+            ],
+            "properties": {
+              "CustomTags": {
+                "type": "object"
+              },
+              "Events": {
+                "type": "array"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/WriteEventsResponse",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/events/playstream-events/writetelemetryevents"
+    },
+    {
+      "method": "POST",
+      "path": "/Inventory/GetInventoryItems",
+      "emulator_games": [
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-inventory-getinventoryitems"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Economy.swagger.json",
+      "operation_id": "GetInventoryItems",
+      "authentication": [
+        {
+          "scheme": "EntityToken",
+          "in": "header",
+          "header": "X-EntityToken",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/GetInventoryItemsRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/GetInventoryItemsRequest",
+            "required": [
+              "Count"
+            ],
+            "properties": {
+              "CollectionId": {
+                "type": "string"
+              },
+              "ContinuationToken": {
+                "type": "string"
+              },
+              "Count": {
+                "type": "number"
+              },
+              "CustomTags": {
+                "type": "object"
+              },
+              "Entity": {
+                "type": "object",
+                "$ref": "#/definitions/EntityKey"
+              },
+              "Filter": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/GetInventoryItemsResponse",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/economy/inventory/getinventoryitems"
+    },
+    {
+      "method": "POST",
+      "path": "/MultiplayerServer/GetCognitiveServicesToken",
+      "emulator_games": [
+        "age4",
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-multiplayerserver-getcognitiveservicestoken"
+      ],
+      "provider_match": false,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested."
+    },
+    {
+      "method": "POST",
+      "path": "/MultiplayerServer/ListPartyQosServers",
+      "emulator_games": [
+        "age4",
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-multiplayerserver-listpartyqosservers"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Multiplayer.swagger.json",
+      "operation_id": "ListPartyQosServers",
+      "authentication": [
+        {
+          "scheme": "None",
+          "in": "header",
+          "header": "None",
+          "no_authentication_headers": true
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/ListPartyQosServersRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/ListPartyQosServersRequest",
+            "required": [],
+            "properties": {
+              "CustomTags": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/ListPartyQosServersResponse",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/multiplayer/multiplayerserver/listpartyqosservers"
+    },
+    {
+      "method": "POST",
+      "path": "/Party/RequestParty",
+      "emulator_games": [
+        "age4",
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-party-requestparty"
+      ],
+      "provider_match": false,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested."
+    },
+    {
+      "method": "POST",
+      "path": "/Catalog/GetItems",
+      "emulator_games": [
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-catalog-getitems"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Economy.swagger.json",
+      "operation_id": "GetItems",
+      "authentication": [
+        {
+          "scheme": "EntityToken",
+          "in": "header",
+          "header": "X-EntityToken",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/GetItemsRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/GetItemsRequest",
+            "required": [],
+            "properties": {
+              "AlternateIds": {
+                "type": "array"
+              },
+              "CustomTags": {
+                "type": "object"
+              },
+              "Entity": {
+                "type": "object",
+                "$ref": "#/definitions/EntityKey"
+              },
+              "Ids": {
+                "type": "array"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/GetItemsResponse",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/economy/catalog/getitems"
+    },
+    {
+      "method": "POST",
+      "path": "/CloudScript/ExecuteFunction",
+      "emulator_games": [
+        "athens"
+      ],
+      "catalog_endpoint_ids": [
+        "agelan-cloudscript-executefunction"
+      ],
+      "provider_match": true,
+      "verification": "Vendor specification inspected; AoE title runtime behavior untested.",
+      "specification_url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/CloudScript.swagger.json",
+      "operation_id": "ExecuteFunction",
+      "authentication": [
+        {
+          "scheme": "EntityToken",
+          "in": "header",
+          "header": "X-EntityToken",
+          "no_authentication_headers": false
+        }
+      ],
+      "request_parameters": [
+        {
+          "reference": "#/parameters/ExecuteFunctionRequest",
+          "location": "body",
+          "required": false,
+          "schema": {
+            "reference": "#/definitions/ExecuteFunctionRequest",
+            "required": [
+              "FunctionName"
+            ],
+            "properties": {
+              "CustomTags": {
+                "type": "object"
+              },
+              "Entity": {
+                "type": "object",
+                "$ref": "#/definitions/EntityKey"
+              },
+              "FunctionName": {
+                "type": "string"
+              },
+              "FunctionParameter": {
+                "type": "object"
+              },
+              "GeneratePlayStreamEvent": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      ],
+      "response_references": {
+        "200": "#/responses/ExecuteFunctionResult",
+        "400": "#/responses/ApiErrorWrapper"
+      },
+      "external_docs": "https://docs.microsoft.com/rest/api/playfab/cloudscript/server-side-cloud-script/executefunction"
+    }
+  ],
+  "limits": [
+    "Generic PlayFab specification does not establish which operations a particular AoE title permits or uses.",
+    "Unmatched means absent from the seven inspected specifications, not proven nonexistent on the server. GitHub code search also returned no hits for the two unmatched operation names in this repository.",
+    "Do not count all vendor platform operations as AoE endpoints.",
+    "Authentication names and schema pointers come from the vendor spec; emulator middleware is an independent implementation."
+  ]
+}

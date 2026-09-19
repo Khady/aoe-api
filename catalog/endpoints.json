@@ -10,7 +10,8 @@
     "ageLANServer additions are source-only local emulator routes. implementation_references.emulator_games records local router conditions, not verified publisher title support; existing methods and live evidence are retained.",
     "Operator attribution is inherited from catalog/services.json and is independent of evidence_basis and verification. Provider means the provider of the referenced service/tool, not necessarily a game publisher.",
     "upstream_candidate identifies a publisher/vendor protocol suggested by an independent emulator, not a verified deployed endpoint. Local emulator operations retain service=agelan-server.",
-    "last_recorded_probe_at is the date of the selected saved sample, not the date of a documentation/source review; catalog/verification-summary.json preserves all audited publisher attempts."
+    "last_recorded_probe_at is the date of the selected saved sample, not the date of a documentation/source review; catalog/verification-summary.json preserves all audited publisher attempts.",
+    "Publisher source-map additions and resolved mod methods are provider-client evidence, not live API verification. GET Subscribe/UnSubscribe are state-changing in the frontend; do not automatically probe every GET."
   ],
   "endpoints": [
     {
@@ -1640,77 +1641,131 @@
     {
       "id": "official-mod-detail",
       "service": "official-website",
-      "method": null,
-      "path": "/api/v4/mods/Detail/",
+      "method": "GET",
+      "path": "/api/v4/mods/Detail/{modId}",
       "purpose": "Frontend-declared mod route",
-      "parameters": [],
+      "parameters": [
+        "modId"
+      ],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "source_declared_prefix": "/api/v4/mods/Detail/",
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+          "module_index": 151,
+          "line": 117,
+          "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+        }
       ]
     },
     {
       "id": "official-mod-download",
       "service": "official-website",
-      "method": null,
-      "path": "/api/v4/mods/Download/",
+      "method": "GET",
+      "path": "/api/v4/mods/Download/{modId}",
       "purpose": "Frontend-declared mod route",
-      "parameters": [],
+      "parameters": [
+        "modId"
+      ],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "source_declared_prefix": "/api/v4/mods/Download/",
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 662,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
       "id": "official-mod-featured",
       "service": "official-website",
-      "method": null,
+      "method": "POST",
       "path": "/api/v4/mods/Featured",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsList.js",
+          "module_index": 141,
+          "line": 539,
+          "module_sha256": "e9a58761ccd68e7dafd4fc6b59b02a7334b1178a7590e8bfc2cbd8fcb8e808dc"
+        }
       ]
     },
     {
       "id": "official-mod-tags",
       "service": "official-website",
-      "method": null,
+      "method": "GET",
       "path": "/api/v4/mods/Tags",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+          "module_index": 151,
+          "line": 437,
+          "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+        }
       ]
     },
     {
@@ -1735,39 +1790,66 @@
     {
       "id": "official-mod-related",
       "service": "official-website",
-      "method": null,
-      "path": "/api/v4/mods/Related",
+      "method": "GET",
+      "path": "/api/v4/mods/Related/{modId}",
       "purpose": "Frontend-declared mod route",
-      "parameters": [],
+      "parameters": [
+        "modId"
+      ],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "source_declared_prefix": "/api/v4/mods/Related",
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 513,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
       "id": "official-mod-reviews",
       "service": "official-website",
-      "method": null,
+      "method": "POST",
       "path": "/api/v4/mods/Reviews",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 292,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
@@ -1821,39 +1903,69 @@
     {
       "id": "official-mod-subscribe",
       "service": "official-website",
-      "method": null,
-      "path": "/api/v4/mods/Subscribe",
+      "method": "GET",
+      "path": "/api/v4/mods/Subscribe/{modId}",
       "purpose": "Frontend-declared mod route",
-      "parameters": [],
+      "parameters": [
+        "modId"
+      ],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "source_declared_prefix": "/api/v4/mods/Subscribe",
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 640,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
       "id": "official-mod-unsubscribe",
       "service": "official-website",
-      "method": null,
-      "path": "/api/v4/mods/UnSubscribe",
+      "method": "GET",
+      "path": "/api/v4/mods/UnSubscribe/{modId}",
       "purpose": "Frontend-declared mod route",
-      "parameters": [],
+      "parameters": [
+        "modId"
+      ],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "source_declared_prefix": "/api/v4/mods/UnSubscribe",
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 715,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
@@ -1878,96 +1990,177 @@
     {
       "id": "official-mod-rate",
       "service": "official-website",
-      "method": null,
+      "method": "POST",
       "path": "/api/v4/mods/Rate",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 364,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
       "id": "official-mod-report",
       "service": "official-website",
-      "method": null,
+      "method": "POST",
       "path": "/api/v4/mods/Report",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 442,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
       "id": "official-mod-publish",
       "service": "official-website",
-      "method": null,
+      "method": "POST",
       "path": "/api/v4/mods/Publish",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+          "module_index": 151,
+          "line": 653,
+          "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+        }
+      ],
+      "request_body_format": "multipart/form-data",
+      "source_form_fields": [
+        "ImageMetaData",
+        "changeList",
+        "description",
+        "gameTitleId",
+        "modDiscussion",
+        "modFiles",
+        "modId",
+        "modImages",
+        "modName",
+        "modTags",
+        "modType",
+        "modVisibility",
+        "useChunk"
       ]
     },
     {
       "id": "official-mod-checkandpublishfile",
       "service": "official-website",
-      "method": null,
+      "method": "PUT",
       "path": "/api/v4/mods/CheckAndPublishFile",
       "purpose": "Frontend-declared mod route",
-      "parameters": [],
+      "parameters": [
+        "blockid",
+        "comp",
+        "modId"
+      ],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed. Chunk/finalization query construction is documented as client evidence; no upload was sent.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
-      ]
+      ],
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+          "module_index": 151,
+          "line": 828,
+          "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+        }
+      ],
+      "request_body_format": "application/octet-stream"
     },
     {
       "id": "official-mod-delete",
       "service": "official-website",
-      "method": null,
+      "method": "POST",
       "path": "/api/v4/mods/Delete",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsList.js",
+          "module_index": 141,
+          "line": 991,
+          "module_sha256": "e9a58761ccd68e7dafd4fc6b59b02a7334b1178a7590e8bfc2cbd8fcb8e808dc"
+        }
       ]
     },
     {
@@ -2030,20 +2223,32 @@
     {
       "id": "official-mod-notifications",
       "service": "official-website",
-      "method": null,
+      "method": "POST",
       "path": "/api/v4/mods/Notifications",
       "purpose": "Frontend-declared mod route",
       "parameters": [],
       "source_ids": [
-        "official-js"
+        "official-js",
+        "official-source-map"
       ],
       "scope": "shared mod service",
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method and client path construction resolved from published source map; operation not executed.",
       "evidence_basis": [
+        "provider-client-source",
         "provider-client-source"
+      ],
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+          "module_index": 159,
+          "line": 793,
+          "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+        }
       ]
     },
     {
@@ -10100,7 +10305,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10127,7 +10333,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10137,6 +10344,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "GetPlayerCombinedInfo",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10148,7 +10361,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10175,7 +10389,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10185,6 +10400,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "GetTime",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10196,7 +10417,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10222,7 +10444,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10232,6 +10455,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "LoginWithCustomID",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10243,7 +10472,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10269,7 +10499,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10279,6 +10510,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "GetUserData",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10290,7 +10527,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10316,7 +10554,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10326,6 +10565,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "GetTitleData",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10337,7 +10582,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10363,7 +10609,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10373,6 +10620,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "GetUserReadOnlyData",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10384,7 +10637,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10410,7 +10664,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10420,6 +10675,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "LoginWithSteam",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10431,7 +10692,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10458,7 +10720,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10468,6 +10731,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+        "operation_id": "UpdateUserTitleDisplayName",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10479,7 +10748,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10506,7 +10776,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10516,6 +10787,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Events.swagger.json",
+        "operation_id": "WriteTelemetryEvents",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10527,7 +10804,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10553,7 +10831,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10563,6 +10842,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Economy.swagger.json",
+        "operation_id": "GetInventoryItems",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10622,7 +10907,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10649,7 +10935,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10659,6 +10946,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Multiplayer.swagger.json",
+        "operation_id": "ListPartyQosServers",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10718,7 +11011,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10744,7 +11038,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10754,6 +11049,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Economy.swagger.json",
+        "operation_id": "GetItems",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -10765,7 +11066,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10791,7 +11093,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10801,6 +11104,12 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/CloudScript.swagger.json",
+        "operation_id": "ExecuteFunction",
+        "scope": "Generic vendor contract; AoE title implementation/access not verified.",
+        "coverage_file": "catalog/playfab-spec-coverage.json"
       }
     },
     {
@@ -11105,6 +11414,192 @@
         ],
         "host": "cdn.ageofempires.com"
       }
+    },
+    {
+      "id": "official-poll-list",
+      "service": "official-website",
+      "method": "GET",
+      "path": "/poll/list/4",
+      "purpose": "List AoE4 website polls",
+      "parameters": [],
+      "source_ids": [
+        "official-source-map"
+      ],
+      "scope": "publisher website; source-inspected, no runtime request",
+      "verification": {
+        "status": "not-probed"
+      },
+      "notes": "Identified in publicly served publisher frontend source. Client use does not establish a supported public API or anonymous access.",
+      "evidence_basis": [
+        "provider-client-source"
+      ],
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/MapVoting.js",
+          "module_index": 125,
+          "line": 103,
+          "module_sha256": "450441f003b8adb6fb60181ebcaef88ca1a531c47615704bd077d9c3922653fc"
+        }
+      ],
+      "access": "Frontend sends credentials: include; server access requirements not tested."
+    },
+    {
+      "id": "official-poll-archive",
+      "service": "official-website",
+      "method": "GET",
+      "path": "/poll/list/archive/4",
+      "purpose": "List archived AoE4 website polls",
+      "parameters": [],
+      "source_ids": [
+        "official-source-map"
+      ],
+      "scope": "publisher website; source-inspected, no runtime request",
+      "verification": {
+        "status": "not-probed"
+      },
+      "notes": "Identified in publicly served publisher frontend source. Client use does not establish a supported public API or anonymous access.",
+      "evidence_basis": [
+        "provider-client-source"
+      ],
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/VoteResults.js",
+          "module_index": 127,
+          "line": 83,
+          "module_sha256": "8cbcbc46dc68076b59b36784d6d420c826f8649fd91034723e05f8f2bad53f07"
+        }
+      ],
+      "access": "Frontend sends credentials: include; server access requirements not tested."
+    },
+    {
+      "id": "official-poll-detail",
+      "service": "official-website",
+      "method": "GET",
+      "path": "/poll/{pollId}",
+      "purpose": "Get poll definition and results",
+      "parameters": [
+        "pollId"
+      ],
+      "source_ids": [
+        "official-source-map"
+      ],
+      "scope": "publisher website; source-inspected, no runtime request",
+      "verification": {
+        "status": "not-probed"
+      },
+      "notes": "Identified in publicly served publisher frontend source. Client use does not establish a supported public API or anonymous access.",
+      "evidence_basis": [
+        "provider-client-source"
+      ],
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/VoteResults.js",
+          "module_index": 127,
+          "line": 116,
+          "module_sha256": "8cbcbc46dc68076b59b36784d6d420c826f8649fd91034723e05f8f2bad53f07"
+        }
+      ],
+      "access": "Frontend sends credentials: include; server access requirements not tested."
+    },
+    {
+      "id": "official-poll-vote",
+      "service": "official-website",
+      "method": "POST",
+      "path": "/poll/",
+      "purpose": "Submit a website poll response",
+      "parameters": [
+        "gameId",
+        "pollId",
+        "answers"
+      ],
+      "source_ids": [
+        "official-source-map"
+      ],
+      "scope": "publisher website; source-inspected, no runtime request",
+      "verification": {
+        "status": "not-probed"
+      },
+      "notes": "Identified in publicly served publisher frontend source. Client use does not establish a supported public API or anonymous access.",
+      "evidence_basis": [
+        "provider-client-source"
+      ],
+      "operation_effect": "state-changing",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/MapVoting.js",
+          "module_index": 125,
+          "line": 350,
+          "module_sha256": "450441f003b8adb6fb60181ebcaef88ca1a531c47615704bd077d9c3922653fc"
+        }
+      ],
+      "access": "Frontend sends credentials: include; server access requirements not tested."
+    },
+    {
+      "id": "official-languages",
+      "service": "official-website",
+      "method": null,
+      "path": "/webapi/Languages",
+      "purpose": "Website language configuration",
+      "parameters": [
+        "gameId"
+      ],
+      "source_ids": [
+        "official-source-map"
+      ],
+      "scope": "publisher website; source-inspected, no runtime request",
+      "verification": {
+        "status": "not-probed"
+      },
+      "notes": "Config declares gameId=aoe; no call site or HTTP method established in the inspected source map.",
+      "evidence_basis": [
+        "provider-client-source"
+      ],
+      "operation_effect": "unknown",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/config.js",
+          "module_index": 18,
+          "line": 20,
+          "module_sha256": "c52b7aa20c2f70780fd420d77a5d55cacebfc58c61f1f527cb7366f543a65f06"
+        }
+      ]
+    },
+    {
+      "id": "official-account-status",
+      "service": "official-account",
+      "method": "GET",
+      "path": "/home/checklogin",
+      "purpose": "Read website account status",
+      "parameters": [],
+      "source_ids": [
+        "official-source-map"
+      ],
+      "scope": "publisher website; source-inspected, no runtime request",
+      "verification": {
+        "status": "not-probed"
+      },
+      "notes": "jsGet sends cookies via withCredentials. Frontend reads username, avatarUrl and platform; login/account state was not queried.",
+      "evidence_basis": [
+        "provider-client-source"
+      ],
+      "operation_effect": "read",
+      "provider_client_references": [
+        {
+          "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+          "module": "webpack://@roots/bud/sage/./scripts/components/MenuProfile.js",
+          "module_index": 10,
+          "line": 27,
+          "module_sha256": "f5197cd1b2bf843cd46c2301948098cb8ea12caa21d65f423f90131db74e1e1c"
+        }
+      ]
     }
   ]
 }

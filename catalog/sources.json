@@ -369,5 +369,19 @@
     "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/common/domain.go",
     "source_kind": "server-emulation-source",
     "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "official-source-map",
+    "title": "Publisher website source map with embedded client sources",
+    "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+    "source_kind": "provider-client",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "playfab-specs",
+    "title": "PlayFab vendor Swagger specifications",
+    "url": "https://github.com/PlayFab/API_Specs/tree/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab",
+    "source_kind": "provider-openapi",
+    "consulted_on": "2026-09-19"
   }
 ]

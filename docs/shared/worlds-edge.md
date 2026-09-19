@@ -129,3 +129,7 @@ Published AoE4 tooling also refers to `/game/login/platformlogin` and `/game/clo
 [ageLANServer’s detailed implementation review](../agelanserver.md) indexes 129 route operations across its routers, including 88 in the AoE4 game router and a session WebSocket. It supplies title-specific methods and serializers, while some handlers deliberately return empty/error data or acknowledgements. Its route registration does not prove live publisher access or functionality.
 
 LibreMatch provides broader source-only coverage of account lookup, observable games, spectator sessions, matchmaking, challenges, inventory, social functions and match reporting. The [endpoint catalog](../../catalog/endpoints.json) now includes all 88 `/game` route pages, including explicit incomplete templates. The linked [OpenAPI](https://github.com/librematch/librematch-rlink_client/blob/a1227c74a6990db9d9bc0e33c83a502773084178/openapi.yaml) models query-based session credentials, but generally leaves response bodies as unconstrained JSON. Neither source is a substitute for AoE4-specific runtime validation.
+
+## Documentation URL discovery
+
+A [bounded check](../documentation-discovery.md#bounded-url-checks) requested eight conventional Swagger/OpenAPI/documentation paths on both the common host and the known AoE4 release host. All returned JSON 404 responses. This does not establish that no specification exists elsewhere; LibreMatch remains an independent community reference, not a discovered publisher-hosted spec.

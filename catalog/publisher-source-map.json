@@ -1,0 +1,1667 @@
+{
+  "checked_on": "2026-09-19",
+  "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+  "source_map_sha256": "05d88c74f72cafd3a10f4ba6787e6165ac93036dca918bd8b48e1176a5b30724",
+  "embedded_modules": 192,
+  "modules": [
+    {
+      "index": 0,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/chunk loaded",
+      "bytes": 886,
+      "sha256": "e832c1f4b45298fd45f2e62b620ec544c9989adfd3ec4b1d008b5adad851d28f",
+      "has_embedded_content": true
+    },
+    {
+      "index": 1,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/load script",
+      "bytes": 1510,
+      "sha256": "f98b2654eb4388509ef54941307085a6f0bd45e6e1556428f8b98345d3903280",
+      "has_embedded_content": true
+    },
+    {
+      "index": 2,
+      "name": "webpack://@roots/bud/sage/../node_modules/moment/locale/ sync ^\\.\\/.*$",
+      "bytes": 5370,
+      "sha256": "b6e5d032654ff1b898afbc965c991f567f481943be409fe62ad27f87ec0bdd26",
+      "has_embedded_content": true
+    },
+    {
+      "index": 3,
+      "name": "webpack://@roots/bud/sage/./scripts/util/ready.js",
+      "bytes": 293,
+      "sha256": "7f7fcb12260743a1ae3a5152231820255e566ef3e214051a530a24449bef30a3",
+      "has_embedded_content": true
+    },
+    {
+      "index": 4,
+      "name": "webpack://@roots/bud/sage/./scripts/util/jsGet.js",
+      "bytes": 804,
+      "sha256": "03fc42d15e8e7ad87ebd1de7919927e5247236c7843299862590bebddfd71922",
+      "has_embedded_content": true
+    },
+    {
+      "index": 5,
+      "name": "webpack://@roots/bud/sage/./scripts/util/camelCase.js",
+      "bytes": 405,
+      "sha256": "5e5949e049d0f1cca051edcfbf542784adc28e6a937ce12d72db7c9d050fc83b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 6,
+      "name": "webpack://@roots/bud/sage/./scripts/util/animate.js",
+      "bytes": 848,
+      "sha256": "1b9a836c06441945e8fc77427eacf4cc62c0e5fbc6881043c94ee679028dfa51",
+      "has_embedded_content": true
+    },
+    {
+      "index": 7,
+      "name": "webpack://@roots/bud/sage/./scripts/components/MenuMobile.js",
+      "bytes": 12791,
+      "sha256": "eff25e140fe761a11a3d218774e251f3700d832626615b96baed842fbe60c17b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 8,
+      "name": "webpack://@roots/bud/sage/./scripts/components/MenuPrimary.js",
+      "bytes": 7029,
+      "sha256": "841b1f0e6040391c5055f2f88027af6b52b86d252ef18a5d82d566a31d3fe4f1",
+      "has_embedded_content": true
+    },
+    {
+      "index": 9,
+      "name": "webpack://@roots/bud/sage/./scripts/components/MenuSecondary.js",
+      "bytes": 6166,
+      "sha256": "2766a2ecaf92217ce83b03733a8ee05442fb37879d20ef3eafd5d39eae850179",
+      "has_embedded_content": true
+    },
+    {
+      "index": 10,
+      "name": "webpack://@roots/bud/sage/./scripts/components/MenuProfile.js",
+      "bytes": 5167,
+      "sha256": "f5197cd1b2bf843cd46c2301948098cb8ea12caa21d65f423f90131db74e1e1c",
+      "has_embedded_content": true
+    },
+    {
+      "index": 11,
+      "name": "webpack://@roots/bud/sage/./scripts/util/prefersReducedMotion.js",
+      "bytes": 99,
+      "sha256": "2ab345b685a7b502fb7ac8ecf01f92f9389710a3a9333a2e38f685c99361b657",
+      "has_embedded_content": true
+    },
+    {
+      "index": 12,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ButtonAnimation.js",
+      "bytes": 2849,
+      "sha256": "5f0b2d76120d3106efba33d329ed2e8fbb8d8a8d6a32c6adb04fb5f28cb57160",
+      "has_embedded_content": true
+    },
+    {
+      "index": 13,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Animation.js",
+      "bytes": 19490,
+      "sha256": "3bf830d0e7165efa6ca211e42391b95023fef4f777bfc3d1cb49f241a619bb67",
+      "has_embedded_content": true
+    },
+    {
+      "index": 14,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Accordion.js",
+      "bytes": 1623,
+      "sha256": "636c54ccdef3f01f942f0a03105d5d14b7599615c76905106f275d4e6f66d10a",
+      "has_embedded_content": true
+    },
+    {
+      "index": 15,
+      "name": "webpack://@roots/bud/sage/./scripts/util/Loader.js",
+      "bytes": 1697,
+      "sha256": "434839df5bcd33435e2c4bb920b88d6766aeb16b575251efcef296c56d7f5dfe",
+      "has_embedded_content": true
+    },
+    {
+      "index": 16,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Modal.js",
+      "bytes": 11224,
+      "sha256": "f5d6a8096f801a7fc30a2f6e8719abefa01ac0a3d2e19a3790fa2ff59f7158da",
+      "has_embedded_content": true
+    },
+    {
+      "index": 17,
+      "name": "webpack://@roots/bud/sage/./scripts/components/PageSubNav.js",
+      "bytes": 2297,
+      "sha256": "fdbe546935119674ceb38b6f3c077c1f0e7dbc22e374d97a3d66c0119db1ce7b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 18,
+      "name": "webpack://@roots/bud/sage/./scripts/config.js",
+      "bytes": 3106,
+      "sha256": "c52b7aa20c2f70780fd420d77a5d55cacebfc58c61f1f527cb7366f543a65f06",
+      "has_embedded_content": true
+    },
+    {
+      "index": 19,
+      "name": "webpack://@roots/bud/sage/./scripts/util/ajaxPost.js",
+      "bytes": 421,
+      "sha256": "e4683068e236089e606e17c9f435660605b101b23f31c36da04a27421ed238d2",
+      "has_embedded_content": true
+    },
+    {
+      "index": 20,
+      "name": "webpack://@roots/bud/sage/./scripts/components/TwitchLiveStreams.js",
+      "bytes": 4507,
+      "sha256": "2372e53dda95cfb564583812a344fcf11c17915bac11e4b26a9fe15fb947e2dd",
+      "has_embedded_content": true
+    },
+    {
+      "index": 21,
+      "name": "webpack://@roots/bud/sage/./scripts/components/EuCookieBanner.js",
+      "bytes": 12681,
+      "sha256": "4173dcfdfffbd8f9837dec4f5d4de9d5a9864ad86ca8296d4e356053c7009f13",
+      "has_embedded_content": true
+    },
+    {
+      "index": 22,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Alerts.js",
+      "bytes": 4934,
+      "sha256": "4c48060e391e45a21cccd38f5be3f7555e677013e148501d90ddfdb48635fe9e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 23,
+      "name": "webpack://@roots/bud/sage/./scripts/util/debounce.js",
+      "bytes": 241,
+      "sha256": "a15fa588206ca791ae44865cc17aab1309ef19c0bdc96d6382a4ccfdb6755a85",
+      "has_embedded_content": true
+    },
+    {
+      "index": 24,
+      "name": "webpack://@roots/bud/sage/./scripts/components/AccessibleImages.js",
+      "bytes": 307,
+      "sha256": "0079dd932ff955ad4cc4e8746a8f81b159125418832d12bbc5297d59806bb111",
+      "has_embedded_content": true
+    },
+    {
+      "index": 25,
+      "name": "webpack://@roots/bud/sage/./scripts/util/AccessibleSU.js",
+      "bytes": 2486,
+      "sha256": "add2d69a27936d255e6a0a59c9c8557eb3d4a1244fd84e11d9002e3d0ce324c9",
+      "has_embedded_content": true
+    },
+    {
+      "index": 26,
+      "name": "webpack://@roots/bud/sage/./scripts/components/GradientText.js",
+      "bytes": 1459,
+      "sha256": "a66a1ee72ca1454e83339eb443a39401a910a2e41db22c54c7bd2252853323db",
+      "has_embedded_content": true
+    },
+    {
+      "index": 27,
+      "name": "webpack://@roots/bud/sage/./scripts/util/getUrlParam.js",
+      "bytes": 564,
+      "sha256": "42ee99875006cbe15829550b9dd460ed35b89c7e008e3b59bf77c02fa658a46c",
+      "has_embedded_content": true
+    },
+    {
+      "index": 28,
+      "name": "webpack://@roots/bud/sage/./scripts/components/LazyFrames.js",
+      "bytes": 1054,
+      "sha256": "38bd96529b3dec0c32952b7d52e2ecce5dc80f6d24d4f90f202c514a20c92fb6",
+      "has_embedded_content": true
+    },
+    {
+      "index": 29,
+      "name": "webpack://@roots/bud/sage/./scripts/util/icon.js",
+      "bytes": 10840,
+      "sha256": "cd7e6970cc0a7343a1b8b785969f61fca8cc71e8cd8d8bbd0221cbe45cfa5928",
+      "has_embedded_content": true
+    },
+    {
+      "index": 30,
+      "name": "webpack://@roots/bud/sage/./scripts/components/TwitchEmbed.js",
+      "bytes": 7942,
+      "sha256": "f008e7163189912743de5bdaf2ad9033970c960ee3882fdffd453f59c30abdad",
+      "has_embedded_content": true
+    },
+    {
+      "index": 31,
+      "name": "webpack://@roots/bud/sage/./scripts/components/InsiderNdaCheck.js",
+      "bytes": 6816,
+      "sha256": "cc5b6ed5766d0a9f73ae9660fb8dd0b22fa9096a0c620c9c5e9f3299bb6f0928",
+      "has_embedded_content": true
+    },
+    {
+      "index": 32,
+      "name": "webpack://@roots/bud/sage/./scripts/components/NdaNoInsider.js",
+      "bytes": 3164,
+      "sha256": "f8c79e62fc872c0330733f8a0b44dd6c7245c753e41043fbcc5d420a862c63ef",
+      "has_embedded_content": true
+    },
+    {
+      "index": 33,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Wallpaper.js",
+      "bytes": 643,
+      "sha256": "8f8bd9c92b3e1268924ea3f9ed80afc53b28f64ba0015139faf798dead3d76cf",
+      "has_embedded_content": true
+    },
+    {
+      "index": 34,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/common.js",
+      "bytes": 3237,
+      "sha256": "b908665a44cbbce8ecfab1d6d648758226be1277d19f2fd17a9bf552963d4950",
+      "has_embedded_content": true
+    },
+    {
+      "index": 35,
+      "name": "webpack://@roots/bud/sage/./scripts/components/MobileHero.js",
+      "bytes": 1964,
+      "sha256": "db75741a5fdde6f1c3bfaa7252e94d6e54d45c7e8f95074d5c33684c2c5002e7",
+      "has_embedded_content": true
+    },
+    {
+      "index": 36,
+      "name": "webpack://@roots/bud/sage/./scripts/components/HeroFeaturedPostWrapper.js",
+      "bytes": 646,
+      "sha256": "6adaca7e5a26792cc89a718fb7978fa05aab1fa7875aec83899a0f761b393ca3",
+      "has_embedded_content": true
+    },
+    {
+      "index": 37,
+      "name": "webpack://@roots/bud/sage/./scripts/util/announceLiveRegion.js",
+      "bytes": 302,
+      "sha256": "c8ba6ec737f48380647f4e5ae373da5a7e6c47438f3175aba718e9dd913e7614",
+      "has_embedded_content": true
+    },
+    {
+      "index": 38,
+      "name": "webpack://@roots/bud/sage/./scripts/components/SimpleSlider.js",
+      "bytes": 5124,
+      "sha256": "06b327bcaa6ba62fc6a22a5cf1c78985057506f311741743786738e59697982c",
+      "has_embedded_content": true
+    },
+    {
+      "index": 39,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/home.js",
+      "bytes": 505,
+      "sha256": "c02141f4df08b880e2940e368e3cd01ddda3f63631859a056cbf3b0c3644dc25",
+      "has_embedded_content": true
+    },
+    {
+      "index": 40,
+      "name": "webpack://@roots/bud/sage/./scripts/components/BeforeAndAfter.js",
+      "bytes": 206,
+      "sha256": "122d0921b7c344cdd69d3b55dc1534b397c61ab02f05d2867ce15122b0159931",
+      "has_embedded_content": true
+    },
+    {
+      "index": 41,
+      "name": "webpack://@roots/bud/sage/./scripts/components/GameScroll.js",
+      "bytes": 551,
+      "sha256": "d520240e12a5381fdb6e156eb71d9f9bb5d0ccd525a076061a7dc366b7192f3a",
+      "has_embedded_content": true
+    },
+    {
+      "index": 42,
+      "name": "webpack://@roots/bud/sage/./scripts/components/CampaignCards.js",
+      "bytes": 1947,
+      "sha256": "89e79f49f1ea3f46ca7fa4498f7969235deb5aba3894b6522ea51ec5b03696f1",
+      "has_embedded_content": true
+    },
+    {
+      "index": 43,
+      "name": "webpack://@roots/bud/sage/./scripts/components/TrailersEvents.js",
+      "bytes": 578,
+      "sha256": "e71241c6e51cf68d7dcedd8e321512d5f228515b68680e609901485f68a7821b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 44,
+      "name": "webpack://@roots/bud/sage/./scripts/components/AwardSlider.js",
+      "bytes": 5169,
+      "sha256": "5eaf7b73cf487080f6c65dd345e54591f633b966d3c9fb66140ce1b73baf2ebb",
+      "has_embedded_content": true
+    },
+    {
+      "index": 45,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/singleGames.js",
+      "bytes": 668,
+      "sha256": "a0e5448757772da63abf284673f0899995383d2c79d2aaaf500842ebbd4aeb6b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 46,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ContentSections.js",
+      "bytes": 10005,
+      "sha256": "94e673ae7dabf47fa334b98cd57edf1b49111cf7d2750d6bcda3aeedb329f726",
+      "has_embedded_content": true
+    },
+    {
+      "index": 47,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/singleCivilizations.js",
+      "bytes": 150,
+      "sha256": "9f7c8c1e715f809d8513bbaa5d8e547f93945d0dbe233b0a7f6e84dcc613f734",
+      "has_embedded_content": true
+    },
+    {
+      "index": 48,
+      "name": "webpack://@roots/bud/sage/./scripts/components/GameModes.js",
+      "bytes": 481,
+      "sha256": "f46256e538bd4342405f713546f184a574aa32f5c66ed7157e954b6328704e2d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 49,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/singleGameModes.js",
+      "bytes": 220,
+      "sha256": "a9641686aee3ebe707f4de5bc6581e9d2c72f183ec1846a92b8623e331ed9676",
+      "has_embedded_content": true
+    },
+    {
+      "index": 50,
+      "name": "webpack://@roots/bud/sage/./scripts/components/RequiredReading.js",
+      "bytes": 2763,
+      "sha256": "39db3a030807267ec9c3f9949e3d64c45f088ab02f290901228f7b31a682ba8e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 51,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/singleRequiredReading.js",
+      "bytes": 145,
+      "sha256": "371d2b9701f7f3d433e417ee1efd2b1d7c410f6800a185ad89376d09d85a7e3b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 52,
+      "name": "webpack://@roots/bud/sage/./scripts/components/NewsFilter.js",
+      "bytes": 1282,
+      "sha256": "e8e78eb3b738772f4fb7292ff2b4eaca355352f4d2e51946fd2ba7f4ccc78239",
+      "has_embedded_content": true
+    },
+    {
+      "index": 53,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/indexData.js",
+      "bytes": 250,
+      "sha256": "34c3ab3d5351fe7b43540ca11295bb3d1f06e3b33d43b61ef153dd85bb5da511",
+      "has_embedded_content": true
+    },
+    {
+      "index": 54,
+      "name": "webpack://@roots/bud/sage/./scripts/components/OAuthLink.js",
+      "bytes": 5074,
+      "sha256": "00019bb61e5f704b3f23fca00ba89083384170b626d6edad1b9ba01b5ffc4b25",
+      "has_embedded_content": true
+    },
+    {
+      "index": 55,
+      "name": "webpack://@roots/bud/sage/./scripts/util/ajaxGet.js",
+      "bytes": 325,
+      "sha256": "78c43485358883c32f8c2f7bdd053ae045b158ffa9009cbd286eabefd96eb0be",
+      "has_embedded_content": true
+    },
+    {
+      "index": 56,
+      "name": "webpack://@roots/bud/sage/./scripts/util/ErrorMessaging.js",
+      "bytes": 494,
+      "sha256": "6a0d3f9225f1749f2f62c25991202e06aa0f77153579157087e978f6032100de",
+      "has_embedded_content": true
+    },
+    {
+      "index": 57,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ParseSpecs.js",
+      "bytes": 3003,
+      "sha256": "c15fc8010942e6abb7a06d0f6c6d953e417ffca443a47036cb7807107dd03246",
+      "has_embedded_content": true
+    },
+    {
+      "index": 58,
+      "name": "webpack://@roots/bud/sage/./scripts/components/InsiderSurvey.js",
+      "bytes": 36940,
+      "sha256": "2c55ce0404fba4c5bba90235a5f99b4de3c1189eec6f181fc02efde4af5a7e88",
+      "has_embedded_content": true
+    },
+    {
+      "index": 59,
+      "name": "webpack://@roots/bud/sage/./scripts/components/InsiderNDA.js",
+      "bytes": 2700,
+      "sha256": "1d87ab43214aa191fff000cead9e70ccc559d55bd2cd469c7722158b7e620576",
+      "has_embedded_content": true
+    },
+    {
+      "index": 60,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/insiderSignup.js",
+      "bytes": 195,
+      "sha256": "96153dc9d0a5ffdffe9e91aa2713c98920b686eab05a5d1406a63f3fc9dec3f3",
+      "has_embedded_content": true
+    },
+    {
+      "index": 61,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Profile.js",
+      "bytes": 26494,
+      "sha256": "648647cfeba61546ec2ae26b62c8b498e4e036679ee45687ca6595222dcd4a6a",
+      "has_embedded_content": true
+    },
+    {
+      "index": 62,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateProfile.js",
+      "bytes": 109,
+      "sha256": "9aabe259ba89388520f9c4cd42fd2ed929bd5754b1d3c16357fceaca72ebfcb7",
+      "has_embedded_content": true
+    },
+    {
+      "index": 63,
+      "name": "webpack://@roots/bud/sage/./scripts/components/FixedSidebar.js",
+      "bytes": 3898,
+      "sha256": "b8eeb1ce35876163bb0d428829e457fd532c04c87a8b1374a729f1a59a81c946",
+      "has_embedded_content": true
+    },
+    {
+      "index": 64,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/postTemplateReleaseNotes.js",
+      "bytes": 114,
+      "sha256": "04a39a92246c9ff0d506aec0eb46bbb75e1058b4549cd463126ad9ae30c7faf9",
+      "has_embedded_content": true
+    },
+    {
+      "index": 65,
+      "name": "webpack://@roots/bud/sage/./scripts/blocks/TOC.js",
+      "bytes": 3333,
+      "sha256": "2be56b0bc381b7561694879e144969189df8d6782cc4edf4210014975b455909",
+      "has_embedded_content": true
+    },
+    {
+      "index": 66,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/postTemplateTemplateGutenbergReleaseNotes.js",
+      "bytes": 83,
+      "sha256": "de830fc3dc75a3c65a99debe8893a8e8c7d0d9c9b42f29aff144a7dc9c99fbe7",
+      "has_embedded_content": true
+    },
+    {
+      "index": 67,
+      "name": "webpack://@roots/bud/sage/./scripts/components/InsidersHideBetaNavLinkIfNoBetaCards.js",
+      "bytes": 274,
+      "sha256": "8e3dd45d666cc6851d99e89b527589bfb6cbc2a5423cbc79d6c034d79d5a3b54",
+      "has_embedded_content": true
+    },
+    {
+      "index": 68,
+      "name": "webpack://@roots/bud/sage/./scripts/components/InsiderLanding.js",
+      "bytes": 1589,
+      "sha256": "8d0e999cbc7a3b511ac5473ee763af99d77d0d68a39388f7fb9fd7444ca34f6d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 69,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ZenFaqsAccordian.js",
+      "bytes": 1707,
+      "sha256": "cf5336ce4ce2184fae2b38da48635f04d66a742cee5c48389a8f0a7280d7eaed",
+      "has_embedded_content": true
+    },
+    {
+      "index": 70,
+      "name": "webpack://@roots/bud/sage/./scripts/components/CardTurner.js",
+      "bytes": 885,
+      "sha256": "d228b06267801802108e60ead76ec9e868fff4de25bbfcc508303f65bb7b6837",
+      "has_embedded_content": true
+    },
+    {
+      "index": 71,
+      "name": "webpack://@roots/bud/sage/./scripts/components/InsiderRevealAccessKey.js",
+      "bytes": 1893,
+      "sha256": "345f68e39deed6092ba4b0b0e1fd79df07aecfd6afa33057148fd99b94628137",
+      "has_embedded_content": true
+    },
+    {
+      "index": 72,
+      "name": "webpack://@roots/bud/sage/./scripts/components/InsidersNavigationMenu.js",
+      "bytes": 942,
+      "sha256": "ec8cd84114e3bd3cb1048c11c03272872fdec1884e6806a037b9254c05d64d07",
+      "has_embedded_content": true
+    },
+    {
+      "index": 73,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateInsiderLanding.js",
+      "bytes": 492,
+      "sha256": "615d4fac07f20aee5782a8e27845499485d7f25fd08397100b70dc6ac7c9b069",
+      "has_embedded_content": true
+    },
+    {
+      "index": 74,
+      "name": "webpack://@roots/bud/sage/./scripts/components/HeroVideo.js",
+      "bytes": 1460,
+      "sha256": "732b4badbcc3d4b58a575c0fd1c68746565abee74d478b445cd8e138fd4a34e8",
+      "has_embedded_content": true
+    },
+    {
+      "index": 75,
+      "name": "webpack://@roots/bud/sage/./scripts/components/UniversityLanding.js",
+      "bytes": 175,
+      "sha256": "35216623f1d2c2443c1627914de629abdde4fc8066f91a80bdd90a7d934a3bb1",
+      "has_embedded_content": true
+    },
+    {
+      "index": 76,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateUniversityLanding.js",
+      "bytes": 129,
+      "sha256": "fd931e2682b8d71f6c1954e4c097eaa960c45c00691b59e7716e856dc787d4e3",
+      "has_embedded_content": true
+    },
+    {
+      "index": 77,
+      "name": "webpack://@roots/bud/sage/./scripts/components/UniversitySignup.js",
+      "bytes": 7003,
+      "sha256": "1c6ad09b7259d5ae7c7f2553c27a54cfe87fff8a357f7722f7958def07ffab30",
+      "has_embedded_content": true
+    },
+    {
+      "index": 78,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateUniversitySignup.js",
+      "bytes": 126,
+      "sha256": "b8715f71c4db9ec7c756d7c36d94bce270f644c5537805427e505284d2b9e659",
+      "has_embedded_content": true
+    },
+    {
+      "index": 79,
+      "name": "webpack://@roots/bud/sage/./scripts/components/UniversityProgram.js",
+      "bytes": 3718,
+      "sha256": "aadc541ac2ea1ce8639c422121e36cd5825e7f6ca514897f3eea413e4467defb",
+      "has_embedded_content": true
+    },
+    {
+      "index": 80,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateUniversityProgram.js",
+      "bytes": 129,
+      "sha256": "3dabb7f6324a25a8c7366cb04c991181387f9424ee03944835d5715dd12184f5",
+      "has_embedded_content": true
+    },
+    {
+      "index": 81,
+      "name": "webpack://@roots/bud/sage/./scripts/components/UniversityAdmin.js",
+      "bytes": 253,
+      "sha256": "47b33b532d895f2cf8a7e58bfaf2968c2086de51d357195fab5ef4f54485ab83",
+      "has_embedded_content": true
+    },
+    {
+      "index": 82,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateUniversityAdmin.js",
+      "bytes": 123,
+      "sha256": "4d0041e76fd2bc80a1104ef9987d59f8236e7f59ac647bc6765f3451c6104323",
+      "has_embedded_content": true
+    },
+    {
+      "index": 83,
+      "name": "webpack://@roots/bud/sage/./scripts/components/WPFormHelper.js",
+      "bytes": 3124,
+      "sha256": "3398c0878ea15d476b022f36081c42dcd80b1e87c69add7148ecd6c1f918ad80",
+      "has_embedded_content": true
+    },
+    {
+      "index": 84,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateGutenberg.js",
+      "bytes": 202,
+      "sha256": "3a764dac26e8f17f75bf59e13a2fc67befee0b6a29fcb64fab423931ecf35a06",
+      "has_embedded_content": true
+    },
+    {
+      "index": 85,
+      "name": "webpack://@roots/bud/sage/./scripts/util/jsPost.js",
+      "bytes": 1627,
+      "sha256": "d183921569469659a66098b26d37d4fa68cd846a56d59b371b35c94b8d6a5f09",
+      "has_embedded_content": true
+    },
+    {
+      "index": 86,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Pagination.js",
+      "bytes": 6723,
+      "sha256": "85d99a2fe98527bb7a44739126af864ce96a1f336375b5a15cb9212f8f16362f",
+      "has_embedded_content": true
+    },
+    {
+      "index": 87,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/pagination.html",
+      "bytes": 730,
+      "sha256": "25e8f0e9e95f59faa670b4a475ee3cbeff9631850d83623892865b31650b2e91",
+      "has_embedded_content": true
+    },
+    {
+      "index": 88,
+      "name": "webpack://@roots/bud/sage/./scripts/constants/statsGames.js",
+      "bytes": 4229,
+      "sha256": "c2d05c21c5e09a657e0259c96f7531a758eba6f171002816bed2242387eaea00",
+      "has_embedded_content": true
+    },
+    {
+      "index": 89,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/statsGlobalLeader.html",
+      "bytes": 4945,
+      "sha256": "7e976f180691c9d52193fad468d6ad729937a6f27e9e44540b7d1688c5a165e9",
+      "has_embedded_content": true
+    },
+    {
+      "index": 90,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/pagination-select.html",
+      "bytes": 1939,
+      "sha256": "030a78df8009c64ada35821669d4f03b3fd35c26afae84ea8bc39df7e5c41972",
+      "has_embedded_content": true
+    },
+    {
+      "index": 91,
+      "name": "webpack://@roots/bud/sage/./scripts/components/StatsLeaderboardAgeIV.js",
+      "bytes": 17581,
+      "sha256": "3021355deb1e9c16c76be31e4d2c60ac644f5e80e73d54b93b27ceed3755a22a",
+      "has_embedded_content": true
+    },
+    {
+      "index": 92,
+      "name": "webpack://@roots/bud/sage/./scripts/components/StatsLeaderboardAgeIVSeasons.js",
+      "bytes": 11861,
+      "sha256": "b654412ab16a451f5e96fde821e83feef2fabb95d2e24ada30fb4a42206fdbdd",
+      "has_embedded_content": true
+    },
+    {
+      "index": 93,
+      "name": "webpack://@roots/bud/sage/./scripts/components/StatsLeaderboardAgeIVSeasonsPUP.js",
+      "bytes": 12336,
+      "sha256": "fbb710953e85481f8c681c9c834d33864ae65f669a334cb98542fa0209327025",
+      "has_embedded_content": true
+    },
+    {
+      "index": 94,
+      "name": "webpack://@roots/bud/sage/./scripts/components/StatsLeaderboards.js",
+      "bytes": 16056,
+      "sha256": "8effb4295f2c162e3c9f74d399c82dbaab6b196b55827919011799a5ee8c3c76",
+      "has_embedded_content": true
+    },
+    {
+      "index": 95,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplateTemplateStatsGlobal.js",
+      "bytes": 2234,
+      "sha256": "e6f08b40752b7f3aad3e3861fa1d11da4986909c0fdd9d345c65888303d1bf78",
+      "has_embedded_content": true
+    },
+    {
+      "index": 96,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/matchSummary.html",
+      "bytes": 2585,
+      "sha256": "926ae2daf1b6c6397feab1100609d66364996d278d04568ba22f238f1dc2456c",
+      "has_embedded_content": true
+    },
+    {
+      "index": 97,
+      "name": "webpack://@roots/bud/sage/./scripts/components/GetMatchDetails.js",
+      "bytes": 9995,
+      "sha256": "6f603d4fccaa9f057a584e901eb2c25c9d7bb887258eeb654c657fdd0eb8b572",
+      "has_embedded_content": true
+    },
+    {
+      "index": 98,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/errorMessage.html",
+      "bytes": 223,
+      "sha256": "689b027f9a6752f6f468fd29c94c6bde333ab47c37e471c5d305287de18094a6",
+      "has_embedded_content": true
+    },
+    {
+      "index": 99,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplatePageStatsMatchDetails.js",
+      "bytes": 1691,
+      "sha256": "95071f1c79de9511f3b1e947d5537177d5aa2e4017f9a28436afc591cacc183e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 100,
+      "name": "webpack://@roots/bud/sage/./scripts/components/StatsCircle.js",
+      "bytes": 12624,
+      "sha256": "6e7d18f86cd9f5e19a204804c0e04f046a4ce1c852003203c6b8dbddad0e6c43",
+      "has_embedded_content": true
+    },
+    {
+      "index": 101,
+      "name": "webpack://@roots/bud/sage/./scripts/components/MPMatchList.js",
+      "bytes": 21340,
+      "sha256": "fdb3941abad471edafbae6669ffdada47400aff12c52e1d2f3626ffbb5076491",
+      "has_embedded_content": true
+    },
+    {
+      "index": 102,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/mpMatch.html",
+      "bytes": 2710,
+      "sha256": "6f1e76dfab7c63fe07f85b1ad57f4301569594c94e8226d3f9cb98330c23940a",
+      "has_embedded_content": true
+    },
+    {
+      "index": 103,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/matchLink.html",
+      "bytes": 378,
+      "sha256": "abb46362aabe3c16c2d072456d00e576467c46f85029bdcaac5f9a93f8032717",
+      "has_embedded_content": true
+    },
+    {
+      "index": 104,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/statsShowNoResults.html",
+      "bytes": 356,
+      "sha256": "e610d1c3412267a2af89cb4881e161ef6482a6f5a8a3857e93a72749807e66a9",
+      "has_embedded_content": true
+    },
+    {
+      "index": 105,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/myStatsNav.html",
+      "bytes": 1281,
+      "sha256": "225738a5e5f0a5cdcf22155852bd449be5cc254dc187416159000e32f977d0ea",
+      "has_embedded_content": true
+    },
+    {
+      "index": 106,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/myStatsNavInner.html",
+      "bytes": 604,
+      "sha256": "01da17b630542af377765876c168ca96e9fcec4cbdb9ab5d3a21b9cafe8cf845",
+      "has_embedded_content": true
+    },
+    {
+      "index": 107,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ProgressAnim.js",
+      "bytes": 4142,
+      "sha256": "99e70f75b44a09d6afdc7076dfa3767c7331cf961fdc3f56c99a63dae67a0007",
+      "has_embedded_content": true
+    },
+    {
+      "index": 108,
+      "name": "webpack://@roots/bud/sage/./scripts/components/StatsMSP.js",
+      "bytes": 23510,
+      "sha256": "49c8588c55b2f3fff8f70142cdb4bef1b3689a1633f8a33434e8ea3381e82f9f",
+      "has_embedded_content": true
+    },
+    {
+      "index": 109,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/statsMapProgress.html",
+      "bytes": 900,
+      "sha256": "1b8b638f365747533c2be2b4a2a61c344237294ea6fbcaa361c18dab7298af3d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 110,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/statsCivProgress.html",
+      "bytes": 1268,
+      "sha256": "3faa1617878845807034cf2e2086e2d46cd52e8566c130fe5b741a5afb3863c8",
+      "has_embedded_content": true
+    },
+    {
+      "index": 111,
+      "name": "webpack://@roots/bud/sage/./scripts/components/CampaignProgress.js",
+      "bytes": 14155,
+      "sha256": "50d5cfe6af36acaac482abed12078a932ff1ed28882ed0e20b72d180f3afda55",
+      "has_embedded_content": true
+    },
+    {
+      "index": 112,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/campaignProgress.html",
+      "bytes": 788,
+      "sha256": "346abbb35247f4d898beb8528054b40aee7928e7041f2201c36484b8884055db",
+      "has_embedded_content": true
+    },
+    {
+      "index": 113,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modalError.html",
+      "bytes": 318,
+      "sha256": "8f6bdcd3c800bccaf8c60067f2d55eb488f5f7285e994969165438b0370db722",
+      "has_embedded_content": true
+    },
+    {
+      "index": 114,
+      "name": "webpack://@roots/bud/sage/./scripts/util/ClearInputField.js",
+      "bytes": 396,
+      "sha256": "1d0e48dbff1efda7f64bcd96314a593b6849678c83b7fa51dc28dcfd75a09a6e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 115,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplatePageStats.js",
+      "bytes": 9588,
+      "sha256": "a016de48e092b46475ecc47998307934bea2629ece406c941b5b7efa21049c91",
+      "has_embedded_content": true
+    },
+    {
+      "index": 116,
+      "name": "webpack://@roots/bud/sage/./scripts/components/StatsGlobal.js",
+      "bytes": 4850,
+      "sha256": "e5a64dbf5e6fc392039417e08ec942f1faee7df3b214970be727292779460d1b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 117,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/statsGlobalCivProgress.html",
+      "bytes": 1238,
+      "sha256": "34d7b9a6b29f1c4b22dee0b39be9a6715510dc06af5d2fffc1a864da2773e631",
+      "has_embedded_content": true
+    },
+    {
+      "index": 118,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/statsMapTops.html",
+      "bytes": 540,
+      "sha256": "01fc2d334ead34ea66fc5240b0ac93352b5d6926b190503b1d0b96bfe39b784d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 119,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplatePageStatsGame.js",
+      "bytes": 6367,
+      "sha256": "dbcd8cb6c3735a44eb68d0dc98160cbc9c42de6f319a33dad7168acf24bba3a8",
+      "has_embedded_content": true
+    },
+    {
+      "index": 120,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplatePageEvents.js",
+      "bytes": 31863,
+      "sha256": "4e06cbb9381f131e3d3ab930f94ef65d066aaaa3572a3702acea9ecdbade84f6",
+      "has_embedded_content": true
+    },
+    {
+      "index": 121,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/eventsListItem.html",
+      "bytes": 202,
+      "sha256": "107414f1f25addebdf6497674b3395fec6be6fdd1e4f3edcecc773c31d2c1d7b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 122,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/eventsTooltip.html",
+      "bytes": 1763,
+      "sha256": "ff0fd161368816baa1e3cbffe49ae03281b95b072153bbc428f0f39b2bb26e80",
+      "has_embedded_content": true
+    },
+    {
+      "index": 123,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ModalAuto.js",
+      "bytes": 1059,
+      "sha256": "7b4deb238e5175b072aa83580dfa98990baab447f9ff995f5a1d9b551d4f4724",
+      "has_embedded_content": true
+    },
+    {
+      "index": 124,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/alertNotLoggedIn.html",
+      "bytes": 280,
+      "sha256": "833d78e6dddab54654269e7d77c394ba4f134f666208a7f250c5a360d8f5d812",
+      "has_embedded_content": true
+    },
+    {
+      "index": 125,
+      "name": "webpack://@roots/bud/sage/./scripts/components/MapVoting.js",
+      "bytes": 14432,
+      "sha256": "450441f003b8adb6fb60181ebcaef88ca1a531c47615704bd077d9c3922653fc",
+      "has_embedded_content": true
+    },
+    {
+      "index": 126,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplatePageMapvotes.js",
+      "bytes": 105,
+      "sha256": "4a7436251f611a96b540a845a3d67bb98a3c60aeff5392689939a2901fefdbbe",
+      "has_embedded_content": true
+    },
+    {
+      "index": 127,
+      "name": "webpack://@roots/bud/sage/./scripts/components/VoteResults.js",
+      "bytes": 14339,
+      "sha256": "8cbcbc46dc68076b59b36784d6d420c826f8649fd91034723e05f8f2bad53f07",
+      "has_embedded_content": true
+    },
+    {
+      "index": 128,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageTemplatePageMapvoteResults.js",
+      "bytes": 112,
+      "sha256": "1e27baf15cc07415b98541001d30f87f87153ba3950755d2a3eaaa6eec9cfc0b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 129,
+      "name": "webpack://@roots/bud/sage/./scripts/util/convertQueryStringToObject.js",
+      "bytes": 1206,
+      "sha256": "716b0659672fcfbd77b55daddbe02c5c3dcaa8aee02d1513c543b096bb20f59d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 130,
+      "name": "webpack://@roots/bud/sage/./scripts/util/tagIcon.js",
+      "bytes": 2959,
+      "sha256": "7d25b401777e82571adf031c366bfa312bb3c64d38e3464022ad9579190de327",
+      "has_embedded_content": true
+    },
+    {
+      "index": 131,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ModsDropdown.js",
+      "bytes": 911,
+      "sha256": "aed49c3cffb97c9ff33f4dcb8aa2fff7eaab11bc4d4e4898c47a53d52df226ae",
+      "has_embedded_content": true
+    },
+    {
+      "index": 132,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsTags.html",
+      "bytes": 1043,
+      "sha256": "f27335aefc6569cb71c5f0cd8de0bfe4e1a64d3855e4080f1da574b168cc9773",
+      "has_embedded_content": true
+    },
+    {
+      "index": 133,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsTagContainer.html",
+      "bytes": 521,
+      "sha256": "ebca09bc33823e935896745d03c6bdc02e7649816b97c9bb722350320ae3304d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 134,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsThumbnail.html",
+      "bytes": 1416,
+      "sha256": "56bf927f9c35554543cfd73b2fd1bd3534aa00032aafff2939a06b0548810552",
+      "has_embedded_content": true
+    },
+    {
+      "index": 135,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsCreator.html",
+      "bytes": 629,
+      "sha256": "ec0ce26a368d06e7f66ebf90007a4a64bf5024b962de7822902fa99d2b075e36",
+      "has_embedded_content": true
+    },
+    {
+      "index": 136,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsTitle.html",
+      "bytes": 265,
+      "sha256": "2e99bf6bbdc307b2bc3359f540ecc3f9497300784c5014896fb164f83c6bf490",
+      "has_embedded_content": true
+    },
+    {
+      "index": 137,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsActionButton.html",
+      "bytes": 648,
+      "sha256": "686dc8240244673f1e2b9f2d84cec93bca023495b8e013ff0e06ae534d49807e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 138,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsListItemInfo.html",
+      "bytes": 2792,
+      "sha256": "ee156ad247bb7335defbee7cf8f50ef1a327ed373fef22c92190295aa2fd58d2",
+      "has_embedded_content": true
+    },
+    {
+      "index": 139,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsDeleteConfirmation.html",
+      "bytes": 909,
+      "sha256": "c5a03bd3ee8e55df014417d3d6cca1ccd69c9802a23916acb737df68b6d4e260",
+      "has_embedded_content": true
+    },
+    {
+      "index": 140,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsStarRating.html",
+      "bytes": 393,
+      "sha256": "1d30bd9daf421359ee3b68a31b9807fb3e672c229cc16250515775ce4147afc5",
+      "has_embedded_content": true
+    },
+    {
+      "index": 141,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ModsList.js",
+      "bytes": 38826,
+      "sha256": "e9a58761ccd68e7dafd4fc6b59b02a7334b1178a7590e8bfc2cbd8fcb8e808dc",
+      "has_embedded_content": true
+    },
+    {
+      "index": 142,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsGamesList.html",
+      "bytes": 519,
+      "sha256": "3af72aa05164774098af7bff1d64fef97eec198fd56516da024ed12f7268908e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 143,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsListFeatured.html",
+      "bytes": 4213,
+      "sha256": "abdc896387acbb044b6892df058686d9d575b3fe99d4ea5d168bcdd003384b12",
+      "has_embedded_content": true
+    },
+    {
+      "index": 144,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsListAll.html",
+      "bytes": 2375,
+      "sha256": "c47874c562603b053d1a28e76ca3a0d38e11ab8b065e5d90f93d66e1e177f73a",
+      "has_embedded_content": true
+    },
+    {
+      "index": 145,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsNoResults.html",
+      "bytes": 731,
+      "sha256": "5007be0979124fdbd891d44035ea6545a6156208a04bd79f0dc5a77ab1880d2b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 146,
+      "name": "webpack://@roots/bud/sage/./scripts/util/ScrollTo.js",
+      "bytes": 851,
+      "sha256": "2da5dec212c034f502bd089050aac27a5727854741d5d5c7620c9228414df42d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 147,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsTagsList.html",
+      "bytes": 1635,
+      "sha256": "1faa3cad7b711033a11c7faffde0d31e8adfac5db8b2dd8da2292093c3c6defc",
+      "has_embedded_content": true
+    },
+    {
+      "index": 148,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageModsAll.js",
+      "bytes": 869,
+      "sha256": "b1904d1e9eaca810eb3a01037b6d839a7f6a9a686197284f9b40016d079a83d7",
+      "has_embedded_content": true
+    },
+    {
+      "index": 149,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageModsSearch.js",
+      "bytes": 869,
+      "sha256": "b1904d1e9eaca810eb3a01037b6d839a7f6a9a686197284f9b40016d079a83d7",
+      "has_embedded_content": true
+    },
+    {
+      "index": 150,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsCreate.html",
+      "bytes": 7717,
+      "sha256": "0ca9780ea67a11cabe57e991ccc07f6c965ed7bd26ef2067dcacb08dcb3983ea",
+      "has_embedded_content": true
+    },
+    {
+      "index": 151,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+      "bytes": 31046,
+      "sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224",
+      "has_embedded_content": true
+    },
+    {
+      "index": 152,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsCreateFile.html",
+      "bytes": 2237,
+      "sha256": "293b53ffe2c20689bfe61d92756091837287c43ac039fbf55dad2b536d13b580",
+      "has_embedded_content": true
+    },
+    {
+      "index": 153,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/alertNotLoggedInSteam.html",
+      "bytes": 280,
+      "sha256": "833d78e6dddab54654269e7d77c394ba4f134f666208a7f250c5a360d8f5d812",
+      "has_embedded_content": true
+    },
+    {
+      "index": 154,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageModsCreate.js",
+      "bytes": 1600,
+      "sha256": "ef88320900d11cdb50d3b447235bc146c853e3f9c2cf01cb68b9860b35bcd001",
+      "has_embedded_content": true
+    },
+    {
+      "index": 155,
+      "name": "webpack://@roots/bud/sage/./scripts/util/safeUrl.js",
+      "bytes": 2569,
+      "sha256": "dd6fb8f90da6b548ff6c1ed4493e735967c0dcead14cbcaa2a8b5dcbb976b4fb",
+      "has_embedded_content": true
+    },
+    {
+      "index": 156,
+      "name": "webpack://@roots/bud/sage/./scripts/components/Tabs.js",
+      "bytes": 2047,
+      "sha256": "c802f9ef506f7dd9c99a26965aa261885ca76cb03fcb6d73c450ca5bf38d12ef",
+      "has_embedded_content": true
+    },
+    {
+      "index": 157,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ThumbCarousel.js",
+      "bytes": 2697,
+      "sha256": "2ae8d7a1b12b425852b531cc484416f0e44e11bc7b49c8f0871261352ebae872",
+      "has_embedded_content": true
+    },
+    {
+      "index": 158,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleReviewsError.html",
+      "bytes": 154,
+      "sha256": "9f5cd3dfd52fd7d1bc7d9275cead587cdeb0042528e0af655862b4b049c04102",
+      "has_embedded_content": true
+    },
+    {
+      "index": 159,
+      "name": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+      "bytes": 27695,
+      "sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3",
+      "has_embedded_content": true
+    },
+    {
+      "index": 160,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleTopAlertBar.html",
+      "bytes": 1450,
+      "sha256": "2ff07a37bdc6fbe9fe862ec3d6d3c943c8ffad8e11ba7030dc3ebee58d4a00ad",
+      "has_embedded_content": true
+    },
+    {
+      "index": 161,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleTop.html",
+      "bytes": 3820,
+      "sha256": "3b7d307d4e4b42bbe6e96f532d31216b3abcf9837d75644a442d79c9e53e1b11",
+      "has_embedded_content": true
+    },
+    {
+      "index": 162,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleMedia.html",
+      "bytes": 1234,
+      "sha256": "e903a9de1bc80831df45f7e50e3225bec2b6d08eead2c313e4d09de9775b4735",
+      "has_embedded_content": true
+    },
+    {
+      "index": 163,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleTabs.html",
+      "bytes": 2294,
+      "sha256": "9a9b52e74790be74c0460d6fc7ea67083c3ae6fa33bb0f6369844c069a5f4c99",
+      "has_embedded_content": true
+    },
+    {
+      "index": 164,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleStarRating.html",
+      "bytes": 1663,
+      "sha256": "8e8665a019037fdc5950c25f1bab7cab434e3fc9172e72625ed25a4d6e239a2a",
+      "has_embedded_content": true
+    },
+    {
+      "index": 165,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleAside.html",
+      "bytes": 2965,
+      "sha256": "d174c8234bd6a7007605bec00efd48b8019a0a8d13b7f239ef59c06768f5a623",
+      "has_embedded_content": true
+    },
+    {
+      "index": 166,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleNotifications.html",
+      "bytes": 1641,
+      "sha256": "ce3f273c0c6b2fde2673628512e0655afefb4e33aa08a1105dd999d66c4a159b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 167,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsModalReport.html",
+      "bytes": 5125,
+      "sha256": "b0141803aaa0385b7221d398e8719e6560b7db5da0e0fa72cb0a698e732edb9b",
+      "has_embedded_content": true
+    },
+    {
+      "index": 168,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsModalRate.html",
+      "bytes": 2802,
+      "sha256": "c41e9ffe227ecee04bc84bb79c144c7160eae5b22b2d0b3ebb18638a2d297e3c",
+      "has_embedded_content": true
+    },
+    {
+      "index": 169,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleReviews.html",
+      "bytes": 1629,
+      "sha256": "4f5dcdf150965cc0794a28ec0353694f7bb87164a71ee85d7ad6274ce7920705",
+      "has_embedded_content": true
+    },
+    {
+      "index": 170,
+      "name": "webpack://@roots/bud/sage/./scripts/templates/modsSingleRelated.html",
+      "bytes": 2430,
+      "sha256": "596d1a36f76d40c2d8ec2386d47647d531bc02d68f11906c01a9473c97afdeee",
+      "has_embedded_content": true
+    },
+    {
+      "index": 171,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/pageModsSingle.js",
+      "bytes": 724,
+      "sha256": "425c711a2a4ff00ba73bd2e5d7889999b99dfa19c2830127ca9b0f380346a919",
+      "has_embedded_content": true
+    },
+    {
+      "index": 172,
+      "name": "webpack://@roots/bud/sage/./scripts/util/StringIdGenerator.js",
+      "bytes": 733,
+      "sha256": "47d0d1437480dd285d09ce45567c1098a36eedc6456db611a578bcb222676283",
+      "has_embedded_content": true
+    },
+    {
+      "index": 173,
+      "name": "webpack://@roots/bud/sage/./scripts/components/LTPButtonAnimation.js",
+      "bytes": 3479,
+      "sha256": "7bc4f3927a87a679f4bfa17d24b312a0e58a890d17bc24e3780a9700f3d2dbf0",
+      "has_embedded_content": true
+    },
+    {
+      "index": 174,
+      "name": "webpack://@roots/bud/sage/./scripts/components/LearnToPlay.js",
+      "bytes": 37490,
+      "sha256": "c58aa398d54702a35d67c77889df4b368b5a3aa73fb5da31d93f2eee3a7a0413",
+      "has_embedded_content": true
+    },
+    {
+      "index": 175,
+      "name": "webpack://@roots/bud/sage/./scripts/routes/singleLearnToPlay.js",
+      "bytes": 113,
+      "sha256": "7d7be0a94c8b6127a23bd4468787f25c6d4b84f188b42ff92e31bdda1d695ce0",
+      "has_embedded_content": true
+    },
+    {
+      "index": 176,
+      "name": "webpack://@roots/bud/sage/./scripts/main.js",
+      "bytes": 3751,
+      "sha256": "bb2f73ce1fee6936248484d45c117e9980e2436a135c862316f777ec3b8de010",
+      "has_embedded_content": true
+    },
+    {
+      "index": 177,
+      "name": "webpack://@roots/bud/sage/./scripts/util/Router.js",
+      "bytes": 1808,
+      "sha256": "5b858e3c4876d2eb49e317e15e89c55438f962a53d1c2bd6ef7e4004161f5c9e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 178,
+      "name": "webpack://@roots/bud/sage/external window \"jQuery\"",
+      "bytes": 34,
+      "sha256": "11319f6dec7f89e826a53c84abfc4b481591b417217df319575ab08b85a467cc",
+      "has_embedded_content": true
+    },
+    {
+      "index": 179,
+      "name": "webpack://@roots/bud/sage/webpack/bootstrap",
+      "bytes": 781,
+      "sha256": "139445bb39c66f78042a72a5f0b8a429f241b290da568cd775f2f1b429743e59",
+      "has_embedded_content": true
+    },
+    {
+      "index": 180,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/amd options",
+      "bytes": 30,
+      "sha256": "e5dfea12197e9a0188bd9cfe90339e0b0c8c63cf5702ec3905baddaa87d14eae",
+      "has_embedded_content": true
+    },
+    {
+      "index": 181,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/compat get default export",
+      "bytes": 267,
+      "sha256": "2d298166484f8c8f6eef9e2c39927d426d9229042e625178dc7fded47d783350",
+      "has_embedded_content": true
+    },
+    {
+      "index": 182,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/define property getters",
+      "bytes": 308,
+      "sha256": "8887a7a4ae920342bb9109b1d8e4a7deddf67d2bb59309fe935121acf0d65d6d",
+      "has_embedded_content": true
+    },
+    {
+      "index": 183,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/ensure chunk",
+      "bytes": 326,
+      "sha256": "de5a5f617f79fb8593449c7d9394af531a3888cfd89e47ac5b7b335078aa9fbf",
+      "has_embedded_content": true
+    },
+    {
+      "index": 184,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/get javascript chunk filename",
+      "bytes": 187,
+      "sha256": "7d0c600f2d4f8ec586d2116ce4e5bcefef2830374616834c4569318a4bc12564",
+      "has_embedded_content": true
+    },
+    {
+      "index": 185,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/get mini-css chunk filename",
+      "bytes": 163,
+      "sha256": "c9b0507eca844c6d2ed4eff0217533212bc08b8d8b32b3220582c9d3452f8efd",
+      "has_embedded_content": true
+    },
+    {
+      "index": 186,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/hasOwnProperty shorthand",
+      "bytes": 88,
+      "sha256": "2fc045876ffafa261598b1d1476ffb16010e9fed737aa98bd4545e5fb2867777",
+      "has_embedded_content": true
+    },
+    {
+      "index": 187,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/make namespace object",
+      "bytes": 274,
+      "sha256": "dcb6fa6d79b08ff7453817108c79154a90678e58f0ba43820f694a7311f22fd8",
+      "has_embedded_content": true
+    },
+    {
+      "index": 188,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/node module decorator",
+      "bytes": 123,
+      "sha256": "14c55cddc5b0fb8be93dc05eb629543c21337b7b0c30a7661221e86c25376881",
+      "has_embedded_content": true
+    },
+    {
+      "index": 189,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/publicPath",
+      "bytes": 66,
+      "sha256": "c6cd1d80c475ef0a4ecc90f412a602a19e27b210bef5aec3d3b5468b0f0fe10e",
+      "has_embedded_content": true
+    },
+    {
+      "index": 190,
+      "name": "webpack://@roots/bud/sage/webpack/runtime/jsonp chunk loading",
+      "bytes": 3156,
+      "sha256": "1ef01ca24321dc12999337248abbaa1a39e56fed165f26b2734e1e160a9e87d7",
+      "has_embedded_content": true
+    },
+    {
+      "index": 191,
+      "name": "webpack://@roots/bud/sage/webpack/startup",
+      "bytes": 378,
+      "sha256": "db560885366da0474018b5e8ee5e12bdbb0487445dd84b7c9ba7bdc6906077ae",
+      "has_embedded_content": true
+    }
+  ],
+  "reviewed_routes": [
+    {
+      "endpoint_id": "official-poll-list",
+      "method": "GET",
+      "path": "/poll/list/4",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/MapVoting.js",
+        "module_index": 125,
+        "line": 103,
+        "module_sha256": "450441f003b8adb6fb60181ebcaef88ca1a531c47615704bd077d9c3922653fc"
+      },
+      "new_pattern": true,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-poll-archive",
+      "method": "GET",
+      "path": "/poll/list/archive/4",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/VoteResults.js",
+        "module_index": 127,
+        "line": 83,
+        "module_sha256": "8cbcbc46dc68076b59b36784d6d420c826f8649fd91034723e05f8f2bad53f07"
+      },
+      "new_pattern": true,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-poll-detail",
+      "method": "GET",
+      "path": "/poll/{pollId}",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/VoteResults.js",
+        "module_index": 127,
+        "line": 116,
+        "module_sha256": "8cbcbc46dc68076b59b36784d6d420c826f8649fd91034723e05f8f2bad53f07"
+      },
+      "new_pattern": true,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-poll-vote",
+      "method": "POST",
+      "path": "/poll/",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/MapVoting.js",
+        "module_index": 125,
+        "line": 350,
+        "module_sha256": "450441f003b8adb6fb60181ebcaef88ca1a531c47615704bd077d9c3922653fc"
+      },
+      "new_pattern": true,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-languages",
+      "method": null,
+      "path": "/webapi/Languages",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/config.js",
+        "module_index": 18,
+        "line": 20,
+        "module_sha256": "c52b7aa20c2f70780fd420d77a5d55cacebfc58c61f1f527cb7366f543a65f06"
+      },
+      "new_pattern": true,
+      "effect": "unknown"
+    },
+    {
+      "endpoint_id": "official-account-status",
+      "method": "GET",
+      "path": "/home/checklogin",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/MenuProfile.js",
+        "module_index": 10,
+        "line": 27,
+        "module_sha256": "f5197cd1b2bf843cd46c2301948098cb8ea12caa21d65f423f90131db74e1e1c"
+      },
+      "new_pattern": true,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-mod-detail",
+      "method": "GET",
+      "path": "/api/v4/mods/Detail/{modId}",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+        "module_index": 151,
+        "line": 117,
+        "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+      },
+      "new_pattern": false,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-mod-download",
+      "method": "GET",
+      "path": "/api/v4/mods/Download/{modId}",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 662,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-mod-featured",
+      "method": "POST",
+      "path": "/api/v4/mods/Featured",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsList.js",
+        "module_index": 141,
+        "line": 539,
+        "module_sha256": "e9a58761ccd68e7dafd4fc6b59b02a7334b1178a7590e8bfc2cbd8fcb8e808dc"
+      },
+      "new_pattern": false,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-mod-tags",
+      "method": "GET",
+      "path": "/api/v4/mods/Tags",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+        "module_index": 151,
+        "line": 437,
+        "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+      },
+      "new_pattern": false,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-mod-related",
+      "method": "GET",
+      "path": "/api/v4/mods/Related/{modId}",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 513,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-mod-reviews",
+      "method": "POST",
+      "path": "/api/v4/mods/Reviews",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 292,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "read"
+    },
+    {
+      "endpoint_id": "official-mod-subscribe",
+      "method": "GET",
+      "path": "/api/v4/mods/Subscribe/{modId}",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 640,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-mod-unsubscribe",
+      "method": "GET",
+      "path": "/api/v4/mods/UnSubscribe/{modId}",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 715,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-mod-rate",
+      "method": "POST",
+      "path": "/api/v4/mods/Rate",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 364,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-mod-report",
+      "method": "POST",
+      "path": "/api/v4/mods/Report",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 442,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-mod-publish",
+      "method": "POST",
+      "path": "/api/v4/mods/Publish",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+        "module_index": 151,
+        "line": 653,
+        "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-mod-checkandpublishfile",
+      "method": "PUT",
+      "path": "/api/v4/mods/CheckAndPublishFile",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModCreate.js",
+        "module_index": 151,
+        "line": 828,
+        "module_sha256": "44179f99c8331e25c6953a63f01718d467bf46da6f3e9733ffe84ae775d0f224"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-mod-delete",
+      "method": "POST",
+      "path": "/api/v4/mods/Delete",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsList.js",
+        "module_index": 141,
+        "line": 991,
+        "module_sha256": "e9a58761ccd68e7dafd4fc6b59b02a7334b1178a7590e8bfc2cbd8fcb8e808dc"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    },
+    {
+      "endpoint_id": "official-mod-notifications",
+      "method": "POST",
+      "path": "/api/v4/mods/Notifications",
+      "source": {
+        "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+        "module": "webpack://@roots/bud/sage/./scripts/components/ModsSingle.js",
+        "module_index": 159,
+        "line": 793,
+        "module_sha256": "afeddf2061a73bfe4a6e931b49fff75144bece9ca2c4ac4461f4fb78e93748f3"
+      },
+      "new_pattern": false,
+      "effect": "state-changing"
+    }
+  ],
+  "helper_references": {
+    "GET": {
+      "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+      "module": "webpack://@roots/bud/sage/./scripts/util/jsGet.js",
+      "module_index": 4,
+      "line": 8,
+      "module_sha256": "03fc42d15e8e7ad87ebd1de7919927e5247236c7843299862590bebddfd71922"
+    },
+    "POST": {
+      "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+      "module": "webpack://@roots/bud/sage/./scripts/util/jsPost.js",
+      "module_index": 85,
+      "line": 41,
+      "module_sha256": "d183921569469659a66098b26d37d4fa68cd846a56d59b371b35c94b8d6a5f09"
+    }
+  },
+  "host_leads": [
+    {
+      "host": "auth.ageofempires.com",
+      "evidence": "Called by MenuProfile, StatsMSP and CampaignProgress through jsGet.",
+      "runtime_checked": false
+    },
+    {
+      "host": "api-flight.ageofempires.com",
+      "evidence": "Declared as baseFlightApi in config.js; no call site found in the 192 embedded modules.",
+      "runtime_checked": false
+    }
+  ],
+  "limits": [
+    "Published client source is not a complete server contract. No poll, account-status, mod-write or upload operation was executed.",
+    "The second vendor/library source map was truncated at the two-megabyte fetch bound and was not fully parsed.",
+    "Full source contents and commented authentication examples were not copied into this repository."
+  ]
+}

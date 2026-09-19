@@ -1,0 +1,947 @@
+{
+  "checked_on": "2026-09-19",
+  "method": "Sequential unauthenticated GETs to a bounded list of standard documentation paths and two source maps explicitly linked by publisher JavaScript; normal TLS validation; 1.2-second spacing; stop further candidates on a host after 401/403/429 or transport error. Responses bounded to 2,000,001 bytes.",
+  "summary": {
+    "planned_requests": 31,
+    "completed_requests": 30,
+    "standard_documentation_urls_checked": 28,
+    "source_map_requests": 2,
+    "detected_swagger_or_openapi_documents": 0,
+    "http_status_counts": {
+      "200": 13,
+      "403": 1,
+      "404": 16
+    },
+    "homepage_redirects": 11
+  },
+  "manifest": "../../catalog/documentation-probes.json",
+  "requests": [
+    {
+      "id": "website-docs-1",
+      "url": "https://api.ageofempires.com/swagger/index.html",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:24:45.938106+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2979
+    },
+    {
+      "id": "website-docs-2",
+      "url": "https://api.ageofempires.com/swagger/v1/swagger.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:24:50.117689+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2858
+    },
+    {
+      "id": "website-docs-3",
+      "url": "https://api.ageofempires.com/openapi.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:24:54.176233+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2847
+    },
+    {
+      "id": "aoe4-client-docs-1",
+      "url": "https://api-dr.ageofempires.com/swagger/index.html",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:24:58.223533+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2690
+    },
+    {
+      "id": "aoe4-client-docs-2",
+      "url": "https://api-dr.ageofempires.com/swagger/v1/swagger.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:25:02.114056+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 403,
+      "final_url": "https://api-dr.ageofempires.com/swagger/v1/swagger.json",
+      "bytes_read": 179,
+      "truncated": false,
+      "sha256": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+      "headers": {
+        "server": "Microsoft-Azure-Application-Gateway/v2",
+        "content-type": "text/html",
+        "content-length": "179"
+      },
+      "body_kind": "html",
+      "html_title": "403 Forbidden",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 606
+    },
+    {
+      "id": "worlds-edge-docs-1",
+      "url": "https://aoe-api.worldsedgelink.com/swagger/index.html",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:25:03.921013+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/swagger/index.html",
+      "bytes_read": 84,
+      "truncated": false,
+      "sha256": "cc6a807c49960fbf8ba1b4c9e8422397ef867cea367e87e286c33106c5f870bd",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "84",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1166
+    },
+    {
+      "id": "worlds-edge-docs-2",
+      "url": "https://aoe-api.worldsedgelink.com/swagger/v1/swagger.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:25:06.287084+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/swagger/v1/swagger.json",
+      "bytes_read": 89,
+      "truncated": false,
+      "sha256": "71af31d1a9a44cd39428ac34e860497e6940b118b98ba96f51fef54413b0abe5",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "89",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1181
+    },
+    {
+      "id": "worlds-edge-docs-3",
+      "url": "https://aoe-api.worldsedgelink.com/openapi.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:25:08.668432+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/openapi.json",
+      "bytes_read": 78,
+      "truncated": false,
+      "sha256": "fa4e7ee69abdba25afb6e18833aec520813d0749936815c4cdbb6ad6722b628a",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "78",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1181
+    },
+    {
+      "id": "aoe4-release-docs-1",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/swagger/index.html",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:25:11.050455+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/swagger/index.html",
+      "bytes_read": 84,
+      "truncated": false,
+      "sha256": "cc6a807c49960fbf8ba1b4c9e8422397ef867cea367e87e286c33106c5f870bd",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "84",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1155
+    },
+    {
+      "id": "aoe4-release-docs-2",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/swagger/v1/swagger.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:25:13.405913+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/swagger/v1/swagger.json",
+      "bytes_read": 89,
+      "truncated": false,
+      "sha256": "71af31d1a9a44cd39428ac34e860497e6940b118b98ba96f51fef54413b0abe5",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "89",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1165
+    },
+    {
+      "id": "aoe4-release-docs-3",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/openapi.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:25:15.772267+00:00",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/openapi.json",
+      "bytes_read": 78,
+      "truncated": false,
+      "sha256": "fa4e7ee69abdba25afb6e18833aec520813d0749936815c4cdbb6ad6722b628a",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "78",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1178
+    },
+    {
+      "id": "website-followup-1",
+      "url": "https://api.ageofempires.com/swagger/docs/v1",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:07.762888+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2854
+    },
+    {
+      "id": "website-followup-2",
+      "url": "https://api.ageofempires.com/swagger/ui/index",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:11.817766+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2822
+    },
+    {
+      "id": "website-followup-3",
+      "url": "https://api.ageofempires.com/openapi/v1.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:15.840133+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2840
+    },
+    {
+      "id": "website-followup-4",
+      "url": "https://api.ageofempires.com/api/openapi.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:19.880768+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2894
+    },
+    {
+      "id": "website-followup-5",
+      "url": "https://api.ageofempires.com/Help",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:23.978498+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2845
+    },
+    {
+      "id": "website-followup-6",
+      "url": "https://api.ageofempires.com/api-docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:28.026331+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2861
+    },
+    {
+      "id": "worlds-edge-followup-1",
+      "url": "https://aoe-api.worldsedgelink.com/api-docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:32.088087+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/api-docs",
+      "bytes_read": 74,
+      "truncated": false,
+      "sha256": "cad03f8b5b0b322bd24464053aef86620aef87619cbd7d41ee8d187b8d6abd55",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "74",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1179
+    },
+    {
+      "id": "worlds-edge-followup-2",
+      "url": "https://aoe-api.worldsedgelink.com/v2/api-docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:34.467920+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/v2/api-docs",
+      "bytes_read": 77,
+      "truncated": false,
+      "sha256": "73423266dd818debe6b20923357d3a0c91d57a0d3b9505a85973ab98f6d3b75d",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "77",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1178
+    },
+    {
+      "id": "worlds-edge-followup-3",
+      "url": "https://aoe-api.worldsedgelink.com/v3/api-docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:36.846086+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/v3/api-docs",
+      "bytes_read": 77,
+      "truncated": false,
+      "sha256": "32db7407e09f321ad8db7f44921b3a001bba91f31f1373858d2d3ee637706193",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "77",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1178
+    },
+    {
+      "id": "worlds-edge-followup-4",
+      "url": "https://aoe-api.worldsedgelink.com/docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:39.224923+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/docs",
+      "bytes_read": 70,
+      "truncated": false,
+      "sha256": "c841814910c086e1978298ccb30dd01b71aa77a7ad2595cb63aa4770ee2f9aeb",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "70",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1164
+    },
+    {
+      "id": "aoe4-release-followup-1",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/api-docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:41.589501+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/api-docs",
+      "bytes_read": 74,
+      "truncated": false,
+      "sha256": "cad03f8b5b0b322bd24464053aef86620aef87619cbd7d41ee8d187b8d6abd55",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "74",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1166
+    },
+    {
+      "id": "aoe4-release-followup-2",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/v2/api-docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:43.956299+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/v2/api-docs",
+      "bytes_read": 77,
+      "truncated": false,
+      "sha256": "73423266dd818debe6b20923357d3a0c91d57a0d3b9505a85973ab98f6d3b75d",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "77",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1158
+    },
+    {
+      "id": "aoe4-release-followup-3",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/v3/api-docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:46.315254+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/v3/api-docs",
+      "bytes_read": 77,
+      "truncated": false,
+      "sha256": "32db7407e09f321ad8db7f44921b3a001bba91f31f1373858d2d3ee637706193",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "77",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1173
+    },
+    {
+      "id": "aoe4-release-followup-4",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/docs",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:48.689225+00:00",
+      "purpose": "Alternate conventional API documentation location",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/docs",
+      "bytes_read": 70,
+      "truncated": false,
+      "sha256": "c841814910c086e1978298ccb30dd01b71aa77a7ad2595cb63aa4770ee2f9aeb",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "70",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1157
+    },
+    {
+      "id": "website-main-sourcemap",
+      "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:51.047301+00:00",
+      "purpose": "Source map explicitly referenced by the previously fetched publisher JavaScript",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+      "bytes_read": 1178243,
+      "truncated": false,
+      "sha256": "05d88c74f72cafd3a10f4ba6787e6165ac93036dca918bd8b48e1176a5b30724",
+      "headers": {
+        "content-type": "application/octet-stream",
+        "content-length": "1178243",
+        "cache-control": "public, max-age=900"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "version",
+        "file",
+        "mappings",
+        "sources",
+        "sourcesContent",
+        "names",
+        "sourceRoot"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {},
+      "duration_ms": 1791
+    },
+    {
+      "id": "website-chunk-sourcemap",
+      "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/975.8075d2.js.map",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:26:54.042214+00:00",
+      "purpose": "Source map explicitly referenced by the previously fetched publisher JavaScript",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/975.8075d2.js.map",
+      "bytes_read": 2000001,
+      "truncated": true,
+      "sha256": "3e3e226bb7b530c2756d8e72971c01bdb61d7c48aadc6ba32fdc138f68795d2c",
+      "headers": {
+        "content-type": "application/octet-stream",
+        "content-length": "6431882",
+        "cache-control": "public, max-age=900"
+      },
+      "body_kind": "text-or-other",
+      "documentation_detected": false,
+      "response_excerpt": "{\"version\":3,\"file\":\"js/975.8075d2.js\",\"mappings\":\";4FAAwMA,OAAxIC,EAAAC,QAA2J,SAAAC,GAAmB,IAAAC,EAAA,GAAS,SAAAC,EAAAC,GAAc,GAAAF,EAAAE,GAAA,OAAAF,EAAAE,GAAAJ,QAA4B,IAAAK,EAAAH,EAAAE,GAAA,CAAYE,EAAAF,EAAAG,GAAA,EAAAP,QAAA,IAAqB,OAAAC,EAAAG,",
+      "duration_ms": 2145
+    },
+    {
+      "id": "website-swagger-root-json",
+      "url": "https://api.ageofempires.com/swagger.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:37:34.647291+00:00",
+      "purpose": "Conventional top-level Swagger 2 JSON document",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "html_title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "documentation_ui_markers": [],
+      "documentation_detected": false,
+      "duration_ms": 2620
+    },
+    {
+      "id": "worlds-edge-swagger-root-json",
+      "url": "https://aoe-api.worldsedgelink.com/swagger.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:37:38.472157+00:00",
+      "purpose": "Conventional top-level Swagger 2 JSON document",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/swagger.json",
+      "bytes_read": 78,
+      "truncated": false,
+      "sha256": "6e26ce0a6820a700c1639289f8fc4ac92654020d31d11800e9968880b8cca7ac",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "78",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1240
+    },
+    {
+      "id": "aoe4-release-swagger-root-json",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/swagger.json",
+      "method": "GET",
+      "checked_at": "2026-09-19T10:37:40.921123+00:00",
+      "purpose": "Conventional top-level Swagger 2 JSON document",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/swagger.json",
+      "bytes_read": 78,
+      "truncated": false,
+      "sha256": "6e26ce0a6820a700c1639289f8fc4ac92654020d31d11800e9968880b8cca7ac",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "78",
+        "cache-control": "must-revalidate,no-cache,no-store"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "documentation_detected": false,
+      "error_or_result": {
+        "message": "",
+        "status": "404"
+      },
+      "duration_ms": 1197
+    }
+  ],
+  "skipped_requests": [
+    {
+      "id": "aoe4-client-docs-3",
+      "url": "https://api-dr.ageofempires.com/openapi.json",
+      "purpose": "Standard documentation URL; existence not assumed",
+      "discovery_only": true,
+      "reason": "Further checks on api-dr stopped after the 403 response; no alternate access was attempted."
+    }
+  ],
+  "vendor_source_fetches": [
+    {
+      "url": "https://api.github.com/repos/PlayFab/API_Specs",
+      "checked_at": "2026-09-19T10:25:10.296808+00:00",
+      "bytes": 6237,
+      "sha256": "876f1f8ef9dd695029b2407d30b0c9d453a4c47aa6955b7c1519e2cb467cfc75"
+    },
+    {
+      "url": "https://api.github.com/repos/PlayFab/API_Specs/commits/master",
+      "checked_at": "2026-09-19T10:25:10.721350+00:00",
+      "bytes": 123823,
+      "sha256": "3cf4a137e00d2a90ba66401a163a26282bd78e5d387fbdc7e878bb9c0dfc16dc"
+    },
+    {
+      "url": "https://api.github.com/repos/PlayFab/API_Specs/git/trees/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6?recursive=1",
+      "checked_at": "2026-09-19T10:25:11.132829+00:00",
+      "bytes": 15628,
+      "sha256": "419d9b409a6ca51060b837f12976ac1390889474138ed1caa74e72e12e02b001"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Client.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Client.swagger.json",
+      "checked_at": "2026-09-19T10:26:32.280103+00:00",
+      "bytes": 951289,
+      "sha256": "25703e3fdf5ad3fd122f3a63f4b09bfc25b93b44904a6c183bb90df6bf701046",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 174,
+      "schemas": 419
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Events.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Events.swagger.json",
+      "checked_at": "2026-09-19T10:26:32.968596+00:00",
+      "bytes": 153189,
+      "sha256": "1cd401ae848f50a523f13e173e62c5420165197c5618f9f6a59fb38f292d903f",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 12,
+      "schemas": 34
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Multiplayer.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Multiplayer.swagger.json",
+      "checked_at": "2026-09-19T10:26:33.931527+00:00",
+      "bytes": 623543,
+      "sha256": "2cd450bf5f1dc0d077ee9984db8faf763eb008cd383c2e3fcee8d1d3bf955d7a",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 88,
+      "schemas": 250
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Economy.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Economy.swagger.json",
+      "checked_at": "2026-09-19T10:26:34.710739+00:00",
+      "bytes": 436197,
+      "sha256": "45c0f985bf7068e550e39e591b924ea632351af14ac960cefa98b3a6cc30833e",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 46,
+      "schemas": 156
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/CloudScript.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/CloudScript.swagger.json",
+      "checked_at": "2026-09-19T10:26:35.500987+00:00",
+      "bytes": 176243,
+      "sha256": "c3acbf2721296e471e9cffc9f320a5aac1e52e0c55765cd092f7dc5ed28df38b",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 15,
+      "schemas": 50
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Authentication.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Authentication.swagger.json",
+      "checked_at": "2026-09-19T10:26:36.275221+00:00",
+      "bytes": 123466,
+      "sha256": "5c57237010b756554d39bb32cacefae3cdad19d30d5a63c9e5a8ffa554e77e5e",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 4,
+      "schemas": 14
+    },
+    {
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab/Data.swagger.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "file": "Swagger/PlayFab/Data.swagger.json",
+      "checked_at": "2026-09-19T10:26:37.071625+00:00",
+      "bytes": 144957,
+      "sha256": "1812d207c2e1cf485ae3d2dae720cad6632ae2dca6ca2569a8a103647dd087c6",
+      "swagger": "2.0",
+      "version": "260814",
+      "paths": 7,
+      "schemas": 22
+    }
+  ],
+  "publisher_source_analysis": {
+    "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+    "embedded_modules": 192,
+    "new_route_patterns": 6,
+    "existing_mod_methods_resolved": 14,
+    "documentation_terms": "No Swagger/OpenAPI configuration found in the 192 main-map modules; vendor map incomplete."
+  },
+  "separate_from_functional_api_probes": true,
+  "limits": [
+    "HTTP 200 after homepage redirection is not Swagger/OpenAPI documentation.",
+    "A JSON 404 or gateway 403 does not prove that no documentation exists elsewhere or behind authentication.",
+    "No business API, login, vote, mod action, upload or PlayFab title call was executed in this follow-up.",
+    "The 47 original API/service probes and 16 publisher routes with HTTP 200 samples retain their original evidence and dates."
+  ],
+  "vendor_repository_code_searches": [
+    {
+      "checked_on": "2026-09-19",
+      "query": "GetCognitiveServicesToken repo:PlayFab/API_Specs",
+      "tool": "gh search code --json path,repository,url --limit 10",
+      "results": [],
+      "limit": "Negative indexed-code search; not proof the operation does not exist."
+    },
+    {
+      "checked_on": "2026-09-19",
+      "query": "RequestParty repo:PlayFab/API_Specs",
+      "tool": "gh search code --json path,repository,url --limit 10",
+      "results": [],
+      "limit": "Negative indexed-code search; not proof the operation does not exist."
+    }
+  ]
+}

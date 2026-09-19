@@ -82,3 +82,9 @@ None of these gaps prevents using the documented and tested public reads. They m
 The [ageLANServer review](agelanserver.md) follows literal route registrations and enclosing title conditions in a pinned source archive. Computed CDN paths, wrapped management handlers and local static-file routing were resolved separately; fallthroughs, TODOs and implicit HEAD behavior were excluded. No source was compiled or executed.
 
 The source index counts method/path operations; the main atlas groups path patterns. Existing paths receive implementation references carrying exact source casing, method and emulator title set, without overwriting earlier live evidence or documented methods. Newly cataloged patterns belong to the local emulator service and remain `not-probed`; they do not establish new working publisher APIs. Tagged structs retain explicit Go tags but omit untagged/embedded/custom-codec expansion. Resource metadata contains hashes and top-level shapes, not full game-data snapshots.
+
+## Documentation discovery is separate from API execution
+
+The [documentation-discovery pass](documentation-discovery.md) checked 28 conventional documentation URLs on known publisher hosts and fetched two source maps referenced by publisher JavaScript. HTTP 200 homepage redirects were not counted as specifications. One host's remaining candidate was skipped after a 403. The main source map supplied publisher client code; the second map exceeded the response-size bound and remained partially read.
+
+Seven pinned PlayFab vendor Swagger files supplied generic schema/security references. Their routes were compared to existing AoE-related emulator evidence; hundreds of generic platform operations were not added as proven AoE APIs. Source-map routes and newly resolved mod methods retain `not-probed`. Documentation/source retrieval has its own manifest and evidence report, separate from the original 47 API/service probes and their offline audit.

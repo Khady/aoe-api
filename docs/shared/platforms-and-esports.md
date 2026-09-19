@@ -29,6 +29,12 @@ AoE4 registrations include custom-ID login, player combined info, user data, tim
 
 No PlayFab login, title configuration query or authenticated Xbox/PlayStation operation was attempted. These remain game-client implementation leads rather than verified public community statistics APIs. For cross-platform AoE statistics, start with the documented community API or verified backend reads in this atlas.
 
+### Vendor specification evidence
+
+PlayFab's own [Swagger repository](https://github.com/PlayFab/API_Specs) provides a stronger source for generic request/response and authentication contracts. Seven inspected specifications match 13 of the 15 emulator operations. In particular, the vendor specifies `X-Authorization` for client session tickets, while the emulator's local middleware uses different headers. [Detailed comparison](../documentation-discovery.md#playfabs-vendor-published-swagger), [schema-reference index](../../catalog/playfab-spec-coverage.json).
+
+This adds vendor documentation, not successful AoE title requests. The two unmatched operation names and all title-specific access assumptions remain unresolved.
+
 ## Liquipedia and tournament data
 
 AoE4 World offers a documented public [esports Elo route](../aoe4/aoe4world.md). For broader tournament/player metadata, Liquipedia publishes LPDB examples under `https://api.liquipedia.net/api/v3/{table}`, using an API key in an `Authorization: Apikey …` header and a `wiki` parameter. Its provider-owned [advanced API example](https://liquipedia.net/commons/Support/Bot/Advanced_Usage) describes tables such as players and tournaments and directs developers to obtain access.

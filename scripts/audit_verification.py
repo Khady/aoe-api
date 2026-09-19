@@ -15,6 +15,7 @@ PUBLISHER_HOSTS = {
     "athens-live-api.worldsedgelink.com": "worlds-edge",
     "aoe-api.reliclink.com": "worlds-edge",
     "api.ageofempires.com": "official-website",
+    "auth.ageofempires.com": "official-account",
 }
 
 
@@ -109,6 +110,7 @@ def summarize(evidence_dir):
         ("worlds-edge", "/community/", "Publisher community namespace"),
         ("worlds-edge", "/game/", "Publisher game-client namespace"),
         ("official-website", "/", "Publisher website APIs"),
+        ("official-account", "/", "Publisher account website API"),
     ]:
         subset = [e for e in endpoints if e["service"] == service and e["path"].startswith(prefix)]
         ids = {e["id"] for e in subset}

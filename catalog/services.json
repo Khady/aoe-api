@@ -74,7 +74,8 @@
       "access": "Mixed; public stats confirmed, mod Find requires authentication",
       "source_ids": [
         "official-js",
-        "official-page"
+        "official-page",
+        "official-source-map"
       ],
       "documentation": "docs/shared/official-website.md",
       "operator": {
@@ -83,7 +84,8 @@
         "attribution_basis": "Routes are declared in the publisher website JavaScript and selected responses were observed on api.ageofempires.com.",
         "source_ids": [
           "official-js",
-          "official-page"
+          "official-page",
+          "official-source-map"
         ]
       }
     },
@@ -263,17 +265,19 @@
       "source_ids": [
         "agelan",
         "agelan-playfab",
-        "agelan-hosts"
+        "agelan-hosts",
+        "playfab-specs"
       ],
       "documentation": "docs/shared/platforms-and-esports.md",
       "operator": {
         "category": "platform-vendor",
         "label": "Microsoft PlayFab",
-        "attribution_basis": "The AoE title hosts and usage are identified by community game-client/emulator source; no live title request was tested.",
+        "attribution_basis": "Vendor-published Swagger schemas establish the generic platform contract. AoE title associations come from game-client/emulator source; no title request was tested.",
         "source_ids": [
           "agelan",
           "agelan-playfab",
-          "agelan-hosts"
+          "agelan-hosts",
+          "playfab-specs"
         ]
       }
     },
@@ -694,6 +698,32 @@
           "agelan-websocket",
           "agelan-playfab",
           "agelan-hosts"
+        ]
+      }
+    },
+    {
+      "id": "official-account",
+      "name": "AgeOfEmpires.com account service",
+      "kind": "publisher-account-website-api",
+      "games": [
+        "aoe1de",
+        "aoe2de",
+        "aoe3de",
+        "aoe4",
+        "aom-retold"
+      ],
+      "base_url": "https://auth.ageofempires.com",
+      "access": "Publisher frontend uses credentialed GET for account status; no account request or login was tested.",
+      "source_ids": [
+        "official-source-map"
+      ],
+      "documentation": "docs/shared/official-website.md",
+      "operator": {
+        "category": "publisher-developer",
+        "label": "Age of Empires publisher website account service",
+        "attribution_basis": "Publisher-served source map shows direct credentialed account-status calls. Hosting behavior and account flows were not tested.",
+        "source_ids": [
+          "official-source-map"
         ]
       }
     }

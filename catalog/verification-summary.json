@@ -21,7 +21,7 @@
     },
     "operator_categories": {
       "independent": 23,
-      "publisher-developer": 3,
+      "publisher-developer": 4,
       "platform-vendor": 2,
       "unresolved": 1
     }
@@ -62,10 +62,20 @@
         "label": "Publisher website APIs",
         "service": "official-website",
         "prefix": "/",
-        "catalog_route_patterns": 37,
+        "catalog_route_patterns": 42,
         "routes_with_http_200_sample": 8,
         "routes_with_only_error_samples": 1,
-        "routes_without_direct_probe": 28,
+        "routes_without_direct_probe": 33,
+        "counting_note": "Counts routes assigned to this catalog service, excludes emulator-only upstream candidates; not a complete service denominator."
+      },
+      {
+        "label": "Publisher account website API",
+        "service": "official-account",
+        "prefix": "/",
+        "catalog_route_patterns": 1,
+        "routes_with_http_200_sample": 0,
+        "routes_with_only_error_samples": 0,
+        "routes_without_direct_probe": 1,
         "counting_note": "Counts routes assigned to this catalog service, excludes emulator-only upstream candidates; not a complete service denominator."
       }
     ],

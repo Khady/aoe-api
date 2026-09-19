@@ -14,7 +14,8 @@ There were **47 recorded requests across all providers**. The other 20 are outsi
 | --- | ---: | ---: | ---: | ---: |
 | World’s Edge `/community/…` | 16 | 8 | 0 | 8 |
 | World’s Edge `/game/…`, principally LibreMatch references | 88 | 0 | 0 | 88 |
-| AgeOfEmpires.com website APIs | 37 | 8 | 1 | 28 |
+| AgeOfEmpires.com website APIs | 42 | 8 | 1 | 33 |
+| AgeOfEmpires.com account API | 1 | 0 | 0 | 1 |
 
 These denominators describe the **current catalog groups**, not the full APIs. The ageLANServer-only additions remain separate: 41 upstream candidates (23 World’s Edge, 15 PlayFab, one website-family and two CDN paths), all without a direct probe. Its five local management/file helpers are not publisher API candidates. The emulator's 88 AoE4 game-router operations overlap other references; do not add every index count together.
 
@@ -26,7 +27,7 @@ Counts are reproducible from the saved files using the [offline audit script](..
 python3 scripts/audit_verification.py --check
 ```
 
-The [machine-readable audit](../catalog/verification-summary.json) links every publisher attempt to its timestamp, host, method, path, title parameter, outcome and original evidence file. This documentation update did **not** issue new API requests or refresh the original check dates.
+The [machine-readable audit](../catalog/verification-summary.json) links every publisher attempt to its timestamp, host, method, path, title parameter, outcome and original evidence file. The provenance audit did **not** issue new API requests or refresh the original check dates. A subsequent [documentation-discovery pass](documentation-discovery.md) made 30 documentation/source-map requests and fetched vendor specifications separately; it did not execute additional business APIs.
 
 ## The routes with direct evidence
 
@@ -72,6 +73,7 @@ The labels deliberately make no inference from a recent commit to live compatibi
 
 | Service or interface | Operator category | Attribution / boundary |
 | --- | --- | --- |
+| [AgeOfEmpires.com account service](shared/official-website.md) | Publisher/developer | Account-status call established in publisher frontend source; runtime untested |
 | [AgeOfEmpires.com website APIs](shared/official-website.md) | Publisher/developer | Age of Empires publisher website |
 | [SCAR / Content Editor](aoe4/replays-and-local-apis.md) | Publisher/developer | AoE4 game and Content Editor |
 | [World’s Edge / Relic game services](shared/worlds-edge.md) | Publisher/developer | Age of Empires / World’s Edge / Relic backend family |
@@ -104,7 +106,7 @@ The labels deliberately make no inference from a recent commit to live compatibi
 
 The local AoE2 `CadeRemote` interface is kept unresolved for precise operator/partner attribution: its current evidence is community protocol/protobuf research, not a maintainer statement establishing the implementation boundary. Its apparent game-client role and runtime verification are separate questions. SCAR, by contrast, has publisher documentation and installed API-reference evidence, but no scripting-runtime test in this research.
 
-PlayFab is a platform/vendor service. The association of particular PlayFab titles with AoE4/Mythology in this atlas comes from community implementation source, and their deployment behavior has not been tested. Generic platform documentation would not by itself verify the game's particular configuration.
+PlayFab is a platform/vendor service. The association of particular PlayFab titles with AoE4/Mythology in this atlas comes from community implementation source, and their deployment behavior has not been tested. Generic platform documentation would not by itself verify the game's particular configuration. [Vendor Swagger evidence](documentation-discovery.md#playfabs-vendor-published-swagger) now supplies generic contract references for 13 emulator paths, without upgrading runtime status.
 
 ## Machine-readable interpretation
 

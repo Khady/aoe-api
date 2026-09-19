@@ -59,6 +59,8 @@ The [machine-readable register](../catalog/sources.json) contains the source IDs
 | `agelan-websocket` | [ageLANServer session WebSocket implementation](https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/wss/wss.go) | server-emulation-source |
 | `agelan-playfab` | [ageLANServer PlayFab route registrations](https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/playfabapi.go) | server-emulation-source |
 | `agelan-hosts` | [ageLANServer hostname construction](https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/common/domain.go) | server-emulation-source |
+| `official-source-map` | [Publisher website source map with embedded client sources](https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map) | provider-client |
+| `playfab-specs` | [PlayFab vendor Swagger specifications](https://github.com/PlayFab/API_Specs/tree/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab) | provider-openapi |
 
 ## Operator identity versus source identity
 
@@ -76,3 +78,5 @@ The [machine-readable register](../catalog/sources.json) contains the source IDs
 - The old LibreMatch wiki hostname failed TLS verification; the project’s GitHub source and GitHub Pages documentation were used instead.
 - Some source pages were discoverable through web search but blocked direct fetches. This is recorded as an access limitation, not inferred service retirement.
 - Local SCAR reference hashes and paths are in [local metadata](../evidence/2026-09-19/local-scar-metadata.json); their contents were read without changing the installation.
+
+The [documentation-discovery evidence](../evidence/2026-09-19/documentation-discovery.json) records conventional URL checks, publisher source-map retrieval and pinned PlayFab specification hashes. Full embedded frontend source and commented authentication examples were not republished.

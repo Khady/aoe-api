@@ -1,11 +1,11 @@
 # AgeOfEmpires.com: official website interfaces
 
-**Operator: publisher website.** Of 37 cataloged route patterns, 8 have HTTP 200 samples, one has only a 401 rejection and 28 have no direct probe. Frontend declarations establish source usage, not complete runtime correctness. [Coverage and evidence labels](../publisher-services.md).
+**Operator: publisher website.** Of 42 cataloged route patterns, 8 have HTTP 200 samples, one has only a 401 rejection and 33 have no direct probe. Frontend declarations establish source usage, not complete runtime correctness. [Coverage and evidence labels](../publisher-services.md).
 
 **API origin:** `https://api.ageofempires.com`  
 **Primary evidence:** the [current official stats page](https://www.ageofempires.com/stats/ageiv) and its [published JavaScript bundle](https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js), fetched on 2026-09-19. The bundle’s URL and hash are recorded in the [source-fetch metadata](../../evidence/2026-09-19/source-fetches.json).
 
-These are publisher-operated website interfaces, with several unauthenticated reads confirmed below. A public website client is not the same as a supported third-party API program. The inspected pages did not provide a general OpenAPI spec, compatibility promise, or numeric rate limit.
+These are publisher-operated website interfaces, with several unauthenticated reads confirmed below. A public website client is not the same as a supported third-party API program. The inspected pages did not provide a general OpenAPI spec, compatibility promise, or numeric rate limit. A [bounded documentation-URL check](../documentation-discovery.md) subsequently found no specification at the tested paths, but the publicly linked source map exposed readable frontend source.
 
 ## AoE4 leaderboards and seasons
 
@@ -74,8 +74,12 @@ The current frontend declares a separate `/api/v4/mods` family. This research us
 | --- | --- | --- |
 | GET tested | `/api/v4/mods/Games` | Anonymous success; game IDs 1, 2, 3, 4, 1001 in this snapshot |
 | POST source + tested | `/api/v4/mods/Find` | Anonymous request returned **401**, `errorCode:900`, “User not authenticated” |
-| Frontend path declarations | `/Detail/`, `/Download/`, `/Featured`, `/Tags`, `/Types`, `/Related`, `/Reviews` | Existing path families; request shapes and auth must be checked individually; not all were exercised |
-| Account reads / state-changing paths | `/My`, `/Installed`, `/Subscribe`, `/UnSubscribe`, `/Like`, `/Rate`, `/Report`, `/Publish`, `/CheckAndPublishFile`, `/Delete` | Session/account operations declared in frontend; no writes attempted |
+| GET in publisher source | `/Detail/{modId}`, `/Download/{modId}`, `/Tags`, `/Related/{modId}` | Methods and path construction established; runtime untested |
+| POST in publisher source | `/Featured`, `/Reviews` | Catalog/review queries; runtime untested |
+| GET in publisher source, state-changing | `/Subscribe/{modId}`, `/UnSubscribe/{modId}` | Subscription actions; not executed |
+| POST in publisher source, state-changing | `/Rate`, `/Report`, `/Publish`, `/Delete`, `/Notifications` | Publication uses multipart form data; not executed |
+| PUT in publisher source | `/CheckAndPublishFile` | Binary upload chunks; not executed |
+| Other frontend declarations | `/Types`, `/My`, `/Installed`, `/Like` | Current method/access not established here; historical community methods noted below |
 | Moderation paths | `/GetFlagged`, `/GetFlaggedDetail`, `/Moderate` | Restricted-looking frontend family; neither permissions nor request bodies investigated |
 
 Do not describe the entire mod API as anonymous because `/Games` works. Do not reuse example Authorization tokens from third-party protocol documentation. The [LibreMatch Find page](https://github.com/LibreMatch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/find.md) includes historical captured authentication; this atlas deliberately reproduces only the field names and no credential values.
@@ -109,3 +113,9 @@ Other declared website interfaces include `/webapi/Languages?gameId=aoe` and Wor
 Read `statusCode`/`errorMessage`, nested match metadata, and HTTP status. An empty successful match list is not equivalent to a demonstrated populated history. Sample requests reflected `Access-Control-Allow-Origin: https://example.org` when that Origin was sent; browser cookie/preflight behavior was not fully tested. No numerical request limit or freshness SLA was established. Cache sensible read results and avoid assuming the official frontend’s refresh policy is identical to the raw backend’s.
 
 The [ageLANServer source review](../agelanserver.md#functional-handlers-fixtures-and-stubs) also identifies game-client POST `/textmoderation` and two CDN status paths. Their local handlers and proxy fallback were inspected only; they are not extra verified website API responses.
+
+## Readable publisher source and account/poll APIs
+
+The [documentation-discovery guide](../documentation-discovery.md) records a public source map with 192 embedded modules. It adds `/poll/list/4`, `/poll/list/archive/4`, `/poll/{pollId}`, vote submission at `/poll/`, the language-config declaration, and `https://auth.ageofempires.com/home/checklogin`. These are source-derived and were not executed. Account status belongs to the separately cataloged publisher account host.
+
+The source map resolves methods for 14 existing mod patterns, including credentialed GET subscription/unsubscription actions, multipart POST publication, and binary PUT upload chunks. The [detailed method table](../documentation-discovery.md#existing-mod-routes-become-more-concrete) and catalog link these findings to source modules and positions. No state-changing operation was tested.

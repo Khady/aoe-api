@@ -2,7 +2,7 @@
 
 **Publisher subset:** 27 requests, with 25 HTTP 200 responses, one HTTP 401 and one TLS/transport failure. They cover 17 distinct route patterns: 16 have an HTTP 200 sample; the mod Find route has only an authentication rejection. All authenticated game-session, PlayFab and WebSocket findings remain source-only. [Coverage guide](../../docs/publisher-services.md), [offline audit](../../catalog/verification-summary.json). This categorization uses the existing observations and does not refresh their timestamps.
 
-**47 selected endpoint probes.** HTTP/transport distribution: 200: 43, 401: 1, 404: 1, transport-error: 2. These are individual request outcomes, not provider health scores.
+**47 selected API/service probes.** HTTP/transport distribution: 200: 43, 401: 1, 404: 1, transport-error: 2. These are individual request outcomes, not provider health scores.
 
 All probe requests used the manifest in [catalog/probes.json](../../catalog/probes.json). HTTP 200 JSON is still interpreted separately from nonempty/useful data. No benchmark/load test was performed. The `.json` reports contain timestamped response structure and selected headers; array shapes inspect only the first item.
 
@@ -69,6 +69,8 @@ All probe requests used the manifest in [catalog/probes.json](../../catalog/prob
 - AoE2.net root returned HTML containing the provider shutdown notice, not an API payload.
 
 ## Additional evidence
+
+- [Documentation discovery](documentation-discovery.json): 28 conventional documentation URL checks plus two source-map requests; vendor specifications fetched separately. These are not additional business-API successes.
 
 - [Provider OpenAPI snapshot](aoe4guides-openapi.json)
 - [Local installed SCAR documentation metadata](local-scar-metadata.json)

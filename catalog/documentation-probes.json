@@ -1,0 +1,188 @@
+[
+  {
+    "id": "website-docs-1",
+    "url": "https://api.ageofempires.com/swagger/index.html",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "website-docs-2",
+    "url": "https://api.ageofempires.com/swagger/v1/swagger.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "website-docs-3",
+    "url": "https://api.ageofempires.com/openapi.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-client-docs-1",
+    "url": "https://api-dr.ageofempires.com/swagger/index.html",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-client-docs-2",
+    "url": "https://api-dr.ageofempires.com/swagger/v1/swagger.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-client-docs-3",
+    "url": "https://api-dr.ageofempires.com/openapi.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-docs-1",
+    "url": "https://aoe-api.worldsedgelink.com/swagger/index.html",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-docs-2",
+    "url": "https://aoe-api.worldsedgelink.com/swagger/v1/swagger.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-docs-3",
+    "url": "https://aoe-api.worldsedgelink.com/openapi.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-docs-1",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/swagger/index.html",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-docs-2",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/swagger/v1/swagger.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-docs-3",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/openapi.json",
+    "purpose": "Standard documentation URL; existence not assumed",
+    "discovery_only": true
+  },
+  {
+    "id": "website-followup-1",
+    "url": "https://api.ageofempires.com/swagger/docs/v1",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "website-followup-2",
+    "url": "https://api.ageofempires.com/swagger/ui/index",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "website-followup-3",
+    "url": "https://api.ageofempires.com/openapi/v1.json",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "website-followup-4",
+    "url": "https://api.ageofempires.com/api/openapi.json",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "website-followup-5",
+    "url": "https://api.ageofempires.com/Help",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "website-followup-6",
+    "url": "https://api.ageofempires.com/api-docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-followup-1",
+    "url": "https://aoe-api.worldsedgelink.com/api-docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-followup-2",
+    "url": "https://aoe-api.worldsedgelink.com/v2/api-docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-followup-3",
+    "url": "https://aoe-api.worldsedgelink.com/v3/api-docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-followup-4",
+    "url": "https://aoe-api.worldsedgelink.com/docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-followup-1",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/api-docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-followup-2",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/v2/api-docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-followup-3",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/v3/api-docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-followup-4",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/docs",
+    "purpose": "Alternate conventional API documentation location",
+    "discovery_only": true
+  },
+  {
+    "id": "website-main-sourcemap",
+    "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+    "purpose": "Source map explicitly referenced by the previously fetched publisher JavaScript",
+    "discovery_only": true
+  },
+  {
+    "id": "website-chunk-sourcemap",
+    "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/975.8075d2.js.map",
+    "purpose": "Source map explicitly referenced by the previously fetched publisher JavaScript",
+    "discovery_only": true
+  },
+  {
+    "id": "website-swagger-root-json",
+    "url": "https://api.ageofempires.com/swagger.json",
+    "purpose": "Conventional top-level Swagger 2 JSON document",
+    "discovery_only": true
+  },
+  {
+    "id": "worlds-edge-swagger-root-json",
+    "url": "https://aoe-api.worldsedgelink.com/swagger.json",
+    "purpose": "Conventional top-level Swagger 2 JSON document",
+    "discovery_only": true
+  },
+  {
+    "id": "aoe4-release-swagger-root-json",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/swagger.json",
+    "purpose": "Conventional top-level Swagger 2 JSON document",
+    "discovery_only": true
+  }
+]
