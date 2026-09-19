@@ -133,3 +133,5 @@ LibreMatch provides broader source-only coverage of account lookup, observable g
 ## Documentation URL discovery
 
 A [bounded check](../documentation-discovery.md#bounded-url-checks) requested eight conventional Swagger/OpenAPI/documentation paths on both the common host and the known AoE4 release host. All returned JSON 404 responses. This does not establish that no specification exists elsewhere; LibreMatch remains an independent community reference, not a discovered publisher-hosted spec.
+
+A further [non-OpenAPI metadata pass](../alternative-discovery.md#exact-negative-checks-and-limits) checked ten candidates/methods on each host, including WADL, OData, minimal GraphQL introspection, API catalogs and OPTIONS. No contract was returned; empty HTTP 200 bodies for root `?wsdl` and OPTIONS are recorded as negative metadata findings.

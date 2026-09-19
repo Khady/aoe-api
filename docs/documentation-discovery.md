@@ -1,6 +1,6 @@
 # Discovering publisher API documentation and metadata
 
-Checked **2026-09-19**. This follow-up explicitly tested conventional Swagger/OpenAPI/help URLs on known publisher hosts and followed the source-map URLs published in the website JavaScript. It also inspected PlayFab's vendor-published specifications.
+Checked **2026-09-19**. **Follow-up:** [discovery beyond OpenAPI](alternative-discovery.md) found live CMS/Steam catalogs and both missing PlayFab contracts in the vendor's custom JSON format. The checks below describe the initial Swagger/source-map pass. This follow-up explicitly tested conventional Swagger/OpenAPI/help URLs on known publisher hosts and followed the source-map URLs published in the website JavaScript. It also inspected PlayFab's vendor-published specifications.
 
 **Result:** no Swagger/OpenAPI document was found at the **28 tested API-host URLs**. However, the website's **public source map** supplied readable client source, and **PlayFab's published Swagger specifications** supplied authoritative generic platform schemas. These are useful first-party references with different scopes; neither establishes that every AoE endpoint currently works.
 
@@ -84,7 +84,7 @@ These are Swagger **2.0** specifications, with version **260814** in the inspect
 
 ### Corroboration and discrepancies
 
-**13 of 15** PlayFab operations found in ageLANServer match paths/methods in the seven inspected specifications. The two unmatched operations are `/MultiplayerServer/GetCognitiveServicesToken` and `/Party/RequestParty`. GitHub code searches of the vendor specification repository also returned no hits for those names; that does not prove the operations are nonexistent or removed.
+**13 of 15** PlayFab operations found in ageLANServer match paths/methods in the seven inspected specifications. The two unmatched operations are `/MultiplayerServer/GetCognitiveServicesToken` and `/Party/RequestParty`. GitHub code searches also returned no hits, but a [subsequent direct inspection](alternative-discovery.md#playfab-custom-json-closes-the-two-contract-gaps) found both in `Legacy/PlayFab/Multiplayer.api.json` at the same revision. They remain absent from these seven Swagger files; vendor-contract coverage across both formats is now 15/15.
 
 The specifications make a significant distinction from emulator behavior:
 

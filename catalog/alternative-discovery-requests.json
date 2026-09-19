@@ -1,0 +1,218 @@
+[
+  {
+    "id": "website-api-catalog",
+    "url": "https://api.ageofempires.com/.well-known/api-catalog",
+    "method": "GET",
+    "purpose": "Standard linkset API catalog"
+  },
+  {
+    "id": "website-api-apis",
+    "url": "https://api.ageofempires.com/apis.json",
+    "method": "GET",
+    "purpose": "APIs.json catalog"
+  },
+  {
+    "id": "website-api-wadl",
+    "url": "https://api.ageofempires.com/application.wadl",
+    "method": "GET",
+    "purpose": "WADL resource descriptions"
+  },
+  {
+    "id": "website-api-wsdl",
+    "url": "https://api.ageofempires.com/?wsdl",
+    "method": "GET",
+    "purpose": "WSDL service description candidate; no known SOAP service path"
+  },
+  {
+    "id": "website-api-odata-root",
+    "url": "https://api.ageofempires.com/$metadata",
+    "method": "GET",
+    "purpose": "OData service metadata candidate"
+  },
+  {
+    "id": "website-api-odata-prefix",
+    "url": "https://api.ageofempires.com/odata/$metadata",
+    "method": "GET",
+    "purpose": "OData prefixed service metadata candidate"
+  },
+  {
+    "id": "website-api-metadata",
+    "url": "https://api.ageofempires.com/metadata",
+    "method": "GET",
+    "purpose": "Framework metadata landing-page candidate"
+  },
+  {
+    "id": "website-api-graphql",
+    "url": "https://api.ageofempires.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+    "method": "GET",
+    "purpose": "Minimal read-only GraphQL schema discovery candidate"
+  },
+  {
+    "id": "website-api-robots",
+    "url": "https://api.ageofempires.com/robots.txt",
+    "method": "GET",
+    "purpose": "Public crawler hints"
+  },
+  {
+    "id": "website-api-options",
+    "url": "https://api.ageofempires.com/",
+    "method": "OPTIONS",
+    "purpose": "HTTP OPTIONS capability/link metadata"
+  },
+  {
+    "id": "worlds-edge-catalog",
+    "url": "https://aoe-api.worldsedgelink.com/.well-known/api-catalog",
+    "method": "GET",
+    "purpose": "Standard linkset API catalog"
+  },
+  {
+    "id": "worlds-edge-apis",
+    "url": "https://aoe-api.worldsedgelink.com/apis.json",
+    "method": "GET",
+    "purpose": "APIs.json catalog"
+  },
+  {
+    "id": "worlds-edge-wadl",
+    "url": "https://aoe-api.worldsedgelink.com/application.wadl",
+    "method": "GET",
+    "purpose": "WADL resource descriptions"
+  },
+  {
+    "id": "worlds-edge-wsdl",
+    "url": "https://aoe-api.worldsedgelink.com/?wsdl",
+    "method": "GET",
+    "purpose": "WSDL service description candidate; no known SOAP service path"
+  },
+  {
+    "id": "worlds-edge-odata-root",
+    "url": "https://aoe-api.worldsedgelink.com/$metadata",
+    "method": "GET",
+    "purpose": "OData service metadata candidate"
+  },
+  {
+    "id": "worlds-edge-odata-prefix",
+    "url": "https://aoe-api.worldsedgelink.com/odata/$metadata",
+    "method": "GET",
+    "purpose": "OData prefixed service metadata candidate"
+  },
+  {
+    "id": "worlds-edge-metadata",
+    "url": "https://aoe-api.worldsedgelink.com/metadata",
+    "method": "GET",
+    "purpose": "Framework metadata landing-page candidate"
+  },
+  {
+    "id": "worlds-edge-graphql",
+    "url": "https://aoe-api.worldsedgelink.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+    "method": "GET",
+    "purpose": "Minimal read-only GraphQL schema discovery candidate"
+  },
+  {
+    "id": "worlds-edge-robots",
+    "url": "https://aoe-api.worldsedgelink.com/robots.txt",
+    "method": "GET",
+    "purpose": "Public crawler hints"
+  },
+  {
+    "id": "worlds-edge-options",
+    "url": "https://aoe-api.worldsedgelink.com/",
+    "method": "OPTIONS",
+    "purpose": "HTTP OPTIONS capability/link metadata"
+  },
+  {
+    "id": "aoe4-release-catalog",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/.well-known/api-catalog",
+    "method": "GET",
+    "purpose": "Standard linkset API catalog"
+  },
+  {
+    "id": "aoe4-release-apis",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/apis.json",
+    "method": "GET",
+    "purpose": "APIs.json catalog"
+  },
+  {
+    "id": "aoe4-release-wadl",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/application.wadl",
+    "method": "GET",
+    "purpose": "WADL resource descriptions"
+  },
+  {
+    "id": "aoe4-release-wsdl",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/?wsdl",
+    "method": "GET",
+    "purpose": "WSDL service description candidate; no known SOAP service path"
+  },
+  {
+    "id": "aoe4-release-odata-root",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/$metadata",
+    "method": "GET",
+    "purpose": "OData service metadata candidate"
+  },
+  {
+    "id": "aoe4-release-odata-prefix",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/odata/$metadata",
+    "method": "GET",
+    "purpose": "OData prefixed service metadata candidate"
+  },
+  {
+    "id": "aoe4-release-metadata",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/metadata",
+    "method": "GET",
+    "purpose": "Framework metadata landing-page candidate"
+  },
+  {
+    "id": "aoe4-release-graphql",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+    "method": "GET",
+    "purpose": "Minimal read-only GraphQL schema discovery candidate"
+  },
+  {
+    "id": "aoe4-release-robots",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/robots.txt",
+    "method": "GET",
+    "purpose": "Public crawler hints"
+  },
+  {
+    "id": "aoe4-release-options",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/",
+    "method": "OPTIONS",
+    "purpose": "HTTP OPTIONS capability/link metadata"
+  },
+  {
+    "id": "publisher-site-robots",
+    "url": "https://www.ageofempires.com/robots.txt",
+    "method": "GET",
+    "purpose": "Publisher website crawler hints"
+  },
+  {
+    "id": "publisher-site-wp-index",
+    "url": "https://www.ageofempires.com/wp-json/",
+    "method": "GET",
+    "purpose": "WordPress API route index; frontend uses WordPress assets"
+  },
+  {
+    "id": "publisher-site-rsd",
+    "url": "https://www.ageofempires.com/xmlrpc.php?rsd",
+    "method": "GET",
+    "purpose": "WordPress RSD metadata only, no XML-RPC operation"
+  },
+  {
+    "id": "publisher-site-catalog",
+    "url": "https://www.ageofempires.com/.well-known/api-catalog",
+    "method": "GET",
+    "purpose": "Standard linkset API catalog"
+  },
+  {
+    "id": "publisher-auth-oidc",
+    "url": "https://auth.ageofempires.com/.well-known/openid-configuration",
+    "method": "GET",
+    "purpose": "Public identity-provider discovery metadata; no login"
+  },
+  {
+    "id": "steam-api-list",
+    "url": "https://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v1/",
+    "method": "GET",
+    "purpose": "Vendor-documented API interface/method discovery; no API key"
+  }
+]

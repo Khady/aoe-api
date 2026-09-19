@@ -119,3 +119,7 @@ The [ageLANServer source review](../agelanserver.md#functional-handlers-fixtures
 The [documentation-discovery guide](../documentation-discovery.md) records a public source map with 192 embedded modules. It adds `/poll/list/4`, `/poll/list/archive/4`, `/poll/{pollId}`, vote submission at `/poll/`, the language-config declaration, and `https://auth.ageofempires.com/home/checklogin`. These are source-derived and were not executed. Account status belongs to the separately cataloged publisher account host.
 
 The source map resolves methods for 14 existing mod patterns, including credentialed GET subscription/unsubscription actions, multipart POST publication, and binary PUT upload chunks. The [detailed method table](../documentation-discovery.md#existing-mod-routes-become-more-concrete) and catalog link these findings to source modules and positions. No state-changing operation was tested.
+
+## Publisher CMS discovery
+
+The separate `www.ageofempires.com` host exposes a [WordPress route index](../alternative-discovery.md#publisher-website-an-actual-route-catalog) with 232 patterns, including game, civilization, learning and event content. These are CMS metadata declarations, distinct from the 42 website-API patterns above. The index also declares an MCP adapter; its protocol and permissions were not tested.

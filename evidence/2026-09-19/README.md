@@ -80,3 +80,5 @@ All probe requests used the manifest in [catalog/probes.json](../../catalog/prob
 - [AoECenter repository and model review](aoecenter-review.json): source inspection plus one offline compressed-fixture check; no additional live service requests
 
 The original response body hashes remain unchanged when explanatory application status fields were added from the already fetched temporary samples. No credentials or signed replay URLs are stored here. Non-personal discovery metadata is retained to make identifier mappings reviewable.
+
+- [Alternative discovery](alternative-discovery.json): 35 completed metadata requests plus seven separately fetched custom vendor contracts. WordPress and Steam index retrieval succeeded; declared operations were not executed.

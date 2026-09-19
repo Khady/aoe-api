@@ -27,7 +27,7 @@
     },
     {
       "id": "worlds-edge",
-      "name": "World\u2019s Edge / Relic game services",
+      "name": "World’s Edge / Relic game services",
       "kind": "publisher-backend",
       "games": [
         "aoe1de",
@@ -48,7 +48,7 @@
       "documentation": "docs/shared/worlds-edge.md",
       "operator": {
         "category": "publisher-developer",
-        "label": "Age of Empires / World\u2019s Edge / Relic backend family",
+        "label": "Age of Empires / World’s Edge / Relic backend family",
         "attribution_basis": "Game-client implementation references and shared title-specific service responses establish the backend family; the exact corporate operating entity was not audited.",
         "source_ids": [
           "librematch",
@@ -239,7 +239,8 @@
       "access": "Method-specific key/privacy requirements",
       "source_ids": [
         "steam-stats",
-        "steam-user"
+        "steam-user",
+        "steam-discovery-docs"
       ],
       "documentation": "docs/shared/platforms-and-esports.md",
       "operator": {
@@ -266,7 +267,8 @@
         "agelan",
         "agelan-playfab",
         "agelan-hosts",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "documentation": "docs/shared/platforms-and-esports.md",
       "operator": {
@@ -724,6 +726,32 @@
         "attribution_basis": "Publisher-served source map shows direct credentialed account-status calls. Hosting behavior and account flows were not tested.",
         "source_ids": [
           "official-source-map"
+        ]
+      }
+    },
+    {
+      "id": "publisher-cms",
+      "name": "AgeOfEmpires.com website CMS",
+      "kind": "publisher-website-cms",
+      "games": [
+        "aoe1de",
+        "aoe2de",
+        "aoe3de",
+        "aoe4",
+        "aom-retold"
+      ],
+      "base_url": "https://www.ageofempires.com",
+      "access": "Anonymous metadata index fetched; permissions and content routes not executed.",
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "documentation": "docs/alternative-discovery.md",
+      "operator": {
+        "category": "publisher-developer",
+        "label": "Age of Empires publisher website",
+        "attribution_basis": "Metadata served by the publisher website itself; WordPress core/plugin authors are not asserted to operate the host.",
+        "source_ids": [
+          "publisher-cms-index"
         ]
       }
     }

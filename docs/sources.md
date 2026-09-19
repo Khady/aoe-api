@@ -66,6 +66,10 @@ The [machine-readable register](../catalog/sources.json) contains the source IDs
 
 “Provider” in this table refers to the provider of the named service, repository or tool. It does not necessarily mean the game publisher. A community source can describe a publisher endpoint, and a publisher frontend declaration can still be runtime-untested. Use the [operator and verification guide](publisher-services.md) and `catalog/services.json` operator fields for this distinction.
 
+| `publisher-cms-index` | [Publisher WordPress REST API route index](https://www.ageofempires.com/wp-json/) | provider-discovery-metadata |
+| `steam-discovery-docs` | [Valve ISteamWebAPIUtil discovery method documentation](https://partner.steamgames.com/doc/webapi/ISteamWebAPIUtil) | provider-documentation |
+| `playfab-custom-specs` | [PlayFab custom JSON SDK contracts (pinned Legacy directory)](https://github.com/PlayFab/API_Specs/tree/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab) | provider-specification |
+
 ## Source handling notes
 
 - The supplied launcher is a concrete working-client reference, not publisher documentation. Its short URL-lifetime and deletion comments are attributed rather than treated as guarantees.
@@ -80,3 +84,5 @@ The [machine-readable register](../catalog/sources.json) contains the source IDs
 - Local SCAR reference hashes and paths are in [local metadata](../evidence/2026-09-19/local-scar-metadata.json); their contents were read without changing the installation.
 
 The [documentation-discovery evidence](../evidence/2026-09-19/documentation-discovery.json) records conventional URL checks, publisher source-map retrieval and pinned PlayFab specification hashes. Full embedded frontend source and commented authentication examples were not republished.
+
+The [alternative-discovery evidence](../evidence/2026-09-19/alternative-discovery.json) records WordPress/Steam catalog retrieval, bounded non-OpenAPI checks and PlayFab custom-contract hashes. Catalog metadata is separate from executing the described operations.

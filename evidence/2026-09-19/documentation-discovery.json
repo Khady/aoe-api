@@ -943,5 +943,9 @@
       "results": [],
       "limit": "Negative indexed-code search; not proof the operation does not exist."
     }
-  ]
+  ],
+  "followup_note": {
+    "evidence": "evidence/2026-09-19/alternative-discovery.json",
+    "finding": "The two PlayFab operation names missed by indexed searches were found in Legacy/PlayFab/Multiplayer.api.json at the same vendor revision. Original request observations and search results are preserved."
+  }
 }

@@ -28,11 +28,12 @@ The [publisher verification guide](publisher-services.md) identifies the operato
 | Provider-documented | Maintainer publishes a route/spec/example | Every current parameter combination was tested |
 | Provider-client observed | Official/current website code declares or calls a route | A third-party compatibility/support guarantee |
 | Implementation-documented | A named community client or protocol researcher describes it | Publisher endorsement or universal title support |
+| Metadata observed | A discovery/index document was fetched successfully | Its listed operations were executed or are anonymously accessible |
 | Live response observed | The saved probe records a concrete request and response | The full provider API is healthy, complete, current or anonymous |
 | Source-only / local-only | Code or installed references establish an interface | A running hosted service exists or was tested |
 | Unresolved / legacy / retired | A specific uncertainty, error or provider retirement notice | A timeout alone proves shutdown |
 
-In `catalog/endpoints.json`, `method:null` means a path declaration was found but no HTTP method is asserted. `verification.status:response-observed` can include an empty list. Read the linked probe and chapter before treating an endpoint as useful for a particular data requirement.
+In `catalog/endpoints.json`, `method:null` means a path declaration was found but no HTTP method is asserted. `verification.status:response-observed` can include an empty list. `metadata-observed` identifies successful discovery-document retrieval, separately from invoking its listed operations. Read the linked probe and chapter before treating an endpoint as useful for a particular data requirement.
 
 For a source declaring both GET and POST, `method` records the first listed method and `documented_methods` preserves both. `method:gRPC` identifies a protobuf RPC rather than an HTTP JSON route. The LibreMatch page index matches route casing only for cross-references; this does not assert server case-insensitivity.
 
@@ -88,3 +89,7 @@ The source index counts method/path operations; the main atlas groups path patte
 The [documentation-discovery pass](documentation-discovery.md) checked 28 conventional documentation URLs on known publisher hosts and fetched two source maps referenced by publisher JavaScript. HTTP 200 homepage redirects were not counted as specifications. One host's remaining candidate was skipped after a 403. The main source map supplied publisher client code; the second map exceeded the response-size bound and remained partially read.
 
 Seven pinned PlayFab vendor Swagger files supplied generic schema/security references. Their routes were compared to existing AoE-related emulator evidence; hundreds of generic platform operations were not added as proven AoE APIs. Source-map routes and newly resolved mod methods retain `not-probed`. Documentation/source retrieval has its own manifest and evidence report, separate from the original 47 API/service probes and their offline audit.
+
+## Alternative discovery
+
+The [non-OpenAPI follow-up](alternative-discovery.md) made 35 bounded metadata requests and separately fetched seven pinned PlayFab custom contracts. It found live WordPress/Steam catalogs and vendor descriptions for both operations absent from the earlier Swagger comparison. Metadata responses remain distinct from game-operation validation; generic CMS/platform catalogs do not inflate the count of working AoE game APIs. Earlier GitHub code-search misses were corrected by direct vendor-tree inspection. No MCP operation or PlayFab title request was sent.

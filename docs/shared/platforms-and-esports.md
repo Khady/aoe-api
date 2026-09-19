@@ -1,6 +1,6 @@
 # Platform, esports and adjacent APIs
 
-**Mixed origins:** Steam and PlayFab are platform-vendor services; independent esports services and wrappers are classified separately. Only the Steam player-count query was tested here; PlayFab title operations were not. [Operator index and verification](../publisher-services.md).
+**Mixed origins:** Steam and PlayFab are platform-vendor services; independent esports services and wrappers are classified separately. The Steam player-count query was tested; a separate method-catalog fetch established discovery metadata. PlayFab title operations were not tested. [Operator index and verification](../publisher-services.md).
 
 These services complement game data. They should not be conflated with an AoE-specific match backend.
 
@@ -17,7 +17,7 @@ AoE4’s Steam app ID is **1466860**, also used in the inspected [AoE4 tooling](
 | `/ISteamUser/GetPlayerSummaries/v2/` | `steamids`, `key` | Steam profile enrichment |
 | `/ISteamUser/ResolveVanityURL/v1/` | `vanityurl`, `key` | Resolve a Steam vanity name to SteamID64 |
 
-Sources: Valve’s [ISteamUserStats reference](https://partner.steamgames.com/doc/webapi/ISteamUserStats) and [ISteamUser reference](https://partner.steamgames.com/doc/webapi/ISteamUser). Only the player-count request was run; none of the key-authenticated operations were tested. The existence of a generic method does not guarantee AoE4 populates every possible stat.
+Sources: Valve’s [ISteamUserStats reference](https://partner.steamgames.com/doc/webapi/ISteamUserStats) and [ISteamUser reference](https://partner.steamgames.com/doc/webapi/ISteamUser). The player-count request and a separate anonymous [method-catalog request](../alternative-discovery.md#steam-a-live-api-discovery-operation) were run; none of the key-authenticated operations were tested. The existence of a generic method does not guarantee AoE4 populates every possible stat.
 
 Steam web API keys, Steam identity login, and an encrypted game app ticket are different credentials/flows. A web API key is not interchangeable with a World’s Edge game-session ticket.
 
@@ -33,7 +33,7 @@ No PlayFab login, title configuration query or authenticated Xbox/PlayStation op
 
 PlayFab's own [Swagger repository](https://github.com/PlayFab/API_Specs) provides a stronger source for generic request/response and authentication contracts. Seven inspected specifications match 13 of the 15 emulator operations. In particular, the vendor specifies `X-Authorization` for client session tickets, while the emulator's local middleware uses different headers. [Detailed comparison](../documentation-discovery.md#playfabs-vendor-published-swagger), [schema-reference index](../../catalog/playfab-spec-coverage.json).
 
-This adds vendor documentation, not successful AoE title requests. The two unmatched operation names and all title-specific access assumptions remain unresolved.
+The [custom JSON contract follow-up](../alternative-discovery.md#playfab-custom-json-closes-the-two-contract-gaps) finds both operations absent from the Swagger files, bringing vendor matches to 15/15. This adds vendor documentation; title-specific permissions and runtime behavior remain untested.
 
 ## Liquipedia and tournament data
 

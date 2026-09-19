@@ -383,5 +383,26 @@
     "url": "https://github.com/PlayFab/API_Specs/tree/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Swagger/PlayFab",
     "source_kind": "provider-openapi",
     "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "publisher-cms-index",
+    "title": "Publisher WordPress REST API route index",
+    "url": "https://www.ageofempires.com/wp-json/",
+    "source_kind": "provider-discovery-metadata",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "steam-discovery-docs",
+    "title": "Valve ISteamWebAPIUtil discovery method documentation",
+    "url": "https://partner.steamgames.com/doc/webapi/ISteamWebAPIUtil",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "playfab-custom-specs",
+    "title": "PlayFab custom JSON SDK contracts (pinned Legacy directory)",
+    "url": "https://github.com/PlayFab/API_Specs/tree/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab",
+    "source_kind": "provider-specification",
+    "consulted_on": "2026-09-19"
   }
 ]

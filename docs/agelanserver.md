@@ -150,7 +150,7 @@ Mythology additionally gets **GET `/static/`**, a local file-serving subtree for
 
 ### Vendor contract comparison added after the emulator review
 
-A [comparison with PlayFab's published Swagger](documentation-discovery.md#corroboration-and-discrepancies) matches 13 of these 15 API operations. The vendor defines client session-ticket authentication as `X-Authorization`; the emulator headers above are local implementation choices. Telemetry authentication and QoS behavior also differ. Consult the vendor schemas for the generic contract and retain the emulator as game-client/protocol evidence; no AoE title runtime behavior was validated.
+A [comparison with PlayFab's published Swagger](documentation-discovery.md#corroboration-and-discrepancies) matches 13 of these 15 API operations; the [vendor custom JSON format](alternative-discovery.md#playfab-custom-json-closes-the-two-contract-gaps) covers all 15, including the two Swagger gaps. The vendor defines client session-ticket authentication as `X-Authorization`; the emulator headers above are local implementation choices. Telemetry authentication and QoS behavior also differ. Consult the vendor schemas for the generic contract and retain the emulator as game-client/protocol evidence; no AoE title runtime behavior was validated.
 
 ## Functional handlers, fixtures and stubs
 

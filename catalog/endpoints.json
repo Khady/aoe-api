@@ -11,7 +11,8 @@
     "Operator attribution is inherited from catalog/services.json and is independent of evidence_basis and verification. Provider means the provider of the referenced service/tool, not necessarily a game publisher.",
     "upstream_candidate identifies a publisher/vendor protocol suggested by an independent emulator, not a verified deployed endpoint. Local emulator operations retain service=agelan-server.",
     "last_recorded_probe_at is the date of the selected saved sample, not the date of a documentation/source review; catalog/verification-summary.json preserves all audited publisher attempts.",
-    "Publisher source-map additions and resolved mod methods are provider-client evidence, not live API verification. GET Subscribe/UnSubscribe are state-changing in the frontend; do not automatically probe every GET."
+    "Publisher source-map additions and resolved mod methods are provider-client evidence, not live API verification. GET Subscribe/UnSubscribe are state-changing in the frontend; do not automatically probe every GET.",
+    "metadata-observed means a discovery document itself was fetched successfully, not that its listed operations were executed. See alternative-discovery.json; metadata requests are excluded from the original 47 API/service probes."
   ],
   "endpoints": [
     {
@@ -10306,7 +10307,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10350,6 +10352,20 @@
         "operation_id": "GetPlayerCombinedInfo",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/43",
+        "name": "GetPlayerCombinedInfo",
+        "method": "POST",
+        "path": "/Client/GetPlayerCombinedInfo",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetPlayerCombinedInfoRequest",
+        "response_type": "GetPlayerCombinedInfoResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10362,7 +10378,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10406,6 +10423,20 @@
         "operation_id": "GetTime",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/72",
+        "name": "GetTime",
+        "method": "POST",
+        "path": "/Client/GetTime",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetTimeRequest",
+        "response_type": "GetTimeResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10418,7 +10449,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10461,6 +10493,20 @@
         "operation_id": "LoginWithCustomID",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/108",
+        "name": "LoginWithCustomID",
+        "method": "POST",
+        "path": "/Client/LoginWithCustomID",
+        "auth": "None",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "LoginWithCustomIDRequest",
+        "response_type": "LoginResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10473,7 +10519,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10516,6 +10563,20 @@
         "operation_id": "GetUserData",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/78",
+        "name": "GetUserData",
+        "method": "POST",
+        "path": "/Client/GetUserData",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetUserDataRequest",
+        "response_type": "GetUserDataResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10528,7 +10589,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10571,6 +10633,20 @@
         "operation_id": "GetTitleData",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/73",
+        "name": "GetTitleData",
+        "method": "POST",
+        "path": "/Client/GetTitleData",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetTitleDataRequest",
+        "response_type": "GetTitleDataResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10583,7 +10659,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10626,6 +10703,20 @@
         "operation_id": "GetUserReadOnlyData",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/82",
+        "name": "GetUserReadOnlyData",
+        "method": "POST",
+        "path": "/Client/GetUserReadOnlyData",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetUserDataRequest",
+        "response_type": "GetUserDataResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10638,7 +10729,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10681,6 +10773,20 @@
         "operation_id": "LoginWithSteam",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/122",
+        "name": "LoginWithSteam",
+        "method": "POST",
+        "path": "/Client/LoginWithSteam",
+        "auth": "None",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "LoginWithSteamRequest",
+        "response_type": "LoginResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10693,7 +10799,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10737,6 +10844,20 @@
         "operation_id": "UpdateUserTitleDisplayName",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/178",
+        "name": "UpdateUserTitleDisplayName",
+        "method": "POST",
+        "path": "/Client/UpdateUserTitleDisplayName",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "UpdateUserTitleDisplayNameRequest",
+        "response_type": "UpdateUserTitleDisplayNameResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10749,7 +10870,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10793,6 +10915,26 @@
         "operation_id": "WriteTelemetryEvents",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Events.api.json",
+        "json_pointer": "/calls/15",
+        "name": "WriteTelemetryEvents",
+        "method": "POST",
+        "path": "/Event/WriteTelemetryEvents",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [
+          "title",
+          "title_player_account",
+          "master_player_account",
+          "service",
+          "game_server"
+        ],
+        "request_type": "WriteEventsRequest",
+        "response_type": "WriteEventsResponse",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10805,7 +10947,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10848,6 +10991,24 @@
         "operation_id": "GetInventoryItems",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Economy.api.json",
+        "json_pointer": "/calls/21",
+        "name": "GetInventoryItems",
+        "method": "POST",
+        "path": "/Inventory/GetInventoryItems",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [
+          "title",
+          "master_player_account",
+          "title_player_account"
+        ],
+        "request_type": "GetInventoryItemsRequest",
+        "response_type": "GetInventoryItemsResponse",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10859,7 +11020,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10886,7 +11048,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -10896,6 +11059,25 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+        "json_pointer": "/calls/39",
+        "name": "GetCognitiveServicesToken",
+        "method": "POST",
+        "path": "/MultiplayerServer/GetCognitiveServicesToken",
+        "auth": "EntityToken",
+        "flags": [
+          "Beta"
+        ],
+        "allowed_entity_token_types": [
+          "title",
+          "title_player_account"
+        ],
+        "request_type": "GetCognitiveServicesTokenRequest",
+        "response_type": "GetCognitiveServicesTokenResponse",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10908,7 +11090,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10952,6 +11135,20 @@
         "operation_id": "ListPartyQosServers",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+        "json_pointer": "/calls/81",
+        "name": "ListPartyQosServers",
+        "method": "POST",
+        "path": "/MultiplayerServer/ListPartyQosServers",
+        "auth": "None",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "ListPartyQosServersRequest",
+        "response_type": "ListPartyQosServersResponse",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -10963,7 +11160,8 @@
       "parameters": [],
       "source_ids": [
         "agelan-source",
-        "agelan-playfab"
+        "agelan-playfab",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -10990,7 +11188,8 @@
         }
       ],
       "evidence_basis": [
-        "independent-emulator-source"
+        "independent-emulator-source",
+        "provider-specification"
       ],
       "upstream_candidate": {
         "family": "playfab",
@@ -11000,6 +11199,26 @@
           "agelan-playfab"
         ],
         "service": "playfab"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+        "json_pointer": "/calls/92",
+        "name": "RequestParty",
+        "method": "POST",
+        "path": "/Party/RequestParty",
+        "auth": "EntityToken",
+        "flags": [
+          "Beta"
+        ],
+        "allowed_entity_token_types": [
+          "title",
+          "title_player_account",
+          "game_server"
+        ],
+        "request_type": "RequestPartyRequest",
+        "response_type": "RequestPartyResponse",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -11012,7 +11231,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -11055,6 +11275,24 @@
         "operation_id": "GetItems",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Economy.api.json",
+        "json_pointer": "/calls/29",
+        "name": "GetItems",
+        "method": "POST",
+        "path": "/Catalog/GetItems",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [
+          "title",
+          "master_player_account",
+          "title_player_account"
+        ],
+        "request_type": "GetItemsRequest",
+        "response_type": "GetItemsResponse",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -11067,7 +11305,8 @@
       "source_ids": [
         "agelan-source",
         "agelan-playfab",
-        "playfab-specs"
+        "playfab-specs",
+        "playfab-custom-specs"
       ],
       "scope": "local emulator implementation; publisher deployment and access unverified",
       "verification": {
@@ -11110,6 +11349,20 @@
         "operation_id": "ExecuteFunction",
         "scope": "Generic vendor contract; AoE title implementation/access not verified.",
         "coverage_file": "catalog/playfab-spec-coverage.json"
+      },
+      "provider_custom_contract_reference": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/CloudScript.api.json",
+        "json_pointer": "/calls/1",
+        "name": "ExecuteFunction",
+        "method": "POST",
+        "path": "/CloudScript/ExecuteFunction",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "ExecuteFunctionRequest",
+        "response_type": "ExecuteFunctionResult",
+        "coverage_file": "catalog/playfab-custom-contracts.json",
+        "scope": "Generic vendor contract; AoE title behavior untested."
       }
     },
     {
@@ -11600,6 +11853,298 @@
           "module_sha256": "f5197cd1b2bf843cd46c2301948098cb8ea12caa21d65f423f90131db74e1e1c"
         }
       ]
+    },
+    {
+      "id": "publisher-cms-index",
+      "service": "publisher-cms",
+      "method": "GET",
+      "path": "/wp-json/",
+      "purpose": "Discover publisher website CMS namespaces, routes and argument schemas",
+      "parameters": [],
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "scope": "Publisher website content/metadata",
+      "verification": {
+        "status": "metadata-observed",
+        "metadata_request_id": "publisher-site-wp-index",
+        "checked_at": "2026-09-19T10:54:07.668864+00:00",
+        "http_status": 200,
+        "evidence": "evidence/2026-09-19/alternative-discovery.json",
+        "scope": "Discovery document response only"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
+    },
+    {
+      "id": "publisher-cms-games",
+      "service": "publisher-cms",
+      "method": "GET",
+      "path": "/wp-json/wp/v2/games",
+      "purpose": "Website content collection: games",
+      "parameters": [
+        "context",
+        "page",
+        "per_page",
+        "search",
+        "after",
+        "modified_after",
+        "author",
+        "author_exclude",
+        "before",
+        "modified_before",
+        "exclude",
+        "include",
+        "search_semantics",
+        "offset",
+        "order",
+        "orderby",
+        "parent",
+        "parent_exclude",
+        "search_columns",
+        "slug",
+        "status"
+      ],
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "scope": "Publisher website content/metadata",
+      "verification": {
+        "status": "not-probed"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
+    },
+    {
+      "id": "publisher-cms-civilizations",
+      "service": "publisher-cms",
+      "method": "GET",
+      "path": "/wp-json/wp/v2/civilizations",
+      "purpose": "Website content collection: civilizations",
+      "parameters": [
+        "context",
+        "page",
+        "per_page",
+        "search",
+        "after",
+        "modified_after",
+        "author",
+        "author_exclude",
+        "before",
+        "modified_before",
+        "exclude",
+        "include",
+        "search_semantics",
+        "offset",
+        "order",
+        "orderby",
+        "search_columns",
+        "slug",
+        "status",
+        "tax_relation",
+        "civ_categories",
+        "civ_categories_exclude"
+      ],
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "scope": "Publisher website content/metadata",
+      "verification": {
+        "status": "not-probed"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
+    },
+    {
+      "id": "publisher-cms-game-modes",
+      "service": "publisher-cms",
+      "method": "GET",
+      "path": "/wp-json/wp/v2/game_modes",
+      "purpose": "Website content collection: game_modes",
+      "parameters": [
+        "context",
+        "page",
+        "per_page",
+        "search",
+        "after",
+        "modified_after",
+        "author",
+        "author_exclude",
+        "before",
+        "modified_before",
+        "exclude",
+        "include",
+        "search_semantics",
+        "offset",
+        "order",
+        "orderby",
+        "search_columns",
+        "slug",
+        "status"
+      ],
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "scope": "Publisher website content/metadata",
+      "verification": {
+        "status": "not-probed"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
+    },
+    {
+      "id": "publisher-cms-learn-to-play",
+      "service": "publisher-cms",
+      "method": "GET",
+      "path": "/wp-json/wp/v2/learn_to_play",
+      "purpose": "Website content collection: learn_to_play",
+      "parameters": [
+        "context",
+        "page",
+        "per_page",
+        "search",
+        "after",
+        "modified_after",
+        "before",
+        "modified_before",
+        "exclude",
+        "include",
+        "search_semantics",
+        "offset",
+        "order",
+        "orderby",
+        "search_columns",
+        "slug",
+        "status",
+        "tax_relation",
+        "ltp_game",
+        "ltp_game_exclude"
+      ],
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "scope": "Publisher website content/metadata",
+      "verification": {
+        "status": "not-probed"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
+    },
+    {
+      "id": "publisher-cms-events",
+      "service": "publisher-cms",
+      "method": "GET",
+      "path": "/wp-json/wp/v2/events",
+      "purpose": "Website content collection: events",
+      "parameters": [
+        "context",
+        "page",
+        "per_page",
+        "search",
+        "after",
+        "modified_after",
+        "before",
+        "modified_before",
+        "exclude",
+        "include",
+        "search_semantics",
+        "offset",
+        "order",
+        "orderby",
+        "search_columns",
+        "slug",
+        "status",
+        "tax_relation",
+        "event_format",
+        "event_format_exclude"
+      ],
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "scope": "Publisher website content/metadata",
+      "verification": {
+        "status": "not-probed"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
+    },
+    {
+      "id": "publisher-cms-game",
+      "service": "publisher-cms",
+      "method": "GET",
+      "path": "/wp-json/wp/v2/game",
+      "purpose": "Website content collection: game",
+      "parameters": [
+        "context",
+        "page",
+        "per_page",
+        "search",
+        "exclude",
+        "include",
+        "order",
+        "orderby",
+        "hide_empty",
+        "parent",
+        "post",
+        "slug"
+      ],
+      "source_ids": [
+        "publisher-cms-index"
+      ],
+      "scope": "Publisher website content/metadata",
+      "verification": {
+        "status": "not-probed"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
+    },
+    {
+      "id": "steam-discovery",
+      "service": "steam",
+      "method": "GET",
+      "path": "/ISteamWebAPIUtil/GetSupportedAPIList/v1/",
+      "purpose": "Discover Steam Web API interfaces, method versions and parameter types",
+      "parameters": [
+        "key"
+      ],
+      "source_ids": [
+        "steam-discovery-docs"
+      ],
+      "scope": "Vendor platform discovery",
+      "verification": {
+        "status": "metadata-observed",
+        "metadata_request_id": "steam-api-list",
+        "checked_at": "2026-09-19T10:54:13.566726+00:00",
+        "http_status": 200,
+        "evidence": "evidence/2026-09-19/alternative-discovery.json",
+        "scope": "Discovery document response only"
+      },
+      "evidence_basis": [
+        "provider-discovery-metadata"
+      ],
+      "operation_effect": "read",
+      "notes": "The discovery result establishes catalog metadata only. It does not verify all listed operations, their permissions or AoE4-specific population."
     }
   ]
 }

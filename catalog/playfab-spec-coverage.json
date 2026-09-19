@@ -833,8 +833,17 @@
   ],
   "limits": [
     "Generic PlayFab specification does not establish which operations a particular AoE title permits or uses.",
-    "Unmatched means absent from the seven inspected specifications, not proven nonexistent on the server. GitHub code search also returned no hits for the two unmatched operation names in this repository.",
+    "Unmatched in this file means absent from the seven inspected Swagger specifications. Both such paths were subsequently found in the vendor custom .api.json format; see custom_contract_followup. Earlier indexed code searches missed those files.",
     "Do not count all vendor platform operations as AoE endpoints.",
     "Authentication names and schema pointers come from the vendor spec; emulator middleware is an independent implementation."
-  ]
+  ],
+  "custom_contract_followup": {
+    "file": "catalog/playfab-custom-contracts.json",
+    "matched_emulator_operations": 15,
+    "previously_unmatched_paths_found": [
+      "/MultiplayerServer/GetCognitiveServicesToken",
+      "/Party/RequestParty"
+    ],
+    "scope": "Same pinned vendor revision; custom format covers both paths absent from the seven Swagger files. No runtime change."
+  }
 }

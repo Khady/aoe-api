@@ -1,0 +1,862 @@
+{
+  "checked_on": "2026-09-19",
+  "repository": "PlayFab/API_Specs",
+  "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+  "format": "PlayFab custom .api.json (Legacy/PlayFab); not Swagger/OpenAPI",
+  "summary": {
+    "reviewed_files": 7,
+    "calls": 400,
+    "datatypes": 1096,
+    "paths_absent_from_corresponding_swagger": 55,
+    "swagger_paths_absent_from_corresponding_custom": 1,
+    "emulator_operations_matched": 15,
+    "new_AoE_runtime_verified_operations": 0
+  },
+  "specifications": [
+    {
+      "file": "Legacy/PlayFab/Client.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:42.837760+00:00",
+      "bytes_read": 966618,
+      "sha256": "ee35e19d01fff8c4ab43daae51288066555c5b5a979854d1032a3f6d5c93426a",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ],
+      "call_count": 186,
+      "datatype_count": 449,
+      "custom_only_paths": [
+        "/Client/GetCloudScriptUrl",
+        "/Client/GetCurrentGames",
+        "/Client/GetFriendLeaderboardAroundCurrentUser",
+        "/Client/GetGameServerRegions",
+        "/Client/GetLeaderboardAroundCurrentUser",
+        "/Client/GetUserCombinedInfo",
+        "/Client/GetUserStatistics",
+        "/Client/LogEvent",
+        "/Client/Matchmake",
+        "/Client/RunCloudScript",
+        "/Client/StartGame",
+        "/Client/UpdateUserStatistics"
+      ],
+      "swagger_only_paths": []
+    },
+    {
+      "file": "Legacy/PlayFab/Events.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Events.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:44.334650+00:00",
+      "bytes_read": 187720,
+      "sha256": "c8c09a27b624fa142c1d23b116bbd56246506b8ea150793b847f18869fbff560",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ],
+      "call_count": 16,
+      "datatype_count": 42,
+      "custom_only_paths": [
+        "/Event/DeleteEventSamplingRatio",
+        "/Event/GetEventSamplingRatio",
+        "/Event/GetEventSamplingRatios",
+        "/Event/SetEventSamplingRatio"
+      ],
+      "swagger_only_paths": []
+    },
+    {
+      "file": "Legacy/PlayFab/Multiplayer.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:45.900709+00:00",
+      "bytes_read": 763599,
+      "sha256": "0e530ac10b169ab8fb4ec5e5dfb9c2158ec19aae5e4bfc5e37553e38ce693c82",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ],
+      "call_count": 114,
+      "datatype_count": 322,
+      "custom_only_paths": [
+        "/MultiplayerServer/GetCognitiveServicesLocales",
+        "/MultiplayerServer/GetCognitiveServicesToken",
+        "/MultiplayerServer/GetMultiplayerServerAndToken",
+        "/MultiplayerServer/ListBuildSummaries",
+        "/MultiplayerServer/ListQosServers",
+        "/MultiplayerServer/RequestMultiplayerServerAndToken",
+        "/Party/EnablePartiesForTitle",
+        "/Party/RequestParty",
+        "/TrueSkill/CancelModel",
+        "/TrueSkill/CreateBaseModel",
+        "/TrueSkill/CreateBatchModel",
+        "/TrueSkill/CreateScenario",
+        "/TrueSkill/DeactivateModel",
+        "/TrueSkill/DeleteModel",
+        "/TrueSkill/DeleteScenario",
+        "/TrueSkill/GetModelDetails",
+        "/TrueSkill/GetModelsByScenario",
+        "/TrueSkill/GetPlayerSkill",
+        "/TrueSkill/GetPlayerSkillForConditions",
+        "/TrueSkill/GetPlayerSkillForConditionsFromModel",
+        "/TrueSkill/GetPlayerSkillFromModel",
+        "/TrueSkill/GetScenarioConfiguration",
+        "/TrueSkill/GetScenarioConfigurations",
+        "/TrueSkill/UpdateModel",
+        "/TrueSkill/UpdatePrimaryModel",
+        "/TrueSkill/UpdateScenarioConfiguration",
+        "/TrueSkill/UploadMatchResult"
+      ],
+      "swagger_only_paths": [
+        "/PubSub/Negotiate"
+      ]
+    },
+    {
+      "file": "Legacy/PlayFab/Economy.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Economy.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:48.768478+00:00",
+      "bytes_read": 502323,
+      "sha256": "e4d358f95aa0ca94e667510b83ae135532017332ab11cd23e280c18305d7a355",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ],
+      "call_count": 58,
+      "datatype_count": 200,
+      "custom_only_paths": [
+        "/Catalog/CreateView",
+        "/Catalog/DeleteView",
+        "/Catalog/GetView",
+        "/Catalog/GetViews",
+        "/Catalog/UpdateView",
+        "/VersionedCatalog/CompleteVersionedCatalogUpload",
+        "/VersionedCatalog/CreateVersionedCatalogUploadURL",
+        "/VersionedCatalog/DeleteVersionedCatalog",
+        "/VersionedCatalog/ExportVersionedCatalog",
+        "/VersionedCatalog/GetVersionedCatalogItem",
+        "/VersionedCatalog/GetVersionedCatalogUploadStatus",
+        "/VersionedCatalog/ListVersionedCatalogs"
+      ],
+      "swagger_only_paths": []
+    },
+    {
+      "file": "Legacy/PlayFab/CloudScript.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/CloudScript.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:50.984465+00:00",
+      "bytes_read": 219464,
+      "sha256": "3b777f84b424f27ee671baf94076da14d518443f4dd97b739fec280039143f0b",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ],
+      "call_count": 15,
+      "datatype_count": 49,
+      "custom_only_paths": [],
+      "swagger_only_paths": []
+    },
+    {
+      "file": "Legacy/PlayFab/Authentication.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Authentication.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:52.927692+00:00",
+      "bytes_read": 153508,
+      "sha256": "105ecb547d6d240edbe0bf12a86fc207618525d096258838db72ad86ba6b3fbe",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ],
+      "call_count": 4,
+      "datatype_count": 13,
+      "custom_only_paths": [],
+      "swagger_only_paths": []
+    },
+    {
+      "file": "Legacy/PlayFab/Data.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Data.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:54.447577+00:00",
+      "bytes_read": 169770,
+      "sha256": "968960db70fcffd7516d64e4ef8043530540ae1c4d527503c9b8cafacfe47cca",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ],
+      "call_count": 7,
+      "datatype_count": 21,
+      "custom_only_paths": [],
+      "swagger_only_paths": []
+    }
+  ],
+  "matches": [
+    {
+      "path": "/Client/GetPlayerCombinedInfo",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-getplayercombinedinfo"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/43",
+        "name": "GetPlayerCombinedInfo",
+        "method": "POST",
+        "path": "/Client/GetPlayerCombinedInfo",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetPlayerCombinedInfoRequest",
+        "response_type": "GetPlayerCombinedInfoResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Client/GetTime",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-gettime"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/72",
+        "name": "GetTime",
+        "method": "POST",
+        "path": "/Client/GetTime",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetTimeRequest",
+        "response_type": "GetTimeResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Client/LoginWithCustomID",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-loginwithcustomid"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/108",
+        "name": "LoginWithCustomID",
+        "method": "POST",
+        "path": "/Client/LoginWithCustomID",
+        "auth": "None",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "LoginWithCustomIDRequest",
+        "response_type": "LoginResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Client/GetUserData",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-getuserdata"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/78",
+        "name": "GetUserData",
+        "method": "POST",
+        "path": "/Client/GetUserData",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetUserDataRequest",
+        "response_type": "GetUserDataResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Client/GetTitleData",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-gettitledata"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/73",
+        "name": "GetTitleData",
+        "method": "POST",
+        "path": "/Client/GetTitleData",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetTitleDataRequest",
+        "response_type": "GetTitleDataResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Client/GetUserReadOnlyData",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-getuserreadonlydata"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/82",
+        "name": "GetUserReadOnlyData",
+        "method": "POST",
+        "path": "/Client/GetUserReadOnlyData",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "GetUserDataRequest",
+        "response_type": "GetUserDataResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Client/LoginWithSteam",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-loginwithsteam"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/122",
+        "name": "LoginWithSteam",
+        "method": "POST",
+        "path": "/Client/LoginWithSteam",
+        "auth": "None",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "LoginWithSteamRequest",
+        "response_type": "LoginResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Client/UpdateUserTitleDisplayName",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-client-updateusertitledisplayname"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+        "json_pointer": "/calls/178",
+        "name": "UpdateUserTitleDisplayName",
+        "method": "POST",
+        "path": "/Client/UpdateUserTitleDisplayName",
+        "auth": "SessionTicket",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "UpdateUserTitleDisplayNameRequest",
+        "response_type": "UpdateUserTitleDisplayNameResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Event/WriteTelemetryEvents",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-event-writetelemetryevents"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Events.api.json",
+        "json_pointer": "/calls/15",
+        "name": "WriteTelemetryEvents",
+        "method": "POST",
+        "path": "/Event/WriteTelemetryEvents",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [
+          "title",
+          "title_player_account",
+          "master_player_account",
+          "service",
+          "game_server"
+        ],
+        "request_type": "WriteEventsRequest",
+        "response_type": "WriteEventsResponse"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Inventory/GetInventoryItems",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-inventory-getinventoryitems"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Economy.api.json",
+        "json_pointer": "/calls/21",
+        "name": "GetInventoryItems",
+        "method": "POST",
+        "path": "/Inventory/GetInventoryItems",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [
+          "title",
+          "master_player_account",
+          "title_player_account"
+        ],
+        "request_type": "GetInventoryItemsRequest",
+        "response_type": "GetInventoryItemsResponse"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/MultiplayerServer/GetCognitiveServicesToken",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-multiplayerserver-getcognitiveservicestoken"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+        "json_pointer": "/calls/39",
+        "name": "GetCognitiveServicesToken",
+        "method": "POST",
+        "path": "/MultiplayerServer/GetCognitiveServicesToken",
+        "auth": "EntityToken",
+        "flags": [
+          "Beta"
+        ],
+        "allowed_entity_token_types": [
+          "title",
+          "title_player_account"
+        ],
+        "request_type": "GetCognitiveServicesTokenRequest",
+        "response_type": "GetCognitiveServicesTokenResponse"
+      },
+      "was_in_reviewed_swagger": false,
+      "models": {
+        "GetCognitiveServicesTokenResponse": {
+          "json_pointer": "/datatypes/GetCognitiveServicesTokenResponse",
+          "flags": [
+            "Beta"
+          ],
+          "enum_values": [],
+          "properties": [
+            {
+              "name": "ExpirationTimeUtc",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "ServiceEndpoint",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "Token",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        "GetCognitiveServicesTokenRequest": {
+          "json_pointer": "/datatypes/GetCognitiveServicesTokenRequest",
+          "flags": [
+            "Beta"
+          ],
+          "enum_values": [],
+          "properties": [
+            {
+              "name": "CognitiveServicesType",
+              "jsontype": "String",
+              "actualtype": "CognitiveServicesType",
+              "isenum": true
+            },
+            {
+              "name": "CustomTags",
+              "collection": "map",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "Region",
+              "jsontype": "String",
+              "actualtype": "String"
+            }
+          ]
+        },
+        "CognitiveServicesType": {
+          "json_pointer": "/datatypes/CognitiveServicesType",
+          "flags": [
+            "Beta"
+          ],
+          "enum_values": [
+            "SpeechToText",
+            "SpeechToTextTranslation",
+            "TextToSpeech",
+            "TextToText"
+          ],
+          "properties": []
+        }
+      },
+      "runtime_verified": false
+    },
+    {
+      "path": "/MultiplayerServer/ListPartyQosServers",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-multiplayerserver-listpartyqosservers"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+        "json_pointer": "/calls/81",
+        "name": "ListPartyQosServers",
+        "method": "POST",
+        "path": "/MultiplayerServer/ListPartyQosServers",
+        "auth": "None",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "ListPartyQosServersRequest",
+        "response_type": "ListPartyQosServersResponse"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/Party/RequestParty",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-party-requestparty"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+        "json_pointer": "/calls/92",
+        "name": "RequestParty",
+        "method": "POST",
+        "path": "/Party/RequestParty",
+        "auth": "EntityToken",
+        "flags": [
+          "Beta"
+        ],
+        "allowed_entity_token_types": [
+          "title",
+          "title_player_account",
+          "game_server"
+        ],
+        "request_type": "RequestPartyRequest",
+        "response_type": "RequestPartyResponse"
+      },
+      "was_in_reviewed_swagger": false,
+      "models": {
+        "RequestPartyResponse": {
+          "json_pointer": "/datatypes/RequestPartyResponse",
+          "flags": [
+            "Beta"
+          ],
+          "enum_values": [],
+          "properties": [
+            {
+              "name": "BuildId",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "ConnectedPlayers",
+              "collection": "array",
+              "jsontype": "Object",
+              "actualtype": "ConnectedPlayer",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "DTLSCertificateSHA2Thumbprint",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "FQDN",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "IPV4Address",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "LastStateTransitionTime",
+              "jsontype": "String",
+              "actualtype": "DateTime",
+              "optional": true
+            },
+            {
+              "name": "PartyId",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "Ports",
+              "collection": "array",
+              "jsontype": "Object",
+              "actualtype": "Port",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "Region",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "ServerId",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "State",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "VmId",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        "Port": {
+          "json_pointer": "/datatypes/Port",
+          "flags": [],
+          "enum_values": [],
+          "properties": [
+            {
+              "name": "Name",
+              "jsontype": "String",
+              "actualtype": "String"
+            },
+            {
+              "name": "Num",
+              "jsontype": "Number",
+              "actualtype": "int32"
+            },
+            {
+              "name": "Protocol",
+              "jsontype": "String",
+              "actualtype": "ProtocolType",
+              "isenum": true
+            }
+          ]
+        },
+        "ProtocolType": {
+          "json_pointer": "/datatypes/ProtocolType",
+          "flags": [],
+          "enum_values": [
+            "TCP",
+            "UDP"
+          ],
+          "properties": []
+        },
+        "ConnectedPlayer": {
+          "json_pointer": "/datatypes/ConnectedPlayer",
+          "flags": [],
+          "enum_values": [],
+          "properties": [
+            {
+              "name": "PlayerId",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        "RequestPartyRequest": {
+          "json_pointer": "/datatypes/RequestPartyRequest",
+          "flags": [
+            "Beta"
+          ],
+          "enum_values": [],
+          "properties": [
+            {
+              "name": "BuildAliasParams",
+              "jsontype": "Object",
+              "actualtype": "PartyBuildAliasParams",
+              "isclass": true,
+              "optional": true
+            },
+            {
+              "name": "CustomTags",
+              "collection": "map",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "PartyId",
+              "jsontype": "String",
+              "actualtype": "String"
+            },
+            {
+              "name": "PreferredRegions",
+              "collection": "array",
+              "jsontype": "String",
+              "actualtype": "String"
+            },
+            {
+              "name": "SessionCookie",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            },
+            {
+              "name": "Version",
+              "jsontype": "String",
+              "actualtype": "String",
+              "optional": true
+            }
+          ]
+        },
+        "PartyBuildAliasParams": {
+          "json_pointer": "/datatypes/PartyBuildAliasParams",
+          "flags": [
+            "Beta"
+          ],
+          "enum_values": [],
+          "properties": [
+            {
+              "name": "AliasId",
+              "jsontype": "String",
+              "actualtype": "String"
+            }
+          ]
+        }
+      },
+      "runtime_verified": false
+    },
+    {
+      "path": "/Catalog/GetItems",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-catalog-getitems"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Economy.api.json",
+        "json_pointer": "/calls/29",
+        "name": "GetItems",
+        "method": "POST",
+        "path": "/Catalog/GetItems",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [
+          "title",
+          "master_player_account",
+          "title_player_account"
+        ],
+        "request_type": "GetItemsRequest",
+        "response_type": "GetItemsResponse"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    },
+    {
+      "path": "/CloudScript/ExecuteFunction",
+      "method": "POST",
+      "catalog_endpoint_ids": [
+        "agelan-cloudscript-executefunction"
+      ],
+      "vendor_contract": {
+        "url": "https://github.com/PlayFab/API_Specs/blob/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/CloudScript.api.json",
+        "json_pointer": "/calls/1",
+        "name": "ExecuteFunction",
+        "method": "POST",
+        "path": "/CloudScript/ExecuteFunction",
+        "auth": "EntityToken",
+        "flags": [],
+        "allowed_entity_token_types": [],
+        "request_type": "ExecuteFunctionRequest",
+        "response_type": "ExecuteFunctionResult"
+      },
+      "was_in_reviewed_swagger": true,
+      "models": {},
+      "runtime_verified": false
+    }
+  ],
+  "limits": [
+    "Legacy is the vendor directory name; source publication is not a promise of current AoE title support.",
+    "Both previously unmatched operations carry the Beta flag and EntityToken auth in this format.",
+    "A missing optional flag is retained as missing in model properties; do not treat the extraction as a converted normative JSON Schema.",
+    "No sample authentication token, response example or live token was copied.",
+    "Generic vendor-only operations are not added as demonstrated AoE integrations."
+  ]
+}

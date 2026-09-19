@@ -4,9 +4,9 @@ A research reference for building Age of Empires tools, starting with **Age of E
 
 This is an independent catalog, not an official SDK. A service operated by Microsoft/World’s Edge can still expose an undocumented interface without a public compatibility guarantee. The endpoint inventory records that distinction and links observations to dated evidence.
 
-This edition catalogs **30 services, datasets and tools**, **274 route/path patterns and RPCs**, and **55 sources**, with **47 recorded API/service probes**. Some entries are source-only, authenticated game operations, local libraries or retired-service references; these counts do not imply 274 working public endpoints.
+This edition catalogs **31 services, datasets and tools**, **282 route/path patterns and RPCs**, and **58 sources**, with **47 recorded API/service probes**. Some entries are source-only, authenticated game operations, local libraries or retired-service references; these counts do not imply 282 working public endpoints.
 
-The separate [documentation-discovery pass](docs/documentation-discovery.md) made **30 documentation/source-map requests**. It found readable publisher frontend source and vendor PlayFab schemas; these do not count as successful business-API probes.
+The [initial documentation-discovery pass](docs/documentation-discovery.md) made **30 documentation/source-map requests**. A [follow-up beyond OpenAPI](docs/alternative-discovery.md) made **35 metadata requests**, finding a publisher CMS index and Steam method catalog. Vendor source files were fetched separately; these do not count as successful business-API probes.
 
 ## Publisher APIs and proof of operation
 
@@ -39,7 +39,9 @@ The saved publisher checks cover **17 distinct route patterns: 16 with HTTP 200 
 
 ## Most useful findings
 
-- **Publisher metadata is available beyond endpoint lists.** A public website source map reveals six additional route patterns and resolves fourteen mod methods. PlayFab publishes vendor Swagger schemas matching thirteen emulator routes, with meaningful authentication differences. [Discovery results and negative URL checks](docs/documentation-discovery.md).
+- **Discovery is not limited to OpenAPI.** The publisher website exposes a WordPress route index; Steam exposes a method catalog. PlayFab's custom SDK contracts resolve both gaps in the Swagger comparison. [Formats, findings and limits](docs/alternative-discovery.md).
+
+- **Publisher metadata is available beyond endpoint lists.** A public website source map reveals six additional route patterns and resolves fourteen mod methods. PlayFab publishes Swagger schemas matching thirteen emulator routes and custom JSON contracts covering all fifteen, with meaningful authentication differences. [Discovery results and negative URL checks](docs/documentation-discovery.md).
 
 - **AoE4 World is several resources:** normalized match/statistics API, static game data, bulk dumps, a replay parser, and an esports Elo endpoint. They have different schemas and access patterns.
 - **AoE4 Guides has a host split.** Its website returns an explicit `not_proxied` error for `/api/builds`. Use the Cloud Run host listed in its Swagger specification for lists and favorites; individual builds are also proxied by the website. [Details and successful requests](docs/aoe4/build-orders.md).
@@ -49,6 +51,8 @@ The saved publisher checks cover **17 distinct route patterns: 16 with HTTP 200 
 - **AoE2.net is retired.** Its homepage explicitly announces that the website and API were sunset. Current alternatives include AoE2 Companion’s HTTP API, WebSocket streams and dumps, and aoestats’ weekly Parquet exports. [Other-game coverage](docs/other-games/overview.md).
 
 ## Documentation and machine-readable files
+
+- [Discovery beyond OpenAPI](docs/alternative-discovery.md), [publisher CMS metadata](catalog/publisher-cms-metadata.json), [Steam catalog](catalog/steam-discovery.json), and [PlayFab custom contracts](catalog/playfab-custom-contracts.json)
 
 - [Publisher documentation discovery](docs/documentation-discovery.md), [source-map index](catalog/publisher-source-map.json), and [PlayFab vendor-schema comparison](catalog/playfab-spec-coverage.json)
 - [Publisher services, operator categories and measured verification](docs/publisher-services.md)

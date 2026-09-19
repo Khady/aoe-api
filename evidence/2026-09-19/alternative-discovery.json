@@ -1,0 +1,1255 @@
+{
+  "checked_on": "2026-09-19",
+  "method": "Sequential unauthenticated GET and OPTIONS metadata requests, normal TLS validation, 1.2-second spacing, 15-second timeout and 2,000,001-byte read bound. No POST/business/MCP operation executed; host checks stop after 401/403/429 or transport failure. api-dr is excluded after the previous 403.",
+  "summary": {
+    "planned_requests": 36,
+    "completed_requests": 35,
+    "skipped_requests": 1,
+    "methods": {
+      "GET": 32,
+      "OPTIONS": 3
+    },
+    "http_status_counts": {
+      "200": 15,
+      "301": 1,
+      "404": 17,
+      "403": 2
+    },
+    "homepage_redirects": 9,
+    "live_catalogs_found": 2,
+    "playfab_custom_files_fetched_separately": 7,
+    "worlds_edge_self_descriptions_found": 0
+  },
+  "requests": [
+    {
+      "id": "website-api-catalog",
+      "url": "https://api.ageofempires.com/.well-known/api-catalog",
+      "method": "GET",
+      "purpose": "Standard linkset API catalog",
+      "checked_at": "2026-09-19T10:52:39.364146+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/.well-known/api-catalog",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2908
+    },
+    {
+      "id": "website-api-apis",
+      "url": "https://api.ageofempires.com/apis.json",
+      "method": "GET",
+      "purpose": "APIs.json catalog",
+      "checked_at": "2026-09-19T10:52:43.493884+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/apis.json",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2893
+    },
+    {
+      "id": "website-api-wadl",
+      "url": "https://api.ageofempires.com/application.wadl",
+      "method": "GET",
+      "purpose": "WADL resource descriptions",
+      "checked_at": "2026-09-19T10:52:47.605418+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/application.wadl",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2855
+    },
+    {
+      "id": "website-api-wsdl",
+      "url": "https://api.ageofempires.com/?wsdl",
+      "method": "GET",
+      "purpose": "WSDL service description candidate; no known SOAP service path",
+      "checked_at": "2026-09-19T10:52:51.679590+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/?wsdl",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2869
+    },
+    {
+      "id": "website-api-odata-root",
+      "url": "https://api.ageofempires.com/$metadata",
+      "method": "GET",
+      "purpose": "OData service metadata candidate",
+      "checked_at": "2026-09-19T10:52:55.766997+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/$metadata",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2856
+    },
+    {
+      "id": "website-api-odata-prefix",
+      "url": "https://api.ageofempires.com/odata/$metadata",
+      "method": "GET",
+      "purpose": "OData prefixed service metadata candidate",
+      "checked_at": "2026-09-19T10:52:59.840591+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/odata/$metadata",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2892
+    },
+    {
+      "id": "website-api-metadata",
+      "url": "https://api.ageofempires.com/metadata",
+      "method": "GET",
+      "purpose": "Framework metadata landing-page candidate",
+      "checked_at": "2026-09-19T10:53:03.949874+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/metadata",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2816
+    },
+    {
+      "id": "website-api-graphql",
+      "url": "https://api.ageofempires.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+      "method": "GET",
+      "purpose": "Minimal read-only GraphQL schema discovery candidate",
+      "checked_at": "2026-09-19T10:53:07.983852+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2600
+    },
+    {
+      "id": "website-api-robots",
+      "url": "https://api.ageofempires.com/robots.txt",
+      "method": "GET",
+      "purpose": "Public crawler hints",
+      "checked_at": "2026-09-19T10:53:11.805540+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/",
+      "bytes_read": 275790,
+      "truncated": false,
+      "sha256": "62018613538c7adde28af6527cb82ec55c991d8b0fe68a561bb4e3f904237679",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "275790"
+      },
+      "body_kind": "html",
+      "title": "Age of Empires Franchise - World&#039;s Edge Studio - Official Web Site",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/robots.txt",
+          "to": "https://aoe.ms/Api404"
+        },
+        {
+          "status": 302,
+          "from": "https://aoe.ms/Api404",
+          "to": "https://www.ageofempires.com/"
+        }
+      ],
+      "duration_ms": 2922
+    },
+    {
+      "id": "website-api-options",
+      "url": "https://api.ageofempires.com/",
+      "method": "OPTIONS",
+      "purpose": "HTTP OPTIONS capability/link metadata",
+      "checked_at": "2026-09-19T10:53:15.945328+00:00",
+      "http_status": 301,
+      "final_url": "https://api.ageofempires.com/",
+      "bytes_read": 195,
+      "truncated": false,
+      "sha256": "a76004959bdd8402fe10509e667dd20ad3e7390f6e8097cc44ef935c908e0e36",
+      "headers": {
+        "server": "Microsoft-Azure-Application-Gateway/v2",
+        "content-type": "text/html",
+        "content-length": "195"
+      },
+      "body_kind": "html",
+      "title": "301 Moved Permanently",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://api.ageofempires.com/",
+          "to": "https://aoe.ms/Api404"
+        }
+      ],
+      "duration_ms": 807
+    },
+    {
+      "id": "worlds-edge-catalog",
+      "url": "https://aoe-api.worldsedgelink.com/.well-known/api-catalog",
+      "method": "GET",
+      "purpose": "Standard linkset API catalog",
+      "checked_at": "2026-09-19T10:53:17.971491+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/.well-known/api-catalog",
+      "bytes_read": 89,
+      "truncated": false,
+      "sha256": "5a73677d8ced74415db32c72d15590c025ece8fc61db31cbafd870c69093254b",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "89"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1180
+    },
+    {
+      "id": "worlds-edge-apis",
+      "url": "https://aoe-api.worldsedgelink.com/apis.json",
+      "method": "GET",
+      "purpose": "APIs.json catalog",
+      "checked_at": "2026-09-19T10:53:20.369216+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/apis.json",
+      "bytes_read": 75,
+      "truncated": false,
+      "sha256": "45d81453e7b250b50d43a518f0d5c2de23d479321b16df4c4d1fd4c2c01d0d22",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "75"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1169
+    },
+    {
+      "id": "worlds-edge-wadl",
+      "url": "https://aoe-api.worldsedgelink.com/application.wadl",
+      "method": "GET",
+      "purpose": "WADL resource descriptions",
+      "checked_at": "2026-09-19T10:53:22.755500+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/application.wadl",
+      "bytes_read": 82,
+      "truncated": false,
+      "sha256": "a0441c5c3f84b7829650c4a9ccfa784e1825064bc69274926db043a404e35439",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "82"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1189
+    },
+    {
+      "id": "worlds-edge-wsdl",
+      "url": "https://aoe-api.worldsedgelink.com/?wsdl",
+      "method": "GET",
+      "purpose": "WSDL service description candidate; no known SOAP service path",
+      "checked_at": "2026-09-19T10:53:25.161840+00:00",
+      "http_status": 200,
+      "final_url": "https://aoe-api.worldsedgelink.com/?wsdl",
+      "bytes_read": 0,
+      "truncated": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "headers": {
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "0"
+      },
+      "body_kind": "text-or-empty",
+      "format_markers": [],
+      "redirects": [],
+      "duration_ms": 1186
+    },
+    {
+      "id": "worlds-edge-odata-root",
+      "url": "https://aoe-api.worldsedgelink.com/$metadata",
+      "method": "GET",
+      "purpose": "OData service metadata candidate",
+      "checked_at": "2026-09-19T10:53:27.565161+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/$metadata",
+      "bytes_read": 75,
+      "truncated": false,
+      "sha256": "71fd08993a3d1fa635ffca7a1bed0cb42f4cd6c49e0855defbafc5f0f4d366c5",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "75"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1169
+    },
+    {
+      "id": "worlds-edge-odata-prefix",
+      "url": "https://aoe-api.worldsedgelink.com/odata/$metadata",
+      "method": "GET",
+      "purpose": "OData prefixed service metadata candidate",
+      "checked_at": "2026-09-19T10:53:29.952040+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/odata/$metadata",
+      "bytes_read": 81,
+      "truncated": false,
+      "sha256": "7b016c98c97e17fe5404a600366b21fc0fbfd24996c74ae5f89b168a53da7e3e",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "81"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1176
+    },
+    {
+      "id": "worlds-edge-metadata",
+      "url": "https://aoe-api.worldsedgelink.com/metadata",
+      "method": "GET",
+      "purpose": "Framework metadata landing-page candidate",
+      "checked_at": "2026-09-19T10:53:32.350819+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/metadata",
+      "bytes_read": 74,
+      "truncated": false,
+      "sha256": "c4c1b9d3912d46752602a9309b65eb43792167ef61fcd918c67df57f2a1b03a3",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "74"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1161
+    },
+    {
+      "id": "worlds-edge-graphql",
+      "url": "https://aoe-api.worldsedgelink.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+      "method": "GET",
+      "purpose": "Minimal read-only GraphQL schema discovery candidate",
+      "checked_at": "2026-09-19T10:53:34.729120+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+      "bytes_read": 73,
+      "truncated": false,
+      "sha256": "2caee4198c68caef89f4bf51ba31ed14b61c54f776b7b10a4960b7afa6bf825b",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "73"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1180
+    },
+    {
+      "id": "worlds-edge-robots",
+      "url": "https://aoe-api.worldsedgelink.com/robots.txt",
+      "method": "GET",
+      "purpose": "Public crawler hints",
+      "checked_at": "2026-09-19T10:53:37.126588+00:00",
+      "http_status": 404,
+      "final_url": "https://aoe-api.worldsedgelink.com/robots.txt",
+      "bytes_read": 76,
+      "truncated": false,
+      "sha256": "0d801a80bac4002b6daeb5fc08b9cae6df70ef6cc5512a2f96c03e190e0f1400",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "76"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1164
+    },
+    {
+      "id": "worlds-edge-options",
+      "url": "https://aoe-api.worldsedgelink.com/",
+      "method": "OPTIONS",
+      "purpose": "HTTP OPTIONS capability/link metadata",
+      "checked_at": "2026-09-19T10:53:39.507317+00:00",
+      "http_status": 200,
+      "final_url": "https://aoe-api.worldsedgelink.com/",
+      "bytes_read": 0,
+      "truncated": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "headers": {
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "0"
+      },
+      "body_kind": "text-or-empty",
+      "format_markers": [],
+      "redirects": [],
+      "duration_ms": 1171
+    },
+    {
+      "id": "aoe4-release-catalog",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/.well-known/api-catalog",
+      "method": "GET",
+      "purpose": "Standard linkset API catalog",
+      "checked_at": "2026-09-19T10:53:41.895421+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/.well-known/api-catalog",
+      "bytes_read": 89,
+      "truncated": false,
+      "sha256": "5a73677d8ced74415db32c72d15590c025ece8fc61db31cbafd870c69093254b",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "89"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1161
+    },
+    {
+      "id": "aoe4-release-apis",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/apis.json",
+      "method": "GET",
+      "purpose": "APIs.json catalog",
+      "checked_at": "2026-09-19T10:53:44.274488+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/apis.json",
+      "bytes_read": 75,
+      "truncated": false,
+      "sha256": "45d81453e7b250b50d43a518f0d5c2de23d479321b16df4c4d1fd4c2c01d0d22",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "75"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1199
+    },
+    {
+      "id": "aoe4-release-wadl",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/application.wadl",
+      "method": "GET",
+      "purpose": "WADL resource descriptions",
+      "checked_at": "2026-09-19T10:53:46.694459+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/application.wadl",
+      "bytes_read": 82,
+      "truncated": false,
+      "sha256": "a0441c5c3f84b7829650c4a9ccfa784e1825064bc69274926db043a404e35439",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "82"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1206
+    },
+    {
+      "id": "aoe4-release-wsdl",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/?wsdl",
+      "method": "GET",
+      "purpose": "WSDL service description candidate; no known SOAP service path",
+      "checked_at": "2026-09-19T10:53:49.131087+00:00",
+      "http_status": 200,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/?wsdl",
+      "bytes_read": 0,
+      "truncated": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "headers": {
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "0"
+      },
+      "body_kind": "text-or-empty",
+      "format_markers": [],
+      "redirects": [],
+      "duration_ms": 1205
+    },
+    {
+      "id": "aoe4-release-odata-root",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/$metadata",
+      "method": "GET",
+      "purpose": "OData service metadata candidate",
+      "checked_at": "2026-09-19T10:53:51.554987+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/$metadata",
+      "bytes_read": 75,
+      "truncated": false,
+      "sha256": "71fd08993a3d1fa635ffca7a1bed0cb42f4cd6c49e0855defbafc5f0f4d366c5",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "75"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1197
+    },
+    {
+      "id": "aoe4-release-odata-prefix",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/odata/$metadata",
+      "method": "GET",
+      "purpose": "OData prefixed service metadata candidate",
+      "checked_at": "2026-09-19T10:53:53.970525+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/odata/$metadata",
+      "bytes_read": 81,
+      "truncated": false,
+      "sha256": "7b016c98c97e17fe5404a600366b21fc0fbfd24996c74ae5f89b168a53da7e3e",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "81"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1175
+    },
+    {
+      "id": "aoe4-release-metadata",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/metadata",
+      "method": "GET",
+      "purpose": "Framework metadata landing-page candidate",
+      "checked_at": "2026-09-19T10:53:56.363529+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/metadata",
+      "bytes_read": 74,
+      "truncated": false,
+      "sha256": "c4c1b9d3912d46752602a9309b65eb43792167ef61fcd918c67df57f2a1b03a3",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "74"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1181
+    },
+    {
+      "id": "aoe4-release-graphql",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+      "method": "GET",
+      "purpose": "Minimal read-only GraphQL schema discovery candidate",
+      "checked_at": "2026-09-19T10:53:58.762196+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/graphql?query=%7B__schema%7BqueryType%7Bname%7D%7D%7D",
+      "bytes_read": 73,
+      "truncated": false,
+      "sha256": "2caee4198c68caef89f4bf51ba31ed14b61c54f776b7b10a4960b7afa6bf825b",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "73"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1169
+    },
+    {
+      "id": "aoe4-release-robots",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/robots.txt",
+      "method": "GET",
+      "purpose": "Public crawler hints",
+      "checked_at": "2026-09-19T10:54:01.149511+00:00",
+      "http_status": 404,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/robots.txt",
+      "bytes_read": 76,
+      "truncated": false,
+      "sha256": "0d801a80bac4002b6daeb5fc08b9cae6df70ef6cc5512a2f96c03e190e0f1400",
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "76"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "servlet",
+        "message",
+        "url",
+        "status"
+      ],
+      "format_markers": [],
+      "message": "",
+      "status": "404",
+      "redirects": [],
+      "duration_ms": 1163
+    },
+    {
+      "id": "aoe4-release-options",
+      "url": "https://dr-activerelease1-api.worldsedgelink.com/",
+      "method": "OPTIONS",
+      "purpose": "HTTP OPTIONS capability/link metadata",
+      "checked_at": "2026-09-19T10:54:03.529874+00:00",
+      "http_status": 200,
+      "final_url": "https://dr-activerelease1-api.worldsedgelink.com/",
+      "bytes_read": 0,
+      "truncated": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "headers": {
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "0"
+      },
+      "body_kind": "text-or-empty",
+      "format_markers": [],
+      "redirects": [],
+      "duration_ms": 1212
+    },
+    {
+      "id": "publisher-site-robots",
+      "url": "https://www.ageofempires.com/robots.txt",
+      "method": "GET",
+      "purpose": "Publisher website crawler hints",
+      "checked_at": "2026-09-19T10:54:05.961252+00:00",
+      "http_status": 404,
+      "final_url": "https://www.ageofempires.com/robots.txt",
+      "bytes_read": 146,
+      "truncated": false,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "146"
+      },
+      "body_kind": "html",
+      "title": "404 Not Found",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [],
+      "duration_ms": 490
+    },
+    {
+      "id": "publisher-site-wp-index",
+      "url": "https://www.ageofempires.com/wp-json/",
+      "method": "GET",
+      "purpose": "WordPress API route index; frontend uses WordPress assets",
+      "checked_at": "2026-09-19T10:54:07.668864+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ageofempires.com/wp-json/",
+      "bytes_read": 366180,
+      "truncated": false,
+      "sha256": "b26668bdb144b91f83808f7eb44709eb3455cb977fdfbb4028dfb8cbac6b8c78",
+      "headers": {
+        "content-type": "application/json; charset=UTF-8",
+        "link": "<https://www.ageofempires.com/wp-json/>; rel=\"https://api.w.org/\"",
+        "access-control-allow-headers": "Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type",
+        "allow": "GET"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "name",
+        "description",
+        "url",
+        "home",
+        "gmt_offset",
+        "timezone_string",
+        "page_for_posts",
+        "page_on_front",
+        "show_on_front",
+        "namespaces",
+        "authentication",
+        "routes",
+        "site_logo",
+        "site_icon",
+        "site_icon_url",
+        "_links"
+      ],
+      "format_markers": [
+        "WordPress REST index"
+      ],
+      "redirects": [],
+      "duration_ms": 1566
+    },
+    {
+      "id": "publisher-site-rsd",
+      "url": "https://www.ageofempires.com/xmlrpc.php?rsd",
+      "method": "GET",
+      "purpose": "WordPress RSD metadata only, no XML-RPC operation",
+      "checked_at": "2026-09-19T10:54:10.453095+00:00",
+      "http_status": 403,
+      "final_url": "https://www.ageofempires.com/xmlrpc.php?rsd",
+      "bytes_read": 159,
+      "truncated": false,
+      "sha256": "a4a739bc62a4355b1b628c0a9fa79aaaf8762946f94c7a4ce2cd828571ef2e75",
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "159"
+      },
+      "body_kind": "text-or-empty",
+      "format_markers": [],
+      "redirects": [],
+      "duration_ms": 72
+    },
+    {
+      "id": "publisher-auth-oidc",
+      "url": "https://auth.ageofempires.com/.well-known/openid-configuration",
+      "method": "GET",
+      "purpose": "Public identity-provider discovery metadata; no login",
+      "checked_at": "2026-09-19T10:54:11.743568+00:00",
+      "http_status": 403,
+      "final_url": "https://auth.ageofempires.com/.well-known/openid-configuration",
+      "bytes_read": 179,
+      "truncated": false,
+      "sha256": "1f2e1251b1d5fab2f47bbfe3e09b149064e61571f98a5e02c6ace5f86bacb1d5",
+      "headers": {
+        "server": "Microsoft-Azure-Application-Gateway/v2",
+        "content-type": "text/html",
+        "content-length": "179"
+      },
+      "body_kind": "html",
+      "title": "403 Forbidden",
+      "discovery_links": [],
+      "format_markers": [],
+      "redirects": [],
+      "duration_ms": 604
+    },
+    {
+      "id": "steam-api-list",
+      "url": "https://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v1/",
+      "method": "GET",
+      "purpose": "Vendor-documented API interface/method discovery; no API key",
+      "checked_at": "2026-09-19T10:54:13.566726+00:00",
+      "http_status": 200,
+      "final_url": "https://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v1/",
+      "bytes_read": 21518,
+      "truncated": false,
+      "sha256": "bd9526d07598517c8c4dc1f76b78137106610be49783637438f660a819acf555",
+      "headers": {
+        "server": "nginx",
+        "content-type": "application/json; charset=UTF-8",
+        "content-length": "21518"
+      },
+      "body_kind": "json",
+      "top_level_keys": [
+        "apilist"
+      ],
+      "format_markers": [
+        "Steam Web API catalog"
+      ],
+      "redirects": [],
+      "duration_ms": 346
+    }
+  ],
+  "skipped_requests": [
+    {
+      "id": "publisher-site-catalog",
+      "url": "https://www.ageofempires.com/.well-known/api-catalog",
+      "method": "GET",
+      "purpose": "Standard linkset API catalog",
+      "reason": "Stopped this host after authorization/rate/transport failure"
+    }
+  ],
+  "provider_source_fetches": [
+    {
+      "file": "Legacy/PlayFab/Client.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Client.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:42.837760+00:00",
+      "bytes_read": 966618,
+      "sha256": "ee35e19d01fff8c4ab43daae51288066555c5b5a979854d1032a3f6d5c93426a",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ]
+    },
+    {
+      "file": "Legacy/PlayFab/Events.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Events.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:44.334650+00:00",
+      "bytes_read": 187720,
+      "sha256": "c8c09a27b624fa142c1d23b116bbd56246506b8ea150793b847f18869fbff560",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ]
+    },
+    {
+      "file": "Legacy/PlayFab/Multiplayer.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Multiplayer.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:45.900709+00:00",
+      "bytes_read": 763599,
+      "sha256": "0e530ac10b169ab8fb4ec5e5dfb9c2158ec19aae5e4bfc5e37553e38ce693c82",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ]
+    },
+    {
+      "file": "Legacy/PlayFab/Economy.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Economy.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:48.768478+00:00",
+      "bytes_read": 502323,
+      "sha256": "e4d358f95aa0ca94e667510b83ae135532017332ab11cd23e280c18305d7a355",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ]
+    },
+    {
+      "file": "Legacy/PlayFab/CloudScript.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/CloudScript.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:50.984465+00:00",
+      "bytes_read": 219464,
+      "sha256": "3b777f84b424f27ee671baf94076da14d518443f4dd97b739fec280039143f0b",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ]
+    },
+    {
+      "file": "Legacy/PlayFab/Authentication.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Authentication.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:52.927692+00:00",
+      "bytes_read": 153508,
+      "sha256": "105ecb547d6d240edbe0bf12a86fc207618525d096258838db72ad86ba6b3fbe",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ]
+    },
+    {
+      "file": "Legacy/PlayFab/Data.api.json",
+      "url": "https://raw.githubusercontent.com/PlayFab/API_Specs/55bf2ff4b08c436ba961e4686ad2ab3929ec15f6/Legacy/PlayFab/Data.api.json",
+      "revision": "55bf2ff4b08c436ba961e4686ad2ab3929ec15f6",
+      "checked_at": "2026-09-19T10:53:54.447577+00:00",
+      "bytes_read": 169770,
+      "sha256": "968960db70fcffd7516d64e4ef8043530540ae1c4d527503c9b8cafacfe47cca",
+      "top_level_keys": [
+        "name",
+        "url",
+        "description",
+        "apiDescriptionList",
+        "datatypes",
+        "subgroups",
+        "calls",
+        "errors",
+        "errorList"
+      ]
+    }
+  ],
+  "source_map_search": {
+    "source_map_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js.map",
+    "sha256": "05d88c74f72cafd3a10f4ba6787e6165ac93036dca918bd8b48e1176a5b30724",
+    "modules_searched": 192,
+    "patterns": [
+      "graphql",
+      "\\.proto\\b",
+      "postman",
+      "\\.raml\\b",
+      "\\.apib\\b",
+      "asyncapi",
+      "well-known",
+      "service-desc",
+      "wp-json",
+      "jsonrpc",
+      "grpc\\.reflection",
+      "application\\.wadl",
+      "wsdl",
+      "ServiceStack"
+    ],
+    "hits": []
+  },
+  "saved_source_search": {
+    "files_considered": 1077,
+    "file_size_limit": 200000,
+    "patterns": [
+      "\\.proto\\b",
+      "grpc\\.reflection",
+      "graphql",
+      "wsdl",
+      "\\.wadl\\b",
+      "\\$metadata",
+      "\\.postman_collection\\.json",
+      "\\.raml\\b",
+      "\\.apib\\b",
+      "apis\\.json",
+      "well-known",
+      "ServiceStack",
+      "rpc\\.discover"
+    ],
+    "hits": [
+      {
+        "file": "librematch-followup/delta-play-replay-cade_api.proto.meta.json",
+        "pattern": "\\.proto\\b",
+        "line": 2,
+        "excerpt": "  \"url\": \"https://raw.githubusercontent.com/librematch/delta-play-replay/9bc90f67f22aec47bb050cdea5b73a5fec0d629e/crates/uncage-client/proto/cade_api.proto\","
+      },
+      {
+        "file": "librematch-followup/delta-play-replay-tree.json",
+        "pattern": "\\.proto\\b",
+        "line": 1,
+        "excerpt": "{\"sha\":\"9bc90f67f22aec47bb050cdea5b73a5fec0d629e\",\"url\":\"https://api.github.com/repos/librematch/delta-play-replay/git/trees/9bc90f67f22aec47bb050cdea5b73a5fec0d629e\",\"tree\":[{\"path\":\".dprint.json\",\"m"
+      },
+      {
+        "file": "librematch-full-review/src/grpc/main.md",
+        "pattern": "\\.proto\\b",
+        "line": 12,
+        "excerpt": "  [cade_api.proto](https://github.com/librematch/delta-play-replay/blob/main/crates/uncage-client/proto/cade_api.proto)"
+      },
+      {
+        "file": "librematch-full-review/src/grpc/file_metadata.md",
+        "pattern": "\\.proto\\b",
+        "line": 7,
+        "excerpt": "  [file_metadata.proto](https://github.com/librematch/delta-play-replay/blob/main/crates/uncage-client/proto/file_metadata.proto)"
+      },
+      {
+        "file": "librematch-full-review/src/grpc/atlas_data.md",
+        "pattern": "\\.proto\\b",
+        "line": 7,
+        "excerpt": "  [atlas_data.proto](https://github.com/librematch/delta-play-replay/blob/main/crates/uncage-client/proto/atlas_data.proto)"
+      },
+      {
+        "file": "librematch-full-review/src/grpc/README.md",
+        "pattern": "\\.proto\\b",
+        "line": 26,
+        "excerpt": "- **[CadeRemote Service](./main.md)** (`cade_api.proto`) - The"
+      },
+      {
+        "file": "librematch-full-review/src/grpc/README.md",
+        "pattern": "\\.proto\\b",
+        "line": 29,
+        "excerpt": "- **[Atlas Data](./atlas_data.md)** (`atlas_data.proto`) -"
+      },
+      {
+        "file": "librematch-full-review/src/grpc/README.md",
+        "pattern": "\\.proto\\b",
+        "line": 32,
+        "excerpt": "  (`file_metadata.proto`) - Metadata for graphics files"
+      }
+    ],
+    "files_scanned": 1072
+  },
+  "limits": [
+    "No negative result proves a protocol or schema is absent at other locations.",
+    "WordPress and Steam catalogs describe registered operations; no listed business operations were executed.",
+    "The PlayFab custom format corroborates all 15 emulator paths, without a title API request.",
+    "Root ?wsdl returned empty World’s Edge responses, not WSDL; OPTIONS exposed no route list.",
+    "Publisher website RSD and auth-host OIDC returned 403; not bypassed or retried."
+  ]
+}
