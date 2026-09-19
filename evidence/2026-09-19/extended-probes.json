@@ -1,0 +1,473 @@
+[
+  {
+    "id": "we-age4-leaderboard",
+    "checked_at": "2026-09-19T08:49:43.406417+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getLeaderBoard2?title=age4&leaderboard_id=17&sortBy=1&start=1&count=1",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getLeaderBoard2?title=age4&leaderboard_id=17&sortBy=1&start=1&count=1",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "634",
+      "cache-control": "public, max-age=60"
+    },
+    "bytes_read": 634,
+    "truncated": false,
+    "sha256": "1f50ed53a605686f1d742c06c10da900cbc70b17aec1005fef62ed352597df91",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "statGroups": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "type": "int",
+          "members": {
+            "type": "array",
+            "length": 1,
+            "first_item_shape": {
+              "profile_id": "int",
+              "name": "str",
+              "alias": "str",
+              "personal_statgroup_id": "int",
+              "xp": "int",
+              "level": "int",
+              "leaderboardregion_id": "int",
+              "country": "str",
+              "clanlist_name": "str"
+            }
+          }
+        }
+      },
+      "leaderboardStats": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "statgroup_id": "int",
+          "leaderboard_id": "int",
+          "wins": "int",
+          "losses": "int",
+          "streak": "int",
+          "disputes": "int",
+          "drops": "int",
+          "rank": "int",
+          "ranktotal": "int",
+          "ranklevel": "int",
+          "rating": "int",
+          "regionrank": "int",
+          "regionranktotal": "int",
+          "lastmatchdate": "int",
+          "highestrank": "int",
+          "highestranklevel": "int",
+          "highestrating": "int",
+          "metadata": "str"
+        }
+      },
+      "rankTotal": "int"
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "duration_ms": 1188
+  },
+  {
+    "id": "we-age4-match",
+    "checked_at": "2026-09-19T08:49:46.594602+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getMatchHistory?title=age4&matchIDs=%5B250457718%5D",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getMatchHistory?title=age4&matchIDs=%5B250457718%5D",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "cache-control": "public, max-age=5"
+    },
+    "bytes_read": 22029,
+    "truncated": false,
+    "sha256": "0caa0c5b1441412c0bc4e34669e6493a8e296d39b26d7fd0ceda8eef52014dfa",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "matchHistory": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "id": "int",
+          "creator_profile_id": "int",
+          "mapname": "str",
+          "maxplayers": "int",
+          "matchtype_id": "int",
+          "options": "str",
+          "slotinfo": "str",
+          "description": "str",
+          "startgametime": "int",
+          "completiontime": "int",
+          "observertotal": "int",
+          "matchhistoryreportresults": {
+            "type": "array",
+            "length": 8,
+            "first_item_shape": {
+              "matchhistory_id": "int",
+              "profile_id": "int",
+              "resulttype": "int",
+              "teamid": "int",
+              "civilization_id": "int",
+              "xpgained": "int",
+              "counters": "str",
+              "matchstartdate": "int"
+            }
+          },
+          "matchhistoryitems": {
+            "type": "array",
+            "length": 28,
+            "first_item_shape": {
+              "profile_id": "int",
+              "matchhistory_id": "int",
+              "iteminstance_id": "int",
+              "itemdefinition_id": "int",
+              "durabilitytype": "int",
+              "durability": "int",
+              "metadata": "str",
+              "itemlocation_id": "int"
+            }
+          },
+          "matchurls": {
+            "type": "array",
+            "length": 16,
+            "first_item_shape": {
+              "profile_id": "int",
+              "url": "str",
+              "size": "int",
+              "datatype": "int"
+            }
+          },
+          "matchhistorymember": {
+            "type": "array",
+            "length": 8,
+            "first_item_shape": {
+              "matchhistory_id": "int",
+              "profile_id": "int",
+              "civilization_id": "int",
+              "statgroup_id": "int",
+              "teamid": "int",
+              "wins": "int",
+              "losses": "int",
+              "streak": "int",
+              "arbitration": "int",
+              "outcome": "int",
+              "oldrating": "int",
+              "newrating": "int",
+              "reporttype": "int"
+            }
+          },
+          "gamemod_id": "int"
+        }
+      },
+      "profiles": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "profile_id": "int",
+          "name": "str",
+          "alias": "str",
+          "personal_statgroup_id": "int",
+          "xp": "int",
+          "level": "int",
+          "leaderboardregion_id": "int",
+          "country": "str",
+          "clanlist_name": "str"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "duration_ms": 1433,
+    "application_status_fields": {}
+  },
+  {
+    "id": "we-age4-lobbies",
+    "checked_at": "2026-09-19T08:49:50.028423+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/advertisement/findAdvertisements?title=age4",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/advertisement/findAdvertisements?title=age4",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "cache-control": "public, max-age=5"
+    },
+    "bytes_read": 53690,
+    "truncated": false,
+    "sha256": "41f8a9d00d6d59e86d90974e0337e79af95b3f848160a31df1b8ef3eab2ffff5",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "matches": {
+        "type": "array",
+        "length": 11,
+        "first_item_shape": {
+          "id": "int",
+          "steamlobbyid": "int",
+          "goodoldgameslobbyid": "int",
+          "xboxsessionid": "str",
+          "host_profile_id": "int",
+          "state": "int",
+          "description": "str",
+          "visible": "int",
+          "mapname": "str",
+          "options": "str",
+          "passwordprotected": "int",
+          "maxplayers": "int",
+          "slotinfo": "str",
+          "matchtype_id": "int",
+          "matchmembers": {
+            "type": "array",
+            "length": 1,
+            "first_item_shape": {
+              "match_id": "int",
+              "profile_id": "int",
+              "ranking": "int",
+              "statgroup_id": "int",
+              "civilization_id": "int",
+              "teamid": "int"
+            }
+          },
+          "observernum": "int",
+          "observermax": "int",
+          "isobservable": "int",
+          "observerdelay": "int",
+          "hasobserverpassword": "int",
+          "servicetype": "int",
+          "relayserver_region": "str"
+        }
+      },
+      "avatars": {
+        "type": "array",
+        "length": 40,
+        "first_item_shape": {
+          "profile_id": "int",
+          "name": "str",
+          "alias": "str",
+          "personal_statgroup_id": "int",
+          "xp": "int",
+          "level": "int",
+          "leaderboardregion_id": "int",
+          "country": "str",
+          "clanlist_name": "str"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "duration_ms": 1626
+  },
+  {
+    "id": "we-age4-achievements",
+    "checked_at": "2026-09-19T08:49:53.655601+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/achievement/getAvailableAchievements?title=age4",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/achievement/getAvailableAchievements?title=age4",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "cache-control": "public, max-age=5"
+    },
+    "bytes_read": 61444,
+    "truncated": false,
+    "sha256": "07dc648429a43eabf22a9c9978872c166a829f018f0c5595c4ba548dc02c54f3",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "achievementDefs": {
+        "type": "array",
+        "length": 175,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "name_locstringid": "int",
+          "description_locstringid": "int",
+          "localizedName": "str",
+          "localizedDescription": "str",
+          "icon": "str",
+          "timemodified": "int",
+          "deleted": "int",
+          "itembundle_id": "int"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "duration_ms": 1627
+  },
+  {
+    "id": "official-age4-events",
+    "checked_at": "2026-09-19T08:49:57.283150+00:00",
+    "method": "GET",
+    "url": "https://api.ageofempires.com/api/ageiv/EventList",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/ageiv/EventList",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 4262,
+    "truncated": false,
+    "sha256": "a1d3471f6d870ed93ac4102cde9dad65e6f5c583f3efd44b32213788ae37dee5",
+    "body_kind": "json",
+    "sampled_shape": {
+      "type": "array",
+      "length": 28,
+      "first_item_shape": {
+        "eventId": "int",
+        "leaderboardId": "int",
+        "eventName": "str",
+        "startDate": "str",
+        "endDate": "str"
+      }
+    },
+    "duration_ms": 805
+  },
+  {
+    "id": "official-mod-games",
+    "checked_at": "2026-09-19T08:50:00.088986+00:00",
+    "method": "GET",
+    "url": "https://api.ageofempires.com/api/v4/mods/Games",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/v4/mods/Games",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "370",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 370,
+    "truncated": false,
+    "sha256": "b278830f66e8974ef13484a945929d0e97f10f84507c326d3d63097fafc41848",
+    "body_kind": "json",
+    "sampled_shape": {
+      "type": "array",
+      "length": 5,
+      "first_item_shape": {
+        "gameTitleId": "int",
+        "gameTitleName": "str",
+        "gameVersion": "null"
+      }
+    },
+    "duration_ms": 844
+  },
+  {
+    "id": "companion-leaderboards",
+    "checked_at": "2026-09-19T08:50:02.933677+00:00",
+    "method": "GET",
+    "url": "https://data.aoe2companion.com/api/leaderboards",
+    "http_status": 200,
+    "final_url": "https://data.aoe2companion.com/api/leaderboards",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"93a-i24g12I0xhPBz3exqqKNmkSOZ1E\""
+    },
+    "bytes_read": 2362,
+    "truncated": false,
+    "sha256": "863cb7f9b3817a75762485defb3d7361a1406f79542ff2b0b55a02f598c4cda8",
+    "body_kind": "json",
+    "sampled_shape": {
+      "type": "array",
+      "length": 13,
+      "first_item_shape": {
+        "leaderboardId": "str",
+        "leaderboardName": "str",
+        "abbreviation": "str",
+        "abbreviationTitle": "str",
+        "abbreviationSubtitle": "str",
+        "active": "bool",
+        "official": "bool"
+      }
+    },
+    "duration_ms": 785
+  },
+  {
+    "id": "companion-dump-list",
+    "checked_at": "2026-09-19T08:50:05.719074+00:00",
+    "method": "GET",
+    "url": "https://data.aoe2companion.com/api/dump/list",
+    "http_status": 200,
+    "final_url": "https://data.aoe2companion.com/api/dump/list",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"17479d-D9C0c+tX6sOKeMUOlhNSnSYn1tE\""
+    },
+    "bytes_read": 1525661,
+    "truncated": false,
+    "sha256": "19e69add1324f967189f83748dbc09e68e53604816f436481fdf0ea13055d659",
+    "body_kind": "json",
+    "sampled_shape": {
+      "type": "array",
+      "length": 6725,
+      "first_item_shape": {
+        "key": "str",
+        "lastModified": "str",
+        "eTag": "str",
+        "size": "int",
+        "storageClass": "str",
+        "url": "str"
+      }
+    },
+    "duration_ms": 5374
+  },
+  {
+    "id": "aoestats-dump-list",
+    "checked_at": "2026-09-19T08:50:13.094675+00:00",
+    "method": "GET",
+    "url": "https://aoestats.io/api/db_dumps",
+    "http_status": 200,
+    "final_url": "https://aoestats.io/api/db_dumps/",
+    "headers": {
+      "content-type": "application/json",
+      "content-length": "75032",
+      "cache-control": "no-cache"
+    },
+    "bytes_read": 75032,
+    "truncated": false,
+    "sha256": "37fcc08562b7f15d97d87be49b8c056168b957b7853211fae57413ed1ce1c38b",
+    "body_kind": "json",
+    "sampled_shape": {
+      "db_dumps": {
+        "type": "array",
+        "length": 207,
+        "first_item_shape": {
+          "start_date": "str",
+          "end_date": "str",
+          "num_matches": "int",
+          "num_players": "int",
+          "matches_url": "str",
+          "players_url": "str",
+          "match_checksum": "str",
+          "player_checksum": "str"
+        }
+      },
+      "total_matches": "int",
+      "total_players": "int"
+    },
+    "duration_ms": 2333
+  }
+]

@@ -1,0 +1,83 @@
+# Manually run individual requests; this file is not a bulk crawler.
+# Replace the descriptive User-Agent with your own project/contact information.
+@userAgent = my-aoe-tool/0.1 (replace-with-project-or-contact-url)
+@profileId = 4635035
+@matchId = 250457718
+@world = https://aoe4world.com/api/v0
+@backend = https://aoe-api.worldsedgelink.com
+@official = https://api.ageofempires.com
+@guides = https://aoe4-guides-api-7h2vti5ckq-ey.a.run.app
+
+### AoE4 World profile
+GET {{world}}/players/{{profileId}}
+User-Agent: {{userAgent}}
+
+### Latest game (provider-recommended polling route)
+GET {{world}}/players/{{profileId}}/games/last
+User-Agent: {{userAgent}}
+
+### Small player-history request (documented; not part of the live probes)
+GET {{world}}/players/{{profileId}}/games?limit=1&leaderboard=rm_team
+User-Agent: {{userAgent}}
+
+### Discover raw backend identifiers
+GET {{backend}}/community/leaderboard/getAvailableLeaderboards?title=age4
+User-Agent: {{userAgent}}
+
+### Profile stats, JSON array encoded inside the query
+GET {{backend}}/community/leaderboard/getPersonalStat?title=age4&profile_ids=%5B{{profileId}}%5D
+User-Agent: {{userAgent}}
+
+### One raw match; response uses matchHistory
+GET {{backend}}/community/leaderboard/getMatchHistory?title=age4&matchIDs=%5B{{matchId}}%5D
+User-Agent: {{userAgent}}
+
+### Replay metadata; URLs in the response expire and should not be logged
+GET {{backend}}/community/leaderboard/getReplayFiles?title=age4&matchIDs=%5B{{matchId}}%5D
+User-Agent: {{userAgent}}
+
+### Official leaderboard read-only POST; sorting is explicit
+POST {{official}}/api/ageiv/Leaderboard
+Content-Type: application/json
+User-Agent: {{userAgent}}
+
+{"region":7,"versus":"players","matchType":"unranked","teamSize":"1v1","searchPlayer":"","page":1,"count":1,"sortColumn":"rank","sortDirection":"ASC","isConsole":false}
+
+### Discover seasonal leaderboard IDs before using EventLeaderboard
+GET {{official}}/api/ageiv/EventList?isConsole=false
+User-Agent: {{userAgent}}
+
+### Official match detail read-only POST
+POST {{official}}/api/GameStats/AgeIV/GetMatchDetail
+Content-Type: application/json
+User-Agent: {{userAgent}}
+
+{"profileId":{{profileId}},"game":"age4","matchId":{{matchId}}}
+
+### Static civilization mapping
+GET https://data.aoe4world.com/civilizations/civs-index.json
+User-Agent: {{userAgent}}
+
+### One static game object
+GET https://data.aoe4world.com/units/english/horseman-2.json
+User-Agent: {{userAgent}}
+
+### Build lists must use the full API host
+GET {{guides}}/builds?civ=ENG
+User-Agent: {{userAgent}}
+
+### Website proxy supports individual builds and overlay conversion
+GET https://aoe4guides.com/api/builds/07qM0jShA7USYa8hprgp?overlay=true
+User-Agent: {{userAgent}}
+
+### Steam-only concurrent player count
+GET https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=1466860
+User-Agent: {{userAgent}}
+
+### AoE2 Companion ladder discovery
+GET https://data.aoe2companion.com/api/leaderboards
+User-Agent: {{userAgent}}
+
+### aoestats weekly export index (does not download bulk files)
+GET https://aoestats.io/api/db_dumps
+User-Agent: {{userAgent}}

@@ -1,0 +1,739 @@
+{
+  "openapi": "3.0.0",
+  "components": {
+    "examples": {},
+    "headers": {},
+    "parameters": {},
+    "requestBodies": {},
+    "responses": {},
+    "schemas": {
+      "Status": {
+        "properties": {
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "BuildOrderStepDetail": {
+        "description": "Represents an individual detailed step within a build phase.",
+        "properties": {
+          "age": {
+            "type": "number",
+            "format": "double",
+            "description": "The age indicator (0 if unused, otherwise 1\u20134)."
+          },
+          "villagers": {
+            "type": "string",
+            "description": "Number of villagers."
+          },
+          "builders": {
+            "type": "string",
+            "description": "Number of builders."
+          },
+          "food": {
+            "type": "string",
+            "description": "Number of villagers assigned to food."
+          },
+          "wood": {
+            "type": "string",
+            "description": "Number of villagers assigned to wood."
+          },
+          "stone": {
+            "type": "string",
+            "description": "Number of villagers assigned to stone."
+          },
+          "gold": {
+            "type": "string",
+            "description": "Number of villagers assigned to gold."
+          },
+          "time": {
+            "type": "string",
+            "description": "The time marker for this step (textual timestamp)."
+          },
+          "description": {
+            "type": "string",
+            "description": "A textual description of the build step, possibly including images."
+          }
+        },
+        "type": "object",
+        "additionalProperties": false
+      },
+      "BuildOrderStep": {
+        "description": "Represents a major phase or stage of a build order.",
+        "properties": {
+          "gameplan": {
+            "type": "string",
+            "description": "A short description or label summarizing this step\u2019s strategy."
+          },
+          "age": {
+            "type": "number",
+            "format": "double",
+            "description": "The age indicator (0 if unused, otherwise 1\u20134)."
+          },
+          "type": {
+            "type": "string",
+            "description": "Age type: \"in age\" or \"ageUp\" when aging up."
+          },
+          "steps": {
+            "items": {
+              "$ref": "#/components/schemas/BuildOrderStepDetail"
+            },
+            "type": "array",
+            "description": "The list of detailed steps for this phase."
+          }
+        },
+        "required": [
+          "type",
+          "steps"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "BuildOrder": {
+        "description": "Represents a complete build order.",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The auto-generated ID of the build order."
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the build order."
+          },
+          "description": {
+            "type": "string",
+            "description": "A brief description of the build order."
+          },
+          "video": {
+            "type": "string",
+            "description": "The YouTube URL associated with this build order."
+          },
+          "author": {
+            "type": "string",
+            "description": "The display name of the author."
+          },
+          "authorUid": {
+            "type": "string",
+            "description": "The unique identifier of the author."
+          },
+          "civ": {
+            "type": "string",
+            "description": "The civilization this build order is designed for."
+          },
+          "comments": {
+            "type": "number",
+            "format": "double",
+            "description": "The number of comments left by users."
+          },
+          "likes": {
+            "type": "number",
+            "format": "double",
+            "description": "The number of likes this build order has received."
+          },
+          "map": {
+            "type": "string",
+            "description": "The map targeted by this build order, if specified."
+          },
+          "season": {
+            "type": "string",
+            "description": "The ranked ladder season this build order was created for."
+          },
+          "score": {
+            "type": "number",
+            "format": "double",
+            "description": "The current dynamic score assigned by the platform."
+          },
+          "scoreAllTime": {
+            "type": "number",
+            "format": "double",
+            "description": "The all-time cumulative score."
+          },
+          "sortTitle": {
+            "type": "string",
+            "description": "A sortable title used for ranking or display order."
+          },
+          "steps": {
+            "items": {
+              "$ref": "#/components/schemas/BuildOrderStep"
+            },
+            "type": "array",
+            "description": "The ordered sequence of build steps that compose this build."
+          },
+          "strategy": {
+            "type": "string",
+            "description": "The general strategic focus of the build order."
+          },
+          "timeCreated": {
+            "type": "string",
+            "description": "Timestamp when the build order was created (ISO string)."
+          },
+          "timeUpdated": {
+            "type": "string",
+            "description": "Timestamp when the build order was last updated (ISO string)."
+          },
+          "upvotes": {
+            "type": "number",
+            "format": "double",
+            "description": "The number of upvotes this build order has received."
+          },
+          "views": {
+            "type": "number",
+            "format": "double",
+            "description": "The total number of views for this build order."
+          },
+          "isDraft": {
+            "type": "boolean",
+            "description": "Whether the build order is a draft (unpublished)."
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "authorUid",
+          "score",
+          "scoreAllTime",
+          "sortTitle",
+          "steps",
+          "timeCreated",
+          "timeUpdated",
+          "views"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "BuildOrders": {
+        "items": {
+          "$ref": "#/components/schemas/BuildOrder"
+        },
+        "type": "array",
+        "description": "Represents a list of build orders."
+      },
+      "OverlayBuildOrderStepDetail": {
+        "description": "Represents the distribution of villagers or workers\r\nacross various resources at a given build step.",
+        "properties": {
+          "food": {
+            "type": "number",
+            "format": "double",
+            "description": "Number of villagers assigned to food gathering."
+          },
+          "wood": {
+            "type": "number",
+            "format": "double",
+            "description": "Number of villagers assigned to wood gathering."
+          },
+          "gold": {
+            "type": "number",
+            "format": "double",
+            "description": "Number of villagers assigned to gold gathering."
+          },
+          "stone": {
+            "type": "number",
+            "format": "double",
+            "description": "Number of villagers assigned to stone gathering."
+          },
+          "builder": {
+            "type": "number",
+            "format": "double",
+            "description": "Number of villagers acting as builders."
+          }
+        },
+        "required": [
+          "food",
+          "wood",
+          "gold",
+          "stone",
+          "builder"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "OverlayBuildOrderStep": {
+        "description": "Represents a single step in an overlay build order.\r\n\r\nEach step corresponds to a point in time within the build,\r\ncontaining resource allocations, population info, and notes.\nRepresents a single step in an overlay build order.\r\n\r\nEach step corresponds to a point in time within the build,\r\ncontaining resource allocations, population info, and notes.",
+        "properties": {
+          "age": {
+            "type": "number",
+            "format": "double",
+            "description": "The current age during this step (e.g., 1\u20134)."
+          },
+          "population_count": {
+            "type": "number",
+            "format": "double",
+            "description": "The total population count at this step."
+          },
+          "time": {
+            "type": "string",
+            "description": "Optional timestamp indicating when this step occurs (e.g., \"05:30\")."
+          },
+          "villager_count": {
+            "type": "number",
+            "format": "double",
+            "description": "The total number of active villagers."
+          },
+          "resources": {
+            "$ref": "#/components/schemas/OverlayBuildOrderStepDetail",
+            "description": "The distribution of villagers across resources."
+          },
+          "notes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "description": "Descriptive notes or actions taken at this step."
+          }
+        },
+        "required": [
+          "age",
+          "population_count",
+          "villager_count",
+          "resources",
+          "notes"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "OverlayBuildOrder": {
+        "description": "Represents a complete build order formatted for overlay display.\r\n\r\nIncludes general build metadata, civilization info,\r\nand the ordered list of build steps.",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The display name or title of the build order."
+          },
+          "author": {
+            "type": "string",
+            "description": "The name of the author who created the build order."
+          },
+          "description": {
+            "type": "string",
+            "description": "A brief description or overview of the build."
+          },
+          "source": {
+            "type": "string",
+            "description": "The canonical source URL for this build."
+          },
+          "civilization": {
+            "type": "string",
+            "description": "The civilization associated with this build order."
+          },
+          "video": {
+            "type": "string",
+            "description": "Optional YouTube or media URL associated with the build."
+          },
+          "season": {
+            "type": "string",
+            "nullable": true,
+            "description": "The ranked ladder season when the build was created or relevant."
+          },
+          "map": {
+            "type": "string",
+            "nullable": true,
+            "description": "The map targeted or recommended for this build."
+          },
+          "strategy": {
+            "type": "string",
+            "nullable": true,
+            "description": "The general strategic focus or style of the build."
+          },
+          "build_order": {
+            "items": {
+              "$ref": "#/components/schemas/OverlayBuildOrderStep"
+            },
+            "type": "array",
+            "description": "The ordered sequence of steps in this build."
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "source",
+          "civilization",
+          "build_order"
+        ],
+        "type": "object",
+        "additionalProperties": false
+      },
+      "OverlayBuildOrderOrders": {
+        "items": {
+          "$ref": "#/components/schemas/OverlayBuildOrder"
+        },
+        "type": "array"
+      },
+      "Civilization": {
+        "description": "Represents all supported civilizations in the game.\r\n\r\nEach key corresponds to a civilization code used internally,\r\nwhile the value is its string identifier. Use the companion\r\n{@link CivilizationNames} map to display human-readable labels.",
+        "enum": [
+          "ANY",
+          "ENG",
+          "FRE",
+          "RUS",
+          "MAL",
+          "DEL",
+          "HRE",
+          "ABB",
+          "OTT",
+          "CHI",
+          "MON",
+          "BYZ",
+          "JAP",
+          "AYY",
+          "JDA",
+          "ZXL",
+          "DRA",
+          "HOL",
+          "KTE",
+          "GOH",
+          "SEN",
+          "MAC",
+          "TUG",
+          "JIN"
+        ],
+        "type": "string"
+      },
+      "BuildOrderByField": {
+        "type": "string",
+        "enum": [
+          "score",
+          "timeCreated",
+          "views",
+          "likes"
+        ],
+        "description": "Fields the build results can be sorted by (always descending)."
+      },
+      "BuildQuery": {
+        "properties": {
+          "civ": {
+            "$ref": "#/components/schemas/Civilization",
+            "description": "Filter by civilization (3-letter code)."
+          },
+          "author": {
+            "type": "string",
+            "description": "Filter by author user id."
+          },
+          "orderBy": {
+            "$ref": "#/components/schemas/BuildOrderByField",
+            "description": "Field to sort by, descending. Defaults to most recent."
+          },
+          "overlay": {
+            "type": "boolean",
+            "description": "Return the compact overlay format used by build-order tools.",
+            "default": false
+          }
+        },
+        "type": "object",
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {}
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "GetWelcome",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "message"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "description": "Returns a welcome message for the API root.",
+        "summary": "Root health message",
+        "tags": [
+          "Root"
+        ],
+        "security": [],
+        "parameters": []
+      }
+    },
+    "/status": {
+      "get": {
+        "operationId": "GetHealth",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            }
+          }
+        },
+        "description": "Check API status",
+        "summary": "Health check endpoint",
+        "tags": [
+          "Health"
+        ],
+        "security": [],
+        "parameters": []
+      }
+    },
+    "/favorites/{userId}": {
+      "get": {
+        "operationId": "GetUserFavorites",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/BuildOrders"
+                    },
+                    {
+                      "$ref": "#/components/schemas/OverlayBuildOrderOrders"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "reason": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reason"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "description": "Get user's favorite builds",
+        "summary": "Get user's favorite builds",
+        "tags": [
+          "Favorites"
+        ],
+        "security": [],
+        "parameters": [
+          {
+            "description": "The user's identifier",
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Filter by civilization (3-letter code).",
+            "in": "query",
+            "name": "civ",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/Civilization"
+            }
+          },
+          {
+            "description": "Filter by author user id.",
+            "in": "query",
+            "name": "author",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Field to sort by, descending. Defaults to most recent.",
+            "in": "query",
+            "name": "orderBy",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/BuildOrderByField"
+            }
+          },
+          {
+            "description": "Return the compact overlay format used by build-order tools.",
+            "in": "query",
+            "name": "overlay",
+            "required": false,
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        ]
+      }
+    },
+    "/builds": {
+      "get": {
+        "operationId": "GetBuilds",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/BuildOrders"
+                    },
+                    {
+                      "$ref": "#/components/schemas/OverlayBuildOrderOrders"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "description": "Get the first 10 builds meeting the criteria in the query parameters.\r\nGet your builds by providing your user id as the author parameter.\r\nResults are capped at 10 and there is no pagination.\r\nBy default, returns the 10 most recent builds.",
+        "summary": "Get all builds",
+        "tags": [
+          "Builds"
+        ],
+        "security": [],
+        "parameters": [
+          {
+            "description": "Filter by civilization (3-letter code).",
+            "in": "query",
+            "name": "civ",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/Civilization"
+            }
+          },
+          {
+            "description": "Filter by author user id.",
+            "in": "query",
+            "name": "author",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Field to sort by, descending. Defaults to most recent.",
+            "in": "query",
+            "name": "orderBy",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/BuildOrderByField"
+            }
+          },
+          {
+            "description": "Return the compact overlay format used by build-order tools.",
+            "in": "query",
+            "name": "overlay",
+            "required": false,
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        ]
+      }
+    },
+    "/builds/{buildId}": {
+      "get": {
+        "operationId": "GetBuildById",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/BuildOrder"
+                    },
+                    {
+                      "$ref": "#/components/schemas/OverlayBuildOrder"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "reason": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "reason"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "description": "Get build by id or error when specified build order is not found.",
+        "summary": "Get a build by his id",
+        "tags": [
+          "Builds"
+        ],
+        "security": [],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "buildId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "overlay",
+            "required": false,
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://aoe4-guides-api-7h2vti5ckq-ey.a.run.app/"
+    }
+  ],
+  "info": {
+    "title": "aoe4guides API",
+    "version": "1.16.0",
+    "description": "The public REST API for [aoe4guides.com](https://aoe4guides.com) \u2014 programmatic, read-only access to community-created **Age of Empires IV** build orders.\n\nFetch build orders in the full schema or the compact **overlay** format used by in-game build-order tools, filter by civilization or author, and sort by score, recency, views or likes.\n\n**Good to know**\n- Open and read-only \u2014 no authentication or API key required.\n- Each list endpoint returns at most 10 results; there is no pagination yet.\n- Civilizations use 3-letter codes (e.g. `ENG`, `FRE`, `JIN`); see the `Civilization` schema for the full list.\n\n**Fair use**\n- Responses are cached briefly and may be up to 60s (lists) or 5min (single builds) old. Please respect `Cache-Control` rather than re-fetching the same build per page view.\n- Rate limits per IP: 30/min and 300/hour for list endpoints, 120/min and 1200/hour for `/builds/{buildId}`. Exceeding them returns `429`; the `RateLimit` response headers tell you where you stand.\n- Building something on this? Attribution and a link back to aoe4guides.com are expected, and get in touch if you need higher limits.\n\n\u00a9 2024 Jens B\u00fchl \u00b7 [MIT licensed](https://github.com/jensbuehl/aoe4-guides-api/blob/HEAD/LICENSE)",
+    "contact": {
+      "name": "aoe4guides",
+      "url": "https://aoe4guides.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/jensbuehl/aoe4-guides-api/blob/HEAD/LICENSE"
+    }
+  }
+}

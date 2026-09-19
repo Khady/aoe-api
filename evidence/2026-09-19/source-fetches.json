@@ -1,0 +1,647 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/wiki/luskaner/ageLANServer/Questions-and-Answers-(QA).md",
+    "final_url": "https://raw.githubusercontent.com/wiki/luskaner/ageLANServer/Questions-and-Answers-(QA).md",
+    "retrieved_at": "2026-09-19T08:43:14.214821+00:00",
+    "status": 200,
+    "sha256": "af35e5d864d4ddc30fbb5f8cfc53441c35b832034aab7e41699e50367e19814f",
+    "bytes": 10609,
+    "research_file": "ageLAN-qa.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/luskaner/ageLANServer/main/server/README.md",
+    "final_url": "https://raw.githubusercontent.com/luskaner/ageLANServer/main/server/README.md",
+    "retrieved_at": "2026-09-19T08:48:26.880402+00:00",
+    "status": 200,
+    "sha256": "b06ee158d8868c56ff436ba83cb83d966698e67ad00f78987c11d23e53ecafa3",
+    "bytes": 8989,
+    "research_file": "ageLAN-readme.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ccsimplyspolit/AOE4-Analytics/main/electron/services/relicAuthService.ts",
+    "final_url": "https://raw.githubusercontent.com/ccsimplyspolit/AOE4-Analytics/main/electron/services/relicAuthService.ts",
+    "retrieved_at": "2026-09-19T08:45:54.267070+00:00",
+    "status": 200,
+    "sha256": "2b396fcc4ab61e1c09f00d8416c65a6b467bd6e53e993144ea6002767d96af37",
+    "bytes": 27666,
+    "research_file": "analytics-auth.ts"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ccsimplyspolit/AOE4-Analytics/main/src/api/relicClient.ts",
+    "final_url": "https://raw.githubusercontent.com/ccsimplyspolit/AOE4-Analytics/main/src/api/relicClient.ts",
+    "retrieved_at": "2026-09-19T08:45:54.195757+00:00",
+    "status": 200,
+    "sha256": "60d5cae188ce735ebeb7756764791ca4c9274de92419e0c4fd663573b622fa50",
+    "bytes": 5105,
+    "research_file": "analytics-relic.ts"
+  },
+  {
+    "url": "https://api.github.com/repos/ccsimplyspolit/AOE4-Analytics/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/ccsimplyspolit/AOE4-Analytics/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-19T08:44:49.585085+00:00",
+    "status": 200,
+    "sha256": "639dce3637898812a34519aa1387c5973f7ebfb8cdd35513b69224c5b3a07960",
+    "bytes": 892067,
+    "research_file": "analytics2-tree.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/happyleavesaoc/aoc-mgz/master/README.md",
+    "final_url": "https://raw.githubusercontent.com/happyleavesaoc/aoc-mgz/master/README.md",
+    "retrieved_at": "2026-09-19T08:48:02.307263+00:00",
+    "status": 200,
+    "sha256": "e6410a137f24d387a1b48e0e7e5de086f7892fe324660cad8eaa1ebb88a2591f",
+    "bytes": 3962,
+    "research_file": "aocmgz-readme.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aalises/age-of-empires-II-api/master/README.md",
+    "final_url": "https://raw.githubusercontent.com/aalises/age-of-empires-II-api/master/README.md",
+    "retrieved_at": "2026-09-19T08:48:01.571225+00:00",
+    "status": 200,
+    "sha256": "74c15e06f0bb2be251a202232c4ad1f5fd326b7d7df9de619d190e73f131a676",
+    "bytes": 8112,
+    "research_file": "aoe2classic-readme.md"
+  },
+  {
+    "url": "https://api.github.com/repos/denniske/aoe2companion/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/denniske/aoe2companion/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-19T08:45:54.977576+00:00",
+    "status": 200,
+    "sha256": "d84edef3b7cb3003da2c294c6e43e3c45d8db48f96976bf704433bb553fd79a3",
+    "bytes": 361181,
+    "research_file": "aoe2companion-tree.json"
+  },
+  {
+    "url": "https://api.github.com/repos/AndyTheNerd/age-of-empires-II-api",
+    "final_url": "https://api.github.com/repos/AndyTheNerd/age-of-empires-II-api",
+    "retrieved_at": "2026-09-19T08:48:26.619368+00:00",
+    "status": 200,
+    "sha256": "e45267f616ecfd0f073430eb85226468e80c0d01c3d16a71e578b1a34e53a923",
+    "bytes": 17427,
+    "research_file": "aoe2new-meta.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/AndyTheNerd/age-of-empires-II-api/master/README.md",
+    "final_url": "https://raw.githubusercontent.com/AndyTheNerd/age-of-empires-II-api/master/README.md",
+    "retrieved_at": "2026-09-19T08:49:10.909623+00:00",
+    "status": 200,
+    "sha256": "57d25199383b94df188c3688af182b158e985f928ec83ed10135530615cfa62e",
+    "bytes": 5158,
+    "research_file": "aoe2new-readme.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/SiegeEngineers/aoe2techtree/master/README.md",
+    "final_url": "https://raw.githubusercontent.com/SiegeEngineers/aoe2techtree/master/README.md",
+    "retrieved_at": "2026-09-19T08:48:02.016696+00:00",
+    "status": 200,
+    "sha256": "eea1d26f8409b96166336c890bceac80cf4704f2bc6f7d74c823567b6b1be6b0",
+    "bytes": 876,
+    "research_file": "aoe2techtree-readme.md"
+  },
+  {
+    "url": "https://aoestats.io/api-info/",
+    "final_url": "https://aoestats.io/api-info/",
+    "retrieved_at": "2026-09-19T08:43:15.250194+00:00",
+    "status": 200,
+    "sha256": "3ed2c90c55cb282d066ca9f4753810869e0f7da1c09510d8782cf74454dbb037",
+    "bytes": 70822,
+    "research_file": "aoestats.html"
+  },
+  {
+    "url": "https://api.github.com/repos/erin-fitzpatric/aom-lambda/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/erin-fitzpatric/aom-lambda/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-19T08:48:01.918515+00:00",
+    "status": 200,
+    "sha256": "8b98749ea7c6606fa532126bbc70f68504ce3b53f35cda57c5db7b721b3edbff",
+    "bytes": 5907,
+    "research_file": "aom-lambda-tree.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/erin-fitzpatric/aom-lambda/main/extract-leaderboard/app.mjs",
+    "final_url": "https://raw.githubusercontent.com/erin-fitzpatric/aom-lambda/main/extract-leaderboard/app.mjs",
+    "retrieved_at": "2026-09-19T08:49:10.925468+00:00",
+    "status": 200,
+    "sha256": "f917b1e1bf08ba2bcba1b9da46fa127a9cba066acca992588a1e23ba4772ba19",
+    "bytes": 7136,
+    "research_file": "aom-leaderboard.mjs"
+  },
+  {
+    "url": "https://aomstats.io/",
+    "final_url": "https://aomstats.io/",
+    "retrieved_at": "2026-09-19T08:48:02.211413+00:00",
+    "status": 200,
+    "sha256": "c30533e70f597ced93124bf4492d59f1af70fe687e31429eebfa8a385acb3247",
+    "bytes": 583997,
+    "research_file": "aomstats.html"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/denniske/aoe2companion/main/src/api/helper/api.ts",
+    "final_url": "https://raw.githubusercontent.com/denniske/aoe2companion/main/src/api/helper/api.ts",
+    "retrieved_at": "2026-09-19T08:47:09.196411+00:00",
+    "status": 200,
+    "sha256": "95c7f2d2e65c971d627fa53770e59dc968ad1c8c6b28feeb6226daee4cdbc8ed",
+    "bytes": 6779,
+    "research_file": "companion-api.ts"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/denniske/aoe2companion/main/src/app/(main)/more/api.tsx",
+    "final_url": "https://raw.githubusercontent.com/denniske/aoe2companion/main/src/app/(main)/more/api.tsx",
+    "retrieved_at": "2026-09-19T08:47:09.355418+00:00",
+    "status": 200,
+    "sha256": "069ec166f63e982c01df96767906c79f98482a51701463e003fc602934ef457f",
+    "bytes": 17726,
+    "research_file": "companion-apipage.tsx"
+  },
+  {
+    "url": "https://api.github.com/repos/denniske/aoe2companion-api/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/denniske/aoe2companion-api/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-19T08:48:01.612820+00:00",
+    "status": 200,
+    "sha256": "8a44627ffd116bb1689d6766ef9cab084f817fd083c65b54d31ec16ccc8ab5c5",
+    "bytes": 6969,
+    "research_file": "companion-bruno-tree.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/denniske/aoe2companion-api/main/bruno/websockets/ongoing%20matches%20by%20profile_ids.bru",
+    "final_url": "https://raw.githubusercontent.com/denniske/aoe2companion-api/main/bruno/websockets/ongoing%20matches%20by%20profile_ids.bru",
+    "retrieved_at": "2026-09-19T08:49:11.209990+00:00",
+    "status": 200,
+    "sha256": "83995d728424bda3e15a33b47466d8c2acc20e8a16e67cc462c2f9f4e91bf2c9",
+    "bytes": 247,
+    "research_file": "companion-ongoing.bru"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/denniske/aoe2companion-api/main/bruno/environments/prod.bru",
+    "final_url": "https://raw.githubusercontent.com/denniske/aoe2companion-api/main/bruno/environments/prod.bru",
+    "retrieved_at": "2026-09-19T08:49:10.885727+00:00",
+    "status": 200,
+    "sha256": "5cddd5df22c20a6201776f807f53d7a848a5cae5943df59f71ab13ae34632441",
+    "bytes": 93,
+    "research_file": "companion-prod.bru"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/denniske/aoe2companion-api/main/bruno/api/profile%20%2B%20stats.bru",
+    "final_url": "https://raw.githubusercontent.com/denniske/aoe2companion-api/main/bruno/api/profile%20%2B%20stats.bru",
+    "retrieved_at": "2026-09-19T08:49:10.867359+00:00",
+    "status": 200,
+    "sha256": "e4461290aa032e273949bb8d9a3f0713e507a4e2554ee983768d7460d6701df8",
+    "bytes": 307,
+    "research_file": "companion-profile.bru"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/denniske/aoe2companion/main/src/api/util.ts",
+    "final_url": "https://raw.githubusercontent.com/denniske/aoe2companion/main/src/api/util.ts",
+    "retrieved_at": "2026-09-19T08:47:09.268796+00:00",
+    "status": 200,
+    "sha256": "d064ebf4c397a3f8c60bc6d013910786b9548e8c90de6996bd59dfaee65a3bfb",
+    "bytes": 14308,
+    "research_file": "companion-util.ts"
+  },
+  {
+    "url": "https://api.github.com/repos/aoe4world/data/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/aoe4world/data/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-19T08:42:53.742971+00:00",
+    "status": 200,
+    "sha256": "058a818b4cffc81871d6cb78bfad0ae5211fb23398096ae5810db8cb7593fa54",
+    "bytes": 1947082,
+    "research_file": "data-tree.json"
+  },
+  {
+    "url": "https://aoe4world.com/dumps",
+    "final_url": "https://aoe4world.com/dumps",
+    "retrieved_at": "2026-09-19T08:42:55.931153+00:00",
+    "status": 200,
+    "sha256": "17978bc6a20b50cc201a21a386d02f04db690aed0c675366a152396380116369",
+    "bytes": 178722,
+    "research_file": "dumps.html"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aoemods/AOEMods.Essence/master/README.md",
+    "final_url": "https://raw.githubusercontent.com/aoemods/AOEMods.Essence/master/README.md",
+    "retrieved_at": "2026-09-19T08:48:02.029011+00:00",
+    "status": 200,
+    "sha256": "a4d40af40e8d54288c8e41855d812a7a05e283f19849c906df123df2039a9808",
+    "bytes": 4371,
+    "research_file": "essence-readme.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/theflyingcodr/aoe4-client/master/official/leaderboards.go",
+    "final_url": "https://raw.githubusercontent.com/theflyingcodr/aoe4-client/master/official/leaderboards.go",
+    "retrieved_at": "2026-09-19T08:45:54.524191+00:00",
+    "status": 200,
+    "sha256": "09b6364ffa7e2c3b38579e28fd9e009815b0829a2e40147cfd95dabafba8546f",
+    "bytes": 2478,
+    "research_file": "go-leaderboards.go"
+  },
+  {
+    "url": "https://api.github.com/repos/theflyingcodr/aoe4-client",
+    "final_url": "https://api.github.com/repos/theflyingcodr/aoe4-client",
+    "retrieved_at": "2026-09-19T08:43:13.876100+00:00",
+    "status": 200,
+    "sha256": "52f22f725eb399976bc88e458b67d77ea69a5c5526b9c909bb0c512a6f866a8b",
+    "bytes": 11330,
+    "research_file": "go-meta.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/theflyingcodr/aoe4-client/master/official/official.go",
+    "final_url": "https://raw.githubusercontent.com/theflyingcodr/aoe4-client/master/official/official.go",
+    "retrieved_at": "2026-09-19T08:45:54.193168+00:00",
+    "status": 200,
+    "sha256": "cea036ab4b4dc729972c08f2afee5285b40397fe3544ddf68525477f305d60d6",
+    "bytes": 3257,
+    "research_file": "go-official.go"
+  },
+  {
+    "url": "https://api.github.com/repos/theflyingcodr/aoe4-client/git/trees/master?recursive=1",
+    "final_url": "https://api.github.com/repos/theflyingcodr/aoe4-client/git/trees/master?recursive=1",
+    "retrieved_at": "2026-09-19T08:44:49.492775+00:00",
+    "status": 200,
+    "sha256": "2a8b5e3123cdce823efa0ff363bd4d1bfe7e41c0b23f4d3153eead32376b8655",
+    "bytes": 7699,
+    "research_file": "go-tree.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/controllers/BuildsController.ts",
+    "final_url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/controllers/BuildsController.ts",
+    "retrieved_at": "2026-09-19T08:44:49.174230+00:00",
+    "status": 200,
+    "sha256": "4dfff6ce0fa35b34636b79c2e75bd66ca86c3e2d457ba9112a67dd9aa913937f",
+    "bytes": 2093,
+    "research_file": "guides-builds.ts"
+  },
+  {
+    "url": "https://aoe4guides.com/api/api-docs/",
+    "final_url": "https://aoe4guides.com/api/api-docs/",
+    "retrieved_at": "2026-09-19T08:42:56.288347+00:00",
+    "status": 200,
+    "sha256": "3d1f21ff983b7b71c5cf152d3134374ba8a0050ddbd97a9cb1b4b8cfb9d308b2",
+    "bytes": 3106,
+    "research_file": "guides-docs.html"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/controllers/FavoritesController.ts",
+    "final_url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/controllers/FavoritesController.ts",
+    "retrieved_at": "2026-09-19T08:44:49.172281+00:00",
+    "status": 200,
+    "sha256": "b530f4d086afd7a145f062b75730e31a235ac59442459f5bf6572faa219b7dc0",
+    "bytes": 1628,
+    "research_file": "guides-favorites.ts"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/types/queries.ts",
+    "final_url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/types/queries.ts",
+    "retrieved_at": "2026-09-19T08:44:49.186257+00:00",
+    "status": 200,
+    "sha256": "0b1b9ff4960f3db5e4fdd946c7ed819d6b01cfb69b94852486180149debcae8b",
+    "bytes": 562,
+    "research_file": "guides-queries.ts"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/server.ts",
+    "final_url": "https://raw.githubusercontent.com/jensbuehl/aoe4-guides-api/develop/src/server.ts",
+    "retrieved_at": "2026-09-19T08:44:49.173475+00:00",
+    "status": 200,
+    "sha256": "d0a10d4a6ee5f1947fb98be696f28d78dfe46fbce2407a3ef629b11cfdca8abd",
+    "bytes": 840,
+    "research_file": "guides-server.ts"
+  },
+  {
+    "url": "https://aoe4guides.com/api/api-docs/swagger-ui-init.js",
+    "final_url": "https://aoe4guides.com/api/api-docs/swagger-ui-init.js",
+    "retrieved_at": "2026-09-19T08:43:14.234938+00:00",
+    "status": 200,
+    "sha256": "a501d06a7ed1a411ade18d20983b35877bc174c9b843f53b88b9fc4ac83746ec",
+    "bytes": 26374,
+    "research_file": "guides-swagger-init.js"
+  },
+  {
+    "url": "https://api.github.com/repos/jensbuehl/aoe4-guides-api/git/trees/develop?recursive=1",
+    "final_url": "https://api.github.com/repos/jensbuehl/aoe4-guides-api/git/trees/develop?recursive=1",
+    "retrieved_at": "2026-09-19T08:42:53.459178+00:00",
+    "status": 200,
+    "sha256": "f349684c813f888d7e8f9068b29be583f3a6f6dec941ecbfc5f63cbb6094575c",
+    "bytes": 7592,
+    "research_file": "guides-tree.json"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/README.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/README.md",
+    "retrieved_at": "2026-09-19T08:47:07.453170+00:00",
+    "status": 200,
+    "sha256": "38781927b1626818e9815c0420e6c7ce45523e5948ec0b47db0071c426f067cd",
+    "bytes": 3202,
+    "research_file": "librematch/README.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/detail.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/detail.md",
+    "retrieved_at": "2026-09-19T08:47:08.831111+00:00",
+    "status": 200,
+    "sha256": "451232e69c6933d523a060fe23bddda43d494acc2549fa013af46c9bd17cecd2",
+    "bytes": 13,
+    "research_file": "librematch/detail.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/download.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/download.md",
+    "retrieved_at": "2026-09-19T08:47:08.846480+00:00",
+    "status": 200,
+    "sha256": "092a94bdba2bac198b16b9d3658aa55b8e5ba3ed020e575d9fcbbec9b50c0e75",
+    "bytes": 38,
+    "research_file": "librematch/download.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/eventleaderboard.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/eventleaderboard.md",
+    "retrieved_at": "2026-09-19T08:47:08.640026+00:00",
+    "status": 200,
+    "sha256": "06a592a5ecde8418a6a321c06d197a3cdac00529c4312d7cec66e71acf5f0f5b",
+    "bytes": 49,
+    "research_file": "librematch/eventleaderboard.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/eventlist.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/eventlist.md",
+    "retrieved_at": "2026-09-19T08:47:08.553761+00:00",
+    "status": 200,
+    "sha256": "7252ebee464697de9d435ab4c6c5734a2c20e723ccec47d6f80c83a0d2970d3b",
+    "bytes": 35,
+    "research_file": "librematch/eventlist.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/find.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/find.md",
+    "retrieved_at": "2026-09-19T08:47:08.740817+00:00",
+    "status": 200,
+    "sha256": "ba5b7fec8cfeddb1937227a5015d2ae37b4229762caf15bc383374fb3db733a8",
+    "bytes": 4199,
+    "research_file": "librematch/find.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/advertisement/findadvertisements.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/advertisement/findadvertisements.md",
+    "retrieved_at": "2026-09-19T08:47:08.081047+00:00",
+    "status": 200,
+    "sha256": "eecea0bf475d3a3c9989e5e0b4ce776a686224bf57510477bb4b5c8e199e33bf",
+    "bytes": 6136,
+    "research_file": "librematch/findadvertisements.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/achievement/getachievements.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/achievement/getachievements.md",
+    "retrieved_at": "2026-09-19T08:47:08.199338+00:00",
+    "status": 200,
+    "sha256": "8d78131a9c96c50a4adb078ec2eec10f143054a2fd1a3361c8c782ccac0fc12e",
+    "bytes": 1565,
+    "research_file": "librematch/getachievements.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/achievement/getavailableachievements.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/achievement/getavailableachievements.md",
+    "retrieved_at": "2026-09-19T08:47:08.275434+00:00",
+    "status": 200,
+    "sha256": "86b7502361f7bfc31566bc31027f676732c42e4963b4bf94093d42bba7c4de5e",
+    "bytes": 2439,
+    "research_file": "librematch/getavailableachievements.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getavailableleaderboards.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getavailableleaderboards.md",
+    "retrieved_at": "2026-09-19T08:47:07.444186+00:00",
+    "status": 200,
+    "sha256": "64d8f8c23155f1e8869f03e8aeab9a37d173ac78ba63908412ae0ea23daaf64d",
+    "bytes": 6491,
+    "research_file": "librematch/getavailableleaderboards.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getavatarstatforprofile.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getavatarstatforprofile.md",
+    "retrieved_at": "2026-09-19T08:47:07.997896+00:00",
+    "status": 200,
+    "sha256": "92a43fec9710e7671b2a481fb21349157a834b0ee795aea6e64fbd603dff6b9f",
+    "bytes": 2397,
+    "research_file": "librematch/getavatarstatforprofile.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getleaderboard2.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getleaderboard2.md",
+    "retrieved_at": "2026-09-19T08:47:07.913997+00:00",
+    "status": 200,
+    "sha256": "daa5ed2f9cc198990f753460faded214b08b62161c0ad8b28138ff423621ad20",
+    "bytes": 6093,
+    "research_file": "librematch/getleaderboard2.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/getmatchdetail.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/getmatchdetail.md",
+    "retrieved_at": "2026-09-19T08:47:08.471232+00:00",
+    "status": 200,
+    "sha256": "43c7c92a17597557d0478fa0f3e2ef9273dcf707b52a3a085d655486bc1337a8",
+    "bytes": 37,
+    "research_file": "librematch/getmatchdetail.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getmatchhistory.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getmatchhistory.md",
+    "retrieved_at": "2026-09-19T08:47:07.724517+00:00",
+    "status": 200,
+    "sha256": "faadc5fc770ca468ec9326c0a4ea3a621f6a67f978047c9c71d9581a0609dada",
+    "bytes": 4660,
+    "research_file": "librematch/getmatchhistory.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getpersonalstat.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getpersonalstat.md",
+    "retrieved_at": "2026-09-19T08:47:07.443514+00:00",
+    "status": 200,
+    "sha256": "37c382cee1144568c827570f1775be704380196a7665bda7565a5893d3ffc634",
+    "bytes": 4855,
+    "research_file": "librematch/getpersonalstat.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getrecentmatchhistory.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getrecentmatchhistory.md",
+    "retrieved_at": "2026-09-19T08:47:07.736005+00:00",
+    "status": 200,
+    "sha256": "ff2a8906b70ceab2badeeb70ebf87acca0a794cbdec8f031df261023a150a997",
+    "bytes": 8014,
+    "research_file": "librematch/getrecentmatchhistory.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getreplayfiles.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/rlink/community/leaderboard/getreplayfiles.md",
+    "retrieved_at": "2026-09-19T08:47:08.290686+00:00",
+    "status": 200,
+    "sha256": "be13eb500dc5f6567ec05ebfe658b151db0260dc0d77a956b62de66e9f7d5f94",
+    "bytes": 3421,
+    "research_file": "librematch/getreplayfiles.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/leaderboard.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/ageiv/leaderboard.md",
+    "retrieved_at": "2026-09-19T08:47:08.452137+00:00",
+    "status": 200,
+    "sha256": "c13f1fd70b229d6c62bc2a1a13ed447d968980eb65b432b020fc179f7a718bd3",
+    "bytes": 38,
+    "research_file": "librematch/leaderboard.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/tags.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/tags.md",
+    "retrieved_at": "2026-09-19T08:47:08.906856+00:00",
+    "status": 200,
+    "sha256": "79fc7d09c707a7a5f42c3e15a962aba075f74f37d547b94795ad4ef8a66574b4",
+    "bytes": 23,
+    "research_file": "librematch/tags.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/types.md",
+    "final_url": "https://raw.githubusercontent.com/LibreMatch/wiki/main/src/aoe/api/v4/mods/types.md",
+    "retrieved_at": "2026-09-19T08:47:09.084922+00:00",
+    "status": 200,
+    "sha256": "6463aba9b66713db58c31f2effc896533b3946acf3afd81b32fbc5dcefe5ffb9",
+    "bytes": 25,
+    "research_file": "librematch/types.md"
+  },
+  {
+    "url": "https://api.github.com/repos/LibreMatch/wiki/git/trees/main?recursive=1",
+    "final_url": "https://api.github.com/repos/LibreMatch/wiki/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-19T08:45:54.181219+00:00",
+    "status": 200,
+    "sha256": "2599c020783fcc3960f8fe1c1ebeffc138f54387f59d00796884d6d49e869ef8",
+    "bytes": 84522,
+    "research_file": "librematch-tree.json"
+  },
+  {
+    "url": "https://support.ageofempires.com/hc/en-us/articles/4421721200532-Editing-a-Win-Condition",
+    "final_url": "https://support.ageofempires.com/hc/en-us/articles/4421721200532-Editing-a-Win-Condition",
+    "retrieved_at": "2026-09-19T08:47:29.397990+00:00",
+    "status": 200,
+    "sha256": "e7401732f44a26c03419442beaae0892cfe841e30eae2a8160b0f34db2729252",
+    "bytes": 76757,
+    "research_file": "modding-wincondition.html"
+  },
+  {
+    "url": "https://www.ageofempires.com/mods",
+    "final_url": "https://www.ageofempires.com/mods",
+    "retrieved_at": "2026-09-19T08:45:55.646450+00:00",
+    "status": 200,
+    "sha256": "4592e5a8cd43e160d4848875b2e104f9d1838c20d88ffc30df44ff7c1567d857",
+    "bytes": 176245,
+    "research_file": "mods-page.html"
+  },
+  {
+    "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/975.8075d2.js",
+    "final_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/975.8075d2.js",
+    "retrieved_at": "2026-09-19T08:48:28.046925+00:00",
+    "status": 200,
+    "sha256": "2ea9a28542063ae03792a8ea11ae4c8651088256b8dc51471d5f2e642b11d4be",
+    "bytes": 1592907,
+    "research_file": "official-chunk.js"
+  },
+  {
+    "url": "https://www.ageofempires.com/stats/ageiv",
+    "final_url": "https://www.ageofempires.com/stats/ageiv",
+    "retrieved_at": "2026-09-19T08:47:29.745815+00:00",
+    "status": 200,
+    "sha256": "2b7b5b7350cdc053ef2f647a821a8b7d48c208008d5302a1f066110295e43fa9",
+    "bytes": 168949,
+    "research_file": "official-leaderboard.html"
+  },
+  {
+    "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js",
+    "final_url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js",
+    "retrieved_at": "2026-09-19T08:48:28.173271+00:00",
+    "status": 200,
+    "sha256": "e64d1f3adb59fa698823095fe7abbab33929b6aee6ac7942d91ffd16e51396e7",
+    "bytes": 954382,
+    "research_file": "official-main.js"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/willfindlay/prelate-rs/master/README.md",
+    "final_url": "https://raw.githubusercontent.com/willfindlay/prelate-rs/master/README.md",
+    "retrieved_at": "2026-09-19T08:49:11.353693+00:00",
+    "status": 200,
+    "sha256": "abb2a7bbb7cb6cd15217899b7c80cbbba16a60227faf275d9f2f57658f72a69b",
+    "bytes": 1978,
+    "research_file": "prelate-readme.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aoe4world/replays-api/master/AoE4WorldReplaysAPI/Controllers/SummaryController.cs",
+    "final_url": "https://raw.githubusercontent.com/aoe4world/replays-api/master/AoE4WorldReplaysAPI/Controllers/SummaryController.cs",
+    "retrieved_at": "2026-09-19T08:44:49.536553+00:00",
+    "status": 200,
+    "sha256": "a4527e74f240d6971806d4de7d88c29c3be6d417326e9917040b7a8b75fe317f",
+    "bytes": 4633,
+    "research_file": "replays-controller.cs"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aoe4world/replays-api/master/AoE4WorldReplaysAPI/Program.cs",
+    "final_url": "https://raw.githubusercontent.com/aoe4world/replays-api/master/AoE4WorldReplaysAPI/Program.cs",
+    "retrieved_at": "2026-09-19T08:44:49.546436+00:00",
+    "status": 200,
+    "sha256": "763b638ceb85b62ea977be2c363581a6b8a75b03b8eb98172b271d7074539a8b",
+    "bytes": 847,
+    "research_file": "replays-program.cs"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aoe4world/replays-api/master/README.md",
+    "final_url": "https://raw.githubusercontent.com/aoe4world/replays-api/master/README.md",
+    "retrieved_at": "2026-09-19T08:43:13.603413+00:00",
+    "status": 200,
+    "sha256": "5f1a722362a4c47bb076008f4288c0abef40425e99f4b5be11642e2b6f3cad99",
+    "bytes": 1304,
+    "research_file": "replays-readme.md"
+  },
+  {
+    "url": "https://api.github.com/repos/aoe4world/replays-api/git/trees/master?recursive=1",
+    "final_url": "https://api.github.com/repos/aoe4world/replays-api/git/trees/master?recursive=1",
+    "retrieved_at": "2026-09-19T08:42:53.447210+00:00",
+    "status": 200,
+    "sha256": "0b864ac4ec4a22de162726b3dbafb56329a4b675db6d4a5cdc6028e52cddbdbd",
+    "bytes": 23705,
+    "research_file": "replays-tree.json"
+  },
+  {
+    "url": "https://partner.steamgames.com/doc/webapi/ISteamUserStats",
+    "final_url": "https://partner.steamgames.com/doc/webapi/ISteamUserStats",
+    "retrieved_at": "2026-09-19T08:47:28.848238+00:00",
+    "status": 200,
+    "sha256": "ef419e0d51d2e043494aa6666050c36c1a6639a8283f7cd8fabe10605b82fdf1",
+    "bytes": 122935,
+    "research_file": "steam-docs.html"
+  },
+  {
+    "url": "https://partner.steamgames.com/doc/webapi/ISteamUser",
+    "final_url": "https://partner.steamgames.com/doc/webapi/ISteamUser",
+    "retrieved_at": "2026-09-19T08:47:28.828860+00:00",
+    "status": 200,
+    "sha256": "7f04be6d92bf6506addd4d55b97d942d0a5e9233af470e3ee97e6b2c88fed431",
+    "bytes": 131406,
+    "research_file": "steam-user-docs.html"
+  },
+  {
+    "url": "https://aoe4world.com/api",
+    "retrieved_on": "2026-09-19",
+    "bytes": 77776,
+    "sha256": "ea23fd4304945405049b24764820ec3826a578b406e733346f52a7122fa30ed0",
+    "research_file": "world-api.html",
+    "note": "Original fetch completed before timestamped source-fetch logger was introduced."
+  },
+  {
+    "url": "https://raw.githubusercontent.com/EKYavsil/AoE4-Replay-Launcher/main/src/aoe4replay/aoe4world.py",
+    "retrieved_on": "2026-09-19",
+    "bytes": 28643,
+    "sha256": "899750f0d612bf55e803cf550b2903b9d9a19487b5e771f0a67d1758c78f621a",
+    "research_file": "launcher.py",
+    "note": "Original fetch completed before timestamped source-fetch logger was introduced."
+  },
+  {
+    "url": "https://raw.githubusercontent.com/aoe4world/data/main/README.md",
+    "retrieved_on": "2026-09-19",
+    "bytes": 10215,
+    "sha256": "847e3cee2b95791cb21ba47f7bd3ca8caaa717e5c3ea24612ff82d7053328227",
+    "research_file": "data-readme.md",
+    "note": "Original fetch completed before timestamped source-fetch logger was introduced."
+  }
+]

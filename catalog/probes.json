@@ -1,0 +1,366 @@
+[
+  {
+    "id": "world-profile",
+    "url": "https://aoe4world.com/api/v0/players/4635035"
+  },
+  {
+    "id": "world-last-game",
+    "url": "https://aoe4world.com/api/v0/players/4635035/games/last"
+  },
+  {
+    "id": "world-search",
+    "url": "https://aoe4world.com/api/v0/players/search",
+    "params": {
+      "query": "beasty",
+      "exact": "true"
+    }
+  },
+  {
+    "id": "world-leaderboard",
+    "url": "https://aoe4world.com/api/v0/leaderboards/rm_solo",
+    "params": {
+      "profile_id": "4635035"
+    }
+  },
+  {
+    "id": "world-esports",
+    "url": "https://aoe4world.com/api/v0/esports/leaderboards/1",
+    "params": {
+      "profile_id": "4635035"
+    }
+  },
+  {
+    "id": "we-age4-discovery",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards",
+    "params": {
+      "title": "age4"
+    },
+    "save_metadata_body": true
+  },
+  {
+    "id": "we-age2-discovery",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards",
+    "params": {
+      "title": "age2"
+    },
+    "save_metadata_body": true
+  },
+  {
+    "id": "we-age3-discovery",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards",
+    "params": {
+      "title": "age3"
+    },
+    "save_metadata_body": true
+  },
+  {
+    "id": "we-age1-discovery",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards",
+    "params": {
+      "title": "age1"
+    },
+    "save_metadata_body": true
+  },
+  {
+    "id": "we-age4-personal",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getPersonalStat",
+    "params": {
+      "title": "age4",
+      "profile_ids": "[4635035]"
+    }
+  },
+  {
+    "id": "we-age4-history",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getRecentMatchHistory",
+    "params": {
+      "title": "age4",
+      "profile_ids": "[4635035]"
+    }
+  },
+  {
+    "id": "legacy-relic-discovery",
+    "url": "https://aoe-api.reliclink.com/community/leaderboard/getAvailableLeaderboards",
+    "params": {
+      "title": "age4"
+    }
+  },
+  {
+    "id": "data-civs",
+    "url": "https://data.aoe4world.com/civilizations/civs-index.json"
+  },
+  {
+    "id": "data-unit",
+    "url": "https://data.aoe4world.com/units/english/horseman-2.json"
+  },
+  {
+    "id": "guides-builds",
+    "url": "https://aoe4guides.com/api/builds",
+    "params": {
+      "civ": "ENG"
+    }
+  },
+  {
+    "id": "guides-direct-status",
+    "url": "https://aoe4-guides-api-7h2vti5ckq-ey.a.run.app/status"
+  },
+  {
+    "id": "guides-direct-builds",
+    "url": "https://aoe4-guides-api-7h2vti5ckq-ey.a.run.app/builds",
+    "params": {
+      "civ": "ENG"
+    }
+  },
+  {
+    "id": "we-dr-discovery",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards",
+    "params": {
+      "title": "age4"
+    },
+    "save_metadata_body": true
+  },
+  {
+    "id": "we-dr-history",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/community/leaderboard/getRecentMatchHistory",
+    "params": {
+      "title": "age4",
+      "profile_ids": "[4635035]"
+    }
+  },
+  {
+    "id": "we-replays",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getReplayFiles",
+    "params": {
+      "title": "age4",
+      "matchIDs": "[250457718]"
+    }
+  },
+  {
+    "id": "we-dr-replays",
+    "url": "https://dr-activerelease1-api.worldsedgelink.com/community/leaderboard/getReplayFiles",
+    "params": {
+      "title": "age4",
+      "matchIDs": "[250457718]"
+    }
+  },
+  {
+    "id": "official-age4-leaderboard",
+    "url": "https://api.ageofempires.com/api/ageiv/Leaderboard",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "region": 7,
+      "versus": "players",
+      "matchType": "unranked",
+      "teamSize": "1v1",
+      "searchPlayer": "",
+      "page": 1,
+      "count": 1
+    }
+  },
+  {
+    "id": "world-game",
+    "url": "https://aoe4world.com/api/v0/games/250457718"
+  },
+  {
+    "id": "world-stats",
+    "url": "https://aoe4world.com/api/v0/stats/rm_solo/civilizations"
+  },
+  {
+    "id": "steam-player-count",
+    "url": "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/",
+    "params": {
+      "appid": 1466860
+    }
+  },
+  {
+    "id": "aoe2net-sunset",
+    "url": "https://aoe2.net/"
+  },
+  {
+    "id": "aoeivnet",
+    "url": "https://aoeiv.net/"
+  },
+  {
+    "id": "we-age4-leaderboard",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getLeaderBoard2",
+    "params": {
+      "title": "age4",
+      "leaderboard_id": 17,
+      "sortBy": 1,
+      "start": 1,
+      "count": 1
+    }
+  },
+  {
+    "id": "we-age4-match",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getMatchHistory",
+    "params": {
+      "title": "age4",
+      "matchIDs": "[250457718]"
+    }
+  },
+  {
+    "id": "we-age4-lobbies",
+    "url": "https://aoe-api.worldsedgelink.com/community/advertisement/findAdvertisements",
+    "params": {
+      "title": "age4"
+    }
+  },
+  {
+    "id": "we-age4-achievements",
+    "url": "https://aoe-api.worldsedgelink.com/community/achievement/getAvailableAchievements",
+    "params": {
+      "title": "age4"
+    }
+  },
+  {
+    "id": "official-age4-events",
+    "url": "https://api.ageofempires.com/api/ageiv/EventList"
+  },
+  {
+    "id": "official-mod-games",
+    "url": "https://api.ageofempires.com/api/v4/mods/Games"
+  },
+  {
+    "id": "companion-leaderboards",
+    "url": "https://data.aoe2companion.com/api/leaderboards"
+  },
+  {
+    "id": "companion-dump-list",
+    "url": "https://data.aoe2companion.com/api/dump/list"
+  },
+  {
+    "id": "aoestats-dump-list",
+    "url": "https://aoestats.io/api/db_dumps"
+  },
+  {
+    "id": "official-age4-leaderboard-sorted",
+    "url": "https://api.ageofempires.com/api/ageiv/Leaderboard",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "region": 7,
+      "versus": "players",
+      "matchType": "unranked",
+      "teamSize": "1v1",
+      "searchPlayer": "",
+      "page": 1,
+      "count": 1,
+      "sortColumn": "rank",
+      "sortDirection": "ASC",
+      "isConsole": false
+    }
+  },
+  {
+    "id": "official-age4-fullstats",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetFullStats",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "profileId": 4635035,
+      "game": "age4",
+      "matchType": 17
+    }
+  },
+  {
+    "id": "official-age4-matches",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchList",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "profileId": 4635035,
+      "game": "age4",
+      "page": 1,
+      "recordCount": 1,
+      "sortColumn": "dateTime",
+      "sortDirection": "DESC"
+    }
+  },
+  {
+    "id": "official-age4-matchdetail",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchDetail",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "profileId": 4635035,
+      "game": "age4",
+      "matchId": 250457718
+    }
+  },
+  {
+    "id": "official-age4-replay",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchReplay/",
+    "params": {
+      "matchId": 250457718,
+      "profileId": 4635035
+    }
+  },
+  {
+    "id": "official-mod-find",
+    "url": "https://api.ageofempires.com/api/v4/mods/Find",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "q": "",
+      "filter": 0,
+      "sort": "lastUpdate",
+      "order": "desc",
+      "start": 0,
+      "count": 1,
+      "game": 4,
+      "modid": 0
+    }
+  },
+  {
+    "id": "we-myth-discovery",
+    "url": "https://athens-live-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards",
+    "params": {
+      "title": "athens"
+    },
+    "save_metadata_body": true
+  },
+  {
+    "id": "aoe2-static-civ",
+    "url": "https://aoe2api.teamrespawntv.com/civilization/britons"
+  },
+  {
+    "id": "official-age4-events-ladder",
+    "url": "https://api.ageofempires.com/api/ageiv/EventLeaderboard",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "region": 7,
+      "versus": "players",
+      "matchType": "164",
+      "teamSize": "1v1",
+      "searchPlayer": "",
+      "page": 1,
+      "count": 1,
+      "sortColumn": "rank",
+      "sortDirection": "ASC",
+      "isConsole": false
+    }
+  },
+  {
+    "id": "official-age4-matches-filtered",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchList",
+    "method": "POST",
+    "read_only": true,
+    "json": {
+      "profileId": 4635035,
+      "game": "age4",
+      "page": 1,
+      "recordCount": 1,
+      "sortColumn": "dateTime",
+      "sortDirection": "DESC",
+      "matchType": 17
+    }
+  },
+  {
+    "id": "guides-build-overlay",
+    "url": "https://aoe4guides.com/api/builds/07qM0jShA7USYa8hprgp",
+    "params": {
+      "overlay": "true"
+    }
+  }
+]

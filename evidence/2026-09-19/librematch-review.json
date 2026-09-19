@@ -1,0 +1,67 @@
+{
+  "checked_on": "2026-09-19",
+  "wiki_archive": {
+    "url": "https://codeload.github.com/librematch/wiki/tar.gz/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419",
+    "commit": "fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419",
+    "fetched_at": "2026-09-19T09:16:30.107911+00:00",
+    "bytes": 303871,
+    "sha256": "c599ff4ae620d70e6b4ecdecf4ca3414334fee2f6019a6c30d2dbd7b04a3cb06",
+    "selected_files": 274
+  },
+  "linked_source_fetches": [
+    {
+      "url": "https://raw.githubusercontent.com/librematch/delta-play-replay/9bc90f67f22aec47bb050cdea5b73a5fec0d629e/README.md",
+      "fetched_at": "2026-09-19T09:17:22.624227+00:00",
+      "bytes": 3112,
+      "sha256": "a8db0c98a67bed3635430108d2e2942cd934d4f9c8bfe4eec90bdf2ac27dba69"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/librematch/delta-play-replay/9bc90f67f22aec47bb050cdea5b73a5fec0d629e/crates/uncage-client/proto/cade_api.proto",
+      "fetched_at": "2026-09-19T09:17:22.975806+00:00",
+      "bytes": 13447,
+      "sha256": "74828708dd092641cd3ae196996791dedda188a41fc5b2dca9d8154baa7c5597"
+    },
+    {
+      "url": "https://api.github.com/repos/librematch/delta-play-replay/git/trees/main?recursive=1",
+      "fetched_at": "2026-09-19T09:17:22.226652+00:00",
+      "bytes": 17165,
+      "sha256": "02de35c0aac1619486afdc81dde2f232f29fc19f6fbe3e12dd1b76d26fe467af"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/librematch/librematch-rlink_client/a1227c74a6990db9d9bc0e33c83a502773084178/README.md",
+      "fetched_at": "2026-09-19T09:17:22.624783+00:00",
+      "bytes": 617,
+      "sha256": "1c4a40481b108db17d50cbf5df2af3fdc367047172f3c6edcc9b7336148420b9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/librematch/librematch-rlink_client/a1227c74a6990db9d9bc0e33c83a502773084178/openapi.yaml",
+      "fetched_at": "2026-09-19T09:17:22.617402+00:00",
+      "bytes": 102613,
+      "sha256": "5141c32be0dc75d8c80100514930ed291889f80d56c59f5aca86d2823fc9c1ad"
+    },
+    {
+      "url": "https://api.github.com/repos/librematch/librematch-rlink_client/git/trees/main?recursive=1",
+      "fetched_at": "2026-09-19T09:17:22.211189+00:00",
+      "bytes": 11294,
+      "sha256": "a1de2a385c63d0860796b231afff708e03f15a74fe217484545e7b173b9fec8e"
+    }
+  ],
+  "coverage_summary": {
+    "endpoint_pages": 172,
+    "by_family": {
+      "community": 16,
+      "game": 88,
+      "website": 68
+    },
+    "by_documentation_status": {
+      "content-present": 114,
+      "explicit-incomplete-template": 2,
+      "heading-or-short-placeholder": 56
+    },
+    "broken_links_in_two_rlink_indexes": 20,
+    "openapi_paths": 102,
+    "openapi_operations": 105,
+    "openapi_named_response_schemas": 0
+  },
+  "new_live_service_requests": 0
+}

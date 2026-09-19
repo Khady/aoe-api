@@ -1,0 +1,846 @@
+[
+  {
+    "id": "official-age4-leaderboard-sorted",
+    "checked_at": "2026-09-19T08:51:04.960946+00:00",
+    "method": "POST",
+    "url": "https://api.ageofempires.com/api/ageiv/Leaderboard",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/ageiv/Leaderboard",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 626,
+    "truncated": false,
+    "sha256": "69d36bc31c9019a7ff0213a0760268a29cdea0a1ce336eef800cfaf0fc4c7ba0",
+    "body_kind": "json",
+    "sampled_shape": {
+      "id": "str",
+      "count": "int",
+      "gameId": "null",
+      "leaderboardId": "int",
+      "region": "int",
+      "lastUpdated": "str",
+      "items": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "gameId": "str",
+          "userId": "str",
+          "rlUserId": "int",
+          "userName": "str",
+          "avatarUrl": "str",
+          "playerNumber": "null",
+          "elo": "int",
+          "eloRating": "int",
+          "eloHighest": "int",
+          "rank": "int",
+          "rankTotal": "int",
+          "region": "str",
+          "wins": "int",
+          "winPercent": "float",
+          "losses": "int",
+          "winStreak": "int",
+          "totalGames": "int",
+          "rankLevel": "str",
+          "rankIcon": "str",
+          "leaderboardKey": "str"
+        }
+      },
+      "isEvent": "bool",
+      "compressedItems": "null"
+    },
+    "duration_ms": 947
+  },
+  {
+    "id": "official-age4-fullstats",
+    "checked_at": "2026-09-19T08:51:07.908144+00:00",
+    "method": "POST",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetFullStats",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetFullStats",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 717,
+    "truncated": false,
+    "sha256": "cd8d34675f8ca11a860aa84226375dd9d1a5a8a338d8e2382f304e2d81773852",
+    "body_kind": "json",
+    "sampled_shape": {
+      "mpStatList": {
+        "totalMatches": "int",
+        "totalWins": "int",
+        "currentWinStreak": "int"
+      },
+      "careerStats": {
+        "totalGames": "int",
+        "totalWins": "int",
+        "civilizations": {
+          "type": "array",
+          "length": 0,
+          "first_item_shape": null
+        },
+        "highScoreTotal": "int",
+        "highScoreMilitary": "int",
+        "highScoreEconomy": "int",
+        "highScoreTechnology": "int",
+        "unitsKilled": "int",
+        "unitsLost": "int",
+        "buildingsRaised": "int",
+        "buildingsLost": "int",
+        "wondersBuilt": "int",
+        "castlesBuilt": "int",
+        "trebsBuilt": "int",
+        "farmsBuilt": "int"
+      },
+      "user": {
+        "userId": "str",
+        "profileId": "int",
+        "userName": "str",
+        "avatarUrl": "str",
+        "elo": "int",
+        "playerStanding": "float",
+        "isHuman": "bool",
+        "team": "int",
+        "civName": "null",
+        "winLoss": "null",
+        "matchReplayAvailable": "bool"
+      },
+      "mpMatches": {
+        "matchList": {
+          "type": "array",
+          "length": 0,
+          "first_item_shape": null
+        },
+        "totalMatches": "int"
+      },
+      "statusCode": "int",
+      "errorMessage": "null"
+    },
+    "duration_ms": 873,
+    "application_status_fields": {
+      "statusCode": 0,
+      "errorMessage": null
+    }
+  },
+  {
+    "id": "official-age4-matches",
+    "checked_at": "2026-09-19T08:51:10.781498+00:00",
+    "method": "POST",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchList",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchList",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 33,
+    "truncated": false,
+    "sha256": "fa0501a0c31a2be1b709c58eb88efa2d2dc42c42d6db225f7b45ee147917f55b",
+    "body_kind": "json",
+    "sampled_shape": {
+      "matchList": {
+        "type": "array",
+        "length": 0,
+        "first_item_shape": null
+      },
+      "totalMatches": "int"
+    },
+    "duration_ms": 1193,
+    "application_status_fields": {}
+  },
+  {
+    "id": "official-age4-matchdetail",
+    "checked_at": "2026-09-19T08:51:13.976528+00:00",
+    "method": "POST",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchDetail",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchDetail",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 2570,
+    "truncated": false,
+    "sha256": "71326b043332fcdab784d994e051d089d9eadc0a112fca064f7d2521cd3b9ae2",
+    "body_kind": "json",
+    "sampled_shape": {
+      "matchSummary": {
+        "gameId": "null",
+        "matchId": "str",
+        "profileId": "int",
+        "userName": "null",
+        "avatarUrl": "null",
+        "dateTime": "str",
+        "matchLength": "float",
+        "playerCount": "int",
+        "victoryResultID": "int",
+        "mapType": "str",
+        "civilizationID": "int",
+        "civilization": "null",
+        "winLoss": "null"
+      },
+      "playerList": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "userId": "str",
+          "profileId": "int",
+          "userName": "str",
+          "avatarUrl": "str",
+          "elo": "null",
+          "playerStanding": "float",
+          "isHuman": "bool",
+          "team": "int",
+          "civName": "str",
+          "winLoss": "str",
+          "matchReplayAvailable": "bool"
+        }
+      },
+      "statusCode": "int",
+      "errorMessage": "null"
+    },
+    "duration_ms": 942,
+    "application_status_fields": {
+      "statusCode": 0,
+      "errorMessage": null
+    }
+  },
+  {
+    "id": "official-age4-replay",
+    "checked_at": "2026-09-19T08:51:16.919700+00:00",
+    "method": "GET",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchReplay/?matchId=250457718&profileId=4635035",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchReplay/?matchId=250457718&profileId=4635035",
+    "headers": {
+      "content-type": "application/zip",
+      "content-length": "1698779",
+      "access-control-allow-origin": "https://example.org",
+      "content-disposition": "attachment; filename=AgeIV_Replay_250457718.gz; filename*=UTF-8''AgeIV_Replay_250457718.gz"
+    },
+    "bytes_read": 1698779,
+    "truncated": false,
+    "sha256": "e5d6ef281ad38ae9bd335a572eca774e4d82f97d7838305e6297a30fd69a051f",
+    "gzip_prefix_contains_aoe4_signature": true,
+    "body_kind": "non-json",
+    "duration_ms": 2133
+  },
+  {
+    "id": "official-mod-find",
+    "checked_at": "2026-09-19T08:51:21.053251+00:00",
+    "method": "POST",
+    "url": "https://api.ageofempires.com/api/v4/mods/Find",
+    "http_status": 401,
+    "final_url": "https://api.ageofempires.com/api/v4/mods/Find",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "144",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 144,
+    "truncated": false,
+    "sha256": "e9ce4b848406b9e6b7fa54258128bea884ffacd23317469cfa124788d3fc5b3c",
+    "body_kind": "json",
+    "sampled_shape": {
+      "searchParams": "null",
+      "modList": {
+        "type": "array",
+        "length": 0,
+        "first_item_shape": null
+      },
+      "totalCount": "null",
+      "isLoggedOn": "bool",
+      "errorCode": "int",
+      "errorMessage": "str"
+    },
+    "duration_ms": 820,
+    "application_status_fields": {
+      "errorCode": 900,
+      "errorMessage": "Access Denied - User not authenticated."
+    }
+  },
+  {
+    "id": "we-myth-discovery",
+    "checked_at": "2026-09-19T08:51:23.873860+00:00",
+    "method": "GET",
+    "url": "https://athens-live-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=athens",
+    "http_status": 200,
+    "final_url": "https://athens-live-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=athens",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "4759",
+      "cache-control": "public, max-age=600"
+    },
+    "bytes_read": 4759,
+    "truncated": false,
+    "sha256": "94fa1b925d475d1933e8225597fb09d62bedaa82a685026d792317dced272c1e",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "leaderboards": {
+        "type": "array",
+        "length": 9,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "isranked": "int",
+          "leaderboardmap": {
+            "type": "array",
+            "length": 1,
+            "first_item_shape": {
+              "matchtype_id": "int",
+              "statgroup_type": "int",
+              "civilization_id": "int"
+            }
+          }
+        }
+      },
+      "matchTypes": {
+        "type": "array",
+        "length": 17,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      },
+      "races": {
+        "type": "array",
+        "length": 23,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "faction_id": "int",
+          "locstringid": "int"
+        }
+      },
+      "factions": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      },
+      "leaderboardRegions": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "discovery_metadata": {
+      "result": {
+        "code": 0,
+        "message": "SUCCESS"
+      },
+      "leaderboards": [
+        {
+          "id": 0,
+          "name": "Custom",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 0,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "1v1Supremacy",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 1,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "TeamSupremacy",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 2,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 3,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 4,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Deathmatch",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 5,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "TeamDeathmatch",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 6,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 7,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 8,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "1v1SupremacyControllerOnly",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 40,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "TeamSupremacyControllerOnly",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 41,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 42,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 43,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "DeathmatchControllerOnly",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 44,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "TeamDeathmatchControllerOnly",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 45,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 46,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 47,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        }
+      ],
+      "matchTypes": [
+        {
+          "id": 0,
+          "name": "CUSTOM",
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "1V1_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "2V2_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "3V3_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "4V4_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "1V1_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "2V2_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "3V3_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "4V4_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 40,
+          "name": "1V1_SUPREMACY_CONTROLLER_ONLY",
+          "locstringid": -1
+        },
+        {
+          "id": 41,
+          "name": "2V2_SUPREMACY_CONTROLLER_ONLY",
+          "locstringid": -1
+        },
+        {
+          "id": 42,
+          "name": "3V3_SUPREMACY_CONTROLLER_ONLY",
+          "locstringid": -1
+        },
+        {
+          "id": 43,
+          "name": "4V4_SUPREMACY_CONTROLLER_ONLY",
+          "locstringid": -1
+        },
+        {
+          "id": 44,
+          "name": "1V1_DEATHMATCH_CONTROLLER_ONLY",
+          "locstringid": -1
+        },
+        {
+          "id": 45,
+          "name": "2V2_DEATHMATCH_CONTROLLER_ONLY",
+          "locstringid": -1
+        },
+        {
+          "id": 46,
+          "name": "3V3_DEATHMATCH_CONTROLLER_ONLY",
+          "locstringid": -1
+        },
+        {
+          "id": 47,
+          "name": "4V4_DEATHMATCH_CONTROLLER_ONLY",
+          "locstringid": -1
+        }
+      ],
+      "races": [
+        {
+          "id": 1,
+          "name": "Zeus",
+          "faction_id": 1,
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "Hades",
+          "faction_id": 1,
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "Poseidon",
+          "faction_id": 1,
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "Ra",
+          "faction_id": 2,
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Isis",
+          "faction_id": 2,
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Set",
+          "faction_id": 2,
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Thor",
+          "faction_id": 3,
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "Odin",
+          "faction_id": 3,
+          "locstringid": -1
+        },
+        {
+          "id": 9,
+          "name": "Loki",
+          "faction_id": 3,
+          "locstringid": -1
+        },
+        {
+          "id": 10,
+          "name": "Kronos",
+          "faction_id": 4,
+          "locstringid": -1
+        },
+        {
+          "id": 11,
+          "name": "Oranos",
+          "faction_id": 4,
+          "locstringid": -1
+        },
+        {
+          "id": 12,
+          "name": "Gaia",
+          "faction_id": 4,
+          "locstringid": -1
+        },
+        {
+          "id": 13,
+          "name": "Freyr",
+          "faction_id": 3,
+          "locstringid": -1
+        },
+        {
+          "id": 14,
+          "name": "Fuxi",
+          "faction_id": 5,
+          "locstringid": -1
+        },
+        {
+          "id": 15,
+          "name": "Nuwa",
+          "faction_id": 5,
+          "locstringid": -1
+        },
+        {
+          "id": 16,
+          "name": "Shennong",
+          "faction_id": 5,
+          "locstringid": -1
+        },
+        {
+          "id": 17,
+          "name": "Amaterasu",
+          "faction_id": 6,
+          "locstringid": -1
+        },
+        {
+          "id": 18,
+          "name": "Tsukuyomi",
+          "faction_id": 6,
+          "locstringid": -1
+        },
+        {
+          "id": 19,
+          "name": "Susanoo",
+          "faction_id": 6,
+          "locstringid": -1
+        },
+        {
+          "id": 20,
+          "name": "Demeter",
+          "faction_id": 1,
+          "locstringid": -1
+        },
+        {
+          "id": 21,
+          "name": "Huitzilopochtli",
+          "faction_id": 7,
+          "locstringid": -1
+        },
+        {
+          "id": 22,
+          "name": "Tezcatlipoca",
+          "faction_id": 7,
+          "locstringid": -1
+        },
+        {
+          "id": 23,
+          "name": "Quetzalcoatl",
+          "faction_id": 7,
+          "locstringid": -1
+        }
+      ],
+      "factions": [
+        {
+          "id": 0,
+          "name": "MotherNature",
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "Greek",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "Egyptian",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "Norse",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "Atlantean",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Chinese",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Japanese",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Aztec",
+          "locstringid": -1
+        }
+      ],
+      "leaderboardRegions": [
+        {
+          "id": 0,
+          "name": "Europe",
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "Middle East",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "Asia",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "North America",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "South America",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Oceania",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Africa",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Unknown",
+          "locstringid": -1
+        }
+      ]
+    },
+    "duration_ms": 1191
+  },
+  {
+    "id": "aoe2-static-civ",
+    "checked_at": "2026-09-19T08:51:27.065997+00:00",
+    "method": "GET",
+    "url": "https://aoe2api.teamrespawntv.com/civilization/britons",
+    "http_status": 200,
+    "final_url": "https://aoe2api.teamrespawntv.com/civilization/britons",
+    "headers": {
+      "content-type": "application/json",
+      "content-length": "440",
+      "access-control-allow-origin": "*"
+    },
+    "bytes_read": 440,
+    "truncated": false,
+    "sha256": "0e318a60583b849679ea74cd574c7183a917b9415c61c43833429a989cf6fb0c",
+    "body_kind": "json",
+    "sampled_shape": {
+      "id": "int",
+      "name": "str",
+      "expansion": "str",
+      "army_type": "str",
+      "unique_unit": "str",
+      "unique_tech": "str",
+      "team_bonus": "str",
+      "civilization_bonus": {
+        "type": "array",
+        "length": 3,
+        "first_item_shape": "str"
+      }
+    },
+    "duration_ms": 470
+  }
+]

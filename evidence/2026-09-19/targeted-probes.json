@@ -1,0 +1,150 @@
+[
+  {
+    "id": "official-age4-events-ladder",
+    "checked_at": "2026-09-19T08:57:56.893263+00:00",
+    "method": "POST",
+    "url": "https://api.ageofempires.com/api/ageiv/EventLeaderboard",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/ageiv/EventLeaderboard",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 21253,
+    "truncated": false,
+    "sha256": "ba071353809affbae16eaa64754c7aa37b29a5cd338875bf846de125f422a778",
+    "body_kind": "json",
+    "sampled_shape": {
+      "id": "str",
+      "count": "int",
+      "gameId": "null",
+      "leaderboardId": "int",
+      "region": "int",
+      "lastUpdated": "str",
+      "items": {
+        "type": "array",
+        "length": 50,
+        "first_item_shape": {
+          "gameId": "str",
+          "userId": "str",
+          "rlUserId": "int",
+          "userName": "str",
+          "avatarUrl": "str",
+          "playerNumber": "null",
+          "elo": "int",
+          "eloRating": "int",
+          "eloHighest": "int",
+          "rank": "int",
+          "rankTotal": "int",
+          "region": "str",
+          "wins": "int",
+          "winPercent": "float",
+          "losses": "int",
+          "winStreak": "int",
+          "totalGames": "int",
+          "rankLevel": "str",
+          "rankIcon": "str",
+          "leaderboardKey": "str"
+        }
+      },
+      "isEvent": "bool",
+      "compressedItems": "null"
+    },
+    "duration_ms": 1022
+  },
+  {
+    "id": "official-age4-matches-filtered",
+    "checked_at": "2026-09-19T08:57:59.915365+00:00",
+    "method": "POST",
+    "url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchList",
+    "http_status": 200,
+    "final_url": "https://api.ageofempires.com/api/GameStats/AgeIV/GetMatchList",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "https://example.org"
+    },
+    "bytes_read": 2661,
+    "truncated": false,
+    "sha256": "1785ac43d273825c3fb17c38626d311d8b46ec5826420a86a6b5be629bd82c05",
+    "body_kind": "json",
+    "sampled_shape": {
+      "matchList": {
+        "type": "array",
+        "length": 10,
+        "first_item_shape": {
+          "gameId": "null",
+          "matchId": "str",
+          "profileId": "int",
+          "userName": "null",
+          "avatarUrl": "null",
+          "dateTime": "str",
+          "matchLength": "float",
+          "playerCount": "int",
+          "victoryResultID": "int",
+          "mapType": "str",
+          "civilizationID": "int",
+          "civilization": "str",
+          "winLoss": "str"
+        }
+      },
+      "totalMatches": "int"
+    },
+    "duration_ms": 1583,
+    "application_status_fields": {}
+  },
+  {
+    "id": "guides-build-overlay",
+    "checked_at": "2026-09-19T08:58:03.498765+00:00",
+    "method": "GET",
+    "url": "https://aoe4guides.com/api/builds/07qM0jShA7USYa8hprgp?overlay=true",
+    "http_status": 200,
+    "final_url": "https://aoe4guides.com/api/builds/07qM0jShA7USYa8hprgp?overlay=true",
+    "headers": {
+      "access-control-allow-origin": "*",
+      "cache-control": "public,max-age=300",
+      "content-length": "995",
+      "content-type": "application/json; charset=utf-8",
+      "etag": "W/\"3e3-9GYygBBYUdzu5ZWG/0H0F2tpCdU\"",
+      "ratelimit": "\"build-per-hour\"; r=1199; t=3600",
+      "ratelimit-policy": "\"build-per-hour\"; q=1200; w=3600; pk=:YzRmOTAwYTU5MTBj:"
+    },
+    "bytes_read": 995,
+    "truncated": false,
+    "sha256": "5c72b9218d852c38ed135be2d4f397206d3145976d70d790227d0c849f2fc6db",
+    "body_kind": "json",
+    "sampled_shape": {
+      "description": "str",
+      "civilization": "str",
+      "name": "str",
+      "author": "str",
+      "source": "str",
+      "build_order": {
+        "type": "array",
+        "length": 6,
+        "first_item_shape": {
+          "age": "int",
+          "population_count": "int",
+          "villager_count": "int",
+          "resources": {
+            "food": "int",
+            "wood": "int",
+            "gold": "int",
+            "stone": "int",
+            "builder": "int"
+          },
+          "notes": {
+            "type": "array",
+            "length": 0,
+            "first_item_shape": null
+          }
+        }
+      },
+      "video": "str",
+      "season": "str",
+      "map": "null",
+      "strategy": "null"
+    },
+    "duration_ms": 847,
+    "application_status_fields": {}
+  }
+]

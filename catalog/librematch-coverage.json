@@ -1,0 +1,4150 @@
+{
+  "checked_on": "2026-09-19",
+  "wiki_revision": "fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419",
+  "openapi_revision": "a1227c74a6990db9d9bc0e33c83a502773084178",
+  "summary": {
+    "endpoint_pages": 172,
+    "by_family": {
+      "community": 16,
+      "game": 88,
+      "website": 68
+    },
+    "by_documentation_status": {
+      "content-present": 114,
+      "explicit-incomplete-template": 2,
+      "heading-or-short-placeholder": 56
+    },
+    "broken_links_in_two_rlink_indexes": 20,
+    "openapi_paths": 102,
+    "openapi_operations": 105,
+    "openapi_named_response_schemas": 0
+  },
+  "methodology": [
+    "All non-README Markdown pages under src/rlink/community, src/rlink/game and src/aoe are indexed.",
+    "Declared routes/methods come only from explicit HTTP-method headings. Unqualified headings remain fragments, not synthesized request URLs.",
+    "heading-or-short-placeholder means fewer than 100 non-heading characters. Explicit parameter templates without a parameter table are flagged separately.",
+    "parameter_names_in_wiki records table field names before the first Response heading; it is not a complete required/optional schema.",
+    "Catalog matching ignores casing and trailing slashes solely for source cross-references, not to assert runtime equivalence.",
+    "Source-only game routes were added without network execution. Existing probe evidence remains unchanged."
+  ],
+  "endpoint_pages": [
+    {
+      "source_path": "src/rlink/community/achievement/getachievements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/achievement/getachievements.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/achievement/getAchievements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "profileids"
+      ],
+      "documentation_gaps": [],
+      "sha256": "8d78131a9c96c50a4adb078ec2eec10f143054a2fd1a3361c8c782ccac0fc12e",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-achievements"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/achievement/getavailableachievements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/achievement/getavailableachievements.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/achievement/getAvailableAchievements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title"
+      ],
+      "documentation_gaps": [],
+      "sha256": "86b7502361f7bfc31566bc31027f676732c42e4963b4bf94093d42bba7c4de5e",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-achievement-definitions"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/advertisement/findadvertisements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/advertisement/findadvertisements.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/advertisement/findAdvertisements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title"
+      ],
+      "documentation_gaps": [],
+      "sha256": "eecea0bf475d3a3c9989e5e0b4ce776a686224bf57510477bb4b5c8e199e33bf",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-lobbies"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/clan/find.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/clan/find.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/clan/find",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "joinPolicies",
+        "tags",
+        "start",
+        "count"
+      ],
+      "documentation_gaps": [],
+      "sha256": "48dcf9593bacaea6be47c309fc7c5f4c29501f8bf7fe1e78e0871cb374689467",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-clan-find"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/clan/getclaninfofull.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/clan/getclaninfofull.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/clan/getClanInfoFull",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title"
+      ],
+      "documentation_gaps": [],
+      "sha256": "905c8cd4b35a34663d502cea253e4158091ba7559cf24d74361fdf7b3130ba49",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-clan-detail"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/communityevent/getavailablecommunityevents.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/communityevent/getavailablecommunityevents.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/CommunityEvent/getAvailableCommunityEvents",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title"
+      ],
+      "documentation_gaps": [],
+      "sha256": "6e8aa8daf58f287fadeb7c2a0c50044f610160e2a7c658fa6fed95f0cefbdb07",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-community-events"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/external/proxysteamuserrequest.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/external/proxysteamuserrequest.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/external/proxysteamuserrequest",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "profile_names",
+        "request"
+      ],
+      "documentation_gaps": [
+        "Example and OpenAPI use profileNames; wiki parameter table uses profile_names."
+      ],
+      "sha256": "80728b52bb2ad4d4724ec8667e63588f952636d3d44886fe0dee7223c0a7c911",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-community-external-proxysteamuserrequest"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/item/getinventorybyprofileids.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/item/getinventorybyprofileids.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/item/getInventoryByProfileIDs",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "profileids"
+      ],
+      "documentation_gaps": [],
+      "sha256": "856c1d2817186eb95a9d8cc7e725d7eeffb5a12190f4a4dc95f53c5db2c8c8ed",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-inventory"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/leaderboard/getavailableleaderboards.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getavailableleaderboards.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/leaderboard/GetAvailableLeaderboards",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title"
+      ],
+      "documentation_gaps": [],
+      "sha256": "64d8f8c23155f1e8869f03e8aeab9a37d173ac78ba63908412ae0ea23daaf64d",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-discovery"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/leaderboard/getavatarstatforprofile.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getavatarstatforprofile.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/leaderboard/GetAvatarStatForProfile",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "profile_names"
+      ],
+      "documentation_gaps": [],
+      "sha256": "92a43fec9710e7671b2a481fb21349157a834b0ee795aea6e64fbd603dff6b9f",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-avatar-stat"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/leaderboard/getleaderboard2.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getleaderboard2.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/leaderboard/getLeaderBoard2",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "leaderboard_id",
+        "platform",
+        "title",
+        "sortBy",
+        "start",
+        "count"
+      ],
+      "documentation_gaps": [],
+      "sha256": "daa5ed2f9cc198990f753460faded214b08b62161c0ad8b28138ff423621ad20",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-leaderboard"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/leaderboard/getmatchhistory.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getmatchhistory.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/leaderboard/getMatchHistory",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "matchIDs"
+      ],
+      "documentation_gaps": [],
+      "sha256": "faadc5fc770ca468ec9326c0a4ea3a621f6a67f978047c9c71d9581a0609dada",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [],
+      "atlas_endpoint_ids": [
+        "we-match"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/leaderboard/getpersonalstat.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getpersonalstat.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/leaderboard/GetPersonalStat",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "profile_names",
+        "aliases"
+      ],
+      "documentation_gaps": [],
+      "sha256": "37c382cee1144568c827570f1775be704380196a7665bda7565a5893d3ffc634",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-personal"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/leaderboard/getrecentmatchhistory.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getrecentmatchhistory.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/leaderboard/getRecentMatchHistory",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "profile_names",
+        "profile_ids",
+        "aliases"
+      ],
+      "documentation_gaps": [],
+      "sha256": "ff2a8906b70ceab2badeeb70ebf87acca0a794cbdec8f031df261023a150a997",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-recent"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/leaderboard/getreplayfiles.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getreplayfiles.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/leaderboard/getReplayFiles",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title",
+        "matchIDs"
+      ],
+      "documentation_gaps": [],
+      "sha256": "be13eb500dc5f6567ec05ebfe658b151db0260dc0d77a956b62de66e9f7d5f94",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [],
+      "atlas_endpoint_ids": [
+        "we-replay"
+      ]
+    },
+    {
+      "source_path": "src/rlink/community/news.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/news.md",
+      "family": "community",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/community/news/getNews",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "title"
+      ],
+      "documentation_gaps": [],
+      "sha256": "2963c5a83e7e1ce84f638169de1bbd0ef31b6022e768ee561e2c8ecc17a14851",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-news"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/account/findprofiles.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/account/findprofiles.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/account/FindProfiles",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "49bd253c7f63f68f7e4f82f4ae8b6cde2334bc44a51c0ef16ea5165dff56d7ea",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-account-findprofiles"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/account/findprofilesbyplatformid.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/account/findprofilesbyplatformid.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/account/FindProfilesByPlatformID",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "platformIDs",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "9c2b273f8f59d26a235773a203b3247380c238a6a63fb2c4572e1d8c29eafea5",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-account-findprofilesbyplatformid"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/account/getprofilename.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/account/getprofilename.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/account/getProfileName",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "profile_ids",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "9ef16cdfdbd16d78d446d240fa34c622a283d5838da15c8e3e2d1820864c59a0",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-account-getprofilename"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/account/getprofileproperty.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/account/getprofileproperty.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/account/getProfileProperty",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "profile_id",
+        "property_id"
+      ],
+      "documentation_gaps": [
+        "TODO Empty Response"
+      ],
+      "sha256": "af7582f1f5c99a4f339fc1eb9123e9727f5dd5504b15e7a1fd10628c8aa95d55",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-account-getprofileproperty"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/account/setavatarmetadata.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/account/setavatarmetadata.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/account/setAvatarMetadata",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "metaData"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "d6b981d855d436efdf79121358861ea1089594c828235d1cbbf64ff82b8d298a",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-account-setavatarmetadata"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/account/setlanguage.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/account/setlanguage.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/account/setLanguage",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "language",
+        "lastCallTime",
+        "sessionID",
+        "title"
+      ],
+      "documentation_gaps": [],
+      "sha256": "199aaea8ed6aff9ebddceaa536dbe68596094dd2a91d385c6f7a2dd982ddf9d5",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-account-setlanguage"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/achievement/getachievements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/achievement/getachievements.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Achievement/getAchievements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "profileIDs",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "4bf391677ca82676ccf063e9f2e581978056f06d19794ffa3007dbecb41bf5d1",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-achievement-getachievements"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/achievement/getavailableachievements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/achievement/getavailableachievements.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Achievement/getAvailableAchievements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "signature"
+      ],
+      "documentation_gaps": [],
+      "sha256": "133ab58dec3dad9c9ac692e33c47f50f3cf97bab9302e1a51a8ec5685a8e60f9",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-achievement-getavailableachievements"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/achievement/syncstats.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/achievement/syncstats.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/achievement/syncStats",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "accountType",
+        "auth",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "407a4451709f4b0152d5b6c8a82ec5455fb8335cb68347d26ab2c49179803ad5",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-achievement-syncstats"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/findadvertisements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/findadvertisements.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/advertisement/findAdvertisements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "appBinaryChecksum",
+        "callNum",
+        "connect_id",
+        "dataChecksum",
+        "lastCallTime",
+        "matchType_id",
+        "modDLLChecksum",
+        "modDLLFile",
+        "modName",
+        "modVersion",
+        "profile_ids",
+        "race_ids",
+        "sessionID",
+        "statGroup_ids",
+        "versionFlags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "cc245ceed59fafa3fc96c4e194fa48ea841c618e62662e54f8f2803a1a949582",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-findadvertisements"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/findobservableadvertisements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/findobservableadvertisements.md",
+      "family": "game",
+      "declared_methods": [
+        "GET",
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/findObservableAdvertisements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "appBinaryChecksum",
+        "callNum",
+        "connect_id",
+        "count",
+        "dataChecksum",
+        "desc",
+        "lastCallTime",
+        "modDLLChecksum",
+        "modDLLFile",
+        "modName",
+        "modVersion",
+        "observerGroupID",
+        "sessionID",
+        "sortOrder",
+        "start",
+        "versionFlags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "602047fbf31582a38ffd18e6f97c4abe16860289c9105bbaee86cd9ebeab0a3b",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET",
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-findobservableadvertisements"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/getadvertisements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/getadvertisements.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/advertisement/getAdvertisements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "match_ids",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "83d14f0c462e4ee823e42c1a2cc8a0478b882fe6ec63dc49968dcffe0456939d",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-getadvertisements"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/getlanadvertisements.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/getlanadvertisements.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/advertisement/getLanAdvertisements",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "appBinaryChecksum",
+        "callNum",
+        "connect_id",
+        "dataChecksum",
+        "lanServerGuids",
+        "lastCallTime",
+        "matchType_id",
+        "modDLLChecksum",
+        "modDLLFile",
+        "modName",
+        "modVersion",
+        "sessionID",
+        "versionFlags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "832b46f19d06272011fff987e8dcec64b642d2eff9ea2b45c4d554dc8d23da91",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-getlanadvertisements"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/host.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/host.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/host",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "appBinaryChecksum",
+        "automatchPoll_id",
+        "callNum",
+        "connect_id",
+        "dataChecksum",
+        "description",
+        "hostid",
+        "isObservable",
+        "lastCallTime",
+        "mapname",
+        "matchtype",
+        "maxplayers",
+        "moddllchecksum",
+        "moddllfile",
+        "modname",
+        "modversion",
+        "observerDelay",
+        "observerPassword",
+        "options",
+        "party",
+        "password",
+        "passworded",
+        "race",
+        "relayRegion",
+        "serviceType",
+        "sessionID",
+        "slotinfo",
+        "state",
+        "statgroup",
+        "team",
+        "versionFlags",
+        "visible"
+      ],
+      "documentation_gaps": [],
+      "sha256": "37e2df67b70ba9b9ff64dd4b5474a97b9172c8136b271bd71f478cf61887d744",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-host"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/join.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/join.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/join",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "appBinaryChecksum",
+        "callNum",
+        "connect_id",
+        "dataChecksum",
+        "lastCallTime",
+        "moddllchecksum",
+        "moddllfile",
+        "modname",
+        "modversion",
+        "party",
+        "password",
+        "race",
+        "sessionID",
+        "statgroup",
+        "team",
+        "versionFlags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "e5de465541e7ffe425da16d01e5d703dbd623a7d6f09ffc1d77bf7e374677d53",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-join"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/leave.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/leave.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/leave",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "c3c7a8b8946d3bd0f119df4b39987c47628a70f59e65cc166cf5fb7d66029507",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-leave"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/startobserving.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/startobserving.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/startObserving",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "appBinaryChecksum",
+        "callNum",
+        "connect_id",
+        "dataChecksum",
+        "lastCallTime",
+        "moddllchecksum",
+        "moddllfile",
+        "modname",
+        "modversion",
+        "password",
+        "sessionID",
+        "versionFlags",
+        "withPartySessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "7147bfbb83abd95036f6a38b1d5fdac4d9b5f10b3548353a9874a7cfe86a00a5",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-startobserving"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/stopobserving.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/stopobserving.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/stopObserving",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "67ddd031311070618e4ed078f085e581099b8fb9268be90cfa4cee8702417924",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-stopobserving"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/update.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/update.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/update",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "appBinaryChecksum",
+        "automatchPoll_id",
+        "callNum",
+        "connect_id",
+        "dataChecksum",
+        "description",
+        "hostid",
+        "isObservable",
+        "lastCallTime",
+        "mapname",
+        "matchtype",
+        "maxplayers",
+        "moddllchecksum",
+        "moddllfile",
+        "modname",
+        "modversion",
+        "observerDelay",
+        "observerPassword",
+        "options",
+        "password",
+        "passworded",
+        "sessionID",
+        "slotinfo",
+        "state",
+        "versionFlags",
+        "visible"
+      ],
+      "documentation_gaps": [],
+      "sha256": "b2b15d24b62b633ee548eb68dd3894a5baf1b82e80267cd1b6db23304088f63a",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-update"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/updateplatformlobbyid.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/updateplatformlobbyid.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/updatePlatformLobbyID",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "matchID",
+        "platformlobbyID",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "0076730ef3c6a5306f29d22e770ea478ff10be669cd23da640fc2aa6e591b691",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-updateplatformlobbyid"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/updatestate.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/updatestate.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/updateState",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "c8cf747d70bde851989043f83eea199b450eef9848e32b51f6a1ff14e08861ee",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-updatestate"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/advertisement/updatetags.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/advertisement/updatetags.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/advertisement/updateTags",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "advertisementid",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "numericTagNames",
+        "numericTagValues",
+        "sessionID",
+        "stringTagNames",
+        "stringTagValues"
+      ],
+      "documentation_gaps": [],
+      "sha256": "47b0a5617044379551e855376c91bbe998562af2674e6b75b2d6df3a158856a9",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-updatetags"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/automatch/getautomatchmap.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/automatch/getautomatchmap.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/automatch/getAutomatchMap",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "653fe1713b4c5962e8dfd3ff3fa611edd0356b8d597307770d8449d04a1b4eee",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-automatch-getautomatchmap"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/automatch2/getautomatchmap.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/automatch2/getautomatchmap.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/automatch2/getAutomatchMap",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "cc29f35675b23a85531f9893a0791ce4e4ddc459090c37174fb8538dbb07097a",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-automatch2-getautomatchmap"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/automatch2/polling.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/automatch2/polling.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/automatch2/polling",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "appBinCRC",
+        "callNum",
+        "connect_id",
+        "dataCRC",
+        "factionIDs",
+        "lastCallTime",
+        "matchTypes",
+        "modDLLFile",
+        "modDllCRC",
+        "modName",
+        "modVersion",
+        "options",
+        "partySessionID",
+        "raceInfoKey",
+        "raceInfoProfileID",
+        "raceInfoRaceID",
+        "relayPingTimes",
+        "relayRegion",
+        "relayRegions",
+        "sessionID",
+        "versionFlags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "a4a61154880371ffa91c68ea941a674128dbbda1cb8227e019b5e48a01c6ccdc",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-automatch2-polling"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/automatch2/stoppolling.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/automatch2/stoppolling.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/automatch2/stoppolling",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "commit",
+        "connect_id",
+        "lastCallTime",
+        "ownerProfileID",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "2b3d126c61f775bacbc6573fbc5e0ebe39ff72a2b2ada1c50af6b3a004c4bf92",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-automatch2-stoppolling"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/automatch2/updatestatus.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/automatch2/updatestatus.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/automatch2/updateStatus",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "matchID",
+        "result",
+        "resultCode",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "1d8c9e0378d1cbcf4b1562935567176514cf90a8aea554e343e433b73c47af89",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-automatch2-updatestatus"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/challenge/getchallengeprogress.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/challenge/getchallengeprogress.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Challenge/getChallengeProgress",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "61664a1016cce7dc2a127a12267b77828d1b941d30e380a2193b717c7a9049b8",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-challenge-getchallengeprogress"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/challenge/getchallengeprogressbyprofileid.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/challenge/getchallengeprogressbyprofileid.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Challenge/getChallengeProgressByProfileID",
+      "heading_path_fragment": null,
+      "documentation_status": "explicit-incomplete-template",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [
+        "Missing Request, Parameters, Response"
+      ],
+      "sha256": "23be01eb03500c63a3cd5fb16752160603acc18f5e3566fbde71b566e49e0f45",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-challenge-getchallengeprogressbyprofileid"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/challenge/getchallenges.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/challenge/getchallenges.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Challenge/getChallenges",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "signature"
+      ],
+      "documentation_gaps": [],
+      "sha256": "5b81027203036bac99db4c44843110bf024a3acf93089ccd3f8a8e7e8e945f92",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-challenge-getchallenges"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/challenge/updateprogressbatched.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/challenge/updateprogressbatched.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/challenge/updateProgressBatched",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "progressIDs",
+        "sessionID",
+        "updateAmounts"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "521d86feb33f1f253dcc28909d17a9002c376b30b4a9d3ef6700bb6af1c7f12d",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-challenge-updateprogressbatched"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/chat/deleteofflinemessage.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/chat/deleteofflinemessage.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/chat/deleteOfflineMessage",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "messageID",
+        "sessionID"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "dadc4b7d95bb08ac99120f2b0a834c17d66033e1b5f12796affbc219d8541a8b",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-chat-deleteofflinemessage"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/chat/getchatchannels.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/chat/getchatchannels.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/chat/getChatChannels",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "ea827bb874cfe173249bcb1863ff010673e215e37562634ceebb096f25b1b6c7",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-chat-getchatchannels"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/chat/getofflinemessages.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/chat/getofflinemessages.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/chat/getOfflineMessages",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "ff5d513ee0754057547aebd7e46a7433041b7a3da5d65ce5188a4d04ffe853b8",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-chat-getofflinemessages"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/clan/apply.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/clan/apply.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/clan/apply",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "clanList_name",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "3c6836b3a51ffd1ec146415d8fa35e269048b6cc83e58515cad37ab2820efe99",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-clan-apply"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/clan/create.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/clan/create.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/clan/create",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "chat",
+        "connect_id",
+        "cost",
+        "demote",
+        "description",
+        "disband",
+        "editInfo",
+        "editPermission",
+        "fullName",
+        "icon",
+        "invite",
+        "itemPrice_id",
+        "joinPolicy",
+        "lastCallTime",
+        "locStringID",
+        "messageOfTheDay",
+        "metadata",
+        "paymentitem",
+        "permissionName",
+        "promote",
+        "rank",
+        "remove",
+        "sessionID",
+        "tags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "f8732d63f19091ce6b088a134fbd0b1248e6495d007d30555cf71f8b31a21eec",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-clan-create"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/clan/disband.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/clan/disband.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/clan/disband",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "d67a368e7eb1d59f834dcac5706eb3bb04e5e50d194a555cf6653642646238d5",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-clan-disband"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/clan/find.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/clan/find.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/clan/find",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "count",
+        "joinPolicies",
+        "lastCallTime",
+        "sessionID",
+        "start",
+        "tags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "e70a819a159476b37f939a4117e77956a9b9fd374fd419268126bad33f06ad60",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-clan-find"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/clan/getclan.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/clan/getclan.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/clan/getClan",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "names",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "0b3305a3d64d8cbdcb8c3673fdecb6465cb079504b6e27911f88075b692dc3f3",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-clan-getclan"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/clan/getclaninfofull.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/clan/getclaninfofull.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/clan/getClanInfoFull",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "458d134764d1ea386356f7b77ea7b626ea1ae2ebabd950cafa637574ea40d2e6",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-clan-getclaninfofull"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/clan/update.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/clan/update.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/clan/update",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "clanList_id",
+        "connect_id",
+        "description",
+        "icon",
+        "joinPolicy",
+        "lastCallTime",
+        "messageOfTheDay",
+        "metadata",
+        "sessionID",
+        "tags"
+      ],
+      "documentation_gaps": [],
+      "sha256": "1e5516af94d2280721afdc18bb2c79bbf4a14591117b47681969c6e94fb33758",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-clan-update"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/cloud/getfileurl.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/cloud/getfileurl.md",
+      "family": "game",
+      "declared_methods": [
+        "GET",
+        "POST"
+      ],
+      "declared_path": "/game/cloud/getFileURL",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "names",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "e5578705dcd3514996709dc3c1d5ce02611667317fa768c0419f1f7cf5d3de6d",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET",
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-cloud-getfileurl"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/cloud/gettempcredentials.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/cloud/gettempcredentials.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/cloud/getTempCredentials",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "key"
+      ],
+      "documentation_gaps": [],
+      "sha256": "84e6b6940474c1b606fab231870681a8965d2b3e56d17a00f76a9ef6ae5a7261",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "we-cloud-credentials"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/communityevent/getavailablecommunityevents.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/communityevent/getavailablecommunityevents.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/CommunityEvent/getAvailableCommunityEvents",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "3441c479a3d9baf7b1db6d3b1ad443189e7556fda5c036b8deb6e066adb1c696",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-communityevent-getavailablecommunityevents"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/communityevent/geteventchallengeprogress.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/communityevent/geteventchallengeprogress.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/CommunityEvent/getEventChallengeProgress",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "event_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "2e6d3d2b8118d8f3b671857dcc2ba564221bbb7742b9f8fd587fcb3242ed5d94",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-communityevent-geteventchallengeprogress"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/communityevent/geteventstats.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/communityevent/geteventstats.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/CommunityEvent/getEventStats",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "event_id",
+        "group_type",
+        "lastCallTime",
+        "member_id",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "c75f9cd87bb88c415e0811f63f2736d7e22c09e177be02343d4b25e65f45472b",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-communityevent-geteventstats"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/invitation/cancelinvitation.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/invitation/cancelinvitation.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/invitation/cancelInvitation",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "gatheringid",
+        "inviteeid",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "97fcf12976a371731c19900ef22dae5481244ae7cb36eb22d4e5f236fae5bccb",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-invitation-cancelinvitation"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/invitation/extendinvitation.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/invitation/extendinvitation.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/invitation/extendInvitation",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "gatheringid",
+        "gatheringpassword",
+        "inviteeid",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "078af555aa436032741f77dfc7e832a988da5d3d7604056e8654740031444179",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-invitation-extendinvitation"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/detachitems.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/detachitems.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/item/detachItems",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "itemCharges",
+        "itemIDs",
+        "itemLocations",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "1a4053f664a34e3254c3f122612f194ef5a39d02967f02cc2d87809218334ce6",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-detachitems"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getinventorybyprofileids.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getinventorybyprofileids.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getInventoryByProfileIDs",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "profileIDs"
+      ],
+      "documentation_gaps": [],
+      "sha256": "99f2c631b975576f8f0fbdfbfc0cfdf2212aa772febc15392e2facd9a44d8da8",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getinventorybyprofileids"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getitembundleitemsjson.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getitembundleitemsjson.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getItemBundleItemsJson",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "signature"
+      ],
+      "documentation_gaps": [],
+      "sha256": "3277727bbaf18c75fa84cced2ce1aeb92ef6ec899e64638487d261e5bd2ec767",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getitembundleitemsjson"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getitemdefinitionsjson.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getitemdefinitionsjson.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getItemDefinitionsJson",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "signature"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "653d09d7787f7c02ce9c3cca47a40f92137815c828c6dd27399f9f9f260e2e69",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getitemdefinitionsjson"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getitemloadouts.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getitemloadouts.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getItemLoadouts",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "aef4120f779dcd208be058abe4e0398ee953e90286030c531acdaf5a505cf53b",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getitemloadouts"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getitemprices.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getitemprices.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getItemPrices",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "accountType",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "country",
+        "currency",
+        "saleVersion"
+      ],
+      "documentation_gaps": [],
+      "sha256": "525eb7978d12576659724ae6cbd05a0334d3cb17d181d5e6c8878b883526a073",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getitemprices"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getlevelrewardstablejson.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getlevelrewardstablejson.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getLevelRewardsTableJson",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "signature"
+      ],
+      "documentation_gaps": [],
+      "sha256": "5095423df069636888c585743195aced7b20d12af0b79cbf44e447e86b407f59",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getlevelrewardstablejson"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getpersonalizedsaleitems.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getpersonalizedsaleitems.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getPersonalizedSaleItems",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "74e345e09d44d1210589556d3e8ecb438ece88d4934e1644fa5b09b765193c64",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getpersonalizedsaleitems"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/getscheduledsaleanditems.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/getscheduledsaleanditems.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/item/getScheduledSaleAndItems",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "saleType"
+      ],
+      "documentation_gaps": [],
+      "sha256": "0ea176e3a64b699aaf78b91fa53c86e227072e1dd9faad51d154646b0f258d59",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-getscheduledsaleanditems"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/movecharges.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/movecharges.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/item/moveCharges",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "charges",
+        "connect_id",
+        "deletes",
+        "fromItemIDs",
+        "lastCallTime",
+        "sessionID",
+        "toItemIDs"
+      ],
+      "documentation_gaps": [],
+      "sha256": "0b4358552aab4494038f7bf5f93e14055075fe20a77a508ae960b42310cb7579",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-movecharges"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/moveitem.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/moveitem.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/item/moveItem",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "itemIDs",
+        "itemLocationIDs",
+        "lastCallTime",
+        "posIDs",
+        "sessionID",
+        "slotIDs"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "f3b2d191fc4403b3146c0053d7d8c1b894eb7b5fe47f1ff36322db188a540252",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-moveitem"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/openitempack.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/openitempack.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/item/openItemPack",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "choices",
+        "connect_id",
+        "itemInstance_id",
+        "itemLocation_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "886f97ad239571b56837e0ce42935fe2db13a5c5cfa2eef9771a4e4d5c380c02",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-openitempack"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/signitems.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/signitems.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/item/signItems",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "crc",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "b57b7bb8894dd5500ad1ae580fe0a1869b3c7a2c431ee9e4b3cba633122fa127",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-signitems"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/item/updateitemattributes.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/item/updateitemattributes.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/item/updateItemAttributes",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "attributeKeys",
+        "attributeValues",
+        "callNum",
+        "connect_id",
+        "itemInstance_ids",
+        "lastCallTime",
+        "sessionID",
+        "xpGains"
+      ],
+      "documentation_gaps": [],
+      "sha256": "ac8ee5d8d3e48ea2393345b69ef2e75c73de11c747d378803061abbde68b62e1",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-item-updateitemattributes"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getavailableleaderboards.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getavailableleaderboards.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Leaderboard/getAvailableLeaderboards",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "3df3ad71a5a4b1148ded6fdb8a7307bec232f9025d2eea605f4d622ae6169045",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getavailableleaderboards"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getleaderboard.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getleaderboard.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Leaderboard/getLeaderBoard",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "leaderboard_id",
+        "start",
+        "sortBy",
+        "count"
+      ],
+      "documentation_gaps": [],
+      "sha256": "a2ef0ab082659dc875e7cc42628ed83d2ef5c6204a0570117a0eaaeaa12070b7",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getleaderboard"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getpartystat.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getpartystat.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Leaderboard/getPartyStat",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "statsids"
+      ],
+      "documentation_gaps": [],
+      "sha256": "7b5f12017cd2c470cf07a18dabc7b5c14926d5d881773fd7c9ed2045c232e3d4",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getpartystat"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getpersonalstat.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getpersonalstat.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Leaderboard/getPersonalStat",
+      "heading_path_fragment": null,
+      "documentation_status": "explicit-incomplete-template",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [
+        "Missing Request, Parameters, Response"
+      ],
+      "sha256": "d03e098cb4b0b62f088369f47878a948065acd0060b7d8ad7c5aeb3e7be94b93",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getpersonalstat"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getrecentmatchhistory.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getrecentmatchhistory.md",
+      "family": "game",
+      "declared_methods": [
+        "GET",
+        "POST"
+      ],
+      "declared_path": "/game/Leaderboard/getRecentMatchHistory",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "profile_ids"
+      ],
+      "documentation_gaps": [],
+      "sha256": "5b3b7361afbd302395e51f78ae884cd0743faa39dfc7cf6985e569727d89dc9a",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET",
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getrecentmatchhistory"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getrecentmatchsingleplayerhistory.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getrecentmatchsingleplayerhistory.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Leaderboard/getRecentMatchSinglePlayerHistory",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "profile_ids"
+      ],
+      "documentation_gaps": [
+        "TODO Empty Responses"
+      ],
+      "sha256": "552df312755d4544ebfaa844703e4dd140b328e369dd77ced408873ac8f1f109",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getrecentmatchsingleplayerhistory"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getstatgroupsbyprofileids.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getstatgroupsbyprofileids.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Leaderboard/getStatGroupsByProfileIDs",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "profileids"
+      ],
+      "documentation_gaps": [],
+      "sha256": "bc8e94d0fad52c82c32546ade01555de7302fecd00ab114114f05f66c672f35a",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getstatgroupsbyprofileids"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/getstatsforleaderboardbyprofilename.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/getstatsforleaderboardbyprofilename.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/Leaderboard/getStatsForLeaderboardByProfileName",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "leaderboard_id",
+        "profileids"
+      ],
+      "documentation_gaps": [],
+      "sha256": "8ec19c5bec43e92ded0fa2330f8f1358ab305decbaaab9b361b38d82f4edf0a3",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-getstatsforleaderboardbyprofilename"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/leaderboard/setavatarstatvalues.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/leaderboard/setavatarstatvalues.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/leaderboard/setAvatarStatValues",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "avatarStat_ids",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "updateTypes",
+        "values"
+      ],
+      "documentation_gaps": [],
+      "sha256": "43eb5f77401086189003c02282eaafc5573260fe8ecb986ece52f1233e99db33",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-leaderboard-setavatarstatvalues"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/login/logout.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/login/logout.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/login/logout",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "d1332655c9f1e63b4bcaf8b8682ec2c7d5fa0e3e516ed864eea883e2f27f5b66",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-login-logout"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/login/platformlogin.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/login/platformlogin.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/login/platformlogin",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "accountType",
+        "alias",
+        "appID",
+        "auth",
+        "callNum",
+        "clientLibVersion",
+        "connect_id",
+        "country",
+        "installationType",
+        "language",
+        "lastCallTime",
+        "macAddress",
+        "majorVersion",
+        "minorVersion",
+        "platformUserID",
+        "startGameToken",
+        "syncHash",
+        "timeoutOverride",
+        "title",
+        "activeMatchId"
+      ],
+      "documentation_gaps": [],
+      "sha256": "3a945376ea8485c713eabd47febd95718dd7fcb36e279bdd35626b5b2cfa7b79",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "we-session-login"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/login/readsession.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/login/readsession.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/login/readSession",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "ack",
+        "pollNum",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "d052acf6280bb092b21307bee1c98da4a473227ae84cd71894900d32b2847d76",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-login-readsession"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/news/getnews.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/news/getnews.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/news/getNews",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "40787f4ab292126676c2e85f86e65ececcd3b833cd12c798448b2c35e5a6338b",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-news-getnews"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/party/createorreportsingleplayer.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/party/createorreportsingleplayer.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/party/createOrReportSinglePlayer",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "appbincrc",
+        "callNum",
+        "connect_id",
+        "countersZip",
+        "createMatchKey",
+        "datacrc",
+        "isComplete",
+        "itemUpdates",
+        "lastCallTime",
+        "mapname",
+        "matchKey",
+        "matchTypeID",
+        "moddllcrc",
+        "moddllfile",
+        "modname",
+        "modversion",
+        "options",
+        "race_ids",
+        "results",
+        "sessionID",
+        "slotInfo",
+        "teamIDs",
+        "versionFlags",
+        "xpGained"
+      ],
+      "documentation_gaps": [],
+      "sha256": "fa4c11d314477b405b0c38becae68e1ed27051c862e835ae3bea38e2b00ce5b0",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-party-createorreportsingleplayer"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/party/finalizereplayupload.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/party/finalizereplayupload.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/party/finalizeReplayUpload",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "errorString",
+        "finalizeResult",
+        "isSinglePlayer",
+        "lastCallTime",
+        "match_id",
+        "sessionID",
+        "size",
+        "url"
+      ],
+      "documentation_gaps": [],
+      "sha256": "5beb975efd0cdfbb9c0decbf9ee9515b61583cb78c8fbd99c1a1703524d02a67",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-party-finalizereplayupload"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/party/peeradd.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/party/peeradd.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/party/peerAdd",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "match_id",
+        "profile_ids",
+        "race_ids",
+        "sessionID",
+        "statGroup_ids",
+        "teamIDs"
+      ],
+      "documentation_gaps": [],
+      "sha256": "843fcf33ec34ee580c6863a49f4497b42f86e0ea22378b652529225a3495e138",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-party-peeradd"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/party/peerupdate.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/party/peerupdate.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/party/peerUpdate",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "isNonParticipants",
+        "lastCallTime",
+        "match_id",
+        "profile_ids",
+        "race_ids",
+        "sessionID",
+        "teamIDs"
+      ],
+      "documentation_gaps": [
+        "Missing Response"
+      ],
+      "sha256": "10a6c664c0f98ef75a24b5f5ca5081f576d238ce23bec3db3324f3649af6dd7c",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-party-peerupdate"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/party/reportmatch.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/party/reportmatch.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/party/reportMatch",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "checkSums",
+        "connect_id",
+        "countersZip",
+        "itemUpdates",
+        "lastCallTime",
+        "match_id",
+        "profile_ids",
+        "race_ids",
+        "results",
+        "sessionID",
+        "simplayerIDs",
+        "teamIDs",
+        "xpGained"
+      ],
+      "documentation_gaps": [],
+      "sha256": "c9e47471d6c8750c87d4451ba226da84b53acbc89e75d57239dec2d930ba90b6",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-party-reportmatch"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/party/sendmatchchat.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/party/sendmatchchat.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/party/sendMatchChat",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "broadcast",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "match_id",
+        "message",
+        "messageTypeID",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "675c5353cd87f49c60a4a75481711a9ce774d5ed1ce119c1955a01d98c135272",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-party-sendmatchchat"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/playerreport/reportuser.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/playerreport/reportuser.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/playerreport/reportuser",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "comment",
+        "connect_id",
+        "lastCallTime",
+        "metadata",
+        "reportReason",
+        "reportType",
+        "reportee_profile_id",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "4c245871c899be0b1d4353d3ac392fdac7eaa08a42261232b3fbe22af2145efa",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-playerreport-reportuser"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/relationship/clearrelationship.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/relationship/clearrelationship.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/relationship/clearRelationship",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "relationType",
+        "sessionID",
+        "targetProfileID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "9ec6151a99989089476f44c1d99fd0f91a652259c3412e38dc3d4e59280157fc",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-relationship-clearrelationship"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/relationship/getpresencedata.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/relationship/getpresencedata.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/relationship/getPresenceData",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "86c8e8bbd5f1bafbcd455e773df0f672cef3e0869921641f2e563ac7668597bd",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-relationship-getpresencedata"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/relationship/getrelationships.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/relationship/getrelationships.md",
+      "family": "game",
+      "declared_methods": [
+        "GET"
+      ],
+      "declared_path": "/game/relationship/getRelationships",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "da8624c0375479488de687756eca155fc3c55b514ec064899085772113100152",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "GET"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-relationship-getrelationships"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/relationship/ignore.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/relationship/ignore.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/relationship/ignore",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "blocklevel",
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "sessionID",
+        "targetProfileID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "eddafb49d4743d4a840928da4c6fd615b1cb5b7d89dbbd3d209976c550d2936d",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-relationship-ignore"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/relationship/setpresence.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/relationship/setpresence.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/relationship/setPresence",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "presence_id",
+        "sessionID"
+      ],
+      "documentation_gaps": [],
+      "sha256": "fdbb997c10be13ae059545a7a980daee23e2d998c442439956ecc6b65d9fc2c5",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-relationship-setpresence"
+      ]
+    },
+    {
+      "source_path": "src/rlink/game/relationship/setpresenceproperty.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/game/relationship/setpresenceproperty.md",
+      "family": "game",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/game/relationship/setPresenceProperty",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "callNum",
+        "connect_id",
+        "lastCallTime",
+        "presencePropertyDef_id",
+        "sessionID",
+        "value"
+      ],
+      "documentation_gaps": [],
+      "sha256": "381a3e93e7fe03cd773150e8fb7f0d1a99636b4999d0e3a7c8b5fa511c1a465a",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [
+        "POST"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-relationship-setpresenceproperty"
+      ]
+    },
+    {
+      "source_path": "src/aoe/api/agede/getcampaign.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/agede/getcampaign.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetCampaign",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "da8931706fdd4f2aaaa5677b8bb3addc48bb22497504373a1489e9d86deadef2",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/agede/getmpfull.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/agede/getmpfull.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetMPFull",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "ded8c4b9c0e0fc81ec63e1c3dcf10598c13ca7f32f80e5b8b62428ff4f3184b1",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/agede/getmpmatchlist.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/agede/getmpmatchlist.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/getmpmatchlist",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "abd30ea53e6dfeb0ea28da4325edefb5af816892d962b31e8e2932c79e9bf1bc",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/agede/getspfull.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/agede/getspfull.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetSPFull",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "05bfdbc1084516a98684ee4bf82b9f9610507d02a9eb27c200657b4c2c9373a6",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/agede/getspmatchlist.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/agede/getspmatchlist.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/getspmatchlist",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "1c8015c095b3dcec8611a16668775491d3aee382c46c6972d77dd650a4d2f6ec",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageii/getage2matchreplay.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageii/getage2matchreplay.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/getAge2MatchReplay",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "951c5855f26bf5a40a36f5a895ce935b999ea28561e6f1459ed4547271aba5c3",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageii/getcampaign.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageii/getcampaign.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetCampaign",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "f9c038af0654e8cc4c0ec1dee3a8dbead51704090bc15f91fac680af1b928a45",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageii/getmpfull.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageii/getmpfull.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetMPFull",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "ce23af7ab09745a4469f6aac351d758cbd6f17eaf4f2e5b3432820d426be1805",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageii/getmpmatchlist.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageii/getmpmatchlist.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetMPMatchList",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "65911ebb973edd637a51bdb14537bc04b0c038b3315233e2256a29cff9393ff7",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageii/getspfull.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageii/getspfull.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetSPFull",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "9bbb0e3176bd28663255f041482d6ab3d9796305906cc8936fb7b37cc4d3e5d9",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageii/getspmatchlist.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageii/getspmatchlist.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/GetSPMatchList",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "23f8601c246b1091be8cc9807a63e6a307f922bc69bc89084f38119265422f8f",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageiii/eventleaderboard.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageiii/eventleaderboard.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/EventLeaderboard",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "ec9c2f32bd9f73e9614b1557fd4a28ff16b1c1bb1da1076540901853c9317f42",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageiii/leaderboard.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageiii/leaderboard.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/Leaderboard",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "94244f5ecd8195444d8ecf8a6cd7533678fe7988d7077bd2b666eaf0fce4d637",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageiv/eventleaderboard.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageiv/eventleaderboard.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/EventLeaderboard",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "06a592a5ecde8418a6a321c06d197a3cdac00529c4312d7cec66e71acf5f0f5b",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageiv/eventlist.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageiv/eventlist.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/EventList",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "7252ebee464697de9d435ab4c6c5734a2c20e723ccec47d6f80c83a0d2970d3b",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageiv/getmatchdetail.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageiv/getmatchdetail.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/getmatchdetail",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "43c7c92a17597557d0478fa0f3e2ef9273dcf707b52a3a085d655486bc1337a8",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/ageiv/leaderboard.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/ageiv/leaderboard.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/Leaderboard",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "c13f1fd70b229d6c62bc2a1a13ed447d968980eb65b432b020fc179f7a718bd3",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/bugs/bugdetail.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/bugs/bugdetail.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "2ba0dd85c74678029ee708f7fe8bac61d582a9a1b0632256a21cc2418cf018d6",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/bugs/getasset.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/bugs/getasset.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "f1bda189a5223254a8e8c36393a14face848313f4da9b18191bee9049bab6c0a",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/bugs/getlist.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/bugs/getlist.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "37415b4ce0de8a2a3db7cef55f0cae681694df2a3cacc3988aeb762e7461b787",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/bugs/submit.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/bugs/submit.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "89a754402149dc9fb0278b8c133617ca8f6a77ea5c5ce3c05c354f67641d63ae",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/bugs/updatebug.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/bugs/updatebug.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "ee4953c19189d365ade4f0df552d3f4096bd1ef0d7c22a0b7b518501abc0e906",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/anondetail.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/anondetail.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "4635a68322c91804c114379086c40cd4cc2f4e5b0ba06d08b535533a3005a5df",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/create.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/create.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "fbb615f62e9b9028167d8498cb7b3b2e2bb7f70dca2a329aef4129521ff79439",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/delete.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/delete.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "5f9e51935cbd437974f82e5bc054e1dc966c37880305c7dae27f35625fd0601a",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/detail.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/detail.md",
+      "family": "website",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/api/v1/Mods/Detail/",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "game",
+        "modid"
+      ],
+      "documentation_gaps": [],
+      "sha256": "6bd44b02367ff09f064235010dfbb5fc1e2192a83c23da6e2f5dab651ecfcdf8",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [],
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/download.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/download.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "fa1e8b44df31d67511228f21d45b9d8c0f70e6370b3d6391e4e1cff66cb6a0df",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/edit.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/edit.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "dd78de94450eee34adc69b418ad77eff5d789cf2e31b885550cd1f64c293a28b",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/find.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/find.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "211d19dea815355f8c8c018b520ab1e15190848923997141f96cd35814bf3295",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/findasuser.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/findasuser.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "eca7d4a280219415702e21372ce218f1e9f00deb99a7bece5761d654fd42c669",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/flag.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/flag.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "f04a970fcebd5320b822320d10a74ed0bfffd901cd394e194bddfd02e31277b9",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/getflagged.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/getflagged.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "722b68f6687a7e5953351c148badce31afa8a604c3d53c0596b2d1be566d1a49",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/install.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/install.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "6cf22393f6ced18c931903e0f946e0f7c9617bfa5c35827d46d03c3c925732cb",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/installed.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/installed.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/installed",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "95bdfd49e3993b3b1bf56800b615eaae1466ae5da146dd1079933843acab7b07",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/like.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/like.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "2ffd40cae186ad8d21fde5e2f4597f24c6031cda9e5def5db352f3f7a836bb3c",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/moderate.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/moderate.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "b578f8ab3806ee1da348897d37b83a2bf8009a744edc19d69c501d49f477cdc7",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/my.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/my.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "f8d8a5b12e1fddeb27e22b8b00a088339e8eb98f9d397245a9e1868e659156bc",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/tags.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/tags.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "aee70e26621099a0af965f14daba6577731f8a9d4befa19febe7541ab6c317fc",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/types.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/types.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "83c3bf591f5ec7ce518e8305097321d77ed96593c3f5de8507b0aa9c245d689e",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v1/mods/uninstall.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v1/mods/uninstall.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "749d4f5dd52695626ed1173fd53b877f361e213cffd8a336f822478cc313fbcc",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v2/ageii/getmpmatchdetail.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v2/ageii/getmpmatchdetail.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/api/v2/ageii/getmpmatchdetail",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "f27993cf5bb8b97ff7f7d2e9022de9b4a81461c5001b7f560f1115dc7fb2feb3",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v2/ageii/leaderboard.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v2/ageii/leaderboard.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/api/v2/ageii/leaderboard",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "85fcf1ffb9c3cc0a55dcae5edd23046eaefff71ca22451c0c8d2112764861c15",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/delete.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/delete.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "5f9e51935cbd437974f82e5bc054e1dc966c37880305c7dae27f35625fd0601a",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/detail.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/detail.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "451232e69c6933d523a060fe23bddda43d494acc2549fa013af46c9bd17cecd2",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/download.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/download.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/api/v4/mods/download",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "092a94bdba2bac198b16b9d3658aa55b8e5ba3ed020e575d9fcbbec9b50c0e75",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/find.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/find.md",
+      "family": "website",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/api/v4/Mods/Find/",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "q",
+        "filter",
+        "sort",
+        "order",
+        "start",
+        "count",
+        "game",
+        "modid"
+      ],
+      "documentation_gaps": [],
+      "sha256": "ba5b7fec8cfeddb1937227a5015d2ae37b4229762caf15bc383374fb3db733a8",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [],
+      "atlas_endpoint_ids": [
+        "official-mod-find"
+      ]
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/getflagged.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/getflagged.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "722b68f6687a7e5953351c148badce31afa8a604c3d53c0596b2d1be566d1a49",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/getflaggeddetail.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/getflaggeddetail.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/GetFlaggedDetail",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "cca4d3fae16a4bac00a857c924290c6484d9aef6f13de20d64d9de6cbd7fe263",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/installed.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/installed.md",
+      "family": "website",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/api/v4/Mods/Installed/",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "q",
+        "filter",
+        "sort",
+        "order",
+        "start",
+        "count",
+        "game",
+        "modid"
+      ],
+      "documentation_gaps": [],
+      "sha256": "4085b7401f0aa0975be153eb9338891d3d8f686afff86749dc18ab956605e5f7",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [],
+      "atlas_endpoint_ids": [
+        "official-mod-installed"
+      ]
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/like.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/like.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Like",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "182fa770be9cf018819d3d0b684b24c287886a7f1ed6b5b1bf768c04a7881932",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/moderate.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/moderate.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Moderate",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "91833b3c9952a84c0f95dc467166953cbc3f9bfe39cc3e39c18998736c5c065b",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/my.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/my.md",
+      "family": "website",
+      "declared_methods": [
+        "POST"
+      ],
+      "declared_path": "/api/v4/Mods/My/",
+      "heading_path_fragment": null,
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [
+        "q",
+        "filter",
+        "sort",
+        "order",
+        "start",
+        "count",
+        "game",
+        "modid"
+      ],
+      "documentation_gaps": [],
+      "sha256": "a2ec968fe63476d19a3535967d45cbb2a9d3786f890a67f1a6f992a2fbac3679",
+      "live_verification": "none-in-this-followup",
+      "openapi_methods": [],
+      "atlas_endpoint_ids": [
+        "official-mod-my"
+      ]
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/publish.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/publish.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Publish",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "5624f02f440c38d76dc83dc965d29358508f0d79067080509590c64138da178b",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/publishfile.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/publishfile.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/PublishFile",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "1f50b2b55df1e73beb190542070c352ed7a1f223cbfd6c94295e5c95ac916c91",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/rate.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/rate.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Rate",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "c13ec9852e48dc8a0db9c0863421def398934e6b2460f2905d9ca5f041bd4e62",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/related.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/related.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Related",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "a872577fa68899098c105ef817a9a7f6c9789524848a8d7c698043d1a7bbbe95",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/report.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/report.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": null,
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "201169253937fa33d1d0efb91c64e632343c82b87df30073febf6ef33f1b57ec",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/reviews.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/reviews.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Reviews",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "e59c9912e68037a61e1046e00b80538d3e60b5e7e9357cb18fe54cb3cd744651",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/subscribe.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/subscribe.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Subscribe",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "2ae72d656469ba7fb2983fbc3ae24b90fbbfc958ca73ee5cacdf53f882a794b3",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/tags.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/tags.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Tags",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "79fc7d09c707a7a5f42c3e15a962aba075f74f37d547b94795ad4ef8a66574b4",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/types.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/types.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/Types",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "6463aba9b66713db58c31f2effc896533b3946acf3afd81b32fbc5dcefe5ffb9",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/api/v4/mods/unsubscribe.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/unsubscribe.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/mods/UnSubscribe",
+      "documentation_status": "heading-or-short-placeholder",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "85748868d314d2a3e0c06a0d6b20e6f597ae97abda532b38e28ff7b5992e9d83",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/poll/list.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/poll/list.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/Poll/list",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "b7bcaa562cfe01b754d2f6303fe516186e4fec662ee506e61d6a42ca3187bb86",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/textmoderation.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/textmoderation.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/textmoderation",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "0d364625b3f1cdc46d9e926dc113d5943d2e778c7850492335b23aaa77582a7f",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/webapi/countrylist.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/webapi/countrylist.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/webapi/CountryList",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "d40eeb9edd7d166ecb98d5d534331c23bf25e77ecd0c06eedbdb1af0301ef5c6",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/webapi/games.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/webapi/games.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/webapi/games",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "9848da3519139a2d1bc2d378279db0af511d6819ddf07dae8a30cb2f3b3016b8",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/webapi/languages.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/webapi/languages.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/webapi/Languages",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [
+        "Missing parameters"
+      ],
+      "sha256": "1218407e244456b6920598f5681f8c800b97c7871d4fbdf6b74ea290ef664066",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    },
+    {
+      "source_path": "src/aoe/webapi/twitter.md",
+      "source_url": "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/webapi/twitter.md",
+      "family": "website",
+      "declared_methods": [],
+      "declared_path": null,
+      "heading_path_fragment": "/webapi/twitter",
+      "documentation_status": "content-present",
+      "parameter_names_in_wiki": [],
+      "documentation_gaps": [],
+      "sha256": "f4a071b83fd96bf891f8a003fa140212f1a1cd9a3d01ae009e9c008c730ddb40",
+      "live_verification": "none-in-this-followup",
+      "atlas_endpoint_ids": []
+    }
+  ],
+  "broken_navigation_links": [
+    {
+      "source_path": "src/rlink/community/README.md",
+      "target": "./item/getitems.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/community/README.md",
+      "target": "./leaderboard/getstatgroupsbyprofileids.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./account/setprofilename.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./achievement/grantachievement.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./automatch2/cancelsearch.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./automatch2/startsearch.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./automatch2/getmatchinfo.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./challenge/getrewarddefinitions.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./clan/join.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./clan/leave.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./cloud/setfile.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./communityevent/claimreward.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./invitation/sendinvitation.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./item/getitems.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./leaderboard/getleaderboard2.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./party/create.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./party/join.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./party/leave.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./party/sendmessage.md",
+      "status": "missing-file-at-pinned-revision"
+    },
+    {
+      "source_path": "src/rlink/game/README.md",
+      "target": "./playerreport/report.md",
+      "status": "missing-file-at-pinned-revision"
+    }
+  ],
+  "additional_rpc_source": "docs/other-games/aoe2-replay-grpc.md"
+}

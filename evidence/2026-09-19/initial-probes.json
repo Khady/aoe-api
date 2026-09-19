@@ -1,0 +1,6488 @@
+[
+  {
+    "id": "world-profile",
+    "checked_at": "2026-09-19T08:44:31.586352+00:00",
+    "method": "GET",
+    "url": "https://aoe4world.com/api/v0/players/4635035",
+    "http_status": 200,
+    "final_url": "https://aoe4world.com/api/v0/players/4635035",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"036a0b82ab2a0e83e2f3be599d8c40b0\"",
+      "cache-control": "max-age=0, private, must-revalidate"
+    },
+    "bytes_read": 22098,
+    "truncated": false,
+    "sha256": "210660d0ceb74534b5bcf92031df10a757781c17eb04a649f40048d841e38ae9",
+    "body_kind": "json",
+    "sampled_shape": {
+      "name": "str",
+      "profile_id": "int",
+      "steam_id": "str",
+      "site_url": "str",
+      "avatars": {
+        "small": "str",
+        "medium": "str",
+        "full": "str"
+      },
+      "country": "str",
+      "social": {},
+      "modes": {
+        "rm_team": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "int",
+          "rank_level": "str",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1788350714": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788352413": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788354909": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788356496": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788357871": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788595258": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788596667": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788597721": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788598359": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788602806": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788605361": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            }
+          },
+          "season": "int",
+          "civilizations": {
+            "type": "array",
+            "length": 2,
+            "first_item_shape": {
+              "civilization": "str",
+              "win_rate": "float",
+              "pick_rate": "float",
+              "games_count": "int"
+            }
+          },
+          "previous_seasons": {
+            "type": "array",
+            "length": 11,
+            "first_item_shape": {
+              "rating": "int",
+              "rank": "int",
+              "rank_level": "str",
+              "streak": "int",
+              "games_count": "int",
+              "wins_count": "int",
+              "losses_count": "int",
+              "disputes_count": "int",
+              "drops_count": "int",
+              "last_game_at": "str",
+              "win_rate": "float",
+              "season": "int"
+            }
+          }
+        },
+        "rm_solo": {
+          "rank_level": "str",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "season": "int",
+          "previous_seasons": {
+            "type": "array",
+            "length": 11,
+            "first_item_shape": {
+              "rating": "int",
+              "rank": "int",
+              "rank_level": "str",
+              "streak": "int",
+              "games_count": "int",
+              "wins_count": "int",
+              "losses_count": "int",
+              "disputes_count": "int",
+              "drops_count": "int",
+              "last_game_at": "str",
+              "win_rate": "float",
+              "season": "int"
+            }
+          },
+          "civilizations": {
+            "type": "array",
+            "length": 5,
+            "first_item_shape": {
+              "civilization": "str",
+              "win_rate": "float",
+              "pick_rate": "float",
+              "games_count": "int"
+            }
+          }
+        },
+        "rm_1v1_elo": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "int",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1782861778": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1782863691": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1782865719": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1782866495": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1782867763": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1782869113": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1783107047": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1783107774": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1783109486": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1783110496": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1783112144": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            }
+          }
+        },
+        "rm_2v2_elo": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "int",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1745978879": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1745980724": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1745981973": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1745983366": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764495387": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764497095": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764745259": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764754270": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764755840": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1772782052": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1772784060": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            }
+          }
+        },
+        "rm_3v3_elo": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "int",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1744148107": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1763693001": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1763694019": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1763695652": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764490136": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764492300": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1764493516": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1767707781": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1767708878": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1767710657": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1767712025": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            }
+          }
+        },
+        "rm_4v4_elo": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "int",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1788350713": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788352413": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788354908": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788356495": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788357872": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788595258": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788596666": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788597721": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788598359": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788602806": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1788605361": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            }
+          }
+        },
+        "qm_1v1": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "null",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1648889605": {
+              "rating": "int",
+              "streak": "null",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649380656": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649383820": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649387793": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649536937": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649650018": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649651105": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649839050": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649841258": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1649948974": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1657635400": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            }
+          },
+          "civilizations": {
+            "type": "array",
+            "length": 0,
+            "first_item_shape": null
+          }
+        },
+        "qm_2v2": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "null",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1666512348": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "games_count": "int"
+            },
+            "1666514044": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666515717": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "games_count": "int"
+            },
+            "1666518275": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666703773": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666704944": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666772352": {
+              "rating": "int",
+              "streak": "null",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666774339": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666776067": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666777806": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666778958": {
+              "rating": "int",
+              "streak": "null",
+              "wins_count": "int",
+              "games_count": "int"
+            }
+          }
+        },
+        "qm_3v3": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "null",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1666077126": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "games_count": "int"
+            },
+            "1666079154": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666081317": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666085111": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666171201": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666174554": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "games_count": "int"
+            },
+            "1666186681": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "games_count": "int"
+            },
+            "1666344847": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "games_count": "int"
+            },
+            "1666544251": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666545054": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            },
+            "1666707034": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "games_count": "int"
+            }
+          }
+        },
+        "qm_4v4": {
+          "rating": "int",
+          "max_rating": "int",
+          "max_rating_7d": "int",
+          "max_rating_1m": "int",
+          "rank": "null",
+          "rank_level": "null",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "disputes_count": "int",
+          "drops_count": "int",
+          "last_game_at": "str",
+          "win_rate": "float",
+          "rating_history": {
+            "1677314719": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1712556721": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1712558257": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1712561300": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1712562571": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1712563964": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1712565561": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1744135905": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1744136568": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1744138767": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            },
+            "1747670247": {
+              "rating": "int",
+              "streak": "int",
+              "wins_count": "int",
+              "drops_count": "int",
+              "orig_rating": "int",
+              "disputes_count": "int",
+              "games_count": "int"
+            }
+          }
+        },
+        "rm_1v1": {
+          "_notice_": "str",
+          "rank_level": "str",
+          "streak": "int",
+          "games_count": "int",
+          "wins_count": "int",
+          "losses_count": "int",
+          "season": "int",
+          "previous_seasons": {
+            "type": "array",
+            "length": 11,
+            "first_item_shape": {
+              "rating": "int",
+              "rank": "int",
+              "rank_level": "str",
+              "streak": "int",
+              "games_count": "int",
+              "wins_count": "int",
+              "losses_count": "int",
+              "disputes_count": "int",
+              "drops_count": "int",
+              "last_game_at": "str",
+              "win_rate": "float",
+              "season": "int"
+            }
+          },
+          "civilizations": {
+            "type": "array",
+            "length": 5,
+            "first_item_shape": {
+              "civilization": "str",
+              "win_rate": "float",
+              "pick_rate": "float",
+              "games_count": "int"
+            }
+          }
+        }
+      }
+    },
+    "duration_ms": 443,
+    "application_status_fields": {}
+  },
+  {
+    "id": "world-last-game",
+    "checked_at": "2026-09-19T08:44:34.030270+00:00",
+    "method": "GET",
+    "url": "https://aoe4world.com/api/v0/players/4635035/games/last",
+    "http_status": 200,
+    "final_url": "https://aoe4world.com/api/v0/players/4635035/games/last",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"5ddfc633a02e79f47ee3130cbf251368\"",
+      "cache-control": "max-age=0, private, must-revalidate"
+    },
+    "bytes_read": 132616,
+    "truncated": false,
+    "sha256": "ee301c1928b73850a782ca6ea8c859d078032e80eb2cafa524df5286290128ef",
+    "body_kind": "json",
+    "sampled_shape": {
+      "filters": {
+        "profile_ids": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "int"
+        }
+      },
+      "game_id": "int",
+      "started_at": "str",
+      "updated_at": "str",
+      "duration": "int",
+      "map": "str",
+      "map_id": "int",
+      "map_custom_id": "null",
+      "state": "str",
+      "kind": "str",
+      "leaderboard": "str",
+      "mmr_leaderboard": "str",
+      "season": "int",
+      "server": "str",
+      "patch": "int",
+      "patch_id": "int",
+      "average_rating": "int",
+      "average_rating_deviation": "null",
+      "average_mmr": "int",
+      "average_mmr_deviation": "int",
+      "ongoing": "bool",
+      "just_finished": "bool",
+      "teams": {
+        "type": "array",
+        "length": 2,
+        "first_item_shape": {
+          "type": "array",
+          "length": 4,
+          "first_item_shape": {
+            "result": "str",
+            "civilization": "str",
+            "civilization_randomized": "bool",
+            "rating": "int",
+            "rating_diff": "int",
+            "mmr": "int",
+            "mmr_diff": "int",
+            "input_type": "str",
+            "name": "str",
+            "profile_id": "int",
+            "steam_id": "str",
+            "site_url": "str",
+            "avatars": {
+              "small": "null",
+              "medium": "null",
+              "full": "null"
+            },
+            "country": "str",
+            "social": {},
+            "modes": {
+              "rm_team": {
+                "rating": "int",
+                "max_rating": "int",
+                "max_rating_7d": "int",
+                "max_rating_1m": "int",
+                "rank": "int",
+                "rank_level": "str",
+                "streak": "int",
+                "games_count": "int",
+                "wins_count": "int",
+                "losses_count": "int",
+                "disputes_count": "int",
+                "drops_count": "int",
+                "last_game_at": "str",
+                "win_rate": "float",
+                "rating_history": {
+                  "1789201530": "dict",
+                  "1789202716": "dict",
+                  "1789205347": "dict",
+                  "1789206394": "dict",
+                  "1789208566": "dict",
+                  "1789211680": "dict",
+                  "1789241210": "dict",
+                  "1789242956": "dict",
+                  "1789245092": "dict",
+                  "1789284350": "dict",
+                  "1789286482": "dict"
+                },
+                "season": "int",
+                "previous_seasons": {
+                  "type": "array",
+                  "length": 1,
+                  "first_item_shape": "dict"
+                }
+              },
+              "rm_4v4_elo": {
+                "rating": "int",
+                "max_rating": "int",
+                "max_rating_7d": "int",
+                "max_rating_1m": "int",
+                "rank": "int",
+                "rank_level": "null",
+                "streak": "int",
+                "games_count": "int",
+                "wins_count": "int",
+                "losses_count": "int",
+                "disputes_count": "int",
+                "drops_count": "int",
+                "last_game_at": "str",
+                "win_rate": "float",
+                "rating_history": {
+                  "1789201530": "dict",
+                  "1789202715": "dict",
+                  "1789205346": "dict",
+                  "1789206393": "dict",
+                  "1789208566": "dict",
+                  "1789211679": "dict",
+                  "1789241209": "dict",
+                  "1789242956": "dict",
+                  "1789245091": "dict",
+                  "1789284350": "dict",
+                  "1789286481": "dict"
+                }
+              },
+              "qm_4v4": {
+                "rating": "int",
+                "max_rating": "int",
+                "max_rating_7d": "int",
+                "max_rating_1m": "int",
+                "rank": "int",
+                "rank_level": "null",
+                "streak": "int",
+                "games_count": "int",
+                "wins_count": "int",
+                "losses_count": "int",
+                "disputes_count": "int",
+                "drops_count": "int",
+                "last_game_at": "str",
+                "win_rate": "float",
+                "rating_history": {
+                  "1788252569": "dict",
+                  "1788254557": "dict",
+                  "1788256464": "dict",
+                  "1788259127": "dict",
+                  "1788261177": "dict",
+                  "1788263863": "dict",
+                  "1788266319": "dict",
+                  "1788266872": "dict",
+                  "1789225394": "dict",
+                  "1789226355": "dict",
+                  "1789229445": "dict"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "duration_ms": 953,
+    "application_status_fields": {}
+  },
+  {
+    "id": "world-search",
+    "checked_at": "2026-09-19T08:44:36.984041+00:00",
+    "method": "GET",
+    "url": "https://aoe4world.com/api/v0/players/search?query=beasty&exact=true",
+    "http_status": 200,
+    "final_url": "https://aoe4world.com/api/v0/players/search?query=beasty&exact=true",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"32b4d3469203a8897fd2d4f05e304484\"",
+      "cache-control": "max-age=0, private, must-revalidate"
+    },
+    "bytes_read": 1539,
+    "truncated": false,
+    "sha256": "0e3230389ebd879d38b549ef6703e9152b00672a9237091b7e9cc96d4b4f3c45",
+    "body_kind": "json",
+    "sampled_shape": {
+      "total_count": "int",
+      "page": "int",
+      "per_page": "int",
+      "count": "int",
+      "offset": "int",
+      "next_page": "null",
+      "filters": {
+        "query": "str",
+        "exact": "bool"
+      },
+      "players": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "name": "str",
+          "profile_id": "int",
+          "steam_id": "str",
+          "avatars": {
+            "small": "null",
+            "medium": "null",
+            "full": "null"
+          },
+          "country": "str",
+          "social": {},
+          "last_game_at": "str",
+          "leaderboards": {
+            "rm_team": {
+              "rank_level": "str",
+              "streak": "int",
+              "games_count": "int",
+              "wins_count": "int",
+              "losses_count": "int",
+              "season": "int",
+              "previous_seasons": {
+                "type": "array",
+                "length": 2,
+                "first_item_shape": {
+                  "rating": "int",
+                  "rank": "int",
+                  "rank_level": "str",
+                  "streak": "int",
+                  "games_count": "int",
+                  "wins_count": "int",
+                  "losses_count": "int",
+                  "disputes_count": "int",
+                  "drops_count": "int",
+                  "last_game_at": "str",
+                  "win_rate": "float",
+                  "season": "int"
+                }
+              }
+            },
+            "rm_3v3_elo": {
+              "rating": "int",
+              "rank": "null",
+              "rank_level": "null",
+              "streak": "int",
+              "games_count": "int",
+              "wins_count": "int",
+              "losses_count": "int",
+              "disputes_count": "int",
+              "drops_count": "int",
+              "last_game_at": "str",
+              "win_rate": "float"
+            },
+            "rm_4v4_elo": {
+              "rating": "int",
+              "rank": "null",
+              "rank_level": "null",
+              "streak": "int",
+              "games_count": "int",
+              "wins_count": "int",
+              "losses_count": "int",
+              "disputes_count": "int",
+              "drops_count": "int",
+              "last_game_at": "str",
+              "win_rate": "float"
+            },
+            "qm_4v4": {
+              "rating": "int",
+              "rank": "null",
+              "rank_level": "null",
+              "streak": "int",
+              "games_count": "int",
+              "wins_count": "int",
+              "losses_count": "int",
+              "disputes_count": "int",
+              "drops_count": "int",
+              "last_game_at": "str",
+              "win_rate": "float"
+            }
+          }
+        }
+      }
+    },
+    "duration_ms": 410,
+    "application_status_fields": {}
+  },
+  {
+    "id": "world-leaderboard",
+    "checked_at": "2026-09-19T08:44:39.395578+00:00",
+    "method": "GET",
+    "url": "https://aoe4world.com/api/v0/leaderboards/rm_solo?profile_id=4635035",
+    "http_status": 200,
+    "final_url": "https://aoe4world.com/api/v0/leaderboards/rm_solo?profile_id=4635035",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "etag": "W/\"e5c07e3ffe3f084c74a33473dd741acb\""
+    },
+    "bytes_read": 1062,
+    "truncated": false,
+    "sha256": "8481be9f6f6a3817caf63803abcbf28d999d29b22d1848fc0d7438cd91082142",
+    "body_kind": "json",
+    "sampled_shape": {
+      "filter": {
+        "query": "null",
+        "profile_ids": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "int"
+        },
+        "country": "null"
+      },
+      "key": "str",
+      "season": "int",
+      "name": "str",
+      "short_name": "str",
+      "site_url": "str",
+      "players": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "name": "str",
+          "profile_id": "int",
+          "steam_id": "str",
+          "site_url": "str",
+          "avatars": {
+            "small": "str",
+            "medium": "str",
+            "full": "str"
+          },
+          "country": "str",
+          "social": {},
+          "twitch_url": "null",
+          "twitch_is_live": "bool",
+          "rating": "null",
+          "max_rating": "null",
+          "max_rating_7d": "null",
+          "max_rating_1m": "null",
+          "rank": "null",
+          "visible_rank": "int",
+          "rank_level": "null",
+          "streak": "null",
+          "games_count": "null",
+          "wins_count": "null",
+          "losses_count": "null",
+          "drops_count": "int",
+          "last_game_at": "null",
+          "win_rate": "null",
+          "last_rating_change": "null"
+        }
+      },
+      "total_count": "int",
+      "page": "int",
+      "per_page": "int",
+      "count": "int",
+      "offset": "int",
+      "next_page": "null"
+    },
+    "duration_ms": 371,
+    "application_status_fields": {}
+  },
+  {
+    "id": "world-esports",
+    "checked_at": "2026-09-19T08:44:41.767982+00:00",
+    "method": "GET",
+    "url": "https://aoe4world.com/api/v0/esports/leaderboards/1?profile_id=4635035",
+    "http_status": 200,
+    "final_url": "https://aoe4world.com/api/v0/esports/leaderboards/1?profile_id=4635035",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"d0bdb7e9c99c0dd74d9a395b32f48b1f\"",
+      "cache-control": "max-age=0, private, must-revalidate"
+    },
+    "bytes_read": 284,
+    "truncated": false,
+    "sha256": "1d0c33ff6475ddedd8a01d7cdab7d4032e4a8c210a695bf52fb6c9c1ea906feb",
+    "body_kind": "json",
+    "sampled_shape": {
+      "filter": {
+        "query": "null",
+        "profile_ids": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "int"
+        },
+        "country": "null"
+      },
+      "key": "int",
+      "name": "str",
+      "site_url": "str",
+      "players": {
+        "type": "array",
+        "length": 0,
+        "first_item_shape": null
+      },
+      "total_count": "int",
+      "page": "int",
+      "per_page": "int",
+      "count": "int",
+      "offset": "int",
+      "next_page": "null"
+    },
+    "duration_ms": 381,
+    "application_status_fields": {}
+  },
+  {
+    "id": "we-age4-discovery",
+    "checked_at": "2026-09-19T08:44:44.150773+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age4",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age4",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "cache-control": "public, max-age=600"
+    },
+    "bytes_read": 33248,
+    "truncated": false,
+    "sha256": "8f788a51d02bb3898b5b6553bb03cf3d55137e1823a21c176172e3b68da1807b",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "leaderboards": {
+        "type": "array",
+        "length": 111,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "isranked": "int",
+          "leaderboardmap": {
+            "type": "array",
+            "length": 1,
+            "first_item_shape": {
+              "matchtype_id": "int",
+              "statgroup_type": "int",
+              "civilization_id": "int"
+            }
+          }
+        }
+      },
+      "matchTypes": {
+        "type": "array",
+        "length": 134,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int",
+          "localizedName": "str"
+        }
+      },
+      "races": {
+        "type": "array",
+        "length": 24,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "faction_id": "int",
+          "locstringid": "int",
+          "localizedName": "str"
+        }
+      },
+      "factions": {
+        "type": "array",
+        "length": 0,
+        "first_item_shape": null
+      },
+      "leaderboardRegions": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "discovery_metadata": {
+      "result": {
+        "code": 0,
+        "message": "SUCCESS"
+      },
+      "leaderboards": [
+        {
+          "id": 0,
+          "name": "Custom",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 0,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Slot1_1v1Ranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 1,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Slot1_2v2Ranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 2,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Slot1_3v3Ranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 3,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Slot1_4v4Ranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 4,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Slot1_2v2AIEasy",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 5,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Slot1_2v2AIMedium",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 6,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Slot1_2v2AIHard",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 7,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Slot1_2v2AIExpert",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 8,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Slot1_3v3AIEasy",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 9,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Slot1_3v3AIMedium",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 10,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Slot1_3v3AIHard",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 11,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Slot1_3v3AIExpert",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 12,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "Slot1_4v4AIEasy",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 13,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Slot1_4v4AIMedium",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 14,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "name": "Slot1_4v4AIHard",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 15,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Slot1_4v4AIExpert",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 16,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "name": "Slot1_1v1Unranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 668,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 20,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "name": "Slot1_2v2Unranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 21,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 667,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "Slot1_3v3Unranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 666,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 22,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "name": "Slot1_4v4Unranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 665,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 23,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "name": "Slot1_1v1AIEasy",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 24,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "Slot1_1v1AIMedium",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 25,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "name": "Slot1_1v1AIHard",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 26,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "Slot1_1v1AIExpert",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 27,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "Skirmish",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 52,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "Campaign",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 17,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "Art of War",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 55,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Slot1_1v1AIEasy_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 210,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 203,
+          "name": "Slot1_1v1AIExpert_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 211,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 204,
+          "name": "Slot1_1v1AIHard_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 212,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 205,
+          "name": "Slot1_1v1AIMedium_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 213,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 206,
+          "name": "Slot1_1v1Ranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 214,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 207,
+          "name": "Slot1_1v1Unranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 215,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 669,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 208,
+          "name": "Slot1_2v2AIEasy_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 216,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 209,
+          "name": "Slot1_2v2AIExpert_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 217,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 210,
+          "name": "Slot1_2v2AIHard_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 218,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 211,
+          "name": "Slot1_2v2AIMedium_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 219,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 212,
+          "name": "Slot1_2v2Ranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 220,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 213,
+          "name": "Slot1_2v2Unranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 670,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 221,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 214,
+          "name": "Slot1_3v3AIEasy_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 222,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 215,
+          "name": "Slot1_3v3AIExpert_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 223,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 216,
+          "name": "Slot1_3v3AIHard_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 224,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 217,
+          "name": "Slot1_3v3AIMedium_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 225,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 218,
+          "name": "Slot1_3v3Ranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 226,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 219,
+          "name": "Slot1_3v3Unranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 671,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 227,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 220,
+          "name": "Slot1_4v4AIEasy_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 228,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 221,
+          "name": "Slot1_4v4AIExpert_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 229,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 222,
+          "name": "Slot1_4v4AIHard_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 230,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 223,
+          "name": "Slot1_4v4AIMedium_console",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 231,
+              "statgroup_type": 0,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 224,
+          "name": "Slot1_4v4Ranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 232,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 225,
+          "name": "Slot1_4v4Unranked_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 672,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 233,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 479,
+          "name": "Slot1_1v1Unranked_EmpireWars",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 571,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 484,
+          "name": "Slot1_2v2Unranked_EmpireWars",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 576,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 489,
+          "name": "Slot1_3v3Unranked_EmpireWars",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 581,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 494,
+          "name": "Slot1_4v4Unranked_EmpireWars",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 586,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 495,
+          "name": "Slot1_1v1Unranked_EmpireWars_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 587,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 496,
+          "name": "Slot1_2v2Unranked_EmpireWars_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 588,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 497,
+          "name": "Slot1_3v3Unranked_EmpireWars_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 589,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 498,
+          "name": "Slot1_4v4Unranked_EmpireWars_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 590,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 533,
+          "name": "Slot1_FFA8Unranked",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 797,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 664,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 660,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 832,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 822,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 663,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 785,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 802,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 812,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 534,
+          "name": "Slot1_FFA8Unranked_Conroller",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 817,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 673,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 782,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 827,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 796,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 674,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 837,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 661,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 807,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 535,
+          "name": "Slot1_FFA4Unranked_Conroller",
+          "isranked": 1,
+          "leaderboardmap": []
+        },
+        {
+          "id": 601,
+          "name": "Slot1_1v1Unranked_MapMonsters",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 776,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 602,
+          "name": "Slot1_2v2Unranked_MapMonsters",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 777,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 603,
+          "name": "Slot1_1v1Unranked_MapMonsters_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 778,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 604,
+          "name": "Slot1_2v2Unranked_MapMonsters_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 779,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 605,
+          "name": "Slot1_3v3Unranked_MapMonsters_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 780,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 606,
+          "name": "Slot1_4v4Unranked_MapMonsters_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 781,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 607,
+          "name": "Slot1_3v3Unranked_MapMonsters",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 783,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 608,
+          "name": "Slot1_4v4Unranked_MapMonsters",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 784,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 610,
+          "name": "Slot1_1v1Unranked_FullMoon",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 790,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 611,
+          "name": "Slot1_2v2Unranked_FullMoon",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 788,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 612,
+          "name": "Slot1_3v3Unranked_FullMoon",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 791,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 613,
+          "name": "Slot1_4v4Unranked_FullMoon",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 792,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 614,
+          "name": "Slot1_1v1Unranked_FullMoon_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 789,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 615,
+          "name": "Slot1_2v2Unranked_FullMoon_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 793,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 616,
+          "name": "Slot1_3v3Unranked_FullMoon_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 794,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 617,
+          "name": "Slot1_4v4Unranked_FullMoon_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 795,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 621,
+          "name": "Slot1_1v1Unranked_ChartACourse",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 798,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 622,
+          "name": "Slot1_2v2Unranked_ChartACourse",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 799,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 623,
+          "name": "Slot1_3v3Unranked_ChartACourse",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 800,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 624,
+          "name": "Slot1_4v4Unranked_ChartACourse",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 801,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 625,
+          "name": "Slot1_1v1Unranked_ChartACourse_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 803,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 626,
+          "name": "Slot1_2v2Unranked_ChartACourse_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 804,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 627,
+          "name": "Slot1_3v3Unranked_ChartACourse_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 805,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 628,
+          "name": "Slot1_4v4Unranked_ChartACourse_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 806,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 629,
+          "name": "Slot1_1v1Unranked_SeasonsFeast",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 808,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 630,
+          "name": "Slot1_2v2Unranked_SeasonsFeast",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 809,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 631,
+          "name": "Slot1_3v3Unranked_SeasonsFeast",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 810,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 632,
+          "name": "Slot1_4v4Unranked_SeasonsFeast",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 811,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 633,
+          "name": "Slot1_1v1Unranked_SeasonsFeast_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 813,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 634,
+          "name": "Slot1_2v2Unranked_SeasonsFeast_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 814,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 635,
+          "name": "Slot1_3v3Unranked_SeasonsFeast_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 815,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 636,
+          "name": "Slot1_4v4Unranked_SeasonFeast_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 816,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 638,
+          "name": "Slot1_1v1Unranked_KingOfTheHill",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 818,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 639,
+          "name": "Slot1_2v2Unranked_KingOfTheHill",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 819,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 640,
+          "name": "Slot1_3v3Unranked_KingOfTheHill",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 820,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 641,
+          "name": "Slot1_4v4Unranked_KingOfTheHill",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 821,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 642,
+          "name": "Slot1_1v1Unranked_KingOfTheHill_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 823,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 643,
+          "name": "Slot1_2v2Unranked_KingOfTheHill_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 824,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 644,
+          "name": "Slot1_3v3Unranked_KingOfTheHill_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 825,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 645,
+          "name": "Slot1_4v4Unranked_FullMoon_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 826,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 646,
+          "name": "Slot1_1v1Unranked_ChaoticClimate",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 828,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 647,
+          "name": "Slot1_2v2Unranked_ChaoticClimate",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 829,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 648,
+          "name": "Slot1_3v3Unranked_ChaoticClimate",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 830,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 649,
+          "name": "Slot1_4v4Unranked_ChaoticClimate",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 831,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 650,
+          "name": "Slot1_1v1Unranked_ChaoticClimate_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 833,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 651,
+          "name": "Slot1_2v2Unranked_ChaoticClimate_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 834,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 652,
+          "name": "Slot1_3v3Unranked_ChaoticClimate_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 835,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 653,
+          "name": "Slot1_4v4Unranked_ChaoticClimate_console",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 836,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        }
+      ],
+      "matchTypes": [
+        {
+          "id": 0,
+          "name": "Custom",
+          "locstringid": 11160879,
+          "localizedName": "Custom"
+        },
+        {
+          "id": 1,
+          "name": "Slot1_1V1_Ranked",
+          "locstringid": 11233424,
+          "localizedName": "Solo Ranked"
+        },
+        {
+          "id": 2,
+          "name": "Slot1_2V2_Ranked",
+          "locstringid": 11233425,
+          "localizedName": "Team Ranked"
+        },
+        {
+          "id": 3,
+          "name": "Slot1_3V3_Ranked",
+          "locstringid": 11233425,
+          "localizedName": "Team Ranked"
+        },
+        {
+          "id": 4,
+          "name": "Slot1_4V4_Ranked",
+          "locstringid": 11233425,
+          "localizedName": "Team Ranked"
+        },
+        {
+          "id": 5,
+          "name": "Slot1_2V2_Ai_Easy",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 6,
+          "name": "Slot1_2V2_Ai_Medium",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 7,
+          "name": "Slot1_2V2_Ai_Hard",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 8,
+          "name": "Slot1_2V2_Ai_Expert",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 9,
+          "name": "Slot1_3V3_Ai_Easy",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 10,
+          "name": "Slot1_3V3_Ai_Medium",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 11,
+          "name": "Slot1_3V3_Ai_Hard",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 12,
+          "name": "Slot1_3V3_Ai_Expert",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 13,
+          "name": "Slot1_4V4_Ai_Easy",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 14,
+          "name": "Slot1_4V4_Ai_Medium",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 15,
+          "name": "Slot1_4V4_Ai_Hard",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 16,
+          "name": "Slot1_4V4_Ai_Expert",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 17,
+          "name": "Campaign",
+          "locstringid": 11160878,
+          "localizedName": "Campaign"
+        },
+        {
+          "id": 20,
+          "name": "Slot1_1V1_Unranked",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 21,
+          "name": "Slot1_2V2_Unranked",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 22,
+          "name": "Slot1_3V3_Unranked",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 23,
+          "name": "Slot1_4V4_Unranked",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 24,
+          "name": "Slot1_1V1_Ai_Easy",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 25,
+          "name": "Slot1_1V1_Ai_Medium",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 26,
+          "name": "Slot1_1V1_Ai_Hard",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 27,
+          "name": "Slot1_1V1_Ai_Expert",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 52,
+          "name": "Skirmish",
+          "locstringid": 11162930,
+          "localizedName": "Skirmish"
+        },
+        {
+          "id": 55,
+          "name": "Trial",
+          "locstringid": 11172316,
+          "localizedName": "Art of War"
+        },
+        {
+          "id": 210,
+          "name": "Slot1_1V1_Ai_Easy_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 211,
+          "name": "Slot1_1V1_Ai_Expert_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 212,
+          "name": "Slot1_1V1_Ai_Hard_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 213,
+          "name": "Slot1_1V1_Ai_Medium_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 214,
+          "name": "Slot1_1V1_Ranked_Console",
+          "locstringid": 11233424,
+          "localizedName": "Solo Ranked"
+        },
+        {
+          "id": 215,
+          "name": "Slot1_1V1_Unranked_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 216,
+          "name": "Slot1_2V2_Ai_Easy_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 217,
+          "name": "Slot1_2V2_Ai_Expert_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 218,
+          "name": "Slot1_2V2_Ai_Hard_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 219,
+          "name": "Slot1_2V2_Ai_Medium_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 220,
+          "name": "Slot1_2V2_Ranked_Console",
+          "locstringid": 11233425,
+          "localizedName": "Team Ranked"
+        },
+        {
+          "id": 221,
+          "name": "Slot1_2V2_Unranked_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 222,
+          "name": "Slot1_3V3_Ai_Easy_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 223,
+          "name": "Slot1_3V3_Ai_Expert_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 224,
+          "name": "Slot1_3V3_Ai_Hard_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 225,
+          "name": "Slot1_3V3_Ai_Medium_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 226,
+          "name": "Slot1_3V3_Ranked_Console",
+          "locstringid": 11233425,
+          "localizedName": "Team Ranked"
+        },
+        {
+          "id": 227,
+          "name": "Slot1_3V3_Unranked_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 228,
+          "name": "Slot1_4V4_Ai_Easy_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 229,
+          "name": "Slot1_4V4_Ai_Expert_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 230,
+          "name": "Slot1_4V4_Ai_Hard_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 231,
+          "name": "Slot1_4V4_Ai_Medium_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 232,
+          "name": "Slot1_4V4_Ranked_Console",
+          "locstringid": 11233425,
+          "localizedName": "Team Ranked"
+        },
+        {
+          "id": 233,
+          "name": "Slot1_4V4_Unranked_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 571,
+          "name": "Slot1_1V1_Unranked_Empirewars",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 576,
+          "name": "Slot1_2V2_Unranked_Empirewars",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 581,
+          "name": "Slot1_3V3_Unranked_Empirewars",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 586,
+          "name": "Slot1_4V4_Unranked_Empirewars",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 587,
+          "name": "Slot1_1V1_Unranked_Empirewars_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 588,
+          "name": "Slot1_2V2_Unranked_Empirewars_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 589,
+          "name": "Slot1_3V3_Unranked_Empirewars_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 590,
+          "name": "Slot1_4V4_Unranked_Empirewars_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 660,
+          "name": "Slot1_Ffa8_Unranked",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 661,
+          "name": "Slot1_Ffa8_Unranked_Controller",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 663,
+          "name": "Slot1_Ffa8_Empirewars",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 664,
+          "name": "Slot1_Ffa8_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 665,
+          "name": "Slot1_4V4_Unranked_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 666,
+          "name": "Slot1_3V3_Unranked_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 667,
+          "name": "Slot1_2V2_Unranked_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 668,
+          "name": "Slot1_1V1_Unranked_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 669,
+          "name": "Slot1_1V1_Unranked_Console_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 670,
+          "name": "Slot1_2V2_Unranked_Console_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 671,
+          "name": "Slot1_3V3_Unranked_Console_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 672,
+          "name": "Slot1_4V4_Unranked_Console_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 673,
+          "name": "Slot1_Ffa8_Unranked_Controller_Nomad",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 674,
+          "name": "Slot1_Ffa8_Unranked_Controller_Empirewars",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 776,
+          "name": "Slot1_1V1_Unranked_Map_Monsters",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 777,
+          "name": "Slot1_2V2_Unranked_Map_Monsters",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 778,
+          "name": "Slot1_1V1_Unranked_Map_Monsters_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 779,
+          "name": "Slot1_2V2_Unranked_Map_Monsters_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 780,
+          "name": "Slot1_3V3_Unranked_Map_Monsters_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 781,
+          "name": "Slot1_4V4_Unranked_Map_Monsters_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 782,
+          "name": "Slot1_Ffa8_Unranked_Controller_Map_Monsters",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 783,
+          "name": "Slot1_3V3_Unranked_Map_Monsters",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 784,
+          "name": "Slot1_4V4_Unranked_Map_Monsters",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 785,
+          "name": "Slot1_Ffa8_Map_Monsters",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 788,
+          "name": "Slot1_2V2_Unranked_Full_Moon",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 789,
+          "name": "Slot1_1V1_Unranked_Full_Moon_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 790,
+          "name": "Slot1_1V1_Unranked_Full_Moon",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 791,
+          "name": "Slot1_3V3_Unranked_Full_Moon",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 792,
+          "name": "Slot1_4V4_Unranked_Full_Moon",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 793,
+          "name": "Slot1_2V2_Unranked_Full_Moon_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 794,
+          "name": "Slot1_3V3_Unranked_Full_Moon_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 795,
+          "name": "Slot1_4V4_Unranked_Full_Moon_Console",
+          "locstringid": -1
+        },
+        {
+          "id": 796,
+          "name": "Slot1_Ffa8_Unranked_Controller_Full_Moon",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 797,
+          "name": "Slot1_Ffa8_Full_Moon",
+          "locstringid": -1
+        },
+        {
+          "id": 798,
+          "name": "Slot1_1V1_Unranked_Chart_A_Course",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 799,
+          "name": "Slot1_2V2_Unranked_Chart_A_Course",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 800,
+          "name": "Slot1_3V3_Unranked_Chart_A_Course",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 801,
+          "name": "Slot1_4V4_Unranked_Chart_A_Course",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 802,
+          "name": "Slot1_Ffa8_Unranked_Chart_A_Course",
+          "locstringid": -1
+        },
+        {
+          "id": 803,
+          "name": "Slot1_1V1_Unranked_Chart_A_Course_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 804,
+          "name": "Slot1_2V2_Unranked_Chart_A_Course_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 805,
+          "name": "Slot1_3V3_Unranked_Chart_A_Course_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 806,
+          "name": "Slot1_4V4unranked_Chart_A_Course_Console",
+          "locstringid": -1
+        },
+        {
+          "id": 807,
+          "name": "Slot1_Ffa8_Unranked_Controller_Chart_A_Course",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 808,
+          "name": "Slot1_1V1_Unranked_Seasons_Feast",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 809,
+          "name": "Slot1_2V2_Unranked_Seasons_Feast",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 810,
+          "name": "Slot1_3V3_Unranked_Seasons_Feast",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 811,
+          "name": "Slot1_4V4_Unranked_Seasons_Feast",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 812,
+          "name": "Slot1_Ffa8_Unranked_Seasons_Feast",
+          "locstringid": -1
+        },
+        {
+          "id": 813,
+          "name": "Slot1_1V1_Unranked_Seasons_Feast_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 814,
+          "name": "Slot1_2V2_Unranked_Seasons_Feast_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 815,
+          "name": "Slot1_3V3_Unranked_Seasons_Feast_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 816,
+          "name": "Slot1_4V4unranked_Seasons_Feast_Console",
+          "locstringid": -1
+        },
+        {
+          "id": 817,
+          "name": "Slot1_Ffa8_Unranked_Controller_Seasons_Feast",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 818,
+          "name": "Slot1_1V1_Unranked_King_Of_The_Hill",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 819,
+          "name": "Slot1_2V2_Unranked_King_Of_The_Hill",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 820,
+          "name": "Slot1_3V3_Unranked_King_Of_The_Hill",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 821,
+          "name": "Slot1_4V4_Unranked_King_Of_The_Hill",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 822,
+          "name": "Slot1_Ffa8_King_Of_The_Hill",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 823,
+          "name": "Slot1_1V1_Unranked_King_Of_The_Hill_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 824,
+          "name": "Slot1_2V2_Unranked_King_Of_The_Hill_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 825,
+          "name": "Slot1_3V3_Unranked_King_Of_The_Hill_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 826,
+          "name": "Slot1_4V4_Unranked_King_Of_The_Hill_Console",
+          "locstringid": -1
+        },
+        {
+          "id": 827,
+          "name": "Slot1_Ffa8_Unranked_Controller_King_Of_The_Hill",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 828,
+          "name": "Slot1_1V1_Unranked_Chaotic_Climate",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 829,
+          "name": "Slot1_2V2_Unranked_Chaotic_Climate",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 830,
+          "name": "Slot1_3V3_Unranked_Chaotic_Climate",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 831,
+          "name": "Slot1_4V4_Unranked_Chaotic_Climate",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 832,
+          "name": "Slot1_Ffa8_Chaotic_Climate",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 833,
+          "name": "Slot1_1V1_Unranked_Chaotic_Climate_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 834,
+          "name": "Slot1_2V2_Unranked_Chaotic_Climate_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 835,
+          "name": "Slot1_3V3_Unranked_Chaotic_Climate_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 836,
+          "name": "Slot1_4V4_Unranked_Chaotic_Climate_Console",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        },
+        {
+          "id": 837,
+          "name": "Slot1_Ffa8_Unranked_Controller_Chaotic_Climate",
+          "locstringid": 11216165,
+          "localizedName": "Quick Match"
+        }
+      ],
+      "races": [
+        {
+          "id": 106553,
+          "name": "English",
+          "faction_id": 0,
+          "locstringid": 11119080,
+          "localizedName": "English"
+        },
+        {
+          "id": 129267,
+          "name": "Mongol",
+          "faction_id": 0,
+          "locstringid": 11143414,
+          "localizedName": "Mongols"
+        },
+        {
+          "id": 131384,
+          "name": "French",
+          "faction_id": 0,
+          "locstringid": 11144801,
+          "localizedName": "French"
+        },
+        {
+          "id": 133008,
+          "name": "Rus",
+          "faction_id": 0,
+          "locstringid": 11145281,
+          "localizedName": "Rus"
+        },
+        {
+          "id": 134522,
+          "name": "Hre",
+          "faction_id": 0,
+          "locstringid": 11146001,
+          "localizedName": "Holy Roman Empire"
+        },
+        {
+          "id": 136150,
+          "name": "Sultanate",
+          "faction_id": 0,
+          "locstringid": 11146840,
+          "localizedName": "Delhi Sultanate"
+        },
+        {
+          "id": 137266,
+          "name": "Chinese",
+          "faction_id": 0,
+          "locstringid": 11148212,
+          "localizedName": "Chinese"
+        },
+        {
+          "id": 199703,
+          "name": "Abbasid",
+          "faction_id": 0,
+          "locstringid": 11183528,
+          "localizedName": "Abbasid Dynasty"
+        },
+        {
+          "id": 2039321,
+          "name": "Ottoman",
+          "faction_id": 0,
+          "locstringid": 11215010,
+          "localizedName": "Ottomans"
+        },
+        {
+          "id": 2058393,
+          "name": "Malian",
+          "faction_id": 0,
+          "locstringid": 11215009,
+          "localizedName": "Malians"
+        },
+        {
+          "id": 2101234,
+          "name": "Byzantine",
+          "faction_id": 0,
+          "locstringid": 11231290,
+          "localizedName": "Byzantines"
+        },
+        {
+          "id": 2109886,
+          "name": "Japanese",
+          "faction_id": 0,
+          "locstringid": 11244802,
+          "localizedName": "Japanese"
+        },
+        {
+          "id": 2121948,
+          "name": "French_Ha_01",
+          "faction_id": 0,
+          "locstringid": 11244985,
+          "localizedName": "Jeanne d'Arc"
+        },
+        {
+          "id": 2121949,
+          "name": "Abbasid_Ha_01",
+          "faction_id": 0,
+          "locstringid": 11244987,
+          "localizedName": "Ayyubids"
+        },
+        {
+          "id": 2121950,
+          "name": "Chinese_Ha_01",
+          "faction_id": 0,
+          "locstringid": 11244986,
+          "localizedName": "Zhu Xi's Legacy"
+        },
+        {
+          "id": 2121952,
+          "name": "Hre_Ha_01",
+          "faction_id": 0,
+          "locstringid": 11244984,
+          "localizedName": "Order of the Dragon"
+        },
+        {
+          "id": 5000002,
+          "name": "Templar",
+          "faction_id": 0,
+          "locstringid": 11265367,
+          "localizedName": "Knights Templar"
+        },
+        {
+          "id": 5000003,
+          "name": "Lancaster",
+          "faction_id": 0,
+          "locstringid": 11265366,
+          "localizedName": "House of Lancaster"
+        },
+        {
+          "id": 9000850,
+          "name": "Japanese_Ha_Sen",
+          "faction_id": 0,
+          "locstringid": 11266161
+        },
+        {
+          "id": 9000860,
+          "name": "Sultanate_Ha_Tug",
+          "faction_id": 0,
+          "locstringid": 11266164
+        },
+        {
+          "id": 9000878,
+          "name": "Mongol_Ha_Gol",
+          "faction_id": 0,
+          "locstringid": 11266201
+        },
+        {
+          "id": 9001050,
+          "name": "Byzantine_Ha_Mac",
+          "faction_id": 0,
+          "locstringid": 11266213
+        },
+        {
+          "id": 9003861,
+          "name": "Rogue_Neutral",
+          "faction_id": 0,
+          "locstringid": 11169889
+        },
+        {
+          "id": 9003910,
+          "name": "Jin_Dynasty",
+          "faction_id": 0,
+          "locstringid": 11270803
+        }
+      ],
+      "factions": [],
+      "leaderboardRegions": [
+        {
+          "id": 2074389,
+          "name": "Europe",
+          "locstringid": 11223541
+        },
+        {
+          "id": 2074390,
+          "name": "North America",
+          "locstringid": 11223543
+        },
+        {
+          "id": 2074436,
+          "name": "Middle East",
+          "locstringid": 11223542
+        },
+        {
+          "id": 2074437,
+          "name": "Asia",
+          "locstringid": 11223540
+        },
+        {
+          "id": 2074438,
+          "name": "South America",
+          "locstringid": 11223545
+        },
+        {
+          "id": 2074440,
+          "name": "Oceania",
+          "locstringid": 11223544
+        },
+        {
+          "id": 2074441,
+          "name": "Africa",
+          "locstringid": 11223539
+        },
+        {
+          "id": 2074442,
+          "name": "Unknown",
+          "locstringid": 11223546
+        }
+      ]
+    },
+    "duration_ms": 1429
+  },
+  {
+    "id": "we-age2-discovery",
+    "checked_at": "2026-09-19T08:44:47.583830+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age2",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age2",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "8081",
+      "cache-control": "public, max-age=600"
+    },
+    "bytes_read": 8081,
+    "truncated": false,
+    "sha256": "0be104a353a42fdbe86f4827cea1e0762af1ae22c90ff81413cc3adcb5a3b814",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "leaderboards": {
+        "type": "array",
+        "length": 17,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "isranked": "int",
+          "leaderboardmap": {
+            "type": "array",
+            "length": 2,
+            "first_item_shape": {
+              "matchtype_id": "int",
+              "statgroup_type": "int",
+              "civilization_id": "int"
+            }
+          }
+        }
+      },
+      "matchTypes": {
+        "type": "array",
+        "length": 29,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      },
+      "races": {
+        "type": "array",
+        "length": 59,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "faction_id": "int",
+          "locstringid": "int"
+        }
+      },
+      "factions": {
+        "type": "array",
+        "length": 0,
+        "first_item_shape": null
+      },
+      "leaderboardRegions": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "discovery_metadata": {
+      "result": {
+        "code": 0,
+        "message": "SUCCESS"
+      },
+      "leaderboards": [
+        {
+          "id": 1,
+          "name": "SOLO_DM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 2,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 60,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "TEAM_DM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 3,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 4,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 5,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 61,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "SOLO_RM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 6,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "TEAM_RM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 7,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 8,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 9,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "SOLO_BR_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 10,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "SOLO_EW_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 26,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "TEAM_EW_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 27,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 28,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 29,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "name": "CO_SOLO_RM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 66,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "name": "CO_TEAM_RM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 67,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 68,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 69,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "name": "CO_SOLO_EW_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 86,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "name": "CO_TEAM_EW_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 87,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 88,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 89,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "name": "SOLO_POM_CUSTOM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 120,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "name": "TEAM_POM_CUSTOM_RANKED",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 121,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "name": "RBW_El_Reinado",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 122,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "name": "RBW_El_Reinado",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 123,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "name": "RBW_Londinium",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 124,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "RBW_Londinium",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 125,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        }
+      ],
+      "matchTypes": [
+        {
+          "id": 2,
+          "name": "1V1",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "2V2",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "3V3",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "4V4",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "1V1",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "2V2",
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "3V3",
+          "locstringid": -1
+        },
+        {
+          "id": 9,
+          "name": "4V4",
+          "locstringid": -1
+        },
+        {
+          "id": 10,
+          "name": "FFA",
+          "locstringid": -1
+        },
+        {
+          "id": 26,
+          "name": "1V1",
+          "locstringid": -1
+        },
+        {
+          "id": 27,
+          "name": "2V2",
+          "locstringid": -1
+        },
+        {
+          "id": 28,
+          "name": "3V3",
+          "locstringid": -1
+        },
+        {
+          "id": 29,
+          "name": "4V4",
+          "locstringid": -1
+        },
+        {
+          "id": 60,
+          "name": "CUSTOM_DM_1v1",
+          "locstringid": -1
+        },
+        {
+          "id": 61,
+          "name": "CUSTOM_DM_TEAM",
+          "locstringid": -1
+        },
+        {
+          "id": 66,
+          "name": "1V1",
+          "locstringid": -1
+        },
+        {
+          "id": 67,
+          "name": "2V2",
+          "locstringid": -1
+        },
+        {
+          "id": 68,
+          "name": "3V3",
+          "locstringid": -1
+        },
+        {
+          "id": 69,
+          "name": "4V4",
+          "locstringid": -1
+        },
+        {
+          "id": 86,
+          "name": "1V1",
+          "locstringid": -1
+        },
+        {
+          "id": 87,
+          "name": "2V2",
+          "locstringid": -1
+        },
+        {
+          "id": 88,
+          "name": "3V3",
+          "locstringid": -1
+        },
+        {
+          "id": 89,
+          "name": "4V4",
+          "locstringid": -1
+        },
+        {
+          "id": 120,
+          "name": "CUSTOM_POM_1v1",
+          "locstringid": -1
+        },
+        {
+          "id": 121,
+          "name": "CUSTOM_POM_TEAM",
+          "locstringid": -1
+        },
+        {
+          "id": 122,
+          "name": "RBW_EL_REINADO",
+          "locstringid": -1
+        },
+        {
+          "id": 123,
+          "name": "RBW_EL_REINADO",
+          "locstringid": -1
+        },
+        {
+          "id": 124,
+          "name": "RBW_LONDINIUM",
+          "locstringid": -1
+        },
+        {
+          "id": 125,
+          "name": "RBW_LONDINIUM",
+          "locstringid": -1
+        }
+      ],
+      "races": [
+        {
+          "id": 0,
+          "name": "Armenians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "Aztecs",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "Bengalis",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "Berbers",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "Bohemians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Britons",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Bulgarians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Burgundians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "Burmese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 9,
+          "name": "Byzantines",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 10,
+          "name": "Celts",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 11,
+          "name": "Chinese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 12,
+          "name": "Cumans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 13,
+          "name": "Dravidians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 14,
+          "name": "Ethiopians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 15,
+          "name": "Franks",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 16,
+          "name": "Georgians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 17,
+          "name": "Goths",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 18,
+          "name": "Gurjaras",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 19,
+          "name": "Huns",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 20,
+          "name": "Incas",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 21,
+          "name": "Indians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 22,
+          "name": "Italians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 23,
+          "name": "Japanese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 24,
+          "name": "Khmer",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 25,
+          "name": "Koreans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 26,
+          "name": "Lithuanians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 27,
+          "name": "Magyars",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 28,
+          "name": "Malay",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 29,
+          "name": "Malians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 30,
+          "name": "Mayans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 31,
+          "name": "Mongols",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 32,
+          "name": "Persians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 33,
+          "name": "Poles",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 34,
+          "name": "Portuguese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 35,
+          "name": "Romans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 36,
+          "name": "Saracens",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 37,
+          "name": "Sicilians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 38,
+          "name": "Slavs",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 39,
+          "name": "Spanish",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 40,
+          "name": "Tatars",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 41,
+          "name": "Teutons",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 42,
+          "name": "Turks",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 43,
+          "name": "Vietnamese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 44,
+          "name": "Vikings",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 45,
+          "name": "Achaemenids",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 46,
+          "name": "Athenians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 47,
+          "name": "Spartans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 48,
+          "name": "Shu",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 49,
+          "name": "Wu",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 50,
+          "name": "Wei",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 51,
+          "name": "Jurchens",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 52,
+          "name": "Khitans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 55,
+          "name": "Macedonians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 56,
+          "name": "Thracians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 57,
+          "name": "Puru",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 58,
+          "name": "Muisca",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 59,
+          "name": "Mapuche",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 60,
+          "name": "Tupi",
+          "faction_id": 0,
+          "locstringid": -1
+        }
+      ],
+      "factions": [],
+      "leaderboardRegions": [
+        {
+          "id": 0,
+          "name": "Europe",
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "Middle East",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "Asia",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "North America",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "South America",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Oceania",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Africa",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Unknown",
+          "locstringid": -1
+        }
+      ]
+    },
+    "duration_ms": 1184
+  },
+  {
+    "id": "we-age3-discovery",
+    "checked_at": "2026-09-19T08:44:50.771580+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age3",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age3",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "4752",
+      "cache-control": "public, max-age=600"
+    },
+    "bytes_read": 4752,
+    "truncated": false,
+    "sha256": "4af9ececf10771b784ff6c702c43ca42807ec84708ed9a6dd974fbe95219258e",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "leaderboards": {
+        "type": "array",
+        "length": 7,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "isranked": "int",
+          "leaderboardmap": {
+            "type": "array",
+            "length": 1,
+            "first_item_shape": {
+              "matchtype_id": "int",
+              "statgroup_type": "int",
+              "civilization_id": "int"
+            }
+          }
+        }
+      },
+      "matchTypes": {
+        "type": "array",
+        "length": 23,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      },
+      "races": {
+        "type": "array",
+        "length": 23,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "faction_id": "int",
+          "locstringid": "int"
+        }
+      },
+      "factions": {
+        "type": "array",
+        "length": 0,
+        "first_item_shape": null
+      },
+      "leaderboardRegions": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "discovery_metadata": {
+      "result": {
+        "code": 0,
+        "message": "SUCCESS"
+      },
+      "leaderboards": [
+        {
+          "id": 0,
+          "name": "Custom",
+          "isranked": 0,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 0,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "1v1Supremacy",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 1,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "TeamSupremacy",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 2,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 3,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 4,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Treaty",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 9,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 10,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 11,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 12,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 14,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 15,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 16,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 17,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 22,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Deathmatch",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 5,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 6,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 7,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 8,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 23,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "1v1EmpireWars",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 18,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "TeamEmpireWars",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 19,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 20,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 21,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        }
+      ],
+      "matchTypes": [
+        {
+          "id": 0,
+          "name": "CUSTOM",
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "1V1_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "2V2_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "3V3_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "4V4_SUPREMACY",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "1V1_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "2V2_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "3V3_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "4V4_DEATHMATCH",
+          "locstringid": -1
+        },
+        {
+          "id": 9,
+          "name": "1V1_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 10,
+          "name": "2V2_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 11,
+          "name": "3V3_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 12,
+          "name": "4V4_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 14,
+          "name": "1V1_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 15,
+          "name": "2V2_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 16,
+          "name": "3V3_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 17,
+          "name": "4V4_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 18,
+          "name": "1V1_EMPIREWARS",
+          "locstringid": -1
+        },
+        {
+          "id": 19,
+          "name": "2V2_EMPIREWARS",
+          "locstringid": -1
+        },
+        {
+          "id": 20,
+          "name": "3V3_EMPIREWARS",
+          "locstringid": -1
+        },
+        {
+          "id": 21,
+          "name": "4V4_EMPIREWARS",
+          "locstringid": -1
+        },
+        {
+          "id": 22,
+          "name": "RANKED_TREATY",
+          "locstringid": -1
+        },
+        {
+          "id": 23,
+          "name": "RANKED_DEATHMATCH",
+          "locstringid": -1
+        }
+      ],
+      "races": [
+        {
+          "id": 1,
+          "name": "Spanish",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "British",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "French",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "Portuguese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Dutch",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Russians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Germans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "Ottomans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 9,
+          "name": "Iroquois",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 10,
+          "name": "Sioux",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 11,
+          "name": "Aztecs",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 12,
+          "name": "Chinese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 13,
+          "name": "Japanese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 14,
+          "name": "Indians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 15,
+          "name": "Incas",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 16,
+          "name": "Swedish",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 17,
+          "name": "Americans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 18,
+          "name": "Ethiopians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 19,
+          "name": "Hausa",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 20,
+          "name": "Mexicans",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 21,
+          "name": "Italians",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 22,
+          "name": "Maltese",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 49,
+          "name": "RandomCiv",
+          "faction_id": 0,
+          "locstringid": -1
+        }
+      ],
+      "factions": [],
+      "leaderboardRegions": [
+        {
+          "id": 0,
+          "name": "Europe",
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "Middle East",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "Asia",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "North America",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "South America",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Oceania",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Africa",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Unknown",
+          "locstringid": -1
+        }
+      ]
+    },
+    "duration_ms": 1162
+  },
+  {
+    "id": "we-age1-discovery",
+    "checked_at": "2026-09-19T08:44:53.938592+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age1",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getAvailableLeaderboards?title=age1",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "3174",
+      "cache-control": "public, max-age=600"
+    },
+    "bytes_read": 3174,
+    "truncated": false,
+    "sha256": "7b601e36cd4ad241036764c3b4489e2ce6ef0d90a77e7e5cedd0215447f0165a",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "leaderboards": {
+        "type": "array",
+        "length": 4,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "isranked": "int",
+          "leaderboardmap": {
+            "type": "array",
+            "length": 2,
+            "first_item_shape": {
+              "matchtype_id": "int",
+              "statgroup_type": "int",
+              "civilization_id": "int"
+            }
+          }
+        }
+      },
+      "matchTypes": {
+        "type": "array",
+        "length": 12,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      },
+      "races": {
+        "type": "array",
+        "length": 18,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "faction_id": "int",
+          "locstringid": "int"
+        }
+      },
+      "factions": {
+        "type": "array",
+        "length": 0,
+        "first_item_shape": null
+      },
+      "leaderboardRegions": {
+        "type": "array",
+        "length": 8,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "locstringid": "int"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "discovery_metadata": {
+      "result": {
+        "code": 0,
+        "message": "SUCCESS"
+      },
+      "leaderboards": [
+        {
+          "id": 1,
+          "name": "RANKED_RM_1v1",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 1,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 9,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "RANKED_RM_TEAM",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 2,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 3,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 4,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 10,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "RANKED_DM_1v1",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 5,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 11,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "RANKED_DM_TEAM",
+          "isranked": 1,
+          "leaderboardmap": [
+            {
+              "matchtype_id": 6,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 7,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 8,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            },
+            {
+              "matchtype_id": 12,
+              "statgroup_type": 1,
+              "civilization_id": -1
+            }
+          ]
+        }
+      ],
+      "matchTypes": [
+        {
+          "id": 1,
+          "name": "RANKED_QUICK_RM_1v1",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "RANKED_QUICK_RM_2v2",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "RANKED_QUICK_RM_3v3",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "RANKED_QUICK_RM_4v4",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "RANKED_QUICK_DM_1v1",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "RANKED_QUICK_DM_2v2",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "RANKED_QUICK_DM_3v3",
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "RANKED_QUICK_DM_4v4",
+          "locstringid": -1
+        },
+        {
+          "id": 9,
+          "name": "RANKED_CUSTOM_RM_1v1",
+          "locstringid": -1
+        },
+        {
+          "id": 10,
+          "name": "RANKED_CUSTOM_RM_TEAM",
+          "locstringid": -1
+        },
+        {
+          "id": 11,
+          "name": "RANKED_CUSTOM_DM_1v1",
+          "locstringid": -1
+        },
+        {
+          "id": 12,
+          "name": "RANKED_CUSTOM_DM_TEAM",
+          "locstringid": -1
+        }
+      ],
+      "races": [
+        {
+          "id": 1,
+          "name": "EGYPTIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "GREEK",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "BABYLONIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "ASSYRIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "MINOAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "HITTITE",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "PHOENICIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 8,
+          "name": "SUMERIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 9,
+          "name": "PERSIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 10,
+          "name": "SHANG",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 11,
+          "name": "YAMATO",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 12,
+          "name": "CHOSON",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 13,
+          "name": "ROMAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 14,
+          "name": "CARTHAGINIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 15,
+          "name": "PALMYRAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 16,
+          "name": "MACEDONIAN",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 17,
+          "name": "RANDOM",
+          "faction_id": 0,
+          "locstringid": -1
+        },
+        {
+          "id": 18,
+          "name": "MIRROR",
+          "faction_id": 0,
+          "locstringid": -1
+        }
+      ],
+      "factions": [],
+      "leaderboardRegions": [
+        {
+          "id": 0,
+          "name": "Europe",
+          "locstringid": -1
+        },
+        {
+          "id": 1,
+          "name": "Middle East",
+          "locstringid": -1
+        },
+        {
+          "id": 2,
+          "name": "Asia",
+          "locstringid": -1
+        },
+        {
+          "id": 3,
+          "name": "North America",
+          "locstringid": -1
+        },
+        {
+          "id": 4,
+          "name": "South America",
+          "locstringid": -1
+        },
+        {
+          "id": 5,
+          "name": "Oceania",
+          "locstringid": -1
+        },
+        {
+          "id": 6,
+          "name": "Africa",
+          "locstringid": -1
+        },
+        {
+          "id": 7,
+          "name": "Unknown",
+          "locstringid": -1
+        }
+      ]
+    },
+    "duration_ms": 1189
+  },
+  {
+    "id": "we-age4-personal",
+    "checked_at": "2026-09-19T08:44:57.132748+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getPersonalStat?title=age4&profile_ids=%5B4635035%5D",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getPersonalStat?title=age4&profile_ids=%5B4635035%5D",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "3011",
+      "cache-control": "public, max-age=5"
+    },
+    "bytes_read": 3011,
+    "truncated": false,
+    "sha256": "b6736074180456ba3a503a5ae06ee0d2b768997b4ee2de8a3a2d12f82b13cb37",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "statGroups": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "id": "int",
+          "name": "str",
+          "type": "int",
+          "members": {
+            "type": "array",
+            "length": 1,
+            "first_item_shape": {
+              "profile_id": "int",
+              "name": "str",
+              "alias": "str",
+              "personal_statgroup_id": "int",
+              "xp": "int",
+              "level": "int",
+              "leaderboardregion_id": "int",
+              "country": "str",
+              "clanlist_name": "str"
+            }
+          }
+        }
+      },
+      "leaderboardStats": {
+        "type": "array",
+        "length": 9,
+        "first_item_shape": {
+          "statgroup_id": "int",
+          "leaderboard_id": "int",
+          "wins": "int",
+          "losses": "int",
+          "streak": "int",
+          "disputes": "int",
+          "drops": "int",
+          "rank": "int",
+          "ranktotal": "int",
+          "ranklevel": "int",
+          "rating": "int",
+          "regionrank": "int",
+          "regionranktotal": "int",
+          "lastmatchdate": "int",
+          "highestrank": "int",
+          "highestranklevel": "int",
+          "highestrating": "int",
+          "metadata": "str"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "duration_ms": 1200,
+    "application_status_fields": {}
+  },
+  {
+    "id": "we-age4-history",
+    "checked_at": "2026-09-19T08:45:00.336986+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getRecentMatchHistory?title=age4&profile_ids=%5B4635035%5D",
+    "http_status": 200,
+    "final_url": "https://aoe-api.worldsedgelink.com/community/leaderboard/getRecentMatchHistory?title=age4&profile_ids=%5B4635035%5D",
+    "headers": {
+      "content-type": "application/json;charset=utf-8",
+      "cache-control": "public, max-age=5"
+    },
+    "bytes_read": 1244133,
+    "truncated": false,
+    "sha256": "38b1d9208fadfc277f985bb4bafc7898ac78d3c754e1c45668223c3f7963c074",
+    "body_kind": "json",
+    "sampled_shape": {
+      "result": {
+        "code": "int",
+        "message": "str"
+      },
+      "matchHistoryStats": {
+        "type": "array",
+        "length": 97,
+        "first_item_shape": {
+          "id": "int",
+          "creator_profile_id": "int",
+          "mapname": "str",
+          "maxplayers": "int",
+          "matchtype_id": "int",
+          "options": "str",
+          "slotinfo": "str",
+          "description": "str",
+          "startgametime": "int",
+          "completiontime": "int",
+          "observertotal": "int",
+          "matchhistoryreportresults": {
+            "type": "array",
+            "length": 6,
+            "first_item_shape": {
+              "matchhistory_id": "int",
+              "profile_id": "int",
+              "resulttype": "int",
+              "teamid": "int",
+              "civilization_id": "int",
+              "xpgained": "int",
+              "counters": "str",
+              "matchstartdate": "int"
+            }
+          },
+          "matchhistoryitems": {
+            "type": "array",
+            "length": 12,
+            "first_item_shape": {
+              "profile_id": "int",
+              "matchhistory_id": "int",
+              "iteminstance_id": "int",
+              "itemdefinition_id": "int",
+              "durabilitytype": "int",
+              "durability": "int",
+              "metadata": "str",
+              "itemlocation_id": "int"
+            }
+          },
+          "matchurls": {
+            "type": "array",
+            "length": 0,
+            "first_item_shape": null
+          },
+          "matchhistorymember": {
+            "type": "array",
+            "length": 6,
+            "first_item_shape": {
+              "matchhistory_id": "int",
+              "profile_id": "int",
+              "civilization_id": "int",
+              "statgroup_id": "int",
+              "teamid": "int",
+              "wins": "int",
+              "losses": "int",
+              "streak": "int",
+              "arbitration": "int",
+              "outcome": "int",
+              "oldrating": "int",
+              "newrating": "int",
+              "reporttype": "int"
+            }
+          },
+          "gamemod_id": "int"
+        }
+      },
+      "profiles": {
+        "type": "array",
+        "length": 234,
+        "first_item_shape": {
+          "profile_id": "int",
+          "name": "str",
+          "alias": "str",
+          "personal_statgroup_id": "int",
+          "xp": "int",
+          "level": "int",
+          "leaderboardregion_id": "int",
+          "country": "str",
+          "clanlist_name": "str"
+        }
+      }
+    },
+    "application_result": {
+      "code": 0,
+      "message": "SUCCESS"
+    },
+    "duration_ms": 4460,
+    "application_status_fields": {}
+  },
+  {
+    "id": "legacy-relic-discovery",
+    "checked_at": "2026-09-19T08:45:06.802535+00:00",
+    "method": "GET",
+    "url": "https://aoe-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=age4",
+    "transport_error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'aoe-api.reliclink.com'. (_ssl.c:1000)>",
+    "duration_ms": 691
+  },
+  {
+    "id": "data-civs",
+    "checked_at": "2026-09-19T08:45:09.499016+00:00",
+    "method": "GET",
+    "url": "https://data.aoe4world.com/civilizations/civs-index.json",
+    "http_status": 200,
+    "final_url": "https://data.aoe4world.com/civilizations/civs-index.json",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "last-modified": "Mon, 04 May 2026 15:20:04 GMT",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"69f8b924-10d8\"",
+      "cache-control": "max-age=600"
+    },
+    "bytes_read": 4312,
+    "truncated": false,
+    "sha256": "2c31814d94f8134ba636f2268fcf755ffd965ce8e9134a1d05e7a9811d743494",
+    "body_kind": "json",
+    "sampled_shape": {
+      "ab": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "ay": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "by": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "ch": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "de": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "en": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "fr": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "gol": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "hr": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "hl": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "ja": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "je": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "jin": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "kt": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "mac": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "ma": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "mo": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "od": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "ot": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "ru": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "sen": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "tug": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      },
+      "zx": {
+        "id": "str",
+        "name": "str",
+        "abbr": "str",
+        "slug": "str",
+        "attribName": "str",
+        "expansion": {
+          "type": "array",
+          "length": 1,
+          "first_item_shape": "str"
+        }
+      }
+    },
+    "duration_ms": 460,
+    "application_status_fields": {}
+  },
+  {
+    "id": "data-unit",
+    "checked_at": "2026-09-19T08:45:11.963796+00:00",
+    "method": "GET",
+    "url": "https://data.aoe4world.com/units/english/horseman-2.json",
+    "http_status": 200,
+    "final_url": "https://data.aoe4world.com/units/english/horseman-2.json",
+    "headers": {
+      "content-type": "application/json; charset=utf-8",
+      "last-modified": "Mon, 04 May 2026 15:20:04 GMT",
+      "access-control-allow-origin": "*",
+      "etag": "W/\"69f8b924-af0\"",
+      "cache-control": "max-age=600"
+    },
+    "bytes_read": 2800,
+    "truncated": false,
+    "sha256": "2deae9e01a7fe8528ffad2f0d67787dadefd6356da41ce5536b30de376c85250",
+    "body_kind": "json",
+    "sampled_shape": {
+      "id": "str",
+      "baseId": "str",
+      "type": "str",
+      "name": "str",
+      "pbgid": "int",
+      "attribName": "str",
+      "age": "int",
+      "civs": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": "str"
+      },
+      "description": "str",
+      "classes": {
+        "type": "array",
+        "length": 13,
+        "first_item_shape": "str"
+      },
+      "displayClasses": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": "str"
+      },
+      "unique": "bool",
+      "costs": {
+        "food": "int",
+        "wood": "int",
+        "stone": "int",
+        "gold": "int",
+        "total": "int",
+        "popcap": "int",
+        "time": "float"
+      },
+      "producedBy": {
+        "type": "array",
+        "length": 4,
+        "first_item_shape": "str"
+      },
+      "icon": "str",
+      "hitpoints": "int",
+      "weapons": {
+        "type": "array",
+        "length": 2,
+        "first_item_shape": {
+          "name": "str",
+          "type": "str",
+          "damage": "int",
+          "speed": "float",
+          "range": {
+            "min": "int",
+            "max": "float"
+          },
+          "modifiers": {
+            "type": "array",
+            "length": 2,
+            "first_item_shape": {
+              "property": "str",
+              "target": {
+                "class": {
+                  "type": "array",
+                  "length": 1,
+                  "first_item_shape": "list"
+                }
+              },
+              "effect": "str",
+              "value": "int",
+              "type": "str"
+            }
+          },
+          "durations": {
+            "aim": "int",
+            "windup": "float",
+            "attack": "float",
+            "winddown": "float",
+            "reload": "int",
+            "setup": "int",
+            "teardown": "int",
+            "cooldown": "float"
+          },
+          "attribName": "str",
+          "pbgid": "int"
+        }
+      },
+      "armor": {
+        "type": "array",
+        "length": 1,
+        "first_item_shape": {
+          "type": "str",
+          "value": "int"
+        }
+      },
+      "sight": {
+        "inner_height": "int",
+        "inner_radius": "int",
+        "outer_height": "int",
+        "outer_radius": "int",
+        "base": "float",
+        "line": "int",
+        "height": "int"
+      },
+      "movement": {
+        "speed": "float"
+      }
+    },
+    "duration_ms": 355,
+    "application_status_fields": {}
+  },
+  {
+    "id": "guides-builds",
+    "checked_at": "2026-09-19T08:45:14.323885+00:00",
+    "method": "GET",
+    "url": "https://aoe4guides.com/api/builds?civ=ENG",
+    "http_status": 404,
+    "final_url": "https://aoe4guides.com/api/builds?civ=ENG",
+    "headers": {
+      "cache-control": "public,max-age=0,must-revalidate",
+      "content-length": "323",
+      "content-type": "application/json",
+      "etag": "\"3a46ee8b9a189ccac8912f3a6577f05d-ssl\""
+    },
+    "bytes_read": 323,
+    "truncated": false,
+    "sha256": "96b67362c280237170991742cbea4f5cbb2db4a7c68ad11087a8c6120fe3fa7e",
+    "body_kind": "json",
+    "sampled_shape": {
+      "error": "str",
+      "message": "str",
+      "docs": "str"
+    },
+    "duration_ms": 336,
+    "application_status_fields": {
+      "error": "not_proxied",
+      "message": "aoe4guides.com proxies only /api/builds/{buildId} and /api/api-docs/. The full API, list endpoints included, is served directly at https://aoe4-guides-api-7h2vti5ckq-ey.a.run.app - please use that host and cache your responses."
+    }
+  }
+]

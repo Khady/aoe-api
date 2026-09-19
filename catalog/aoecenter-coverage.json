@@ -1,0 +1,2065 @@
+{
+  "checked_on": "2026-09-19",
+  "summary": {
+    "repositories": 5,
+    "sdk_request_builders": 17,
+    "community_request_builders": 14,
+    "game_request_builders": 2,
+    "login_helpers": 1,
+    "game_module_files": 17,
+    "empty_game_module_files": 15,
+    "community_response_models": 13,
+    "game_response_models": 2,
+    "model_files_indexed": 48,
+    "json_fixtures": 14,
+    "new_upstream_routes_established": 0,
+    "new_live_service_requests": 0
+  },
+  "methodology": [
+    "Repositories and source files are pinned to Git tree revisions returned by GitHub.",
+    "SDK request builders are counted from explicit path constructors plus the login helper; aliases do not add routes.",
+    "Case-folded matching joins source references only; it is not a claim about server case sensitivity.",
+    "The inventory route discrepancy maps to the existing intended operation; its differing path is not added as a confirmed endpoint.",
+    "Record fields are extracted from OCaml type declarations; this is not a wire-schema, required-field or full semantic guarantee.",
+    "All code was inspected, not executed. No credentials, game sessions or local user data were accessed."
+  ],
+  "repositories": [
+    {
+      "repository": "AoECenter/relic-sdk",
+      "url": "https://github.com/AoECenter/relic-sdk/tree/5b82d10bcc48dea5770745bc8e12f723576ca744",
+      "revision": "5b82d10bcc48dea5770745bc8e12f723576ca744",
+      "default_branch": "master",
+      "pushed_at": "2025-09-09T11:29:13Z",
+      "archived": false,
+      "license": "MIT",
+      "role": "OCaml SDK and typed protocol models; partial implementation"
+    },
+    {
+      "repository": "AoECenter/makefiles",
+      "url": "https://github.com/AoECenter/makefiles/tree/2038c80a1da1a1a9b9e0a4fe051e1ae8498dca8b",
+      "revision": "2038c80a1da1a1a9b9e0a4fe051e1ae8498dca8b",
+      "default_branch": "main",
+      "pushed_at": "2024-04-18T13:15:06Z",
+      "archived": false,
+      "license": null,
+      "role": "Shared build recipes; no game API interface"
+    },
+    {
+      "repository": "AoECenter/relic-store",
+      "url": "https://github.com/AoECenter/relic-store/tree/284602fae6c8e5073e059b981a53cab676005375",
+      "revision": "284602fae6c8e5073e059b981a53cab676005375",
+      "default_branch": "master",
+      "pushed_at": "2024-05-14T00:35:21Z",
+      "archived": false,
+      "license": "MIT",
+      "role": "AoE2 lobby collector and SQLite player-identity persistence prototype"
+    },
+    {
+      "repository": "AoECenter/relic-token",
+      "url": "https://github.com/AoECenter/relic-token/tree/c86c8efe7326250a549f2f6078e434ff963c8f35",
+      "revision": "c86c8efe7326250a549f2f6078e434ff963c8f35",
+      "default_branch": "master",
+      "pushed_at": "2024-07-01T20:39:05Z",
+      "archived": false,
+      "license": "MIT",
+      "role": "Local AoE2/Steam login-traffic extraction prototype; source-inspected only"
+    },
+    {
+      "repository": "AoECenter/relic-client",
+      "url": "https://github.com/AoECenter/relic-client/tree/f25fb2df7f682d4b88585b96dfa9e1d38f2cee70",
+      "revision": "f25fb2df7f682d4b88585b96dfa9e1d38f2cee70",
+      "default_branch": "master",
+      "pushed_at": "2024-06-28T14:29:39Z",
+      "archived": false,
+      "license": null,
+      "role": "Tauri/Svelte starter; no implemented game API integration found"
+    }
+  ],
+  "sdk_requests": [
+    {
+      "source_path": "lib/api/community/achievement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/achievement.ml",
+      "source_line": 4,
+      "ocaml_function": "get_available",
+      "method": "GET",
+      "route_literal": "/community/achievement/getAvailableAchievements",
+      "parameter_names": [
+        "title"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-achievement-definitions"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/achievement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/achievement.ml",
+      "source_line": 18,
+      "ocaml_function": "get",
+      "method": "GET",
+      "route_literal": "/community/achievement/getAchievements",
+      "parameter_names": [
+        "title",
+        "profileids"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-achievements"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/advertisement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/advertisement.ml",
+      "source_line": 4,
+      "ocaml_function": "get",
+      "method": "GET",
+      "route_literal": "/community/advertisement/findAdvertisements",
+      "parameter_names": [
+        "title",
+        "start",
+        "count"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-lobbies"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/clan.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/clan.ml",
+      "source_line": 4,
+      "ocaml_function": "find",
+      "method": "GET",
+      "route_literal": "/community/clan/find",
+      "parameter_names": [
+        "title",
+        "name",
+        "tags",
+        "joinPolicies",
+        "start",
+        "count"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-clan-find"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/clan.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/clan.ml",
+      "source_line": 25,
+      "ocaml_function": "get",
+      "method": "GET",
+      "route_literal": "/community/clan/getClanInfoFull",
+      "parameter_names": [
+        "title",
+        "name"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-clan-detail"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/community_event.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/community_event.ml",
+      "source_line": 5,
+      "ocaml_function": "get",
+      "method": "GET",
+      "route_literal": "/community/CommunityEvent/getAvailableCommunityEvents",
+      "parameter_names": [
+        "title"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-community-events"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/external.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/external.ml",
+      "source_line": 5,
+      "ocaml_function": "proxy_steam_request",
+      "method": "GET",
+      "route_literal": "/community/external/proxysteamuserrequest",
+      "parameter_names": [
+        "title",
+        "profile_names",
+        "request"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "librematch-community-external-proxysteamuserrequest"
+      ],
+      "discrepancies": [
+        "SDK uses profile_names; LibreMatch example/OpenAPI use profileNames. Parameter spelling remains unresolved."
+      ],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/item.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/item.ml",
+      "source_line": 8,
+      "ocaml_function": "get_inventory",
+      "method": "GET",
+      "route_literal": "/community/achievement/getInventoryByProfileIDs",
+      "parameter_names": [
+        "title",
+        "profileids"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-inventory"
+      ],
+      "discrepancies": [
+        "SDK literal uses achievement directory; LibreMatch uses item. Not treated as a new confirmed route."
+      ],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/leaderboard.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/leaderboard.ml",
+      "source_line": 4,
+      "ocaml_function": "get_available_leaderboards",
+      "method": "GET",
+      "route_literal": "/community/leaderboard/GetAvailableLeaderboards",
+      "parameter_names": [
+        "title",
+        "format"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-discovery"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/leaderboard.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/leaderboard.ml",
+      "source_line": 20,
+      "ocaml_function": "get_avatar",
+      "method": "GET",
+      "route_literal": "/community/leaderboard/GetAvatarStatForProfile",
+      "parameter_names": [
+        "title",
+        "profile_ids",
+        "format"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-avatar-stat"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/leaderboard.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/leaderboard.ml",
+      "source_line": 44,
+      "ocaml_function": "get_leaderboard_2",
+      "method": "GET",
+      "route_literal": "/community/leaderboard/getLeaderboard2",
+      "parameter_names": [
+        "title",
+        "sortBy",
+        "platform",
+        "leaderboard_id",
+        "start",
+        "count",
+        "format"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-leaderboard"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/leaderboard.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/leaderboard.ml",
+      "source_line": 69,
+      "ocaml_function": "get_recent_match_history",
+      "method": "GET",
+      "route_literal": "/community/leaderboard/getRecentMatchHistory",
+      "parameter_names": [
+        "title",
+        "format",
+        "profile_ids"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-recent"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/leaderboard.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/leaderboard.ml",
+      "source_line": 88,
+      "ocaml_function": "get_personal_stat",
+      "method": "GET",
+      "route_literal": "/community/leaderboard/getPersonalStat",
+      "parameter_names": [
+        "title",
+        "format",
+        "profile_ids"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-personal"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/community/news.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/community/news.ml",
+      "source_line": 4,
+      "ocaml_function": "get",
+      "method": "GET",
+      "route_literal": "/community/news/getNews",
+      "parameter_names": [
+        "title"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-news"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/game/advertisement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/game/advertisement.ml",
+      "source_line": 7,
+      "ocaml_function": "find_observable",
+      "method": "GET",
+      "route_literal": "/game/advertisement/findObservableAdvertisements",
+      "parameter_names": [
+        "title",
+        "start",
+        "count",
+        "desc",
+        "sortOrder",
+        "dataChecksum",
+        "modDLLFile",
+        "modName",
+        "modVersion",
+        "modDLLChecksum",
+        "appBinaryChecksum",
+        "versionFlags",
+        "profileids"
+      ],
+      "duplicate_parameter_names": [
+        "dataChecksum"
+      ],
+      "atlas_endpoint_ids": [
+        "librematch-game-advertisement-findobservableadvertisements"
+      ],
+      "discrepancies": [
+        "Fixed build fields and duplicate dataChecksum query key; empty profile list causes a second request using first-response member IDs."
+      ],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/api/game/news.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/api/game/news.ml",
+      "source_line": 4,
+      "ocaml_function": "get",
+      "method": "GET",
+      "route_literal": "/game/news/getNews",
+      "parameter_names": [
+        "title"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "librematch-game-news-getnews"
+      ],
+      "discrepancies": [],
+      "verification": "source-only"
+    },
+    {
+      "source_path": "lib/data/platform/cookie.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/data/platform/cookie.ml",
+      "source_line": 80,
+      "ocaml_function": "create",
+      "method": "POST",
+      "route_literal": "/game/login/platformlogin",
+      "parameter_names": [
+        "accountType",
+        "activeMatchId",
+        "alias",
+        "appID",
+        "auth",
+        "callNum",
+        "clientLibVersion",
+        "connect_id",
+        "country",
+        "installationType",
+        "language",
+        "macAddress",
+        "majorVersion",
+        "minorVersion",
+        "platformEnvironment",
+        "platformUserID",
+        "startGameToken",
+        "storeLicenseToken",
+        "storetoken",
+        "syncHash",
+        "timeoutOverride",
+        "title"
+      ],
+      "duplicate_parameter_names": [],
+      "atlas_endpoint_ids": [
+        "we-session-login"
+      ],
+      "discrepancies": [
+        "Login form hard-codes title=age2 and Steam appID=813780, independent of the generic client game enum."
+      ],
+      "verification": "source-only"
+    }
+  ],
+  "game_modules": [
+    {
+      "source_path": "lib/api/game/account.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/achievement.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/advertisement.ml",
+      "empty": false
+    },
+    {
+      "source_path": "lib/api/game/automatch.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/automatch2.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/challenge.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/chat.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/clan.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/cloud.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/community_event.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/invitation.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/item.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/leaderboard.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/news.ml",
+      "empty": false
+    },
+    {
+      "source_path": "lib/api/game/party.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/playerreport.ml",
+      "empty": true
+    },
+    {
+      "source_path": "lib/api/game/relationship.ml",
+      "empty": true
+    }
+  ],
+  "models": [
+    {
+      "source_path": "lib/models/response/community/achievement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/achievement.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "achievement_defs",
+          "ocaml_type": "Stub.Community.Achievement.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/achievement_attainment.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/achievement_attainment.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "user_achievements_map",
+          "ocaml_type": "(string * Stub.Community.Achievement_attainment.t list) list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/advertisement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/advertisement.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "matches",
+          "ocaml_type": "Stub.Community.Advertisement.t list"
+        },
+        {
+          "name": "avatars",
+          "ocaml_type": "Stub.Community.Avatar.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/avatar_stat.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/avatar_stat.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "avatar_stats_for_profile",
+          "ocaml_type": "Stub.Community.Avatar_stat.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/clan.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/clan.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "clans",
+          "ocaml_type": "Stub.Community.Clan.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/clan_info.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/clan_info.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "clan",
+          "ocaml_type": "Stub.Community.Clan_info.t"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/community_event.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/community_event.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "communityEvents",
+          "ocaml_type": "Stub.Community.Community_event.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/inventory.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/inventory.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "item_instances_by_profile_id",
+          "ocaml_type": "(string * Stub.Community.Inventory.t list) list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/leaderboard.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/leaderboard.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "leaderboards",
+          "ocaml_type": "Stub.Community.Leaderboard.t list"
+        },
+        {
+          "name": "match_types",
+          "ocaml_type": "Stub.Community.Match_type.t list"
+        },
+        {
+          "name": "races",
+          "ocaml_type": "Stub.Community.Race.t list"
+        },
+        {
+          "name": "leaderboard_regions",
+          "ocaml_type": "Stub.Community.Leaderboard_region.t list *)"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/leaderboard2.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/leaderboard2.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "stat_groups",
+          "ocaml_type": "Stub.Community.Stat_group.t list"
+        },
+        {
+          "name": "leaderboard_stats",
+          "ocaml_type": "Stub.Community.Leaderboard_stat.t list"
+        },
+        {
+          "name": "rank_total",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/news.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/news.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "news",
+          "ocaml_type": "Stub.Community.News.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/personal_stat.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/personal_stat.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "stat_groups",
+          "ocaml_type": "Stub.Community.Stat_group.t list"
+        },
+        {
+          "name": "leaderboard_stats",
+          "ocaml_type": "Stub.Community.Leaderboard_stat.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/community/recent_match_history.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/community/recent_match_history.ml",
+      "declared_record_fields": [
+        {
+          "name": "result",
+          "ocaml_type": "Stub.Community.Response.t"
+        },
+        {
+          "name": "match_history_stats",
+          "ocaml_type": "Stub.Community.Match_history_stats.t list"
+        },
+        {
+          "name": "profiles",
+          "ocaml_type": "Stub.Community.Avatar.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/game/news.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/game/news.ml",
+      "declared_record_fields": [
+        {
+          "name": "status",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "news",
+          "ocaml_type": "Stub.Game.News.t list"
+        },
+        {
+          "name": "tail",
+          "ocaml_type": "Yojson.Basic.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/response/game/observable_advertisements.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/response/game/observable_advertisements.ml",
+      "declared_record_fields": [
+        {
+          "name": "status",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "advertisements",
+          "ocaml_type": "Stub.Game.Observable_advertisement.t list"
+        },
+        {
+          "name": "members",
+          "ocaml_type": "Stub.Game.Observable_advertisement_member.t list"
+        },
+        {
+          "name": "tail",
+          "ocaml_type": "Yojson.Basic.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/achievement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/achievement.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "name_locstringid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "description_locstringid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "icon",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "timemodified",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "deleted",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "itembundle_id",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/achievement_attainment.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/achievement_attainment.ml",
+      "declared_record_fields": [
+        {
+          "name": "achievement_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "achieveddate",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/advertisement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/advertisement.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "steamlobbyid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "goodoldgameslobbyid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "xboxsessionid",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "host_profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "state",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "visible",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "mapname",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "options",
+          "ocaml_type": "Advertisement_options.t option"
+        },
+        {
+          "name": "passwordprotected",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "maxplayers",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "slotinfo",
+          "ocaml_type": "Slot_info.t option"
+        },
+        {
+          "name": "matchtype_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "matchmembers",
+          "ocaml_type": "Match_member.t list"
+        },
+        {
+          "name": "observernum",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "observermax",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "isobservable",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "observerdelay",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "hasobserverpassword",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "servicetype",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "relayserver_region",
+          "ocaml_type": "string"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/advertisement_options.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/advertisement_options.ml",
+      "declared_record_fields": [],
+      "has_from_json": false,
+      "has_to_json": false
+    },
+    {
+      "source_path": "lib/models/stub/community/avatar.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/avatar.ml",
+      "declared_record_fields": [
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "alias",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "personal_statgroup_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "xp",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "level",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "leaderboardregion_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "country",
+          "ocaml_type": "string"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/avatar_stat.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/avatar_stat.ml",
+      "declared_record_fields": [
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "avatarstat_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "value",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "lastupdated",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/clan.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/clan.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "fullname",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "tags",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "icon",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "membercount",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "joinpolicy",
+          "ocaml_type": "Join_policy.t"
+        },
+        {
+          "name": "metadata",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "messageoftheday",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "statgroup_id",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/clan_info.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/clan_info.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "fullname",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "tags",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "icon",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "membercount",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "joinpolicy",
+          "ocaml_type": "Join_policy.t"
+        },
+        {
+          "name": "metadata",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "messageoftheday",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "statgroup_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "permissions",
+          "ocaml_type": "Clan_permissions.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/clan_member.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/clan_member.ml",
+      "declared_record_fields": [
+        {
+          "name": "avatar",
+          "ocaml_type": "Clan_member_avatar.t"
+        },
+        {
+          "name": "membershipstatus",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "playerlistpermission_rank",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": false,
+      "has_to_json": false
+    },
+    {
+      "source_path": "lib/models/stub/community/clan_member_avatar.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/clan_member_avatar.ml",
+      "declared_record_fields": [
+        {
+          "name": "entityversion",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "metadata",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "alias",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "clanlist_name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "personal_statgroup_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "xp",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "level",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "leaderboardregion_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "presence_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "presenceproperty",
+          "ocaml_type": "string list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/clan_permissions.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/clan_permissions.ml",
+      "declared_record_fields": [
+        {
+          "name": "rank",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "chat",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "promote",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "demote",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "invite",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "remove",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "disband",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "editinfo",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "editpermission",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "locstringid",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/community_event.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/community_event.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "start",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "end_",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "expirytime",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "scheduledstarttime",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "scheduledendtime",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "scheduledexpirytime",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "actualstarttime",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "customdata",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "eventstate",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "localized_name",
+          "ocaml_type": "string"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/inventory.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/inventory.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "entityversion",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "itemdefinition_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "durability",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "durabilitytype",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "metadata",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "creationdate",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "itemlocation_locationid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "itemtrade_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "permissionflags",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "maxchargesperitem",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/inventory_metadata.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/inventory_metadata.ml",
+      "declared_record_fields": [],
+      "has_from_json": false,
+      "has_to_json": false
+    },
+    {
+      "source_path": "lib/models/stub/community/join_policy.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/join_policy.ml",
+      "declared_record_fields": [],
+      "has_from_json": false,
+      "has_to_json": false
+    },
+    {
+      "source_path": "lib/models/stub/community/leaderboard.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/leaderboard.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "isranked",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "leaderboardmap",
+          "ocaml_type": "Leaderboard_map.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/leaderboard_map.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/leaderboard_map.ml",
+      "declared_record_fields": [
+        {
+          "name": "matchtype_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "statgroup_type",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "race_id",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/leaderboard_region.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/leaderboard_region.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "locstringid",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/leaderboard_sorting.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/leaderboard_sorting.ml",
+      "declared_record_fields": [],
+      "has_from_json": false,
+      "has_to_json": false
+    },
+    {
+      "source_path": "lib/models/stub/community/leaderboard_stat.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/leaderboard_stat.ml",
+      "declared_record_fields": [
+        {
+          "name": "statgroup_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "leaderboard_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "wins",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "losses",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "streak",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "disputes",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "drops",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "rank",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "ranktotal",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "ranklevel",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "rating",
+          "ocaml_type": "int option"
+        },
+        {
+          "name": "regionrank",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "regionranktotal",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "lastmatchdate",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "highestrank",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "highestranklevel",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "highestrating",
+          "ocaml_type": "int option"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/match_history_report_results.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/match_history_report_results.ml",
+      "declared_record_fields": [
+        {
+          "name": "matchhistory_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "resulttype",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "teamid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "race_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "xpgained",
+          "ocaml_type": "int *)"
+        },
+        {
+          "name": "matchstartdate",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/match_history_stats.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/match_history_stats.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "creator_profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "mapname",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "maxplayers",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "matchtype_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "options",
+          "ocaml_type": "string *)"
+        },
+        {
+          "name": "description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "startgametime",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "completiontime",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "observertotal",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "match_history_report_results",
+          "ocaml_type": "Match_history_report_results.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/match_member.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/match_member.ml",
+      "declared_record_fields": [
+        {
+          "name": "match_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "ranking",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "statgroup_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "race_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "teamid",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/match_type.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/match_type.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "locstringid",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/news.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/news.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "hidden",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "newscategory",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "newstitle_locstringid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "newssubtitle_locstringid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "newstext_locstringid",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "newsimage",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "newsbody",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "metadata",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "datevisible",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "expirytime",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/race.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/race.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "faction_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "locstringid",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/response.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/response.ml",
+      "declared_record_fields": [
+        {
+          "name": "code",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "message",
+          "ocaml_type": "string"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/slot.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/slot.ml",
+      "declared_record_fields": [
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "station_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "team_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "faction_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "race_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "rank_level",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "rank_match_type_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "time_per_frame_ms",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "is_ready",
+          "ocaml_type": "bool"
+        },
+        {
+          "name": "status",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "metadata",
+          "ocaml_type": "string"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/community/slot_info.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/slot_info.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "slots",
+          "ocaml_type": "Slot.t list"
+        }
+      ],
+      "has_from_json": false,
+      "has_to_json": false
+    },
+    {
+      "source_path": "lib/models/stub/community/stat_group.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/community/stat_group.ml",
+      "declared_record_fields": [
+        {
+          "name": "id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "type_",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "members",
+          "ocaml_type": "Avatar.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/game/news.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/game/news.ml",
+      "declared_record_fields": [
+        {
+          "name": "status",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "image_url",
+          "ocaml_type": "string option"
+        },
+        {
+          "name": "title",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "subtitle",
+          "ocaml_type": "string option"
+        },
+        {
+          "name": "description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "short_description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "long_description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "category",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "start_time",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "end_time",
+          "ocaml_type": "int"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/game/observable_advertisement.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/game/observable_advertisement.ml",
+      "declared_record_fields": [
+        {
+          "name": "match_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int1",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "string1",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "host_relic_link_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int2",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "title",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "description",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "int3",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "map",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "options",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "int4",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int5",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "slotinfo",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "int6",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "metadata",
+          "ocaml_type": "Yojson.Basic.t list"
+        },
+        {
+          "name": "int7",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int8",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int9",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int10",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int11",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int12",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "time_started",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "server",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "unknown",
+          "ocaml_type": "int option"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    },
+    {
+      "source_path": "lib/models/stub/game/observable_advertisement_member.ml",
+      "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/lib/models/stub/game/observable_advertisement_member.ml",
+      "declared_record_fields": [
+        {
+          "name": "int1",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "profile_id",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "platform_id",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "icon",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "name",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "string1",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "int2",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int3",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int4",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int5",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "int_null",
+          "ocaml_type": "int option"
+        },
+        {
+          "name": "string2",
+          "ocaml_type": "string"
+        },
+        {
+          "name": "int6",
+          "ocaml_type": "int"
+        },
+        {
+          "name": "list1",
+          "ocaml_type": "Yojson.Basic.t list"
+        }
+      ],
+      "has_from_json": true,
+      "has_to_json": true
+    }
+  ]
+}

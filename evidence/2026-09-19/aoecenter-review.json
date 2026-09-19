@@ -1,0 +1,120 @@
+{
+  "checked_on": "2026-09-19",
+  "scope": "Public GitHub source inspection and one offline fixture check; no live game API requests or SDK execution.",
+  "summary": {
+    "repositories": 5,
+    "sdk_request_builders": 17,
+    "community_request_builders": 14,
+    "game_request_builders": 2,
+    "login_helpers": 1,
+    "game_module_files": 17,
+    "empty_game_module_files": 15,
+    "community_response_models": 13,
+    "game_response_models": 2,
+    "model_files_indexed": 48,
+    "json_fixtures": 14,
+    "new_upstream_routes_established": 0,
+    "new_live_service_requests": 0
+  },
+  "fetches": [
+    {
+      "url": "https://codeload.github.com/AoECenter/makefiles/tar.gz/2038c80a1da1a1a9b9e0a4fe051e1ae8498dca8b",
+      "repository": "AoECenter/makefiles",
+      "commit": "2038c80a1da1a1a9b9e0a4fe051e1ae8498dca8b",
+      "fetched_at": "2026-09-19T09:26:10.711675+00:00",
+      "bytes": 903,
+      "sha256": "c7fd7520017ae1018568f99f79b48e67a8e17f864f383b75526dace725b7a41d",
+      "selected_files": 1
+    },
+    {
+      "url": "https://api.github.com/repos/AoECenter/makefiles/git/trees/main?recursive=1",
+      "fetched_at": "2026-09-19T09:25:47.861080+00:00",
+      "bytes": 1951,
+      "sha256": "1c1d2870cb0b399305458e60ebe61c27bbd6ece33493271890a8f5ad0744ca01"
+    },
+    {
+      "url": "https://codeload.github.com/AoECenter/relic-client/tar.gz/f25fb2df7f682d4b88585b96dfa9e1d38f2cee70",
+      "repository": "AoECenter/relic-client",
+      "commit": "f25fb2df7f682d4b88585b96dfa9e1d38f2cee70",
+      "fetched_at": "2026-09-19T09:26:11.082222+00:00",
+      "bytes": 230714,
+      "sha256": "35942eacd133e231d3532ff80aeb856a070c32c4d8f628502b860dad2009cfed",
+      "selected_files": 9
+    },
+    {
+      "url": "https://api.github.com/repos/AoECenter/relic-client/git/trees/master?recursive=1",
+      "fetched_at": "2026-09-19T09:25:48.146434+00:00",
+      "bytes": 10662,
+      "sha256": "0c9a12f19f42ede11a700f528e15fd52788a6d8af00f98b8e79542102b5c405e"
+    },
+    {
+      "url": "https://codeload.github.com/AoECenter/relic-sdk/tar.gz/5b82d10bcc48dea5770745bc8e12f723576ca744",
+      "repository": "AoECenter/relic-sdk",
+      "commit": "5b82d10bcc48dea5770745bc8e12f723576ca744",
+      "fetched_at": "2026-09-19T09:26:10.759642+00:00",
+      "bytes": 51195,
+      "sha256": "7e0ba35d37df9e9031847c4ba58d723e20f2fa4a7e86830820bb07dd836b06fb",
+      "selected_files": 134
+    },
+    {
+      "url": "https://api.github.com/repos/AoECenter/relic-sdk/git/trees/master?recursive=1",
+      "fetched_at": "2026-09-19T09:25:47.837032+00:00",
+      "bytes": 43002,
+      "sha256": "8e14053ff72e7a65b9606a187da17b920c4af1d5c63d39fc880f186d4773903a"
+    },
+    {
+      "url": "https://codeload.github.com/AoECenter/relic-store/tar.gz/284602fae6c8e5073e059b981a53cab676005375",
+      "repository": "AoECenter/relic-store",
+      "commit": "284602fae6c8e5073e059b981a53cab676005375",
+      "fetched_at": "2026-09-19T09:26:10.735612+00:00",
+      "bytes": 11741,
+      "sha256": "ee0a38d60870a4c9f4237229079b0ce32bc433f6948015fbe9e3d19eb34da034",
+      "selected_files": 29
+    },
+    {
+      "url": "https://api.github.com/repos/AoECenter/relic-store/git/trees/master?recursive=1",
+      "fetched_at": "2026-09-19T09:25:47.838340+00:00",
+      "bytes": 11754,
+      "sha256": "439d1b7b08c2712795e6dc2fc729f419b9b68a95430e931e73c97e455f7f7974"
+    },
+    {
+      "url": "https://codeload.github.com/AoECenter/relic-token/tar.gz/c86c8efe7326250a549f2f6078e434ff963c8f35",
+      "repository": "AoECenter/relic-token",
+      "commit": "c86c8efe7326250a549f2f6078e434ff963c8f35",
+      "fetched_at": "2026-09-19T09:26:10.998962+00:00",
+      "bytes": 8443,
+      "sha256": "8c8233e7f3c8f4ec929fe33ad03c7233154e08716e194c63a4a0d6f09768ca15",
+      "selected_files": 17
+    },
+    {
+      "url": "https://api.github.com/repos/AoECenter/relic-token/git/trees/master?recursive=1",
+      "fetched_at": "2026-09-19T09:25:48.143311+00:00",
+      "bytes": 9278,
+      "sha256": "6b60b13d1db4f2a2da45b693329f65dd6450f1c53e876fe28a5bd13c6d6b5e9d"
+    },
+    {
+      "url": "https://api.github.com/orgs/AoECenter/repos?per_page=100&type=public",
+      "fetched_at": "2026-09-19T09:25:47.522088+00:00",
+      "bytes": 26293,
+      "sha256": "8205efd2fcfa7d017ab22d02f21b67183d6aa497ec82b9cbaffde138f8be4c6a"
+    }
+  ],
+  "offline_fixture_check": {
+    "source_url": "https://github.com/AoECenter/relic-sdk/blob/5b82d10bcc48dea5770745bc8e12f723576ca744/tests/unit/res/findAdvertisements.json",
+    "sha256": "0a1144da0dbe3aa62b44d2192295f3dc31202e6dc08fbeb4f8ea9f6e4605bf45",
+    "method": "Python standard-library base64/zlib processing, then JSON syntax check of the fragment selected by the SDK slotinfo parser. No SDK build or execution.",
+    "results": [
+      {
+        "fixture_array_index": 0,
+        "options_colon_field_count": 73,
+        "sdk_slotinfo_second_comma_segment_valid_json": false
+      },
+      {
+        "fixture_array_index": 1,
+        "options_colon_field_count": 73,
+        "sdk_slotinfo_second_comma_segment_valid_json": false
+      }
+    ]
+  },
+  "retained_data": "Repository metadata, source URLs/hashes, field names and validation counts. No captured player payloads, tickets or session values."
+}

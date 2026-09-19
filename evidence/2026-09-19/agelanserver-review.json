@@ -1,0 +1,890 @@
+{
+  "checked_on": "2026-09-19",
+  "repository": "luskaner/ageLANServer",
+  "revision": "eb7ec5ed5fe2ad0a39a843819a0fb928390d4454",
+  "repository_metadata": {
+    "default_branch": "main",
+    "pushed_at": "2026-09-10T20:35:54Z",
+    "archived": false,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    }
+  },
+  "fetches": [
+    {
+      "url": "https://api.github.com/repos/luskaner/ageLANServer",
+      "fetched_at": "2026-09-19T09:35:09.607839+00:00",
+      "bytes": 5668,
+      "sha256": "5d17830aeb5dbd43cffcf347486a676ac6334d64cf4b22c8582ad4e9cd95904f"
+    },
+    {
+      "url": "https://api.github.com/repos/luskaner/ageLANServer/git/trees/main?recursive=1",
+      "fetched_at": "2026-09-19T09:35:09.620796+00:00",
+      "bytes": 236673,
+      "sha256": "7e86768817b52eeae081b401759768117b425aecb5f469ccd3411945852a8287"
+    },
+    {
+      "url": "https://codeload.github.com/luskaner/ageLANServer/tar.gz/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454",
+      "revision": "eb7ec5ed5fe2ad0a39a843819a0fb928390d4454",
+      "fetched_at": "2026-09-19T09:35:33.524309+00:00",
+      "bytes": 883637,
+      "sha256": "d86ad160ae78a04c81ca6c69972b5f479f731e16ef1e1af0eabf920d523e2f54",
+      "selected_files": 608
+    }
+  ],
+  "summary": {
+    "route_operations": 129,
+    "game_router_operations": 107,
+    "playfab_api_operations": 15,
+    "explicit_local_only_operations": 5,
+    "game_router_per_title": {
+      "age1": 61,
+      "age2": 79,
+      "age3": 88,
+      "age4": 88,
+      "athens": 87
+    },
+    "playfab_api_per_title": {
+      "age4": 9,
+      "athens": 13
+    },
+    "tagged_handler_types": 43,
+    "websocket_action_names": 14,
+    "response_json_files": 46,
+    "aoe4_response_json_files": 9,
+    "new_live_service_requests": 0,
+    "new_catalog_path_patterns": 46,
+    "existing_catalog_paths_cross_referenced": 75
+  },
+  "method": "Read-only source retrieval and inspection. Literal route registrations plus enclosing game conditions indexed; special CDN/static/management routes resolved from source. No upstream source compiled or executed.",
+  "files_indexed_or_inspected": [
+    {
+      "path": "README.md",
+      "bytes": 18339,
+      "sha256": "f559e26a35b7af6ebcb1ec40112930b0c3d947eb7e19f43bb85fe8306bf1efa0",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/README.md"
+    },
+    {
+      "path": "common/domain.go",
+      "bytes": 3882,
+      "sha256": "21a8063d1d06f8e00f611a60d90bfce40e134ea39d81a85e2b3405693961b389",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/common/domain.go"
+    },
+    {
+      "path": "common/game/game.go",
+      "bytes": 312,
+      "sha256": "6121e2d6b61169bd19db6dc8827191379a0c07740fe23a384c42940e2686879d",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/common/game/game.go"
+    },
+    {
+      "path": "server/internal/http.go",
+      "bytes": 1459,
+      "sha256": "79bae4f3f37957f4ce22b00d264e9840cbd2d948c0dd2982270fd25a354f6721",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/http.go"
+    },
+    {
+      "path": "server/internal/models/advertisement.go",
+      "bytes": 16998,
+      "sha256": "9c824e5e99512293e467cfe18aed608bee7fb71469238d28fc27fd112139e0d3",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/models/advertisement.go"
+    },
+    {
+      "path": "server/internal/models/age4/game.go",
+      "bytes": 758,
+      "sha256": "20c4ccec4d8457dd1b47f630258569cb146a5b65a12c452beefab8cc7d53b1ab",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/models/age4/game.go"
+    },
+    {
+      "path": "server/internal/models/battleServer.go",
+      "bytes": 7518,
+      "sha256": "afffcd7dc15989d6a7f8f9534b8380200b53c9f7fa6d242811fd4ebed3cea08c",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/models/battleServer.go"
+    },
+    {
+      "path": "server/internal/models/playfab/static.go",
+      "bytes": 1486,
+      "sha256": "13c0785ec12548ee72d099266db7574d11db8ea4b544054af3eb80cab901504f",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/models/playfab/static.go"
+    },
+    {
+      "path": "server/internal/models/session.go",
+      "bytes": 3445,
+      "sha256": "98781f08ba72343ac1981a298506d642ae7e6a5a225114bcaf4bb638ea172773",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/models/session.go"
+    },
+    {
+      "path": "server/internal/models/user.go",
+      "bytes": 12505,
+      "sha256": "65521eb4a3a1b63c16b44a364c1aeb08f2e496167ba599b93dd56b6c8f9e148a",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/models/user.go"
+    },
+    {
+      "path": "server/internal/routes/apiAgeOfEmpires/textmoderation/textmoderation.go",
+      "bytes": 1184,
+      "sha256": "4cd2bd8895f265df1e558992dd2a6731cd65dd0f767570c4c6f575bf374d2ca9",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/apiAgeOfEmpires/textmoderation/textmoderation.go"
+    },
+    {
+      "path": "server/internal/routes/cdnAgeOfEmpires/aoe/serverStatus/serverStatus.go",
+      "bytes": 139,
+      "sha256": "6708b8ed3dfc65e8ad435f21bfad1a388f01664cb2db40042e9337abd23db8bd",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/cdnAgeOfEmpires/aoe/serverStatus/serverStatus.go"
+    },
+    {
+      "path": "server/internal/routes/cloudfiles/cloudfiles.go",
+      "bytes": 2366,
+      "sha256": "5f4350e1f76faa094b85eaa7330e7089e0085ace51a46e5ca892e567fa0333c8",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/cloudfiles/cloudfiles.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/addProfileProperty.go",
+      "bytes": 809,
+      "sha256": "680b68534913e34d165b7cd476295c627c6ced63a8fbe7b583daece3cdf8a3fb",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/addProfileProperty.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/clearProfileProperty.go",
+      "bytes": 679,
+      "sha256": "083875072ae4cdbf98b3dae8cb354e4669ff8a8eeeaa6537ad20f6d5247edda9",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/clearProfileProperty.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/findProfiles.go",
+      "bytes": 645,
+      "sha256": "21e94584c1d0a6beca7f748ebae5f48df61d1368219c9a08b9aedf6708229aad",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/findProfiles.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/findProfilesByPlatformID.go",
+      "bytes": 919,
+      "sha256": "9014a25062d3fd43fc8a1ed0e28056bfa018cbc1aa0d36d830d1d4fd2b5b68c8",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/findProfilesByPlatformID.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/getProfileName.go",
+      "bytes": 846,
+      "sha256": "f935d9c11643dba3f99c899ac099a35b7e3d9564d5ca3fcc5c353e7067ed0829",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/getProfileName.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/getProfileProperty.go",
+      "bytes": 1018,
+      "sha256": "eda94ad6697d71d9e0c4cd096066685f54b950f0e784b187a43b3d49a08292ee",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/getProfileProperty.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/setAvatarMetadata.go",
+      "bytes": 684,
+      "sha256": "ea796119e136f66a81e70b66cde9390e4abcdd3de2838ea9116df9b01cc229f2",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/setAvatarMetadata.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/setCrossplayEnabled.go",
+      "bytes": 468,
+      "sha256": "2c32ed854443226e5059c2f900f419e34eb86749a7d0a792eb3b6971c69cbddb",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/setCrossplayEnabled.go"
+    },
+    {
+      "path": "server/internal/routes/game/account/setLanguage.go",
+      "bytes": 177,
+      "sha256": "043dd02fbf74e41e7e55ca31ba04ab7366b00b5ab1be523976a7f929ea3ae6f7",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/account/setLanguage.go"
+    },
+    {
+      "path": "server/internal/routes/game/achievement/applyOfflineUpdates.go",
+      "bytes": 230,
+      "sha256": "b05fe75cb5e75638f794709fe109db3425f7c55a9c9be999101df7a0509d0075",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/achievement/applyOfflineUpdates.go"
+    },
+    {
+      "path": "server/internal/routes/game/achievement/getAchievements.go",
+      "bytes": 430,
+      "sha256": "8aa584c146ed8bdd345b66868b8e634ada2e8603d3551a0d918fab8aab8be612",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/achievement/getAchievements.go"
+    },
+    {
+      "path": "server/internal/routes/game/achievement/getAvailableAchievements.go",
+      "bytes": 257,
+      "sha256": "ad75e6c26c676dc05feff9c6a1a8847f1c9972d738c2f2037dffd2a5dd993a41",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/achievement/getAvailableAchievements.go"
+    },
+    {
+      "path": "server/internal/routes/game/achievement/grantAchievement.go",
+      "bytes": 285,
+      "sha256": "32b764a1f3013bd97440708e674669d92b239bc3840052a417a7d54101ada1f3",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/achievement/grantAchievement.go"
+    },
+    {
+      "path": "server/internal/routes/game/achievement/syncStats.go",
+      "bytes": 205,
+      "sha256": "a09b77cc8530659a66c1b51b8a3cb7173c0277a1ffd63ab8d05a4c67b3b3bd8a",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/achievement/syncStats.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/findAdvertisements.go",
+      "bytes": 3032,
+      "sha256": "62b11d5eac3ab10fea972e01e5019dd52c2f55b115974e76598e086c91cba5de",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/findAdvertisements.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/findObservableAdvertisements.go",
+      "bytes": 804,
+      "sha256": "29c91a66fc2d13be269a432c9245d13ac66c7674b604875094d1f2d0ee087fc1",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/findObservableAdvertisements.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/getAdvertisements.go",
+      "bytes": 889,
+      "sha256": "ecd2fb85c3bec199b1ca6d9102737b892f28c58cafa2ab684053e80844ec2778",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/getAdvertisements.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/getLanAdvertisements.go",
+      "bytes": 757,
+      "sha256": "76182ad3cd2fda0c80a78b51ce29c3eb892571e70503bcee2eff5ec280af152b",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/getLanAdvertisements.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/host.go",
+      "bytes": 3841,
+      "sha256": "0401f9ecee9583345b987078ca486f33b3582d699330623f781c93fcdbc3c09b",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/host.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/join.go",
+      "bytes": 3357,
+      "sha256": "6bfdea488a70cbf07ccce027ddd121cf6b774fa04829cd94324d50cc626aa021",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/join.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/leave.go",
+      "bytes": 813,
+      "sha256": "f2fb334d7cf72676248f54ded0eb2a2337d0c12f529c48e5fcad34d96f6861a0",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/leave.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/startObserving.go",
+      "bytes": 3094,
+      "sha256": "f861d484f30accd0a08bedda21e59018388add99ca6918994b793a783fc0c3b5",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/startObserving.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/stopObserving.go",
+      "bytes": 676,
+      "sha256": "d46f13963ad5439cd1ed33edea8d7b0c520c710b5b07d2460ae9cfa135a11e7e",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/stopObserving.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/update.go",
+      "bytes": 1509,
+      "sha256": "c7cf9602d4f943734d597f46719d5d0fd96b897ffa849af89800b26bfc7f82ad",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/update.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/updatePlatformLobbyID.go",
+      "bytes": 1867,
+      "sha256": "4942533a4a6269926847fd8939139d37c2f3ef3713b20d08a7dd75506be53737",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/updatePlatformLobbyID.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/updatePlatformSessionID.go",
+      "bytes": 210,
+      "sha256": "35ff411062b1a577bc9d967392f4561faca865443cdfb25880a6e7aef75f1c0a",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/updatePlatformSessionID.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/updateState.go",
+      "bytes": 2340,
+      "sha256": "55c9b4ef6d79c954135c8cdd84b35b25230c39ef3da1809c02cd376d7e0aa096",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/updateState.go"
+    },
+    {
+      "path": "server/internal/routes/game/advertisement/updateTags.go",
+      "bytes": 2083,
+      "sha256": "8a9c088390a069c7ceb71e9e6bb0900e5d22d712919c066ae0fc50c86a212f02",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/advertisement/updateTags.go"
+    },
+    {
+      "path": "server/internal/routes/game/automatch2/getAutomatchMap.go",
+      "bytes": 295,
+      "sha256": "cf1d8b315698bb9223361f135f704c87ee039e17f2f9e93f0a8ef8de8a9f1366",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/automatch2/getAutomatchMap.go"
+    },
+    {
+      "path": "server/internal/routes/game/challenge/getChallengeProgress.go",
+      "bytes": 304,
+      "sha256": "5fdf50e426e9270748d28ac52289a858649c71dcbc54ab45f3059bae64284d07",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/challenge/getChallengeProgress.go"
+    },
+    {
+      "path": "server/internal/routes/game/challenge/getChallenges.go",
+      "bytes": 242,
+      "sha256": "5112f0632bf04b6b62b53b227b42eef2af73dc94d74959855682c3406b8f6e41",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/challenge/getChallenges.go"
+    },
+    {
+      "path": "server/internal/routes/game/challenge/updateProgress.go",
+      "bytes": 196,
+      "sha256": "1ab281c372237f17aad0783c75425a1bb3823c1af0f0b3c9dee5e265434fd8f1",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/challenge/updateProgress.go"
+    },
+    {
+      "path": "server/internal/routes/game/challenge/updateProgressBatched.go",
+      "bytes": 189,
+      "sha256": "659384545480f104117bbd517e20ff25e90f577fbfc35123b686682cf4f5ed2c",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/challenge/updateProgressBatched.go"
+    },
+    {
+      "path": "server/internal/routes/game/chat/deleteOfflineMessage.go",
+      "bytes": 183,
+      "sha256": "78981fa02643c092be794814e35b7708255bdfb90886b0038001d6e81e2f1b48",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/chat/deleteOfflineMessage.go"
+    },
+    {
+      "path": "server/internal/routes/game/chat/getChatChannels.go",
+      "bytes": 279,
+      "sha256": "45871a2b6390d3fb21bbb704dcde496881e47b94f643a04111ced5656b897629",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/chat/getChatChannels.go"
+    },
+    {
+      "path": "server/internal/routes/game/chat/getOfflineMessages.go",
+      "bytes": 507,
+      "sha256": "feaa139f302a5ed98f1062421525762c12afe08f14c50d1166d35565de672eb4",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/chat/getOfflineMessages.go"
+    },
+    {
+      "path": "server/internal/routes/game/chat/joinChannel.go",
+      "bytes": 1417,
+      "sha256": "9d06e6311429f5b0d35b640a06d76fc3ccf92ac48c46fbc9ded14999d4d7b0c9",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/chat/joinChannel.go"
+    },
+    {
+      "path": "server/internal/routes/game/chat/leaveChannel.go",
+      "bytes": 1321,
+      "sha256": "f98eb813eb190b49b208b7e5a8016fcf2bea78a7af56372547b1105ee4642e3a",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/chat/leaveChannel.go"
+    },
+    {
+      "path": "server/internal/routes/game/chat/sendText.go",
+      "bytes": 1223,
+      "sha256": "a8f004bf99bbf1ba8ce19c41ceb46ec425b23b38c98deb528c4acbd340007c95",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/chat/sendText.go"
+    },
+    {
+      "path": "server/internal/routes/game/chat/sendWhisper.go",
+      "bytes": 2352,
+      "sha256": "863751b08e1dd9daadaf8e44724370aca2197709240589f367af2598cd0f8222",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/chat/sendWhisper.go"
+    },
+    {
+      "path": "server/internal/routes/game/clan/create.go",
+      "bytes": 186,
+      "sha256": "0d7e260272064735298b50de8dc3274ec3148a5777252ca72b57dc4e15db2a94",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/clan/create.go"
+    },
+    {
+      "path": "server/internal/routes/game/clan/find.go",
+      "bytes": 275,
+      "sha256": "6b09e0a9ba5afbd7f0b94efcb6ba00a42c80faf0af93c08fa504d763708e2584",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/clan/find.go"
+    },
+    {
+      "path": "server/internal/routes/game/cloud/getFileURL.go",
+      "bytes": 1212,
+      "sha256": "c3226210cae0bdd27b6092ef876e1bfd8e49809a848038857a574e42b90f87df",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/cloud/getFileURL.go"
+    },
+    {
+      "path": "server/internal/routes/game/cloud/getTempCredentials.go",
+      "bytes": 915,
+      "sha256": "c3abc53ae59224ca2db516ed9f1108c1a0ce7cc66938daa9891ac46f8b43d0d5",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/cloud/getTempCredentials.go"
+    },
+    {
+      "path": "server/internal/routes/game/communityEvent/getAvailableCommunityEvents.go",
+      "bytes": 682,
+      "sha256": "0085b353954550326b6400439c36f71f66083b24b08b283d103878b14fa2cb73",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/communityEvent/getAvailableCommunityEvents.go"
+    },
+    {
+      "path": "server/internal/routes/game/communityEvent/getEventLeaderboard.go",
+      "bytes": 213,
+      "sha256": "0d96e52ce2d07c09286c259dabfeac69999fc2811bb0202329acf594924f24a7",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/communityEvent/getEventLeaderboard.go"
+    },
+    {
+      "path": "server/internal/routes/game/communityEvent/getEventStats.go",
+      "bytes": 214,
+      "sha256": "35dcfc199e0efebaab6bba9fb7629fd12563cdf67c645d8f62db9701d95bfbf8",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/communityEvent/getEventStats.go"
+    },
+    {
+      "path": "server/internal/routes/game/invitation/cancelInvitation.go",
+      "bytes": 1382,
+      "sha256": "568bfc9944955b94a0432f73ac7e01ec6bde98e19eeb431877e22a1649551112",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/invitation/cancelInvitation.go"
+    },
+    {
+      "path": "server/internal/routes/game/invitation/extendInvitation.go",
+      "bytes": 1561,
+      "sha256": "999383e13730ad6c4c8b86d277db3faea156a4cc707d3ed89fe6fc6694e6ce20",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/invitation/extendInvitation.go"
+    },
+    {
+      "path": "server/internal/routes/game/invitation/replyToInvitation.go",
+      "bytes": 1537,
+      "sha256": "6212cd2f0887ff9b35700f85e36a9ad6e7864eb32fd18f975eae4988e1233e37",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/invitation/replyToInvitation.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/createItemLoadout.go",
+      "bytes": 1585,
+      "sha256": "8fdda5e9900fa8932a1948c074cc8b043cf2c4db065a6ab5dc3e7296c8c02b14",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/createItemLoadout.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/detachItems.go",
+      "bytes": 1712,
+      "sha256": "cc0490ce92ea9a98f8d828b98af2cd2d5cb28a2b388fa57487fa797e2d153328",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/detachItems.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/equipItemLoadout.go",
+      "bytes": 993,
+      "sha256": "eded567ded721aa1735707428c656aa7482cecc757a803777c2cbf81c326a531",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/equipItemLoadout.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getInventoryByProfileIDs.go",
+      "bytes": 1499,
+      "sha256": "65c56dd9d9fb875d1de148ea90a62ef8797a199a498e1862c9aede2483116d7e",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getInventoryByProfileIDs.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getItemBundleItemsJson.go",
+      "bytes": 250,
+      "sha256": "73c32ca296a0e2d47f53438bad9298b4ba51b6e5e9e0bc42dc73b93f47375beb",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getItemBundleItemsJson.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getItemDefinitionsJson.go",
+      "bytes": 250,
+      "sha256": "156df9fd099484d19b6cc4ca6b40f51d1fd9032cd62cf1a92b89b207bfdb02c8",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getItemDefinitionsJson.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getItemLoadouts.go",
+      "bytes": 666,
+      "sha256": "55d596d4e3fd139473a414ffd2f9238e9c8d4e2b35ff3c46ed1e50487ecc4b63",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getItemLoadouts.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getItemPrices.go",
+      "bytes": 193,
+      "sha256": "06250d35890aa051dd043e019c121bc34d7f8b7532f1017aa29ae6661646d310",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getItemPrices.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getLevelRewardsTableJson.go",
+      "bytes": 254,
+      "sha256": "aa7deb20b0d28b5377616d0b3760a6598f907ce57562020cd2326b045387abab",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getLevelRewardsTableJson.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getPersonalizedSaleItems.go",
+      "bytes": 201,
+      "sha256": "13bd5b2f262c74132b8f8ea785f090a24f585837ad33d02876281c0aa9a7a81f",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getPersonalizedSaleItems.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/getScheduledSaleAndItems.go",
+      "bytes": 204,
+      "sha256": "2a8ee82dd1f21ad80e92d1c57a032dc0888586d8389afcbf8e99b226f69dad23",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/getScheduledSaleAndItems.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/moveItem.go",
+      "bytes": 1992,
+      "sha256": "ec95193a00856338c5b87309ea9becbb115a4da3d533d25a46ccf589d2ccf0a7",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/moveItem.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/signItems.go",
+      "bytes": 250,
+      "sha256": "31c0a2c5b2c582ad50cf7ffb90264b1733f4035ef6c1e24b4d1353df7a870264",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/signItems.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/updateItemAttributes.go",
+      "bytes": 2066,
+      "sha256": "a4961fd14dcfc9eeed01f89c738cd5f075d7801945f8cd88c3f88ffb88883897",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/updateItemAttributes.go"
+    },
+    {
+      "path": "server/internal/routes/game/item/updateItemLoadout.go",
+      "bytes": 1062,
+      "sha256": "205cd2416261e4ad49e2799da26b5dacf64da158af3da547473c47db1a5850ba",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/item/updateItemLoadout.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/applyOfflineUpdates.go",
+      "bytes": 230,
+      "sha256": "02cf66c044d8fdeb2f21271d49fe66ee52e7935256554d8d6ac8f56e0b390934",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/applyOfflineUpdates.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getAvailableLeaderboards.go",
+      "bytes": 304,
+      "sha256": "0824fc9cc6096b13dd87448dc2567b175718e4865b985ea596c572308d4f29f5",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getAvailableLeaderboards.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getAvatarStatLeaderBoard.go",
+      "bytes": 208,
+      "sha256": "e4e1895bd834f25e2c1a82ba9554d7a10a11de078ff0841d59a087a0e115766a",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getAvatarStatLeaderBoard.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getLeaderBoard.go",
+      "bytes": 238,
+      "sha256": "3ea4b20f0b39a87b790233b0fe7d857734d48dd7b846ca2bea45716be25a9a08",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getLeaderBoard.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getPartyStat.go",
+      "bytes": 348,
+      "sha256": "5b518b3fce0e1d2984006e6af02fb08c41d0dc5ec59d7dbb3a17eab8cc46cd90",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getPartyStat.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getRecentMatchHistory.go",
+      "bytes": 198,
+      "sha256": "8160caf36ffc47e08ffde1d19c3d45c7f4b389d853aa5d3f0e02ba1e63e716b0",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getRecentMatchHistory.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getRecentMatchSinglePlayerHistory.go",
+      "bytes": 211,
+      "sha256": "9aae58f9fa01152585e4fb7fa0af25896493eab861288cf36ee9f40565f083de",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getRecentMatchSinglePlayerHistory.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getStatGroupsByProfileIDs.go",
+      "bytes": 509,
+      "sha256": "d366b5837b2bc23687b8e255d5c3165635a641030cb99a642404e541afad279a",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getStatGroupsByProfileIDs.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/getStatsForLeaderboardByProfileName.go",
+      "bytes": 373,
+      "sha256": "c808428f6edd75eac6bd2cdca64ebb05338a66c09d1fdbf635011481b2e2f0e3",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/getStatsForLeaderboardByProfileName.go"
+    },
+    {
+      "path": "server/internal/routes/game/leaderboard/setAvatarStatValues.go",
+      "bytes": 2703,
+      "sha256": "73ca0779c5de99c8d4891072d58d7040b96c52531807d2653aa2eff475b1e247",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/leaderboard/setAvatarStatValues.go"
+    },
+    {
+      "path": "server/internal/routes/game/login/logout.go",
+      "bytes": 1905,
+      "sha256": "b8adcd8e7e4ca6ec1e7f09d98ad15533ef74ecee3a57f215013b527bf973c0b9",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/login/logout.go"
+    },
+    {
+      "path": "server/internal/routes/game/login/platformlogin.go",
+      "bytes": 3672,
+      "sha256": "72264651a83fefc4732c7618e59bf082ce6af51a570413228322b925f746e506",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/login/platformlogin.go"
+    },
+    {
+      "path": "server/internal/routes/game/login/readSession.go",
+      "bytes": 765,
+      "sha256": "2eb012763840497e12df7cb0e77ef45b9be2b2363bd4ad66cdd22bb947ec9ca8",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/login/readSession.go"
+    },
+    {
+      "path": "server/internal/routes/game/news/getNews.go",
+      "bytes": 184,
+      "sha256": "c9b4306259d56ed8664b3dab5c2f40dff32592d1f4ee6eb8c7289705b333c731",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/news/getNews.go"
+    },
+    {
+      "path": "server/internal/routes/game/party/createOrReportSinglePlayer.go",
+      "bytes": 318,
+      "sha256": "70d9016aff8ad8955bdc965dd2b6dbf6e983a4410dedd24ea31c01c60851546c",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/party/createOrReportSinglePlayer.go"
+    },
+    {
+      "path": "server/internal/routes/game/party/finalizeReplayUpload.go",
+      "bytes": 184,
+      "sha256": "d47e56f3898b6557beb89f643292ba09026e2d7993f2f5db0b3463c8a26d0976",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/party/finalizeReplayUpload.go"
+    },
+    {
+      "path": "server/internal/routes/game/party/peerAdd.go",
+      "bytes": 1542,
+      "sha256": "ad246052d1f7918efd649d0982a296f8da129032c8520ce5b40ad871ab3333f0",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/party/peerAdd.go"
+    },
+    {
+      "path": "server/internal/routes/game/party/peerUpdate.go",
+      "bytes": 1372,
+      "sha256": "e9667622a583a664a5d082f1aa036f201657a408fb859242b8b2860f86d8a89d",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/party/peerUpdate.go"
+    },
+    {
+      "path": "server/internal/routes/game/party/reportMatch.go",
+      "bytes": 314,
+      "sha256": "318abae18e007977765a472487cb1a5a56d919fe560fdb1cd018366c7adf0922",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/party/reportMatch.go"
+    },
+    {
+      "path": "server/internal/routes/game/party/sendMatchChat.go",
+      "bytes": 2528,
+      "sha256": "c3455c03e5e55f42ef4c163a9d27394e9af85306df19fc0a06e14e81c9e59ddc",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/party/sendMatchChat.go"
+    },
+    {
+      "path": "server/internal/routes/game/party/updateHost.go",
+      "bytes": 989,
+      "sha256": "b4dcb8279273be5dc4433fb38ab89e1b0ef0226f4311fccd073a9328a1a51438",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/party/updateHost.go"
+    },
+    {
+      "path": "server/internal/routes/game/playerreport/reportUser.go",
+      "bytes": 184,
+      "sha256": "3c64f3d648c104333032e43f0dd34e48eed2c17145466cc705a9cb8c4f339e87",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/playerreport/reportUser.go"
+    },
+    {
+      "path": "server/internal/routes/game/relationship/addfriend.go",
+      "bytes": 620,
+      "sha256": "93f792e193f82592101ef70468f0d108805343cf568c2e5180b37e93eaceebfa",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/relationship/addfriend.go"
+    },
+    {
+      "path": "server/internal/routes/game/relationship/clearRelationship.go",
+      "bytes": 188,
+      "sha256": "50619d34b37b92d88d7cf5264a40b7b7885df0ff6c41d0067bc337e2365512ac",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/relationship/clearRelationship.go"
+    },
+    {
+      "path": "server/internal/routes/game/relationship/getPresenceData.go",
+      "bytes": 249,
+      "sha256": "3c6f49e50efff5c235d8cf6a31c124d11d33c8397c2c0daa16145bed1a7f63d1",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/relationship/getPresenceData.go"
+    },
+    {
+      "path": "server/internal/routes/game/relationship/getRelationships.go",
+      "bytes": 1529,
+      "sha256": "7b3db7a3763a0022033cf2ec503f66ea3fcddc3876828b1d6750df8a69286e9b",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/relationship/getRelationships.go"
+    },
+    {
+      "path": "server/internal/routes/game/relationship/ignore.go",
+      "bytes": 557,
+      "sha256": "72e7773cdea45d68ec11e5e0d5fd7b6677196b19b198cbeef08c506684832b3e",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/relationship/ignore.go"
+    },
+    {
+      "path": "server/internal/routes/game/relationship/setPresence.go",
+      "bytes": 1507,
+      "sha256": "531ec004a8bd59a27a752f1bbc59c44f932eb4982531a3e5d8e65880ce8e7453",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/relationship/setPresence.go"
+    },
+    {
+      "path": "server/internal/routes/game/relationship/setPresenceProperty.go",
+      "bytes": 794,
+      "sha256": "9e1a01c19ac0ad047cb3ffc2599c2257f74e52f1c76b3273dedddd9de98f6b96",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/game/relationship/setPresenceProperty.go"
+    },
+    {
+      "path": "server/internal/routes/msstore/getStoreTokens.go",
+      "bytes": 262,
+      "sha256": "75c5ff9a5bc150b2e645b4ab5497de848cd5c6b33640bfc250762e46f8ab220f",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/msstore/getStoreTokens.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Catalog/GetItems.go",
+      "bytes": 1063,
+      "sha256": "7b76738d12567f31d868962ce072e3242ba419e94626c75e23efd3bc36e7e44f",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Catalog/GetItems.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/GetPlayerCombinedInfo.go",
+      "bytes": 864,
+      "sha256": "288bea09ede316a70133036ec4c383983c34ccf8c11f3cfaa761dd834cba1265",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/GetPlayerCombinedInfo.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/GetTime.go",
+      "bytes": 325,
+      "sha256": "23987c141afb5bbb7e910d1114d17d27e71c92d06c453df70a0d9d88b96bc54b",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/GetTime.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/GetTitleData.go",
+      "bytes": 633,
+      "sha256": "11ef8eb3286599767b1cb6b97fcef5b7457e9749485ff5f3b814f2e7cd35bb4f",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/GetTitleData.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/GetUserData.go",
+      "bytes": 522,
+      "sha256": "442a976ff2750c16b54602d324eb9c40f60d909b509dff8a958b179c081521d4",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/GetUserData.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/GetUserReadOnlyData.go",
+      "bytes": 2006,
+      "sha256": "a219598ff1a064bddd0730abbb29a4405a9b9db3eebb8ea8a28f904c02cbfcba",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/GetUserReadOnlyData.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/LoginWithCustomID.go",
+      "bytes": 939,
+      "sha256": "6b76e263e16028bc5fe461d101171fc32c3e62617c462b9dce0d8fe9c66376f1",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/LoginWithCustomID.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/LoginWithSteam.go",
+      "bytes": 2784,
+      "sha256": "f50d760c222b450baddca00fdbe4b4b9f0d6bff3bb3a9e7366be28ab6e186683",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/LoginWithSteam.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/UpdateUserTitleDisplayName.go",
+      "bytes": 626,
+      "sha256": "d74a9eb67cf73e7b96bab4a679e594cf1b26368e2ebad6585bb735a7079dab3f",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/UpdateUserTitleDisplayName.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Client/shared/response.go",
+      "bytes": 1285,
+      "sha256": "d2c190ad72d6498fcbdc8e319b59d573f8719d455a8204301d38591da18e247e",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Client/shared/response.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/CloudScript/ExecuteFunction.go",
+      "bytes": 2018,
+      "sha256": "5e6dcfdd1723bcd01f3750cc5c40ee8b1fc35043dd92449b3e2496d1ab788d2f",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/CloudScript/ExecuteFunction.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Event/WriteTelemetryEvents.go",
+      "bytes": 352,
+      "sha256": "ddb7a60e7c6c0a313bc496af5ecb04a03c9c6322c656046f2e824aac36cae3b6",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Event/WriteTelemetryEvents.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Inventory/GetInventoryItems.go",
+      "bytes": 1597,
+      "sha256": "2143fbe370377cd87e46bd746342b36a03d57678410c1bc40b3758b991993d47",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Inventory/GetInventoryItems.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/MultiplayerServer/GetCognitiveServicesToken.go",
+      "bytes": 240,
+      "sha256": "96ebf04b7858edb19488be233be981f74d06b521ae017144af6f9ba068b24c65",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/MultiplayerServer/GetCognitiveServicesToken.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/MultiplayerServer/ListPartyQosServers.go",
+      "bytes": 234,
+      "sha256": "cd27e97e15f3aec5b914cef80945023862a17352371684691fdc14f03f44abd3",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/MultiplayerServer/ListPartyQosServers.go"
+    },
+    {
+      "path": "server/internal/routes/playfab/Party/RequestParty.go",
+      "bytes": 215,
+      "sha256": "908da01b5efef01d6cfdc5b68953aa5170bf327f15b8e1b801100c58620b02ee",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/playfab/Party/RequestParty.go"
+    },
+    {
+      "path": "server/internal/routes/router/apiAgeOfEmpires.go",
+      "bytes": 1145,
+      "sha256": "707cafa9e096648494f481f009a6880bc767db651c07f1a800b0bb2cc053fcc5",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/apiAgeOfEmpires.go"
+    },
+    {
+      "path": "server/internal/routes/router/cdnAgeOfEmpires.go",
+      "bytes": 922,
+      "sha256": "a18f4817c7cc525cbd09fa933871ed6c6eea5cf8db698bd3a7fd9a09c9c382c0",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/cdnAgeOfEmpires.go"
+    },
+    {
+      "path": "server/internal/routes/router/game.go",
+      "bytes": 14458,
+      "sha256": "f21059d72aa132f9b59cd71c30fa8fc4945011568829882225113902bc3a1710",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/game.go"
+    },
+    {
+      "path": "server/internal/routes/router/general.go",
+      "bytes": 1301,
+      "sha256": "757c661695760f0bc15a81dec8babd9c0d1ba383aca0a3748ef4fbc603b4bb64",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/general.go"
+    },
+    {
+      "path": "server/internal/routes/router/hostMiddleware.go",
+      "bytes": 1241,
+      "sha256": "175083ebb93d7eee03a44a85f3e18d124cd6d64df215591c04e534c7fb32c9d7",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/hostMiddleware.go"
+    },
+    {
+      "path": "server/internal/routes/router/playfabapi.go",
+      "bytes": 3397,
+      "sha256": "ae4fe38d57c46785a1e031bae7ac5c7b70b1b8c7497c777ec01880cc8544bc9a",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/playfabapi.go"
+    },
+    {
+      "path": "server/internal/routes/router/playfabapiMiddleware.go",
+      "bytes": 1510,
+      "sha256": "0a1bb4b11604caf68d49db70f5327da8d5b233819f70af9825a2cfe0d12a8d61",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/playfabapiMiddleware.go"
+    },
+    {
+      "path": "server/internal/routes/router/proxy.go",
+      "bytes": 1402,
+      "sha256": "02be191aee716dd45f6ffb58f2142f257f1caf3161209cb86be4dd392bfe9816",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/proxy.go"
+    },
+    {
+      "path": "server/internal/routes/router/router.go",
+      "bytes": 1101,
+      "sha256": "f5e838d79032a71cccd5c8a15f47d312664ecb218a683f0b35fce7dbf76eb716",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/router.go"
+    },
+    {
+      "path": "server/internal/routes/router/sessionMiddleware.go",
+      "bytes": 1136,
+      "sha256": "40364f382521319fa47160ffa68a864914185ac7fbca171bc14da7d061b771bd",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/sessionMiddleware.go"
+    },
+    {
+      "path": "server/internal/routes/router/titleMiddleware.go",
+      "bytes": 386,
+      "sha256": "c1bd000481e21c3c29a896af85653193a1027f834a3e7314282481bfa54390fa",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/titleMiddleware.go"
+    },
+    {
+      "path": "server/internal/routes/wss/wss.go",
+      "bytes": 8240,
+      "sha256": "4a5ab7846bcbe3b911a3d2c01e91446233f610752c522604c37bd7c575b40112",
+      "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/wss/wss.go"
+    }
+  ],
+  "response_resource_inventory": "../../catalog/agelanserver-coverage.json",
+  "new_live_service_requests": 0,
+  "limitations": [
+    "No game client, BattleServer relay, WebSocket session or authenticated publisher endpoint was exercised.",
+    "Route declarations can point to empty/error/acknowledgement handlers; reviewed examples are marked separately.",
+    "No host enumeration was run. Hostname construction is source evidence, not a current active-host list.",
+    "Named struct tags are incomplete type clues, not a generated OpenAPI schema."
+  ]
+}

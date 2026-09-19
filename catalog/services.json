@@ -1,0 +1,450 @@
+{
+  "checked_on": "2026-09-19",
+  "services": [
+    {
+      "id": "aoe4world",
+      "name": "AoE4 World",
+      "kind": "community-http",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": "https://aoe4world.com/api/v0",
+      "access": "Anonymous public reads; optional private-game keys on selected routes",
+      "source_ids": [
+        "world-docs",
+        "world-faq"
+      ],
+      "documentation": "docs/aoe4/aoe4world.md"
+    },
+    {
+      "id": "worlds-edge",
+      "name": "Worlds Edge community backend",
+      "kind": "publisher-backend",
+      "games": [
+        "aoe1de",
+        "aoe2de",
+        "aoe3de",
+        "aoe4",
+        "aom-retold"
+      ],
+      "base_url": "https://aoe-api.worldsedgelink.com",
+      "access": "Tested community reads anonymous; host/title-specific",
+      "source_ids": [
+        "librematch",
+        "launcher",
+        "agelan",
+        "agelan-routes",
+        "agelan-hosts"
+      ],
+      "documentation": "docs/shared/worlds-edge.md"
+    },
+    {
+      "id": "official-website",
+      "name": "AgeOfEmpires.com website APIs",
+      "kind": "publisher-website-api",
+      "games": [
+        "aoe1de",
+        "aoe2de",
+        "aoe3de",
+        "aoe4",
+        "aom-retold"
+      ],
+      "base_url": "https://api.ageofempires.com",
+      "access": "Mixed; public stats confirmed, mod Find requires authentication",
+      "source_ids": [
+        "official-js",
+        "official-page"
+      ],
+      "documentation": "docs/shared/official-website.md"
+    },
+    {
+      "id": "aoe4-data",
+      "name": "AoE4 World Data",
+      "kind": "static-json",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": "https://data.aoe4world.com",
+      "access": "Anonymous static files",
+      "source_ids": [
+        "data-source",
+        "data-civs"
+      ],
+      "documentation": "docs/aoe4/static-data.md"
+    },
+    {
+      "id": "aoe4-guides",
+      "name": "AoE4 Guides",
+      "kind": "community-http",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": "https://aoe4-guides-api-7h2vti5ckq-ey.a.run.app",
+      "access": "Anonymous; published per-IP quotas; website proxies selected paths only",
+      "source_ids": [
+        "guides-openapi",
+        "guides-source"
+      ],
+      "documentation": "docs/aoe4/build-orders.md"
+    },
+    {
+      "id": "aoe4-dumps",
+      "name": "AoE4 World datasets",
+      "kind": "bulk-export",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": "https://aoe4world.com/dumps",
+      "access": "Public index and expiring download URLs; index only inspected",
+      "source_ids": [
+        "world-dumps"
+      ],
+      "documentation": "docs/aoe4/aoe4world.md"
+    },
+    {
+      "id": "aoe4-replay-parser",
+      "name": "AoE4 World summary parser",
+      "kind": "self-hosted-http",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": null,
+      "access": "Local deployment; no public hosted base established; runtime untested",
+      "source_ids": [
+        "replays-source"
+      ],
+      "documentation": "docs/aoe4/replays-and-local-apis.md"
+    },
+    {
+      "id": "scar",
+      "name": "SCAR / Content Editor",
+      "kind": "local-game-scripting",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": null,
+      "access": "Installed game/editor; local API docs verified",
+      "source_ids": [
+        "scar-script",
+        "scar-options"
+      ],
+      "documentation": "docs/aoe4/replays-and-local-apis.md"
+    },
+    {
+      "id": "essence",
+      "name": "AOEMods.Essence",
+      "kind": "file-format-library",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": null,
+      "access": "Local library/CLI; not run",
+      "source_ids": [
+        "essence"
+      ],
+      "documentation": "docs/aoe4/replays-and-local-apis.md"
+    },
+    {
+      "id": "steam",
+      "name": "Steam Web API",
+      "kind": "platform-http",
+      "games": [
+        "aoe4",
+        "other-steam-editions"
+      ],
+      "base_url": "https://api.steampowered.com",
+      "access": "Method-specific key/privacy requirements",
+      "source_ids": [
+        "steam-stats",
+        "steam-user"
+      ],
+      "documentation": "docs/shared/platforms-and-esports.md"
+    },
+    {
+      "id": "playfab",
+      "name": "PlayFab game-client services",
+      "kind": "client-infrastructure",
+      "games": [
+        "aoe4",
+        "aom-retold"
+      ],
+      "base_url": null,
+      "access": "Title hosts and 15 emulated route operations identified; no publisher login or public AoE statistics contract verified.",
+      "source_ids": [
+        "agelan",
+        "agelan-playfab",
+        "agelan-hosts"
+      ],
+      "documentation": "docs/shared/platforms-and-esports.md"
+    },
+    {
+      "id": "aoe2-companion",
+      "name": "AoE2 Companion",
+      "kind": "community-http-and-websocket",
+      "games": [
+        "aoe2de"
+      ],
+      "base_url": "https://data.aoe2companion.com",
+      "access": "Anonymous selected reads verified; provider WebSocket examples untested",
+      "source_ids": [
+        "companion-source",
+        "companion-examples"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoestats",
+      "name": "aoestats",
+      "kind": "bulk-export",
+      "games": [
+        "aoe2de"
+      ],
+      "base_url": "https://aoestats.io",
+      "access": "Public export index verified; no bulk download",
+      "source_ids": [
+        "aoestats"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoe2-static",
+      "name": "AndyTheNerd AoE2 API",
+      "kind": "static-data-http",
+      "games": [
+        "aoe2"
+      ],
+      "base_url": "https://aoe2api.teamrespawntv.com",
+      "access": "Anonymous sample verified; modern DE coverage not established",
+      "source_ids": [
+        "aoe2new"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoe2-classic-api",
+      "name": "aalises classic AoE2 API",
+      "kind": "self-hostable-source",
+      "games": [
+        "aoe2-aok",
+        "aoe2-aoc"
+      ],
+      "base_url": null,
+      "access": "Hosted legacy URL unverified",
+      "source_ids": [
+        "aoe2classic"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoe2-data-api",
+      "name": "amrtgaber AoE2 Data API",
+      "kind": "self-hostable-source",
+      "games": [
+        "aoe2de"
+      ],
+      "base_url": null,
+      "access": "Hosted availability unverified",
+      "source_ids": [
+        "aoe2data"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoe2-techtree",
+      "name": "AoE2 Tech Tree",
+      "kind": "static-data-source",
+      "games": [
+        "aoe2de",
+        "return-of-rome"
+      ],
+      "base_url": null,
+      "access": "Source and website; file consumption untested",
+      "source_ids": [
+        "aoe2tree"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "mgz",
+      "name": "aoc-mgz",
+      "kind": "replay-library",
+      "games": [
+        "aoe2"
+      ],
+      "base_url": null,
+      "access": "Local parser; version-specific support; not run",
+      "source_ids": [
+        "mgz"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aom-gg",
+      "name": "AoM.gg",
+      "kind": "website-and-source",
+      "games": [
+        "aom-retold"
+      ],
+      "base_url": null,
+      "access": "Upstream collector inspected; separate public site API contract not established",
+      "source_ids": [
+        "aom-collector",
+        "aom-site"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoe2net",
+      "name": "AoE2.net",
+      "kind": "retired-http",
+      "games": [
+        "aoe2"
+      ],
+      "base_url": "https://aoe2.net",
+      "access": "Provider announces sunset",
+      "source_ids": [
+        "aoe2net"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoeivnet",
+      "name": "AoEIV.net",
+      "kind": "legacy-http",
+      "games": [
+        "aoe4"
+      ],
+      "base_url": "https://aoeiv.net",
+      "access": "Root request timed out; no definitive retirement claim",
+      "source_ids": [
+        "go-client"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "liquipedia",
+      "name": "Liquipedia LPDB",
+      "kind": "esports-http",
+      "games": [
+        "age-of-empires-series"
+      ],
+      "base_url": "https://api.liquipedia.net/api/v3",
+      "access": "Provider key/access required; AoE query not tested",
+      "source_ids": [
+        "liquipedia"
+      ],
+      "documentation": "docs/shared/platforms-and-esports.md"
+    },
+    {
+      "id": "voobly",
+      "name": "Voobly",
+      "kind": "legacy-platform-http",
+      "games": [
+        "legacy-age-of-empires"
+      ],
+      "base_url": null,
+      "access": "Documentation lead; auth/requests unverified",
+      "source_ids": [
+        "voobly"
+      ],
+      "documentation": "docs/shared/platforms-and-esports.md"
+    },
+    {
+      "id": "openage",
+      "name": "openage",
+      "kind": "independent-engine-api",
+      "games": [
+        "aoe1",
+        "aoe2"
+      ],
+      "base_url": null,
+      "access": "Local independent engine; not Microsoft game API",
+      "source_ids": [
+        "openage"
+      ],
+      "documentation": "docs/other-games/overview.md"
+    },
+    {
+      "id": "aoe2-replay-grpc",
+      "name": "AoE2 DE CadeRemote replay interface",
+      "kind": "local-grpc",
+      "games": [
+        "aoe2de"
+      ],
+      "base_url": null,
+      "access": "Local replay interface described by community reverse engineering; listener/auth/runtime not verified",
+      "source_ids": [
+        "delta-play-replay",
+        "librematch-wiki"
+      ],
+      "documentation": "docs/other-games/aoe2-replay-grpc.md"
+    },
+    {
+      "id": "aoecenter-sdk",
+      "name": "AoECenter Relic SDK",
+      "kind": "client-library",
+      "games": [
+        "aoe1de",
+        "aoe2de",
+        "aoe3de",
+        "aoe4"
+      ],
+      "base_url": null,
+      "access": "Source-inspected partial OCaml SDK; public community reads plus AoE2-specific login implementation.",
+      "source_ids": [
+        "aoecenter-relic-sdk"
+      ],
+      "documentation": "docs/aoecenter.md"
+    },
+    {
+      "id": "aoecenter-store",
+      "name": "AoECenter Relic Store",
+      "kind": "local-collector",
+      "games": [
+        "aoe2de"
+      ],
+      "base_url": null,
+      "access": "Source-only lobby collector and SQLite persistence prototype; no hosted query service established.",
+      "source_ids": [
+        "aoecenter-relic-store"
+      ],
+      "documentation": "docs/aoecenter.md"
+    },
+    {
+      "id": "aoecenter-token",
+      "name": "AoECenter Relic Token",
+      "kind": "local-auth-research",
+      "games": [
+        "aoe2de"
+      ],
+      "base_url": null,
+      "access": "Source-only local login-traffic extraction prototype; not executed and no public token service established.",
+      "source_ids": [
+        "aoecenter-relic-token"
+      ],
+      "documentation": "docs/aoecenter.md"
+    },
+    {
+      "id": "agelan-server",
+      "name": "ageLANServer protocol implementation",
+      "kind": "local-server-emulator",
+      "games": [
+        "aoe1de",
+        "aoe2de",
+        "aoe3de",
+        "aoe4",
+        "aom-retold"
+      ],
+      "base_url": null,
+      "access": "Local server with game sessions and optional authentication middleware; source-only review, no setup or login performed.",
+      "source_ids": [
+        "agelan-source",
+        "agelan-routes",
+        "agelan-websocket",
+        "agelan-playfab",
+        "agelan-hosts"
+      ],
+      "documentation": "docs/agelanserver.md"
+    }
+  ]
+}

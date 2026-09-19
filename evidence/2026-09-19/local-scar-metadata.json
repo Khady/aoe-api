@@ -1,0 +1,49 @@
+[
+  {
+    "path": "/mnt/c/XboxGames/Age of Empires IV/Content/scardocs/api/Essence_ScarFunctions.api",
+    "bytes": 300003,
+    "sha256": "76dc00e0f2b40c9e891e0d4a9b3f56f55820541117e3cad89a40ba87650bc63d",
+    "checked_at": "2026-09-19T08:57:56.755492+00:00",
+    "named_function_count": 1969,
+    "top_prefixes": {
+      "Entity": 230,
+      "Squad": 201,
+      "UI": 125,
+      "Player": 114,
+      "AIEncounter": 111,
+      "AI": 102,
+      "World": 84,
+      "AIPlayer": 72,
+      "LocalCommand": 66,
+      "Misc": 66,
+      "AIProductionScoring": 62,
+      "Game": 62,
+      "BP": 58,
+      "AISquad": 48,
+      "Camera": 47,
+      "Obj": 44,
+      "SGroup": 33,
+      "EGroup": 30,
+      "FOW": 26,
+      "Sim": 24
+    }
+  },
+  {
+    "path": "/mnt/c/XboxGames/Age of Empires IV/Content/scardocs/api/Essence_Constants.api",
+    "bytes": 17875,
+    "sha256": "1a28238505fdd3968c47f32e055a9d65b09b2a68da8b3bfc39ea948bde97d452",
+    "checked_at": "2026-09-19T08:57:56.773544+00:00"
+  },
+  {
+    "path": "/mnt/c/XboxGames/Age of Empires IV/Content/scardocs/html/frameset.htm",
+    "bytes": 806,
+    "sha256": "aa3bc5536058383087c88938c51379492c862bfe040f2993c03ed6c289193452",
+    "checked_at": "2026-09-19T08:57:56.785467+00:00"
+  },
+  {
+    "path": "/mnt/c/XboxGames/Age of Empires IV/Content/scardocs/html/function_list.htm",
+    "bytes": 2424644,
+    "sha256": "ae6a8886d73e414a911cf305182ac52db9d0092e92469ffdd2a9fa8bcdd75ca9",
+    "checked_at": "2026-09-19T08:57:56.841531+00:00"
+  }
+]

@@ -1,0 +1,373 @@
+[
+  {
+    "id": "world-docs",
+    "title": "AoE4 World API documentation",
+    "url": "https://aoe4world.com/api",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "world-faq",
+    "title": "AoE4 World FAQ",
+    "url": "https://aoe4world.com/faq",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "world-dumps",
+    "title": "AoE4 World dump index",
+    "url": "https://aoe4world.com/dumps",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "launcher",
+    "title": "User-supplied replay launcher",
+    "url": "https://github.com/EKYavsil/AoE4-Replay-Launcher/blob/7543f21d75a9cb76e5fae9c2ba104cd5a2b819e3/src/aoe4replay/aoe4world.py",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "librematch",
+    "title": "LibreMatch community protocol reference",
+    "url": "https://github.com/LibreMatch/wiki/tree/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community",
+    "source_kind": "community-protocol-research",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "official-js",
+    "title": "Official website JavaScript",
+    "url": "https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js",
+    "source_kind": "provider-client",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "official-page",
+    "title": "Official AoE4 leaderboard page",
+    "url": "https://www.ageofempires.com/stats/ageiv",
+    "source_kind": "provider-site",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "official-replays",
+    "title": "Official replay download instructions",
+    "url": "https://support.ageofempires.com/hc/en-us/articles/34920298779540-Downloading-Replay-Files-through-the-Age-of-Empires-Stats-page",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "guides-openapi",
+    "title": "AoE4 Guides live Swagger documentation",
+    "url": "https://aoe4guides.com/api/api-docs/",
+    "source_kind": "provider-openapi",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "guides-source",
+    "title": "AoE4 Guides API source",
+    "url": "https://github.com/jensbuehl/aoe4-guides-api/tree/733ce6eaa9f0865083159982274f5a696cb0ad7b",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "data-source",
+    "title": "AoE4 World Data source",
+    "url": "https://github.com/aoe4world/data/tree/b2cd38222deae40ba2db18171edf494f81410c69",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "data-civs",
+    "title": "AoE4 World civilization index",
+    "url": "https://data.aoe4world.com/civilizations/civs-index.json",
+    "source_kind": "provider-data",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "replays-source",
+    "title": "AoE4 World replay parser source",
+    "url": "https://github.com/aoe4world/replays-api/tree/efc391296451da352c3660daf814403e37e787e8",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "essence",
+    "title": "AOEMods.Essence project",
+    "url": "https://github.com/aoemods/AOEMods.Essence",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "scar-script",
+    "title": "Official SCAR scripting reference",
+    "url": "https://support.ageofempires.com/hc/en-us/articles/4424274153620-Editing-a-Script",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "scar-options",
+    "title": "Official Win Condition reference",
+    "url": "https://support.ageofempires.com/hc/en-us/articles/4421721200532-Editing-a-Win-Condition",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "agelan",
+    "title": "ageLANServer host/protocol notes",
+    "url": "https://github.com/luskaner/ageLANServer/wiki/Questions-and-Answers-%28QA%29",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "analytics",
+    "title": "AoE4 Analytics client source",
+    "url": "https://github.com/ccsimplyspolit/AOE4-Analytics/tree/2766f54c2575d1f9222650a01ea5591d7d2a5a22",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "steam-stats",
+    "title": "Valve ISteamUserStats reference",
+    "url": "https://partner.steamgames.com/doc/webapi/ISteamUserStats",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "steam-user",
+    "title": "Valve ISteamUser reference",
+    "url": "https://partner.steamgames.com/doc/webapi/ISteamUser",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "companion-source",
+    "title": "AoE2 Companion API client and usage page",
+    "url": "https://github.com/denniske/aoe2companion/tree/89c8b2e6242c6bb436aa49544da3a72d1bc112a5",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "companion-examples",
+    "title": "AoE2 Companion Bruno request collection",
+    "url": "https://github.com/denniske/aoe2companion-api/tree/7861ccb8c986dbbf57052e66c9427a2fea0917d5",
+    "source_kind": "provider-examples",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoestats",
+    "title": "aoestats data export documentation",
+    "url": "https://aoestats.io/api-info/",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoe2new",
+    "title": "AndyTheNerd static-data API",
+    "url": "https://github.com/AndyTheNerd/age-of-empires-II-api",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoe2classic",
+    "title": "Classic AoE2 API source",
+    "url": "https://github.com/aalises/age-of-empires-II-api",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoe2data",
+    "title": "AoE2 Data API source",
+    "url": "https://github.com/amrtgaber/aoe2-data-api",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoe2tree",
+    "title": "AoE2 Tech Tree source",
+    "url": "https://github.com/SiegeEngineers/aoe2techtree",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "mgz",
+    "title": "AoE2 recorded-game parser",
+    "url": "https://github.com/happyleavesaoc/aoc-mgz",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aom-collector",
+    "title": "AoM.gg published collector",
+    "url": "https://github.com/erin-fitzpatric/aom-lambda/blob/ee51b41da4a60fcfe066ca5894e7e09849d3e6a5/extract-leaderboard/app.mjs",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aom-site",
+    "title": "AoM.gg website source",
+    "url": "https://github.com/erin-fitzpatric/next-aom-gg",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoe2net",
+    "title": "AoE2.net provider shutdown notice",
+    "url": "https://aoe2.net/",
+    "source_kind": "provider-site",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "liquipedia",
+    "title": "Liquipedia LPDB access example",
+    "url": "https://liquipedia.net/commons/Support/Bot/Advanced_Usage",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "voobly",
+    "title": "Voobly external API documentation",
+    "url": "https://www.voobly.com/pages/view/147/External-API-Documentation",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "prelate",
+    "title": "prelate-rs AoE4 World wrapper",
+    "url": "https://github.com/willfindlay/prelate-rs",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "orda",
+    "title": "Orda AoE4 Guides wrapper",
+    "url": "https://github.com/gzordrai/orda",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "mcp",
+    "title": "AoE4 World Data MCP adapter",
+    "url": "https://github.com/enisn/aoe4world-mcp",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "go-client",
+    "title": "Historical Go AoE4 client",
+    "url": "https://github.com/theflyingcodr/aoe4-client/tree/2a65b081a6209057593df2935541c895aa45d9c9",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "overlay",
+    "title": "AoE4 World overlay project",
+    "url": "https://github.com/aoe4world/overlay",
+    "source_kind": "provider-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "openage",
+    "title": "openage modding API description",
+    "url": "https://blog.openage.dev/d14-openage-modding-api-finale.html",
+    "source_kind": "provider-documentation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "librematch-wiki",
+    "title": "LibreMatch complete wiki and protocol coverage",
+    "url": "https://github.com/librematch/wiki/tree/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419",
+    "source_kind": "community-protocol-research",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "librematch-openapi",
+    "title": "LibreMatch Worlds Edge OpenAPI specification",
+    "url": "https://github.com/librematch/librematch-rlink_client/blob/a1227c74a6990db9d9bc0e33c83a502773084178/openapi.yaml",
+    "source_kind": "community-openapi",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "delta-play-replay",
+    "title": "Delta Play Replay CadeRemote protobuf definitions",
+    "url": "https://github.com/librematch/delta-play-replay/blob/9bc90f67f22aec47bb050cdea5b73a5fec0d629e/crates/uncage-client/proto/cade_api.proto",
+    "source_kind": "community-protocol-research",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoecenter-org",
+    "title": "AoECenter public repositories",
+    "url": "https://github.com/AoECenter",
+    "source_kind": "provider-organization",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoecenter-relic-sdk",
+    "title": "AoECenter relic-sdk",
+    "url": "https://github.com/AoECenter/relic-sdk/tree/5b82d10bcc48dea5770745bc8e12f723576ca744",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoecenter-makefiles",
+    "title": "AoECenter makefiles",
+    "url": "https://github.com/AoECenter/makefiles/tree/2038c80a1da1a1a9b9e0a4fe051e1ae8498dca8b",
+    "source_kind": "build-tooling",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoecenter-relic-store",
+    "title": "AoECenter relic-store",
+    "url": "https://github.com/AoECenter/relic-store/tree/284602fae6c8e5073e059b981a53cab676005375",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoecenter-relic-token",
+    "title": "AoECenter relic-token",
+    "url": "https://github.com/AoECenter/relic-token/tree/c86c8efe7326250a549f2f6078e434ff963c8f35",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "aoecenter-relic-client",
+    "title": "AoECenter relic-client",
+    "url": "https://github.com/AoECenter/relic-client/tree/f25fb2df7f682d4b88585b96dfa9e1d38f2cee70",
+    "source_kind": "client-implementation",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "agelan-source",
+    "title": "ageLANServer pinned source",
+    "url": "https://github.com/luskaner/ageLANServer/tree/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454",
+    "source_kind": "server-emulation-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "agelan-routes",
+    "title": "ageLANServer per-title game route registrations",
+    "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/game.go",
+    "source_kind": "server-emulation-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "agelan-websocket",
+    "title": "ageLANServer session WebSocket implementation",
+    "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/wss/wss.go",
+    "source_kind": "server-emulation-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "agelan-playfab",
+    "title": "ageLANServer PlayFab route registrations",
+    "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/playfabapi.go",
+    "source_kind": "server-emulation-source",
+    "consulted_on": "2026-09-19"
+  },
+  {
+    "id": "agelan-hosts",
+    "title": "ageLANServer hostname construction",
+    "url": "https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/common/domain.go",
+    "source_kind": "server-emulation-source",
+    "consulted_on": "2026-09-19"
+  }
+]
