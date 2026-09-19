@@ -14,11 +14,20 @@
         "world-docs",
         "world-faq"
       ],
-      "documentation": "docs/aoe4/aoe4world.md"
+      "documentation": "docs/aoe4/aoe4world.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE4 World project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "world-docs",
+          "world-faq"
+        ]
+      }
     },
     {
       "id": "worlds-edge",
-      "name": "Worlds Edge community backend",
+      "name": "World\u2019s Edge / Relic game services",
       "kind": "publisher-backend",
       "games": [
         "aoe1de",
@@ -36,7 +45,19 @@
         "agelan-routes",
         "agelan-hosts"
       ],
-      "documentation": "docs/shared/worlds-edge.md"
+      "documentation": "docs/shared/worlds-edge.md",
+      "operator": {
+        "category": "publisher-developer",
+        "label": "Age of Empires / World\u2019s Edge / Relic backend family",
+        "attribution_basis": "Game-client implementation references and shared title-specific service responses establish the backend family; the exact corporate operating entity was not audited.",
+        "source_ids": [
+          "librematch",
+          "launcher",
+          "agelan",
+          "agelan-routes",
+          "agelan-hosts"
+        ]
+      }
     },
     {
       "id": "official-website",
@@ -55,7 +76,16 @@
         "official-js",
         "official-page"
       ],
-      "documentation": "docs/shared/official-website.md"
+      "documentation": "docs/shared/official-website.md",
+      "operator": {
+        "category": "publisher-developer",
+        "label": "Age of Empires publisher website",
+        "attribution_basis": "Routes are declared in the publisher website JavaScript and selected responses were observed on api.ageofempires.com.",
+        "source_ids": [
+          "official-js",
+          "official-page"
+        ]
+      }
     },
     {
       "id": "aoe4-data",
@@ -70,7 +100,16 @@
         "data-source",
         "data-civs"
       ],
-      "documentation": "docs/aoe4/static-data.md"
+      "documentation": "docs/aoe4/static-data.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE4 World Data project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "data-source",
+          "data-civs"
+        ]
+      }
     },
     {
       "id": "aoe4-guides",
@@ -85,7 +124,16 @@
         "guides-openapi",
         "guides-source"
       ],
-      "documentation": "docs/aoe4/build-orders.md"
+      "documentation": "docs/aoe4/build-orders.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE4 Guides project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "guides-openapi",
+          "guides-source"
+        ]
+      }
     },
     {
       "id": "aoe4-dumps",
@@ -99,7 +147,15 @@
       "source_ids": [
         "world-dumps"
       ],
-      "documentation": "docs/aoe4/aoe4world.md"
+      "documentation": "docs/aoe4/aoe4world.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE4 World datasets project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "world-dumps"
+        ]
+      }
     },
     {
       "id": "aoe4-replay-parser",
@@ -113,7 +169,15 @@
       "source_ids": [
         "replays-source"
       ],
-      "documentation": "docs/aoe4/replays-and-local-apis.md"
+      "documentation": "docs/aoe4/replays-and-local-apis.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE4 World summary parser project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "replays-source"
+        ]
+      }
     },
     {
       "id": "scar",
@@ -128,7 +192,16 @@
         "scar-script",
         "scar-options"
       ],
-      "documentation": "docs/aoe4/replays-and-local-apis.md"
+      "documentation": "docs/aoe4/replays-and-local-apis.md",
+      "operator": {
+        "category": "publisher-developer",
+        "label": "AoE4 game and Content Editor",
+        "attribution_basis": "Publisher scripting documentation and API reference files shipped with the installed game; local runtime behavior was not tested.",
+        "source_ids": [
+          "scar-script",
+          "scar-options"
+        ]
+      }
     },
     {
       "id": "essence",
@@ -142,7 +215,15 @@
       "source_ids": [
         "essence"
       ],
-      "documentation": "docs/aoe4/replays-and-local-apis.md"
+      "documentation": "docs/aoe4/replays-and-local-apis.md",
+      "operator": {
+        "category": "independent",
+        "label": "AOEMods.Essence project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "essence"
+        ]
+      }
     },
     {
       "id": "steam",
@@ -158,7 +239,16 @@
         "steam-stats",
         "steam-user"
       ],
-      "documentation": "docs/shared/platforms-and-esports.md"
+      "documentation": "docs/shared/platforms-and-esports.md",
+      "operator": {
+        "category": "platform-vendor",
+        "label": "Valve / Steam",
+        "attribution_basis": "Valve-owned Web API documentation; one AoE4 player-count request was observed.",
+        "source_ids": [
+          "steam-stats",
+          "steam-user"
+        ]
+      }
     },
     {
       "id": "playfab",
@@ -175,7 +265,17 @@
         "agelan-playfab",
         "agelan-hosts"
       ],
-      "documentation": "docs/shared/platforms-and-esports.md"
+      "documentation": "docs/shared/platforms-and-esports.md",
+      "operator": {
+        "category": "platform-vendor",
+        "label": "Microsoft PlayFab",
+        "attribution_basis": "The AoE title hosts and usage are identified by community game-client/emulator source; no live title request was tested.",
+        "source_ids": [
+          "agelan",
+          "agelan-playfab",
+          "agelan-hosts"
+        ]
+      }
     },
     {
       "id": "aoe2-companion",
@@ -190,7 +290,16 @@
         "companion-source",
         "companion-examples"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE2 Companion project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "companion-source",
+          "companion-examples"
+        ]
+      }
     },
     {
       "id": "aoestats",
@@ -204,7 +313,15 @@
       "source_ids": [
         "aoestats"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "aoestats project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoestats"
+        ]
+      }
     },
     {
       "id": "aoe2-static",
@@ -218,7 +335,15 @@
       "source_ids": [
         "aoe2new"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "AndyTheNerd AoE2 API project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoe2new"
+        ]
+      }
     },
     {
       "id": "aoe2-classic-api",
@@ -233,7 +358,15 @@
       "source_ids": [
         "aoe2classic"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "aalises classic AoE2 API project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoe2classic"
+        ]
+      }
     },
     {
       "id": "aoe2-data-api",
@@ -247,7 +380,15 @@
       "source_ids": [
         "aoe2data"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "amrtgaber AoE2 Data API project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoe2data"
+        ]
+      }
     },
     {
       "id": "aoe2-techtree",
@@ -262,7 +403,15 @@
       "source_ids": [
         "aoe2tree"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE2 Tech Tree project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoe2tree"
+        ]
+      }
     },
     {
       "id": "mgz",
@@ -276,7 +425,15 @@
       "source_ids": [
         "mgz"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "aoc-mgz project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "mgz"
+        ]
+      }
     },
     {
       "id": "aom-gg",
@@ -291,7 +448,16 @@
         "aom-collector",
         "aom-site"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoM.gg project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aom-collector",
+          "aom-site"
+        ]
+      }
     },
     {
       "id": "aoe2net",
@@ -305,7 +471,15 @@
       "source_ids": [
         "aoe2net"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoE2.net project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoe2net"
+        ]
+      }
     },
     {
       "id": "aoeivnet",
@@ -319,7 +493,15 @@
       "source_ids": [
         "go-client"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoEIV.net project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "go-client"
+        ]
+      }
     },
     {
       "id": "liquipedia",
@@ -333,7 +515,15 @@
       "source_ids": [
         "liquipedia"
       ],
-      "documentation": "docs/shared/platforms-and-esports.md"
+      "documentation": "docs/shared/platforms-and-esports.md",
+      "operator": {
+        "category": "independent",
+        "label": "Liquipedia LPDB project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "liquipedia"
+        ]
+      }
     },
     {
       "id": "voobly",
@@ -347,7 +537,15 @@
       "source_ids": [
         "voobly"
       ],
-      "documentation": "docs/shared/platforms-and-esports.md"
+      "documentation": "docs/shared/platforms-and-esports.md",
+      "operator": {
+        "category": "independent",
+        "label": "Voobly project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "voobly"
+        ]
+      }
     },
     {
       "id": "openage",
@@ -362,7 +560,15 @@
       "source_ids": [
         "openage"
       ],
-      "documentation": "docs/other-games/overview.md"
+      "documentation": "docs/other-games/overview.md",
+      "operator": {
+        "category": "independent",
+        "label": "openage project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "openage"
+        ]
+      }
     },
     {
       "id": "aoe2-replay-grpc",
@@ -377,7 +583,16 @@
         "delta-play-replay",
         "librematch-wiki"
       ],
-      "documentation": "docs/other-games/aoe2-replay-grpc.md"
+      "documentation": "docs/other-games/aoe2-replay-grpc.md",
+      "operator": {
+        "category": "unresolved",
+        "label": "AoE2 game-client / CaptureAge-related replay interface",
+        "attribution_basis": "Community protobuf and protocol references only. The precise implementation owner or partner-maintained boundary was not independently established.",
+        "source_ids": [
+          "delta-play-replay",
+          "librematch-wiki"
+        ]
+      }
     },
     {
       "id": "aoecenter-sdk",
@@ -394,7 +609,15 @@
       "source_ids": [
         "aoecenter-relic-sdk"
       ],
-      "documentation": "docs/aoecenter.md"
+      "documentation": "docs/aoecenter.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoECenter Relic SDK project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoecenter-relic-sdk"
+        ]
+      }
     },
     {
       "id": "aoecenter-store",
@@ -408,7 +631,15 @@
       "source_ids": [
         "aoecenter-relic-store"
       ],
-      "documentation": "docs/aoecenter.md"
+      "documentation": "docs/aoecenter.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoECenter Relic Store project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoecenter-relic-store"
+        ]
+      }
     },
     {
       "id": "aoecenter-token",
@@ -422,7 +653,15 @@
       "source_ids": [
         "aoecenter-relic-token"
       ],
-      "documentation": "docs/aoecenter.md"
+      "documentation": "docs/aoecenter.md",
+      "operator": {
+        "category": "independent",
+        "label": "AoECenter Relic Token project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "aoecenter-relic-token"
+        ]
+      }
     },
     {
       "id": "agelan-server",
@@ -444,7 +683,30 @@
         "agelan-playfab",
         "agelan-hosts"
       ],
-      "documentation": "docs/agelanserver.md"
+      "documentation": "docs/agelanserver.md",
+      "operator": {
+        "category": "independent",
+        "label": "ageLANServer protocol implementation project/provider",
+        "attribution_basis": "Maintainer-owned source/site listed in source_ids; no publisher/developer affiliation established.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes",
+          "agelan-websocket",
+          "agelan-playfab",
+          "agelan-hosts"
+        ]
+      }
     }
+  ],
+  "operator_categories": {
+    "publisher-developer": "Service or local API supplied by the game publisher/developer ecosystem; not a claim of a supported public integration contract.",
+    "platform-vendor": "Platform/cloud vendor API used alongside the game; AoE-specific title usage and access may remain source-only.",
+    "independent": "Independent service or community project, including commercial third parties; no game-publisher relationship inferred.",
+    "unresolved": "Interface origin or responsible organization is not established strongly enough by the inspected evidence."
+  },
+  "provenance_notes": [
+    "Operator attribution, documentation origin, and live verification are independent properties. A community-maintained document can describe a publisher-operated endpoint.",
+    "An operator label does not establish legal corporate ownership, an employment relationship, anonymous access, supported third-party use, or current endpoint functionality.",
+    "Endpoint operator attribution follows its service. Emulator entries stay independent; upstream_candidate records the publisher/vendor interface they may reproduce without upgrading its verification status."
   ]
 }

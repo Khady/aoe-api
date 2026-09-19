@@ -1,0 +1,844 @@
+{
+  "evidence_period": {
+    "first_probe_at": "2026-09-19T08:44:31.586352+00:00",
+    "last_probe_at": "2026-09-19T08:58:03.498765+00:00"
+  },
+  "method": "Offline audit of saved observations; no new endpoint requests. Operator provenance, source existence, and runtime verification are separate.",
+  "input_files": [
+    "evidence/2026-09-19/extended-probes.json",
+    "evidence/2026-09-19/followup-probes.json",
+    "evidence/2026-09-19/initial-probes.json",
+    "evidence/2026-09-19/official-probes.json",
+    "evidence/2026-09-19/targeted-probes.json"
+  ],
+  "all_services": {
+    "recorded_requests": 47,
+    "http_status_counts": {
+      "200": 43,
+      "transport-error": 2,
+      "404": 1,
+      "401": 1
+    },
+    "operator_categories": {
+      "independent": 23,
+      "publisher-developer": 3,
+      "platform-vendor": 2,
+      "unresolved": 1
+    }
+  },
+  "publisher_http": {
+    "recorded_requests": 27,
+    "outcome_counts": {
+      "http-200-response-observed": 25,
+      "transport-error": 1,
+      "http-error": 1
+    },
+    "distinct_catalog_routes_attempted": 17,
+    "distinct_routes_with_http_200_sample": 16,
+    "distinct_routes_with_only_error_samples": 1,
+    "route_counting_rule": "Group by catalog endpoint ID; repeated samples, game titles and release/legacy hosts do not create new route patterns. Source path casing is preserved.",
+    "families": [
+      {
+        "label": "Publisher community namespace",
+        "service": "worlds-edge",
+        "prefix": "/community/",
+        "catalog_route_patterns": 16,
+        "routes_with_http_200_sample": 8,
+        "routes_with_only_error_samples": 0,
+        "routes_without_direct_probe": 8,
+        "counting_note": "Counts routes assigned to this catalog service, excludes emulator-only upstream candidates; not a complete service denominator."
+      },
+      {
+        "label": "Publisher game-client namespace",
+        "service": "worlds-edge",
+        "prefix": "/game/",
+        "catalog_route_patterns": 88,
+        "routes_with_http_200_sample": 0,
+        "routes_with_only_error_samples": 0,
+        "routes_without_direct_probe": 88,
+        "counting_note": "Counts routes assigned to this catalog service, excludes emulator-only upstream candidates; not a complete service denominator."
+      },
+      {
+        "label": "Publisher website APIs",
+        "service": "official-website",
+        "prefix": "/",
+        "catalog_route_patterns": 37,
+        "routes_with_http_200_sample": 8,
+        "routes_with_only_error_samples": 1,
+        "routes_without_direct_probe": 28,
+        "counting_note": "Counts routes assigned to this catalog service, excludes emulator-only upstream candidates; not a complete service denominator."
+      }
+    ],
+    "routes": [
+      {
+        "endpoint_id": "official-full-stats",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/GameStats/AgeIV/GetFullStats",
+        "probe_ids": [
+          "official-age4-fullstats"
+        ],
+        "http_200_probe_ids": [
+          "official-age4-fullstats"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "official-match-detail",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/GameStats/AgeIV/GetMatchDetail",
+        "probe_ids": [
+          "official-age4-matchdetail"
+        ],
+        "http_200_probe_ids": [
+          "official-age4-matchdetail"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "official-matches",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/GameStats/AgeIV/GetMatchList",
+        "probe_ids": [
+          "official-age4-matches",
+          "official-age4-matches-filtered"
+        ],
+        "http_200_probe_ids": [
+          "official-age4-matches",
+          "official-age4-matches-filtered"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "official-replay",
+        "service": "official-website",
+        "method": "GET",
+        "path": "/api/GameStats/AgeIV/GetMatchReplay/",
+        "probe_ids": [
+          "official-age4-replay"
+        ],
+        "http_200_probe_ids": [
+          "official-age4-replay"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "official-event-ladder",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/ageiv/EventLeaderboard",
+        "probe_ids": [
+          "official-age4-events-ladder"
+        ],
+        "http_200_probe_ids": [
+          "official-age4-events-ladder"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "official-events",
+        "service": "official-website",
+        "method": "GET",
+        "path": "/api/ageiv/EventList",
+        "probe_ids": [
+          "official-age4-events"
+        ],
+        "http_200_probe_ids": [
+          "official-age4-events"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "official-leaderboard",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/ageiv/Leaderboard",
+        "probe_ids": [
+          "official-age4-leaderboard",
+          "official-age4-leaderboard-sorted"
+        ],
+        "http_200_probe_ids": [
+          "official-age4-leaderboard",
+          "official-age4-leaderboard-sorted"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "official-mod-find",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/v4/mods/Find",
+        "probe_ids": [
+          "official-mod-find"
+        ],
+        "http_200_probe_ids": [],
+        "other_probe_ids": [
+          "official-mod-find"
+        ]
+      },
+      {
+        "endpoint_id": "official-mod-games",
+        "service": "official-website",
+        "method": "GET",
+        "path": "/api/v4/mods/Games",
+        "probe_ids": [
+          "official-mod-games"
+        ],
+        "http_200_probe_ids": [
+          "official-mod-games"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "we-achievement-definitions",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/achievement/getAvailableAchievements",
+        "probe_ids": [
+          "we-age4-achievements"
+        ],
+        "http_200_probe_ids": [
+          "we-age4-achievements"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "we-lobbies",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/advertisement/findAdvertisements",
+        "probe_ids": [
+          "we-age4-lobbies"
+        ],
+        "http_200_probe_ids": [
+          "we-age4-lobbies"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "probe_ids": [
+          "we-dr-discovery",
+          "we-age4-discovery",
+          "we-age2-discovery",
+          "we-age3-discovery",
+          "we-age1-discovery",
+          "legacy-relic-discovery",
+          "we-myth-discovery"
+        ],
+        "http_200_probe_ids": [
+          "we-dr-discovery",
+          "we-age4-discovery",
+          "we-age2-discovery",
+          "we-age3-discovery",
+          "we-age1-discovery",
+          "we-myth-discovery"
+        ],
+        "other_probe_ids": [
+          "legacy-relic-discovery"
+        ]
+      },
+      {
+        "endpoint_id": "we-leaderboard",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getLeaderBoard2",
+        "probe_ids": [
+          "we-age4-leaderboard"
+        ],
+        "http_200_probe_ids": [
+          "we-age4-leaderboard"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "we-match",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getMatchHistory",
+        "probe_ids": [
+          "we-age4-match"
+        ],
+        "http_200_probe_ids": [
+          "we-age4-match"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "we-personal",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getPersonalStat",
+        "probe_ids": [
+          "we-age4-personal"
+        ],
+        "http_200_probe_ids": [
+          "we-age4-personal"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "we-recent",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getRecentMatchHistory",
+        "probe_ids": [
+          "we-dr-history",
+          "we-age4-history"
+        ],
+        "http_200_probe_ids": [
+          "we-dr-history",
+          "we-age4-history"
+        ],
+        "other_probe_ids": []
+      },
+      {
+        "endpoint_id": "we-replay",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getReplayFiles",
+        "probe_ids": [
+          "we-replays",
+          "we-dr-replays"
+        ],
+        "http_200_probe_ids": [
+          "we-replays",
+          "we-dr-replays"
+        ],
+        "other_probe_ids": []
+      }
+    ],
+    "samples": [
+      {
+        "probe_id": "we-age4-discovery",
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:44:44.150773+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/initial-probes.json"
+      },
+      {
+        "probe_id": "we-age2-discovery",
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age2",
+        "checked_at": "2026-09-19T08:44:47.583830+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/initial-probes.json"
+      },
+      {
+        "probe_id": "we-age3-discovery",
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age3",
+        "checked_at": "2026-09-19T08:44:50.771580+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/initial-probes.json"
+      },
+      {
+        "probe_id": "we-age1-discovery",
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age1",
+        "checked_at": "2026-09-19T08:44:53.938592+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/initial-probes.json"
+      },
+      {
+        "probe_id": "we-age4-personal",
+        "endpoint_id": "we-personal",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getPersonalStat",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:44:57.132748+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/initial-probes.json"
+      },
+      {
+        "probe_id": "we-age4-history",
+        "endpoint_id": "we-recent",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getRecentMatchHistory",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:45:00.336986+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/initial-probes.json"
+      },
+      {
+        "probe_id": "legacy-relic-discovery",
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "host": "aoe-api.reliclink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:45:06.802535+00:00",
+        "http_status": null,
+        "body_kind": null,
+        "application_result": {},
+        "outcome": "transport-error",
+        "evidence_file": "evidence/2026-09-19/initial-probes.json"
+      },
+      {
+        "probe_id": "we-dr-discovery",
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "host": "dr-activerelease1-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:46:40.344968+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/followup-probes.json"
+      },
+      {
+        "probe_id": "we-dr-history",
+        "endpoint_id": "we-recent",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getRecentMatchHistory",
+        "host": "dr-activerelease1-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:46:43.759230+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/followup-probes.json"
+      },
+      {
+        "probe_id": "we-replays",
+        "endpoint_id": "we-replay",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getReplayFiles",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:46:48.416826+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/followup-probes.json"
+      },
+      {
+        "probe_id": "we-dr-replays",
+        "endpoint_id": "we-replay",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getReplayFiles",
+        "host": "dr-activerelease1-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:46:51.594683+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/followup-probes.json"
+      },
+      {
+        "probe_id": "official-age4-leaderboard",
+        "endpoint_id": "official-leaderboard",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/ageiv/Leaderboard",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:46:54.805343+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/followup-probes.json"
+      },
+      {
+        "probe_id": "we-age4-leaderboard",
+        "endpoint_id": "we-leaderboard",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getLeaderBoard2",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:49:43.406417+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/extended-probes.json"
+      },
+      {
+        "probe_id": "we-age4-match",
+        "endpoint_id": "we-match",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getMatchHistory",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:49:46.594602+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/extended-probes.json"
+      },
+      {
+        "probe_id": "we-age4-lobbies",
+        "endpoint_id": "we-lobbies",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/advertisement/findAdvertisements",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:49:50.028423+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/extended-probes.json"
+      },
+      {
+        "probe_id": "we-age4-achievements",
+        "endpoint_id": "we-achievement-definitions",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/achievement/getAvailableAchievements",
+        "host": "aoe-api.worldsedgelink.com",
+        "title_parameter": "age4",
+        "checked_at": "2026-09-19T08:49:53.655601+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/extended-probes.json"
+      },
+      {
+        "probe_id": "official-age4-events",
+        "endpoint_id": "official-events",
+        "service": "official-website",
+        "method": "GET",
+        "path": "/api/ageiv/EventList",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:49:57.283150+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/extended-probes.json"
+      },
+      {
+        "probe_id": "official-mod-games",
+        "endpoint_id": "official-mod-games",
+        "service": "official-website",
+        "method": "GET",
+        "path": "/api/v4/mods/Games",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:50:00.088986+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/extended-probes.json"
+      },
+      {
+        "probe_id": "official-age4-leaderboard-sorted",
+        "endpoint_id": "official-leaderboard",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/ageiv/Leaderboard",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:51:04.960946+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/official-probes.json"
+      },
+      {
+        "probe_id": "official-age4-fullstats",
+        "endpoint_id": "official-full-stats",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/GameStats/AgeIV/GetFullStats",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:51:07.908144+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "statusCode": 0,
+          "errorMessage": null
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/official-probes.json"
+      },
+      {
+        "probe_id": "official-age4-matches",
+        "endpoint_id": "official-matches",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/GameStats/AgeIV/GetMatchList",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:51:10.781498+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/official-probes.json"
+      },
+      {
+        "probe_id": "official-age4-matchdetail",
+        "endpoint_id": "official-match-detail",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/GameStats/AgeIV/GetMatchDetail",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:51:13.976528+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "statusCode": 0,
+          "errorMessage": null
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/official-probes.json"
+      },
+      {
+        "probe_id": "official-age4-replay",
+        "endpoint_id": "official-replay",
+        "service": "official-website",
+        "method": "GET",
+        "path": "/api/GameStats/AgeIV/GetMatchReplay/",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:51:16.919700+00:00",
+        "http_status": 200,
+        "body_kind": "non-json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/official-probes.json"
+      },
+      {
+        "probe_id": "official-mod-find",
+        "endpoint_id": "official-mod-find",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/v4/mods/Find",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:51:21.053251+00:00",
+        "http_status": 401,
+        "body_kind": "json",
+        "application_result": {
+          "errorCode": 900,
+          "errorMessage": "Access Denied - User not authenticated."
+        },
+        "outcome": "http-error",
+        "evidence_file": "evidence/2026-09-19/official-probes.json"
+      },
+      {
+        "probe_id": "we-myth-discovery",
+        "endpoint_id": "we-discovery",
+        "service": "worlds-edge",
+        "method": "GET",
+        "path": "/community/leaderboard/getAvailableLeaderboards",
+        "host": "athens-live-api.worldsedgelink.com",
+        "title_parameter": "athens",
+        "checked_at": "2026-09-19T08:51:23.873860+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {
+          "code": 0,
+          "message": "SUCCESS"
+        },
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/official-probes.json"
+      },
+      {
+        "probe_id": "official-age4-events-ladder",
+        "endpoint_id": "official-event-ladder",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/ageiv/EventLeaderboard",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:57:56.893263+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/targeted-probes.json"
+      },
+      {
+        "probe_id": "official-age4-matches-filtered",
+        "endpoint_id": "official-matches",
+        "service": "official-website",
+        "method": "POST",
+        "path": "/api/GameStats/AgeIV/GetMatchList",
+        "host": "api.ageofempires.com",
+        "title_parameter": null,
+        "checked_at": "2026-09-19T08:57:59.915365+00:00",
+        "http_status": 200,
+        "body_kind": "json",
+        "application_result": {},
+        "outcome": "http-200-response-observed",
+        "evidence_file": "evidence/2026-09-19/targeted-probes.json"
+      }
+    ]
+  },
+  "emulator_upstream_candidates": {
+    "route_patterns": 41,
+    "families": {
+      "worlds-edge": 23,
+      "playfab": 15,
+      "official-website": 1,
+      "publisher-cdn": 2
+    },
+    "directly_probed_route_patterns": 0,
+    "endpoint_ids": [
+      "agelan-game-item-createitemloadout",
+      "agelan-game-item-equipitemloadout",
+      "agelan-game-item-updateitemloadout",
+      "agelan-game-communityevent-geteventleaderboard",
+      "agelan-game-challenge-updateprogress",
+      "agelan-game-account-setcrossplayenabled",
+      "agelan-game-account-addprofileproperty",
+      "agelan-game-account-clearprofileproperty",
+      "agelan-game-leaderboard-getavatarstatleaderboard",
+      "agelan-game-leaderboard-applyofflineupdates",
+      "agelan-game-achievement-applyofflineupdates",
+      "agelan-game-achievement-grantachievement",
+      "agelan-game-advertisement-updateplatformsessionid",
+      "agelan-game-chat-joinchannel",
+      "agelan-game-chat-leavechannel",
+      "agelan-game-chat-sendtext",
+      "agelan-game-chat-sendwhisper",
+      "agelan-game-chat-sendwhispers",
+      "agelan-game-relationship-addfriend",
+      "agelan-game-party-updatehost",
+      "agelan-game-invitation-replytoinvitation",
+      "agelan-game-msstore-getstoretokens",
+      "agelan-wss",
+      "agelan-client-getplayercombinedinfo",
+      "agelan-client-gettime",
+      "agelan-client-loginwithcustomid",
+      "agelan-client-getuserdata",
+      "agelan-client-gettitledata",
+      "agelan-client-getuserreadonlydata",
+      "agelan-client-loginwithsteam",
+      "agelan-client-updateusertitledisplayname",
+      "agelan-event-writetelemetryevents",
+      "agelan-inventory-getinventoryitems",
+      "agelan-multiplayerserver-getcognitiveservicestoken",
+      "agelan-multiplayerserver-listpartyqosservers",
+      "agelan-party-requestparty",
+      "agelan-catalog-getitems",
+      "agelan-cloudscript-executefunction",
+      "agelan-textmoderation",
+      "agelan-aoe-rl-server-status-json",
+      "agelan-aoe-athens-server-status-json"
+    ]
+  },
+  "source_only_game_protocol": {
+    "aoe4_game_router_operations_in_emulator": 88,
+    "playfab_api_operations_in_emulator": 15,
+    "aoe4_playfab_operations_in_emulator": 9,
+    "live_requests_recorded": 0
+  },
+  "limits": [
+    "HTTP 200 is an observation, not a complete schema/correctness check. Empty/default results remain part of the evidence.",
+    "A 401 establishes rejection of the submitted request, not a working authenticated operation; a TLS failure establishes no response from the intended service.",
+    "No authenticated game session, PlayFab title API, WebSocket stream, relay transport or local replay gRPC was runtime-tested.",
+    "Source review dates and recent commits do not refresh old runtime evidence. This report does not claim availability after the recorded probe dates.",
+    "No global verification percentage is given: the total publisher API surface is unknown and emulator entries overlap other references."
+  ]
+}

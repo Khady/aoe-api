@@ -1,5 +1,7 @@
 # AoE4 Guides: build-order API
 
+**Operator: independent/community project.** Its provider-published API specification is not a game-publisher specification. [Operator and evidence definitions](../publisher-services.md).
+
 This API serves community-authored build orders and their overlay representation. It does not serve match history or compute a build order from a replay.
 
 - [Provider Swagger UI](https://aoe4guides.com/api/api-docs/)

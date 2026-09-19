@@ -60,6 +60,10 @@ The [machine-readable register](../catalog/sources.json) contains the source IDs
 | `agelan-playfab` | [ageLANServer PlayFab route registrations](https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/server/internal/routes/router/playfabapi.go) | server-emulation-source |
 | `agelan-hosts` | [ageLANServer hostname construction](https://github.com/luskaner/ageLANServer/blob/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454/common/domain.go) | server-emulation-source |
 
+## Operator identity versus source identity
+
+“Provider” in this table refers to the provider of the named service, repository or tool. It does not necessarily mean the game publisher. A community source can describe a publisher endpoint, and a publisher frontend declaration can still be runtime-untested. Use the [operator and verification guide](publisher-services.md) and `catalog/services.json` operator fields for this distinction.
+
 ## Source handling notes
 
 - The supplied launcher is a concrete working-client reference, not publisher documentation. Its short URL-lifetime and deletion comments are attributed rather than treated as guarantees.

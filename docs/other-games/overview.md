@@ -1,5 +1,7 @@
 # Beyond AoE4
 
+**Mixed origins:** publisher backends, platform/vendor services and independent community APIs are distinct. The [operator index](../publisher-services.md#operator-index) identifies each, separately from its evidence and live verification.
+
 This edition verifies selected discovery routes across the series and records concrete provider documentation. It is a starting index, not the same depth of validation as the AoE4 chapters.
 
 ## Shared publisher services

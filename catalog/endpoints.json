@@ -7,7 +7,10 @@
     "response-observed may mean an empty response. Read linked evidence and documentation.",
     "Verification applies to one concrete sample, not all requests represented by a template.",
     "Additional source-only game routes are indexed from LibreMatch. documented_methods lists alternate methods when the source declares GET/POST. Case-folded matching in the coverage map does not establish server case-insensitivity.",
-    "ageLANServer additions are source-only local emulator routes. implementation_references.emulator_games records local router conditions, not verified publisher title support; existing methods and live evidence are retained."
+    "ageLANServer additions are source-only local emulator routes. implementation_references.emulator_games records local router conditions, not verified publisher title support; existing methods and live evidence are retained.",
+    "Operator attribution is inherited from catalog/services.json and is independent of evidence_basis and verification. Provider means the provider of the referenced service/tool, not necessarily a game publisher.",
+    "upstream_candidate identifies a publisher/vendor protocol suggested by an independent emulator, not a verified deployed endpoint. Local emulator operations retain service=agelan-server.",
+    "last_recorded_probe_at is the date of the selected saved sample, not the date of a documentation/source review; catalog/verification-summary.json preserves all audited publisher attempts."
   ],
   "endpoints": [
     {
@@ -26,9 +29,15 @@
         "evidence_file": "evidence/2026-09-19/initial-probes.json",
         "probe_id": "world-profile",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:44:31.586352+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "world-player-games",
@@ -52,7 +61,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-player-game",
@@ -71,7 +83,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-last-game",
@@ -92,9 +107,15 @@
         "evidence_file": "evidence/2026-09-19/initial-probes.json",
         "probe_id": "world-last-game",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:44:34.030270+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "world-search",
@@ -116,9 +137,15 @@
         "evidence_file": "evidence/2026-09-19/initial-probes.json",
         "probe_id": "world-search",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:44:36.984041+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "world-autocomplete",
@@ -138,7 +165,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-leaderboard",
@@ -163,9 +193,15 @@
         "evidence_file": "evidence/2026-09-19/initial-probes.json",
         "probe_id": "world-leaderboard",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:44:39.395578+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "world-games",
@@ -189,7 +225,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-esports",
@@ -214,9 +253,15 @@
         "evidence_file": "evidence/2026-09-19/initial-probes.json",
         "probe_id": "world-esports",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:44:41.767982+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "world-game",
@@ -234,9 +279,15 @@
         "evidence_file": "evidence/2026-09-19/followup-probes.json",
         "probe_id": "world-game",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:46:58.176769+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Used by supplied launcher; not in main provider route list."
+      "notes": "Used by supplied launcher; not in main provider route list.",
+      "evidence_basis": [
+        "independent-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "world-stats-rm_solo-civilizations",
@@ -258,9 +309,15 @@
         "evidence_file": "evidence/2026-09-19/followup-probes.json",
         "probe_id": "world-stats",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:47:01.409258+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "world-stats-rm_solo-matchups",
@@ -280,7 +337,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-stats-rm_solo-maps",
@@ -301,7 +361,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-stats-rm_solo-maps-detail",
@@ -321,7 +384,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-stats-qm_1v1-civilizations",
@@ -340,7 +406,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-stats-qm_1v1-matchups",
@@ -359,7 +428,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-stats-qm_1v1-maps",
@@ -379,7 +451,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-stats-qm_1v1-maps-detail",
@@ -398,7 +473,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Patch defaults in provider prose are stale; preserve returned filters."
+      "notes": "Patch defaults in provider prose are stale; preserve returned filters.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-team-civilizations",
@@ -418,7 +496,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Provider describes RM/QM 2v2/3v3/4v4 section; examples include rm_2v2; each mode combination untested. Team-map heading has a copy/paste inconsistency."
+      "notes": "Provider describes RM/QM 2v2/3v3/4v4 section; examples include rm_2v2; each mode combination untested. Team-map heading has a copy/paste inconsistency.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-team-maps",
@@ -439,7 +520,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Provider describes RM/QM 2v2/3v3/4v4 section; examples include rm_2v2; each mode combination untested. Team-map heading has a copy/paste inconsistency."
+      "notes": "Provider describes RM/QM 2v2/3v3/4v4 section; examples include rm_2v2; each mode combination untested. Team-map heading has a copy/paste inconsistency.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-team-maps-detail",
@@ -459,7 +543,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Provider describes RM/QM 2v2/3v3/4v4 section; examples include rm_2v2; each mode combination untested. Team-map heading has a copy/paste inconsistency."
+      "notes": "Provider describes RM/QM 2v2/3v3/4v4 section; examples include rm_2v2; each mode combination untested. Team-map heading has a copy/paste inconsistency.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "world-2v2-teams",
@@ -478,7 +565,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "we-discovery",
@@ -505,7 +595,9 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:44:44.150773+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "Discover title-specific board/match/race mappings.",
       "source_urls": [
@@ -520,6 +612,12 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "direct-request-observation"
       ]
     },
     {
@@ -552,7 +650,9 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:49:43.406417+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "Only count=1 and a known AoE4 quick-match board tested.",
       "source_urls": [
@@ -567,6 +667,12 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "direct-request-observation"
       ]
     },
     {
@@ -597,7 +703,9 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:44:57.132748+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "JSON-encoded array selectors; only profile_ids tested.",
       "source_urls": [
@@ -612,6 +720,12 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "direct-request-observation"
       ]
     },
     {
@@ -643,7 +757,9 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:45:00.336986+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "Observed history is not newest-first; no retention guarantee.",
       "source_urls": [
@@ -658,6 +774,12 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "direct-request-observation"
       ]
     },
     {
@@ -684,11 +806,17 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:49:46.594602+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "By match IDs; response key matchHistory differs from recent history.",
       "source_urls": [
         "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getmatchhistory.md"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "direct-request-observation"
       ]
     },
     {
@@ -716,11 +844,18 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:46:48.416826+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "Expiring URLs; validate datatype, size and application code.",
       "source_urls": [
         "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community/leaderboard/getreplayfiles.md"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "independent-client-source",
+        "direct-request-observation"
       ]
     },
     {
@@ -750,7 +885,9 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:49:50.028423+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "Lobby advertisements are not full in-game telemetry. AoECenter SDK sends start/count; pagination semantics were not verified by the existing unfiltered live probe.",
       "source_urls": [
@@ -765,6 +902,12 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "direct-request-observation"
       ]
     },
     {
@@ -792,7 +935,9 @@
         "application_result": {
           "code": 0,
           "message": "SUCCESS"
-        }
+        },
+        "last_recorded_probe_at": "2026-09-19T08:49:53.655601+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
       "notes": "Definitions, not player completion.",
       "source_urls": [
@@ -807,6 +952,12 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "direct-request-observation"
       ]
     },
     {
@@ -842,6 +993,11 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -878,6 +1034,11 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -912,6 +1073,11 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -946,6 +1112,11 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -980,6 +1151,11 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -1016,6 +1192,11 @@
             "SDK literal uses achievement directory; LibreMatch uses item. Not treated as a new confirmed route."
           ]
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -1050,6 +1231,11 @@
           "status": "source-only",
           "discrepancies": []
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -1105,6 +1291,12 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "independent-emulator-source"
       ]
     },
     {
@@ -1149,6 +1341,12 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "independent-emulator-source"
       ]
     },
     {
@@ -1178,9 +1376,15 @@
         "evidence_file": "evidence/2026-09-19/official-probes.json",
         "probe_id": "official-age4-leaderboard-sorted",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:51:04.960946+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Explicitly set sort fields."
+      "notes": "Explicitly set sort fields.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-events",
@@ -1200,9 +1404,15 @@
         "evidence_file": "evidence/2026-09-19/extended-probes.json",
         "probe_id": "official-age4-events",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:49:57.283150+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "eventId is not leaderboardId."
+      "notes": "eventId is not leaderboardId.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-event-ladder",
@@ -1231,9 +1441,15 @@
         "evidence_file": "evidence/2026-09-19/targeted-probes.json",
         "probe_id": "official-age4-events-ladder",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:57:56.893263+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "matchType uses an EventList leaderboardId; sample 164 is dated."
+      "notes": "matchType uses an EventList leaderboardId; sample 164 is dated.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-full-stats",
@@ -1255,9 +1471,15 @@
         "evidence_file": "evidence/2026-09-19/official-probes.json",
         "probe_id": "official-age4-fullstats",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:51:07.908144+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Frontend carries additional selectors; sample had empty career/embedded history fields."
+      "notes": "Frontend carries additional selectors; sample had empty career/embedded history fields.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-matches",
@@ -1283,9 +1505,15 @@
         "evidence_file": "evidence/2026-09-19/targeted-probes.json",
         "probe_id": "official-age4-matches-filtered",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:57:59.915365+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Unfiltered sample empty; recordCount=1 did not limit filtered response to one entry."
+      "notes": "Unfiltered sample empty; recordCount=1 did not limit filtered response to one entry.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-match-detail",
@@ -1307,9 +1535,15 @@
         "evidence_file": "evidence/2026-09-19/official-probes.json",
         "probe_id": "official-age4-matchdetail",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:51:13.976528+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Some participant profileId values were zero; verify identifier mapping."
+      "notes": "Some participant profileId values were zero; verify identifier mapping.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-replay",
@@ -1331,9 +1565,16 @@
         "evidence_file": "evidence/2026-09-19/official-probes.json",
         "probe_id": "official-age4-replay",
         "http_status": 200,
-        "body_kind": "non-json"
+        "body_kind": "non-json",
+        "last_recorded_probe_at": "2026-09-19T08:51:16.919700+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Gzip signature verified; no full parse or game playback."
+      "notes": "Gzip signature verified; no full parse or game playback.",
+      "evidence_basis": [
+        "independent-client-source",
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-mod-games",
@@ -1351,9 +1592,15 @@
         "evidence_file": "evidence/2026-09-19/extended-probes.json",
         "probe_id": "official-mod-games",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:50:00.088986+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Numeric mod game identifiers."
+      "notes": "Numeric mod game identifiers.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-mod-find",
@@ -1380,9 +1627,15 @@
         "evidence_file": "evidence/2026-09-19/official-probes.json",
         "probe_id": "official-mod-find",
         "http_status": 401,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:51:21.053251+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Anonymous probe rejected; requires authentication."
+      "notes": "Anonymous probe rejected; requires authentication.",
+      "evidence_basis": [
+        "provider-client-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "official-mod-detail",
@@ -1398,7 +1651,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-download",
@@ -1414,7 +1670,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-featured",
@@ -1430,7 +1689,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-tags",
@@ -1446,7 +1708,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-types",
@@ -1462,7 +1727,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-related",
@@ -1478,7 +1746,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-reviews",
@@ -1494,7 +1765,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-my",
@@ -1514,6 +1788,10 @@
       "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method comes from the historical LibreMatch reference; current runtime behavior remains untested.",
       "source_urls": [
         "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/my.md"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "provider-client-source"
       ]
     },
     {
@@ -1534,6 +1812,10 @@
       "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed. HTTP method comes from the historical LibreMatch reference; current runtime behavior remains untested.",
       "source_urls": [
         "https://github.com/librematch/wiki/blob/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/aoe/api/v4/mods/installed.md"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "provider-client-source"
       ]
     },
     {
@@ -1550,7 +1832,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-unsubscribe",
@@ -1566,7 +1851,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-like",
@@ -1582,7 +1870,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-rate",
@@ -1598,7 +1889,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-report",
@@ -1614,7 +1908,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-publish",
@@ -1630,7 +1927,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-checkandpublishfile",
@@ -1646,7 +1946,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-delete",
@@ -1662,7 +1965,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-getflagged",
@@ -1678,7 +1984,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-getflaggeddetail",
@@ -1694,7 +2003,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-moderate",
@@ -1710,7 +2022,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-mod-notifications",
@@ -1726,7 +2041,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed."
+      "notes": "Method/parameters not asserted from a path declaration; auth/state-changing behavior may apply. Not probed.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-ladder-aoe1de",
@@ -1742,7 +2060,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Path declaration verified; game-specific request contract untested."
+      "notes": "Path declaration verified; game-specific request contract untested.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-ladder-aoe2de",
@@ -1758,7 +2079,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Path declaration verified; game-specific request contract untested."
+      "notes": "Path declaration verified; game-specific request contract untested.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-ladder-aoe2mac",
@@ -1774,7 +2098,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Path declaration verified; game-specific request contract untested."
+      "notes": "Path declaration verified; game-specific request contract untested.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-ladder-aoe3de",
@@ -1790,7 +2117,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Path declaration verified; game-specific request contract untested."
+      "notes": "Path declaration verified; game-specific request contract untested.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-ladder-aom-retold",
@@ -1806,7 +2136,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Path declaration verified; game-specific request contract untested."
+      "notes": "Path declaration verified; game-specific request contract untested.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-age2-getcampaignstats",
@@ -1822,7 +2155,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Path source only; not runtime-tested."
+      "notes": "Path source only; not runtime-tested.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "official-age2-getmatchreplay",
@@ -1838,7 +2174,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Path source only; not runtime-tested."
+      "notes": "Path source only; not runtime-tested.",
+      "evidence_basis": [
+        "provider-client-source"
+      ]
     },
     {
       "id": "data-civs",
@@ -1857,9 +2196,16 @@
         "evidence_file": "evidence/2026-09-19/initial-probes.json",
         "probe_id": "data-civs",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:45:09.499016+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-data",
+        "provider-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "data-civ",
@@ -1875,7 +2221,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-object",
@@ -1893,9 +2242,15 @@
         "evidence_file": "evidence/2026-09-19/initial-probes.json",
         "probe_id": "data-unit",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:45:11.963796+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Only units/english/horseman-2.json live-tested; see source tree for available combinations."
+      "notes": "Only units/english/horseman-2.json live-tested; see source tree for available combinations.",
+      "evidence_basis": [
+        "provider-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "data-slug",
@@ -1911,7 +2266,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-unified-base_id",
@@ -1927,7 +2285,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-all",
@@ -1943,7 +2304,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-all-unified",
@@ -1959,7 +2323,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-all-baseids",
@@ -1975,7 +2342,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-all-optimized",
@@ -1991,7 +2361,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-slug-unified",
@@ -2007,7 +2380,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "data-slug-optimized",
@@ -2023,7 +2399,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree."
+      "notes": "Categories include units, buildings, technologies, upgrades, abilities; verify each file in pinned tree.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "guides-welcome",
@@ -2039,7 +2418,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs."
+      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs.",
+      "evidence_basis": [
+        "provider-specification"
+      ]
     },
     {
       "id": "guides-status",
@@ -2057,9 +2439,15 @@
         "evidence_file": "evidence/2026-09-19/followup-probes.json",
         "probe_id": "guides-direct-status",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:46:34.209593+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs."
+      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs.",
+      "evidence_basis": [
+        "provider-specification",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "guides-favorites",
@@ -2081,7 +2469,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs."
+      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs.",
+      "evidence_basis": [
+        "provider-specification"
+      ]
     },
     {
       "id": "guides-builds",
@@ -2104,9 +2495,15 @@
         "evidence_file": "evidence/2026-09-19/followup-probes.json",
         "probe_id": "guides-direct-builds",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:46:36.792056+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs."
+      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs.",
+      "evidence_basis": [
+        "provider-specification",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "guides-build",
@@ -2125,7 +2522,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs."
+      "notes": "Full API on Cloud Run host; website only proxies individual builds and docs.",
+      "evidence_basis": [
+        "provider-specification"
+      ]
     },
     {
       "id": "parser-summary",
@@ -2143,7 +2543,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Self-hosted source only; local file path means parser-server path."
+      "notes": "Self-hosted source only; local file path means parser-server path.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "parser-summary-old",
@@ -2161,7 +2564,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Self-hosted source only; local file path means parser-server path."
+      "notes": "Self-hosted source only; local file path means parser-server path.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "parser-summary-new",
@@ -2179,7 +2585,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Self-hosted source only; local file path means parser-server path."
+      "notes": "Self-hosted source only; local file path means parser-server path.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "parser-summary-file",
@@ -2197,7 +2606,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Self-hosted source only; local file path means parser-server path."
+      "notes": "Self-hosted source only; local file path means parser-server path.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "parser-summary-newfile",
@@ -2215,7 +2627,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Self-hosted source only; local file path means parser-server path."
+      "notes": "Self-hosted source only; local file path means parser-server path.",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "steam-count",
@@ -2235,9 +2650,15 @@
         "evidence_file": "evidence/2026-09-19/followup-probes.json",
         "probe_id": "steam-player-count",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:47:03.789194+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Generic platform API; game/privacy support varies."
+      "notes": "Generic platform API; game/privacy support varies.",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "steam-schema",
@@ -2257,7 +2678,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Generic platform API; game/privacy support varies."
+      "notes": "Generic platform API; game/privacy support varies.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "steam-achievements",
@@ -2278,7 +2702,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Generic platform API; game/privacy support varies."
+      "notes": "Generic platform API; game/privacy support varies.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "steam-user-stats",
@@ -2298,7 +2725,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Generic platform API; game/privacy support varies."
+      "notes": "Generic platform API; game/privacy support varies.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "steam-profiles",
@@ -2317,7 +2747,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Generic platform API; game/privacy support varies."
+      "notes": "Generic platform API; game/privacy support varies.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "steam-vanity",
@@ -2336,7 +2769,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Generic platform API; game/privacy support varies."
+      "notes": "Generic platform API; game/privacy support varies.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "companion-leaderboards",
@@ -2355,9 +2791,16 @@
         "evidence_file": "evidence/2026-09-19/extended-probes.json",
         "probe_id": "companion-leaderboards",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:50:02.933677+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "companion-leaderboards-leaderboardId",
@@ -2374,7 +2817,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-profiles-profileId",
@@ -2395,7 +2842,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-profiles",
@@ -2412,7 +2863,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-matches",
@@ -2429,7 +2884,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-matches-matchId",
@@ -2446,7 +2905,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-matches-matchId-analysis",
@@ -2463,7 +2926,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-dump-list",
@@ -2482,9 +2949,16 @@
         "evidence_file": "evidence/2026-09-19/extended-probes.json",
         "probe_id": "companion-dump-list",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:50:05.719074+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "companion-assets",
@@ -2501,7 +2975,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-news",
@@ -2518,7 +2996,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-videos-featured",
@@ -2537,7 +3019,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-videos-civ-civ",
@@ -2554,7 +3040,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-maps",
@@ -2571,7 +3061,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-maps-ranked",
@@ -2588,7 +3082,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-maps-poll",
@@ -2605,7 +3103,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-builds",
@@ -2622,7 +3124,11 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Inspect provider Bruno examples/types for full filter contract."
+      "notes": "Inspect provider Bruno examples/types for full filter contract.",
+      "evidence_basis": [
+        "provider-examples",
+        "provider-source"
+      ]
     },
     {
       "id": "companion-ongoing-ws",
@@ -2641,7 +3147,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Provider exact example verified; no WebSocket connection attempted."
+      "notes": "Provider exact example verified; no WebSocket connection attempted.",
+      "evidence_basis": [
+        "provider-examples"
+      ]
     },
     {
       "id": "aoestats-dumps",
@@ -2659,9 +3168,15 @@
         "evidence_file": "evidence/2026-09-19/extended-probes.json",
         "probe_id": "aoestats-dump-list",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:50:13.094675+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-documentation",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "aoe2-static-civilizations",
@@ -2677,7 +3192,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "aoe2-static-civilization",
@@ -2695,9 +3213,15 @@
         "evidence_file": "evidence/2026-09-19/official-probes.json",
         "probe_id": "aoe2-static-civ",
         "http_status": 200,
-        "body_kind": "json"
+        "body_kind": "json",
+        "last_recorded_probe_at": "2026-09-19T08:51:27.065997+00:00",
+        "interpretation": "Dated sample outcome only; not complete correctness, present-day availability, or a supported public contract."
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source",
+        "direct-request-observation"
+      ]
     },
     {
       "id": "aoe2-static-units",
@@ -2713,7 +3237,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "aoe2-static-unit",
@@ -2729,7 +3256,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "aoe2-static-structures",
@@ -2745,7 +3275,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "aoe2-static-structure",
@@ -2761,7 +3294,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "aoe2-static-technologies",
@@ -2777,7 +3313,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "aoe2-static-technology",
@@ -2793,7 +3332,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": ""
+      "notes": "",
+      "evidence_basis": [
+        "provider-source"
+      ]
     },
     {
       "id": "liquipedia-table",
@@ -2815,7 +3357,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Requires LPDB access and API key; AoE-specific schema/entitlement untested."
+      "notes": "Requires LPDB access and API key; AoE-specific schema/entitlement untested.",
+      "evidence_basis": [
+        "provider-documentation"
+      ]
     },
     {
       "id": "librematch-community-external-proxysteamuserrequest",
@@ -2862,6 +3407,11 @@
             "SDK uses profile_names; LibreMatch example/OpenAPI use profileNames. Parameter spelling remains unresolved."
           ]
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source"
       ]
     },
     {
@@ -2919,6 +3469,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -2976,6 +3531,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3033,6 +3593,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3091,6 +3656,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3150,6 +3720,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3208,6 +3783,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3265,6 +3845,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3322,6 +3907,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3382,6 +3972,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3462,6 +4057,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3554,6 +4154,12 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3611,6 +4217,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3687,6 +4298,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3776,6 +4392,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3849,6 +4470,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3906,6 +4532,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -3975,6 +4606,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4031,6 +4667,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4116,6 +4757,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4171,6 +4817,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4230,6 +4881,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4289,6 +4945,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4341,6 +5002,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4396,6 +5062,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4451,6 +5122,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -4488,6 +5163,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -4526,6 +5205,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -4594,6 +5277,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4630,6 +5318,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -4687,6 +5379,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4744,6 +5441,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4799,6 +5501,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4868,6 +5575,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4924,6 +5636,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -4960,6 +5677,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -5038,6 +5759,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5073,6 +5799,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -5134,6 +5864,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5170,6 +5905,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -5206,6 +5945,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -5248,6 +5991,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -5317,6 +6064,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5373,6 +6125,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5409,6 +6166,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -5465,6 +6226,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5523,6 +6289,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5582,6 +6353,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5640,6 +6416,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5696,6 +6477,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5752,6 +6538,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5811,6 +6602,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5867,6 +6663,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5927,6 +6728,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -5983,6 +6789,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6039,6 +6850,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6096,6 +6912,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6135,6 +6956,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -6196,6 +7021,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6234,6 +7064,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -6291,6 +7125,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6350,6 +7189,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6406,6 +7250,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6466,6 +7315,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6523,6 +7377,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6558,6 +7417,10 @@
       "authentication_parameter_names": [
         "connect_id",
         "sessionID"
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification"
       ]
     },
     {
@@ -6628,6 +7491,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6683,6 +7551,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6740,6 +7613,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6798,6 +7676,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6857,6 +7740,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6913,6 +7801,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -6967,6 +7860,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7032,6 +7930,12 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-client-source",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7109,6 +8013,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7171,6 +8080,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7232,6 +8146,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7295,6 +8214,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7361,6 +8285,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7423,6 +8352,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7482,6 +8416,11 @@
           "matching": "case-folded cross-reference only; preserve source casing",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7540,6 +8479,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7596,6 +8540,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7665,6 +8614,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7724,6 +8678,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7781,6 +8740,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7837,6 +8801,11 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "community-protocol-reference",
+        "community-specification",
+        "independent-emulator-source"
       ]
     },
     {
@@ -7854,7 +8823,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary."
+      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary.",
+      "evidence_basis": [
+        "community-protocol-reference"
+      ]
     },
     {
       "id": "aoe2-cade-pause",
@@ -7873,7 +8845,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary."
+      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary.",
+      "evidence_basis": [
+        "community-protocol-reference"
+      ]
     },
     {
       "id": "aoe2-cade-setfogofwar",
@@ -7892,7 +8867,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary."
+      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary.",
+      "evidence_basis": [
+        "community-protocol-reference"
+      ]
     },
     {
       "id": "aoe2-cade-setperspective",
@@ -7911,7 +8889,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary."
+      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary.",
+      "evidence_basis": [
+        "community-protocol-reference"
+      ]
     },
     {
       "id": "aoe2-cade-frames",
@@ -7934,7 +8915,10 @@
       "verification": {
         "status": "not-probed"
       },
-      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary."
+      "notes": "Proto declaration verified; local connection and game runtime untested. Frames is server-streaming; the other RPCs are unary.",
+      "evidence_basis": [
+        "community-protocol-reference"
+      ]
     },
     {
       "id": "agelan-game-item-createitemloadout",
@@ -7972,7 +8956,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-item-equipitemloadout",
@@ -8010,7 +9006,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-item-updateitemloadout",
@@ -8048,7 +9056,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-communityevent-geteventleaderboard",
@@ -8084,7 +9104,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-challenge-updateprogress",
@@ -8119,7 +9151,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-account-setcrossplayenabled",
@@ -8158,7 +9202,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-account-addprofileproperty",
@@ -8195,7 +9251,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-account-clearprofileproperty",
@@ -8232,7 +9300,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-leaderboard-getavatarstatleaderboard",
@@ -8267,7 +9347,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-leaderboard-applyofflineupdates",
@@ -8306,7 +9398,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-achievement-applyofflineupdates",
@@ -8345,7 +9449,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-achievement-grantachievement",
@@ -8384,7 +9500,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-advertisement-updateplatformsessionid",
@@ -8421,7 +9549,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-chat-joinchannel",
@@ -8456,7 +9596,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-chat-leavechannel",
@@ -8491,7 +9643,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-chat-sendtext",
@@ -8526,7 +9690,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-chat-sendwhisper",
@@ -8561,7 +9737,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-chat-sendwhispers",
@@ -8597,7 +9785,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-relationship-addfriend",
@@ -8634,7 +9834,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-party-updatehost",
@@ -8673,7 +9885,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-invitation-replytoinvitation",
@@ -8712,7 +9936,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-game-msstore-getstoretokens",
@@ -8751,7 +9987,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-routes"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-wss",
@@ -8790,7 +10038,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "worlds-edge",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-websocket"
+        ],
+        "service": "worlds-edge"
+      }
     },
     {
       "id": "agelan-cloudfiles",
@@ -8826,6 +10086,9 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
       ]
     },
     {
@@ -8862,7 +10125,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-client-gettime",
@@ -8898,7 +10173,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-client-loginwithcustomid",
@@ -8933,7 +10220,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-client-getuserdata",
@@ -8968,7 +10267,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-client-gettitledata",
@@ -9003,7 +10314,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-client-getuserreadonlydata",
@@ -9038,7 +10361,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-client-loginwithsteam",
@@ -9073,7 +10408,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-client-updateusertitledisplayname",
@@ -9109,7 +10456,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-event-writetelemetryevents",
@@ -9145,7 +10504,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-inventory-getinventoryitems",
@@ -9180,7 +10551,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-multiplayerserver-getcognitiveservicestoken",
@@ -9216,7 +10599,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-multiplayerserver-listpartyqosservers",
@@ -9252,7 +10647,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-party-requestparty",
@@ -9288,7 +10695,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-catalog-getitems",
@@ -9323,7 +10742,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-cloudscript-executefunction",
@@ -9358,7 +10789,19 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "playfab",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source",
+          "agelan-playfab"
+        ],
+        "service": "playfab"
+      }
     },
     {
       "id": "agelan-static",
@@ -9393,6 +10836,9 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
       ]
     },
     {
@@ -9431,6 +10877,9 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
       ]
     },
     {
@@ -9469,6 +10918,9 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
       ]
     },
     {
@@ -9507,6 +10959,9 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
       ]
     },
     {
@@ -9545,7 +11000,18 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "official-website",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source"
+        ],
+        "service": "official-website"
+      }
     },
     {
       "id": "agelan-aoe-rl-server-status-json",
@@ -9582,7 +11048,18 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "publisher-cdn",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source"
+        ],
+        "host": "cdn.ageofempires.com"
+      }
     },
     {
       "id": "agelan-aoe-athens-server-status-json",
@@ -9616,7 +11093,18 @@
           "matching": "exact-path",
           "verification": "source-only; no publisher runtime test"
         }
-      ]
+      ],
+      "evidence_basis": [
+        "independent-emulator-source"
+      ],
+      "upstream_candidate": {
+        "family": "publisher-cdn",
+        "relationship": "Protocol implemented by an independent emulator; live upstream route and behavior unverified.",
+        "source_ids": [
+          "agelan-source"
+        ],
+        "host": "cdn.ageofempires.com"
+      }
     }
   ]
 }

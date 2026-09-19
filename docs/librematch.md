@@ -1,5 +1,7 @@
 # LibreMatch: existing reference and coverage map
 
+**Origin: community protocol documentation.** The publisher routes it describes retain publisher attribution, but untested routes remain untested. [Operator categories and direct verification](publisher-services.md).
+
 [LibreMatch’s wiki](https://github.com/librematch/wiki) is a substantial existing reference for the shared Age of Empires backend. Use its [rendered documentation](https://librematch.github.io/wiki/) for browsing and its [pinned source](https://github.com/librematch/wiki/tree/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419) for reproducibility. The complete repository tree was checked on 2026-09-19, at the same revision used by the initial atlas.
 
 The initial atlas used its community endpoint pages but underrepresented the rest of the project. This follow-up indexes **172 endpoint-reference pages** and follows the linked OpenAPI and replay-protocol projects. It also corrects the atlas’s news route to `/community/news/getNews`.

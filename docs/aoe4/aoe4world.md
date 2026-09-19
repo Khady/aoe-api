@@ -1,5 +1,7 @@
 # AoE4 World: player, match and statistics API
 
+**Operator: independent/community project.** AoE4 World is a separate API provider, not the game publisher. Provider documentation and selected live samples are recorded separately. [Operator and evidence definitions](../publisher-services.md).
+
 **Base:** `https://aoe4world.com/api/v0`  
 **Provider documentation:** [aoe4world.com/api](https://aoe4world.com/api)  
 **Operator:** independent community project; [provider FAQ](https://aoe4world.com/faq).  

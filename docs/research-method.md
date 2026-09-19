@@ -17,6 +17,10 @@ A follow-up reviewed the full LibreMatch repository tree and indexed its 172 end
 
 The AoECenter follow-up inspected all five public repositories, indexing 17 SDK request builders and 48 model files. An offline check examined compressed fields in one saved public fixture; no SDK, collector, authentication helper or live-service request was run. [Findings](aoecenter.md), [coverage index](../catalog/aoecenter-coverage.json), [fetch and fixture evidence](../evidence/2026-09-19/aoecenter-review.json).
 
+## Operator attribution is separate from evidence
+
+The [publisher verification guide](publisher-services.md) identifies the operator of every service, the origin of each claim, and what the saved runtime evidence actually establishes. “Publisher/developer-operated” does not mean a public supported API, and “provider source” can belong to an independent community API. Emulator entries retain their independent service identity; their `upstream_candidate` links are unverified protocol relationships.
+
 ## Evidence levels
 
 | Level | What it means | What it does not mean |
@@ -34,7 +38,7 @@ For a source declaring both GET and POST, `method` records the first listed meth
 
 ## What was verified
 
-The [verification report](../evidence/2026-09-19/README.md) lists all 47 endpoint probes. These were sequential, bounded, identified by a descriptive User-Agent and performed with TLS verification. Selected read-only POSTs match website data queries; no publisher state-changing POST was sent.
+The [verification report](../evidence/2026-09-19/README.md) lists all 47 endpoint probes across all providers. The [offline audit](../catalog/verification-summary.json) attributes 27 requests to publisher hosts, covering 17 distinct route patterns: 16 with HTTP 200 samples and one with only a 401 response. No authenticated game-client, PlayFab, WebSocket, relay or local replay-gRPC operation was runtime-tested. These were sequential, bounded, identified by a descriptive User-Agent and performed with TLS verification. Selected read-only POSTs match website data queries; no publisher state-changing POST was sent.
 
 Evidence JSON includes request URLs/bodies through the manifest, timestamps, HTTP status, application result fields where available, byte counts, hashes, selected headers and sampled response shapes. Shapes inspect the first array item and have a depth bound; they are not exhaustive JSON Schemas. Non-personal discovery metadata is retained in full for leaderboard/race mapping. A single replay response was checked for its gzip/AoE4 signature without saving the recording.
 
@@ -60,17 +64,16 @@ Refresh provider specs and official frontend route declarations when request beh
 
 ## Follow-up research
 
-Concrete remaining gaps, ordered by likely usefulness:
+The current priority is publisher/developer and game-platform interfaces, with direct evidence separated from source-derived leads:
 
-1. Establish AoE4 World’s supported access path and data contract for detailed match summaries if an application needs build-order/economy timelines; avoid extrapolating from HTML pages.
-2. Validate more AoE4 FFA, console/controller, event and team statistics combinations with known matching records; separate missing coverage from empty filters.
-3. Test replay-parser compatibility with representative full-replay and summary versions in a local fixture set.
-4. Establish the supported authentication flow for official mod catalog/account operations if needed; this pass recorded the anonymous 401 rather than guessing credentials.
-5. Verify AoE2 Companion WebSocket message schemas and reconnect/subscription behavior for an actual overlay use case.
-6. Expand AoE1, AoE2, AoE3 and Mythology from discovery to per-title joins, result enums, retention and record formats.
-7. Investigate other community sites only where provider-owned API docs or explicit integration support exists; website functionality alone does not constitute a public API contract.
-8. Clarify the maintenance/hosting status of legacy services, static AoE2 datasets and wrappers, plus Online/Mobile coverage.
-9. Establish dataset and asset reuse terms for any intended redistribution or commercial product, using the relevant provider’s own terms.
+1. Run recursive GitHub domain-usage searches for publisher/backend hosts, inspect surrounding consumers and record additional candidate services/routes with provenance.
+2. Verify remaining documented anonymous publisher reads and expand title/build-specific schema evidence with small representative requests.
+3. Document AoE4 authentication/session lifecycles and platform/build requirements from implementations, then distinguish what requires an authorized runtime session to establish.
+4. Validate game-client response layouts, WebSocket notifications and relay boundaries; emulator functionality is insufficient proof of publisher behavior.
+5. Trace replay storage/upload and mod account APIs, including access requirements and payload semantics.
+6. Expand cross-title identifier joins, result enums, retention and record formats using dated evidence.
+7. Continue community-provider research separately where it supplies an application-facing contract or additional derived data; do not count wrappers as new upstream services.
+8. Test replay parser compatibility and local replay protocols with representative fixtures when an integration needs them.
 
 None of these gaps prevents using the documented and tested public reads. They mark the boundary between this reference and a production integration built for a specific product.
 

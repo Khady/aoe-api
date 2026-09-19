@@ -1,5 +1,7 @@
 # Platform, esports and adjacent APIs
 
+**Mixed origins:** Steam and PlayFab are platform-vendor services; independent esports services and wrappers are classified separately. Only the Steam player-count query was tested here; PlayFab title operations were not. [Operator index and verification](../publisher-services.md).
+
 These services complement game data. They should not be conflated with an AoE-specific match backend.
 
 ## Steam Web API
@@ -46,7 +48,7 @@ Tournament organizers can also publish APIs through general platforms. These are
 - [theflyingcodr/aoe4-client](https://github.com/theflyingcodr/aoe4-client): Go client containing historical official leaderboard request models.
 - [Orda](https://github.com/gzordrai/orda): Rust AoE4 Guides client.
 - [aoe4world-mcp](https://github.com/enisn/aoe4world-mcp): factual static-data MCP interface.
-- [AoE4 World overlay](https://github.com/aoe4world/overlay): first-party community-project consumer useful for following real API usage.
+- [AoE4 World overlay](https://github.com/aoe4world/overlay): AoE4 World’s own API consumer, useful for following request construction.
 - [ageLANServer](https://github.com/luskaner/ageLANServer): local online-service implementation and protocol reference.
 
 None of these packages was installed or run for this research. Verify release activity, route/base-URL drift, license and client behavior before selecting one. Their service dependencies remain the relevant source of availability and limits.

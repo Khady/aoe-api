@@ -1,5 +1,7 @@
 # World’s Edge / Relic community API
 
+**Operator: publisher/developer backend.** `/community/` is a publisher namespace. Of its 16 cataloged community routes, 8 have successful saved samples; the 88 cataloged `/game/` routes have no direct probes. Community references and emulator code do not establish current runtime behavior. [Coverage and evidence labels](../publisher-services.md).
+
 The World’s Edge backend exposes JSON services used by community tools. Its public-read routes are distinct from authenticated game-session routes. The most useful community paths are under `/community/leaderboard`, with additional lobby, achievement and other families.
 
 This reference combines successful AoE4 requests, the supplied [replay launcher](https://github.com/EKYavsil/AoE4-Replay-Launcher/blob/7543f21d75a9cb76e5fae9c2ba104cd5a2b819e3/src/aoe4replay/aoe4world.py), and the [LibreMatch protocol reference](https://github.com/LibreMatch/wiki/tree/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/rlink/community). LibreMatch is a community reverse-engineering source, not Microsoft’s official API contract; some of its examples describe AoE2 specifically.

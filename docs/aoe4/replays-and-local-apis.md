@@ -1,5 +1,7 @@
 # AoE4 replays, parsers and local game APIs
 
+**Mixed origins:** publisher replay endpoints and the SCAR game API are separate from independent replay parsers and file-format tools. Source inspection, local reference files and live download samples establish different things. [Operator and evidence definitions](../publisher-services.md).
+
 There are three different tasks: **find/download a replay**, **parse an existing recording or summary**, and **run rules inside a game**. An API that handles one does not automatically provide the other two.
 
 ## Replay discovery and download
@@ -62,7 +64,7 @@ Despite the repository name, the controller inspected here exposes **summary par
 | `/Summary/file?path=...` | Server-local gzip file path | Older parser output |
 | `/Summary/newfile?path=...` | Server-local gzip file path | New parser and generated summary |
 
-Source: [SummaryController.cs](https://github.com/aoe4world/replays-api/blob/efc391296451da352c3660daf814403e37e787e8/AoE4WorldReplaysAPI/Controllers/SummaryController.cs). All five operations are source-verified, **not runtime-tested** here. The path is a path on the parser server, not automatically the browser/client machine.
+Source: [SummaryController.cs](https://github.com/aoe4world/replays-api/blob/efc391296451da352c3660daf814403e37e787e8/AoE4WorldReplaysAPI/Controllers/SummaryController.cs). All five operations were identified in source and were **not runtime-tested** here. The path is a path on the parser server, not automatically the browser/client machine.
 
 The [program configuration](https://github.com/aoe4world/replays-api/blob/efc391296451da352c3660daf814403e37e787e8/AoE4WorldReplaysAPI/Program.cs) enables Swagger only in development and has authorization middleware commented out. Because these operations open local paths or fetch URLs, keep a research deployment local/trusted and define access controls before exposing it. This is a property of the inspected implementation, not an assertion about AoE4 World’s private production deployment.
 

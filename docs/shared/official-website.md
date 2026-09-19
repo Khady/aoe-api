@@ -1,5 +1,7 @@
 # AgeOfEmpires.com: official website interfaces
 
+**Operator: publisher website.** Of 37 cataloged route patterns, 8 have HTTP 200 samples, one has only a 401 rejection and 28 have no direct probe. Frontend declarations establish source usage, not complete runtime correctness. [Coverage and evidence labels](../publisher-services.md).
+
 **API origin:** `https://api.ageofempires.com`  
 **Primary evidence:** the [current official stats page](https://www.ageofempires.com/stats/ageiv) and its [published JavaScript bundle](https://www.ageofempires.com/wp-content/themes/ageOfEmpires/public/js/main.b0837c.js), fetched on 2026-09-19. The bundle’s URL and hash are recorded in the [source-fetch metadata](../../evidence/2026-09-19/source-fetches.json).
 

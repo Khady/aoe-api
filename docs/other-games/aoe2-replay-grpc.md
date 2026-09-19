@@ -1,5 +1,7 @@
 # AoE2 DE replay-viewing gRPC interface
 
+**Origin: game-client-related protocol described by community research; precise implementation-owner/partner attribution unresolved.** No runtime connection was tested. [Operator and evidence definitions](../publisher-services.md).
+
 LibreMatch documents an additional **local replay interface**, separate from hosted leaderboard and match-history APIs. Its [gRPC reference](https://github.com/librematch/wiki/tree/fdb932e9eb6cff5f7dd8d1d46c7fbcc8202d0419/src/grpc) and [Delta Play Replay project](https://github.com/librematch/delta-play-replay/tree/9bc90f67f22aec47bb050cdea5b73a5fec0d629e) describe AoE2 DE replay playback and the CaptureAge-related state stream.
 
 The linked [`cade_api.proto`](https://github.com/librematch/delta-play-replay/blob/9bc90f67f22aec47bb050cdea5b73a5fec0d629e/crates/uncage-client/proto/cade_api.proto) defines package `cade_api.rpc`, service `CadeRemote`, and these operations:

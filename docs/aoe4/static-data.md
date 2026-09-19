@@ -1,5 +1,7 @@
 # AoE4 World Data: static game definitions
 
+**Operator: independent/community project.** Extracted game data does not make this publisher-operated hosting. [Operator and evidence definitions](../publisher-services.md).
+
 **Hosted data:** `https://data.aoe4world.com`  
 **Source and generation pipeline:** [aoe4world/data](https://github.com/aoe4world/data)  
 **Inspected revision:** [`b2cd38222deae40ba2db18171edf494f81410c69`](https://github.com/aoe4world/data/tree/b2cd38222deae40ba2db18171edf494f81410c69)

@@ -1,5 +1,7 @@
 # AoECenter: SDK, response models and supporting tools
 
+**Origin: independent/community client tools.** They document and consume publisher services; their models and fixtures are source evidence, not new live verification. [Operator categories and direct verification](publisher-services.md).
+
 [AoECenter](https://github.com/AoECenter) supplies implementation detail for the World’s Edge/Relic backend. Its most useful repository is `relic-sdk`, an OCaml client with typed models and captured response fixtures. It explicitly acknowledges LibreMatch’s protocol research. This complements the wiki and OpenAPI reference with concrete parsing and request-building code.
 
 All **five public repositories** were inspected at pinned revisions on **2026-09-19**. No separate hosted AoECenter data API or new upstream endpoint was established by this review. The [coverage index](../catalog/aoecenter-coverage.json) records repositories, SDK request builders, model fields and discrepancies; the [evidence record](../evidence/2026-09-19/aoecenter-review.json) contains fetch hashes and a small offline fixture check.

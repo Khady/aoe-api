@@ -1,5 +1,7 @@
 # ageLANServer: game-client protocol reference
 
+**Operator: independent/community emulator.** Source-inspected routes are not live publisher verification; its publisher/vendor counterparts are marked as upstream candidates. [Operator categories and direct verification](publisher-services.md).
+
 [ageLANServer](https://github.com/luskaner/ageLANServer) contributes substantially more than hostname clues. It implements a local replacement for parts of the online services used by Age of Empires I/II/III: Definitive Edition, IV, and Mythology: Retold. Its route registrations, session notifications and serializers help explain the protocol behind the game client.
 
 **Reviewed 2026-09-19 at [revision `eb7ec5e`](https://github.com/luskaner/ageLANServer/tree/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454).** The repository metadata reports a push on 2026-09-10 and an AGPL-3.0 source license. This review inspected source and indexed declarations; it did not install or run the server, launcher or game.

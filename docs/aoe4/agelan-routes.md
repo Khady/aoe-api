@@ -1,5 +1,7 @@
 # AoE4 game-client routes in ageLANServer
 
+**Evidence: independent emulator source, not publisher runtime verification.** Every route in this table is untested against the publisher service. [Origin and verification guide](../publisher-services.md).
+
 Source-only reference checked on **2026-09-19**, from [ageLANServer `eb7ec5e`](https://github.com/luskaner/ageLANServer/tree/eb7ec5ed5fe2ad0a39a843819a0fb928390d4454). These are the **88 operations** registered for `age4`: 87 game HTTP routes and one WebSocket upgrade. Publisher deployment, access and runtime behavior were not tested.
 
 Read the [implementation guide](../agelanserver.md) for sessions, positional responses, known stubs, WebSocket events, and the nine additional AoE4 PlayFab routes. The [machine-readable index](../../catalog/agelanserver-coverage.json) also records all other titles, source conditions and partial tagged types.
